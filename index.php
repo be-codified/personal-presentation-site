@@ -17,10 +17,6 @@
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114.png" />
 
-        <!-- IE8 support for html5 elements and media queries -->
-        <script type="text/javascript" src="js/lib/html5shiv.min.js"></script>
-        <script type="text/javascript" src="js/lib/respond.min.js"></script>
-
         <!-- google analytics tracking code -->
         <script type="text/javascript">
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -97,7 +93,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
@@ -134,7 +130,7 @@
                                     CSS pre-processor <a href="http://lesscss.org/" target="_blank">Less</a>,
                                 </li>
                                 <li>
-                                    <a href="http://jquery.com/" target="_blank">jQuery</a> - fast, small, and feature-rich JavaScript library
+                                    <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library
                                 </li>
                                 <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome</li>
                                 <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (note: what libraries should be here?)</li>
@@ -143,7 +139,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                             <p class="latest">Latest work</p>
                             <h2>Some title goes here</h2>
@@ -152,7 +148,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
@@ -183,19 +179,22 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
-                            <p class="lead">How was this site made?</p>
+                            <h2 class="smaller">How was this site made?</h2>
                             <p>No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets how-made">
                                 <li>HTML5, CSS3 (using Less), jQuery and animations // note: change this,</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
-                                <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights,</li> 
-                                <li>cross-browser and cross-platform compatibility was tested as well.</li>
-                            </ul>
-                            <ul class="plus-bullets how-made">
-                                <li>Feel free to see whole project code at GitHub.</li>
+                                <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights (or yslow.com?),</li> 
+                                <li>logo and contact icons are used in SVG format</li>
+                                <li>CSS and JavaScript files have been minified,</li>
+                                <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
+                                <li>time for how long I am working in web industry is calculated automatically.</li>
                             </ul>
                             <ul class="plus-bullets how-made">
                                 <li>Design came under hands of Groga Tancek, photography triggered by Ana Skobe. Both made by love. // note: cleaner sentence</li>
+                            </ul>
+                            <ul class="plus-bullets how-made last">
+                                <li>Feel free to see whole project code at <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</li>
                             </ul>
                         </div>
                     </div>

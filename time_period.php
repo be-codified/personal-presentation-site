@@ -23,6 +23,7 @@
                 2 => 'two',
                 3 => 'three',
                 4 => 'four',
+                5 => 'five',
             );
             return $integer_to_string[round($period->days / 365)];            
         }

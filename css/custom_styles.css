@@ -111,6 +111,9 @@ h2 {
   font-size: 50px;
   line-height: 125%;
 }
+h2.smaller {
+  font-size: 35px;
+}
 .intro h2 {
   font-size: 44px;
   line-height: 125%;
@@ -159,7 +162,8 @@ ul.tools li strong {
 ul li strong.reduced-right-padding {
   padding-right: 2px;
 }
-ul.tools a {
+ul.tools a,
+ul.how-made a {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
@@ -167,14 +171,18 @@ ul.tools a {
   text-indent: 0;
 }
 ul.tools a:hover,
-ul.tools a:active {
+ul.how-made a:hover,
+ul.tools a:active,
+ul.how-made a:active {
   text-decoration: none;
 }
-ul.tools .warning {
+ul.tools .warning,
+ul.how-made .warning {
   font-size: 13px;
   color: #d2dee2;
 }
-ul.tools .warning span {
+ul.tools .warning span,
+ul.how-made .warning span {
   text-transform: uppercase;
 }
 .portfolio .latest {
@@ -191,8 +199,8 @@ ul.tools .warning span {
 ul.how-made {
   padding: 10px 0;
 }
-ul.how-made li {
-  padding-bottom: 0 !important;
+ul.how-made li:last-child {
+  padding-bottom: 10px;
 }
 .business-owner {
   font-size: 13px;

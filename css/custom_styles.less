@@ -19,9 +19,7 @@ body {
     position: relative;
 }
 
-.clearfix {
-    clear: both;
-}
+.clearfix { clear: both; }
 
 .main-color-1 { background-color: @main-color-1; }
 .main-color-2 { background-color: @main-color-2; }
@@ -124,13 +122,8 @@ ul.achievements {
             color: @color-white;
         }
 
-        .counter.small {
-            font-size: 30px;  
-        }
-
-        .counter.smaller {
-            font-size: 25px;  
-        }
+        .counter.small { font-size: 30px; }
+        .counter.smaller { font-size: 25px; }
     }
 
     .desc {
@@ -146,19 +139,17 @@ h2 {
     line-height: 125%;    
 }
 
+h2.smaller { font-size: 35px; }
+
 .intro h2 {
     font-size: 44px;
     line-height: 125%;
     padding: 0 0 5px 0;
 
-    strong {
-        font-family: 'ralewaysemibold', sans-serif;
-    }
+    strong { font-family: 'ralewaysemibold', sans-serif; }
 }
 
-p.lead {
-    font-size: 22px;
-}
+p.lead { font-size: 22px; }
 
 ul.plus-bullets {
     li:before {
@@ -170,16 +161,12 @@ ul.plus-bullets {
         top: 2px;        
     }
 
-    li:last-child {
-        padding-bottom: 50px;
-    }
+    li:last-child { padding-bottom: 50px; }
 }
 
 ul.strenghts,
 ul.how-made {
-    li:before {
-        color: lighten(@main-color-2, 25%);
-    }
+    li:before { color: lighten(@main-color-2, 25%); }
 
     strong {
         background-color: lighten(@main-color-2, 20%);
@@ -191,9 +178,7 @@ ul.how-made {
 ul.skills,
 ul.tools {
     li {
-        &:before {
-            color: lighten(@main-color-1, 20%);
-        }
+        &:before { color: lighten(@main-color-1, 20%); }
 
         strong {
             text-indent: 0;
@@ -206,11 +191,10 @@ ul.tools {
     }
 }
 
-ul li strong.reduced-right-padding {
-    padding-right: 2px;
-}
+ul li strong.reduced-right-padding { padding-right: 2px; }
 
-ul.tools {
+ul.tools,
+ul.how-made {
     a {
         text-decoration: none;
         color: @color-white;
@@ -219,18 +203,14 @@ ul.tools {
         text-indent: 0;
 
         &:hover,
-        &:active {
-            text-decoration: none;        
-        }
+        &:active { text-decoration: none; }
     }
 
     .warning {
         font-size: 13px;
         color: lighten(@main-color-1, 20%);
 
-        span {
-            text-transform: uppercase;
-        }
+        span { text-transform: uppercase; }
     }
 }
 
@@ -249,21 +229,20 @@ ul.tools {
     }
 } 
 
-ul.how-made {
-    padding: 10px 0;
+ul {
+    &.how-made {
+        padding: 10px 0;
+    }    
 
-    li {
-        padding-bottom: 0 !important;
-    }
+    &.how-made li:last-child { padding-bottom: 10px; }
 }
 
 .business-owner {
     font-size: 13px;
-
-    small {
-        font-size: 11px;
-    }
+    
+    small { font-size: 11px; }
 }
+
 
 /*** layout
 *********************************************************/
@@ -285,9 +264,7 @@ ul.achievements {
     } 
 
     .values,
-    .desc {
-        float: left;
-    }
+    .desc { float: left; }
 
     .values {
         display: inline-block;
@@ -296,9 +273,7 @@ ul.achievements {
         background-color: @main-color-3;    
     }
 
-    .desc {
-        padding: 11px 0 0 20px;     
-    }
+    .desc { padding: 11px 0 0 20px; }
 }
 
 /*
@@ -375,13 +350,8 @@ ul.achievements {
         background-size: cover;
     }
 
-    .item-2 {
-        background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
-    } 
-
-    .item-3 {
-        background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
-    }  
+    .item-2 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; } 
+    .item-3 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; }  
 }
 
 /*** icons
@@ -402,16 +372,14 @@ ul.achievements {
         padding-top: 44px;
     }
 
-    a.email   { 
-        background-image: url('../img/icon_email.svg'); 
-    }
+    a.email { background-image: url('../img/icon_email.svg'); }
 
-    a.skype   { 
+    a.skype { 
         background-image: url('../img/icon_skype.svg'); 
         margin-top: -50px;
     }
 
-    a.phone   { 
+    a.phone { 
         background-image: url('../img/icon_phone.svg'); 
         margin-top: -45px;
     }
