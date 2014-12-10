@@ -7,11 +7,13 @@
         <title>be-codified.com | freelance front-end developer</title>
 
         <!-- stylesheets -->
-
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- google analytics tracking code -->
+        <!-- IE8 support for html5 elements and media queries -->
+        <script src="js/lib/html5shiv.min.js"></script>
+        <script src="js/lib/respond.min.js"></script>
 
+        <!-- google analytics tracking code -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,5 +26,8 @@
     </head>
     <body>
         <h1>be-codified.com</h1>
-</body>
+
+        <!-- jquery -->
+        <script src="js/lib/jquery.min.js"></script>
+    </body>
 </html>
