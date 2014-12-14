@@ -1,1 +1,1 @@
-Code of my personal site - http://www.be-codified.com
+Code of my personal presentation site - http://www.be-codified.com
