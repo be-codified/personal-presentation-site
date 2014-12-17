@@ -1,3 +1,7 @@
-html {
-    background-color: blue;
+/*********************************************************
+***** custom styles for overriding bootstrap styles ******
+***** be-codified | http://www.be-codified.com *********** 
+*********************************************************/
+body {
+  background-color: blue;
 }
