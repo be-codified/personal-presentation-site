@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>be-codified.com | freelance front-end developer</title>
 
+        <!-- fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:700,400" rel="stylesheet" type="text/css" />
+
         <!-- stylesheets -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
         <link href="css/custom_styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
@@ -34,6 +37,8 @@
     </head>
     <body>
         <h1>be-codified.com</h1>
+
+        <h2>My main strenghts</h2>
 
         <!-- jquery -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
