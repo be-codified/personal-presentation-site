@@ -70,6 +70,26 @@ module.exports = function(grunt) {
             }
         },
 
+        // deployment
+        'ftp-deploy': {
+            development: {
+                auth: {
+                    host: '109.202.120.135',
+                    port: 21,
+                    authKey: 'credentials'
+                },
+                src: '/Users/Ziga/Projekti/be_codified/site',
+                dest: '/public_html/development',
+                exclusions: [
+                    'node_modules', 
+                    '.git', '.gitignore', 'readme.md',
+                    'gruntfile.js', 'package.json', 
+                    'licence.txt', '.ftppass', 
+                    '.DS_Store', '*/.DS_Store'
+                ]
+            }
+        },
+
 /*
         lint5: {
             dirPath: '/',
@@ -103,19 +123,6 @@ module.exports = function(grunt) {
             }
         }
 
-        'ftp-deploy': {
-          build: {
-            auth: {
-              host: '109.202.120.135',
-              port: 21,
-              authKey: 'credentials'
-            },
-            src: '/Users/Ziga/Projekti/be_codified/site',
-            dest: '/public_html',
-            exclusions: ['.', '.', '.']
-          }
-        },
-
 */
 
     });
@@ -123,9 +130,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-notify');
 
     //grunt.loadNpmTasks('grunt-lint5');
     //grunt.loadNpmTasks('grunt-contrib-csslint');
-    //grunt.loadNpmTasks('grunt-ftp-deploy');
+
 };
