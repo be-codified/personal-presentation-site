@@ -36,9 +36,52 @@
         </script>
     </head>
     <body>
-        <h1>be-codified.com</h1>
+        <div class="container" style="background-color: red;">
+            <header>
+                <h1>be-codified.com</h1>
+            </header>
+            <article>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: yellow;">
+                        <h2>My main strenghts</h2>
+                        <ul>
+                            <li>strong understanding of developing for the web and <strong>a careful eye for design</strong>,</li>
+                            <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
+                            <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
+                            <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
+                            <li>solid understanding of <strong>designing in a browser</strong>,</li>
+                            <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
+                            <li>solid understanding of <strong>SEO</strong>,</li>
+                            <li>solid understanding and appreciation of <strong>colour and typography</strong>,</li>
+                            <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
+                            <li>excellent <strong>communication skills</strong>,</li>
+                            <li>ability to dive in and learn new things to <strong>find solutions for technical problems</strong>.</li>
+                        </ul>            
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: pink;">
+                        <h2>Latest work</h2>
+                        <p>Here goes image/text</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: green;">
+                        <h2>My main skills</h2>
+                        <ul>
+                            <li><strong>HTML5</strong> (modern markup),</li>
+                            <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
+                            <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong>compatibility testing</strong>,</li>
+                            <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax),</li>
+                            <li><strong>Git</strong> (working with a team of developers, service BitBucket),</li>
+                            <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
+                            <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
+                            <li>basic understanding of PHP and MySQL.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
 
-        <h2>My main strenghts</h2>
+        
 
         <!-- jquery -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
