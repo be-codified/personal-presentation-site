@@ -20,6 +20,7 @@
     </head>
     <body>
         <div class="avatar"></div>
+        <div class="circle"></div>
 
         <!-- jquery and main script -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>

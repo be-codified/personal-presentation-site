@@ -1,1 +1,1 @@
-body{background-color:#fff;position:relative}.avatar{display:block;width:400px;height:400px;background-image:url(../img/avatar_testing_image.jpg);position:absolute;top:50px;left:150px;border-radius:50%}
+body{background-color:#fff;position:relative}.avatar{display:block;width:400px;height:400px;background-image:url(../img/avatar_testing_image.jpg);position:absolute;top:50px;left:150px;border-radius:50%;border:5px solid red}.circle{display:block;width:410px;height:410px;position:absolute;top:45px;left:145px;border-radius:50%;border:5px solid #00f}

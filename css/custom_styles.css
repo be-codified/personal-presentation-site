@@ -17,4 +17,15 @@ body {
   top: 50px;
   left: 150px;
   border-radius: 50%;
+  border: 5px solid red;
+}
+.circle {
+  display: block;
+  width: 410px;
+  height: 410px;
+  position: absolute;
+  top: 45px;
+  left: 145px;
+  border-radius: 50%;
+  border: 5px solid blue;
 }
