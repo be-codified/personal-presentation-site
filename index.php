@@ -42,6 +42,21 @@
             </header>
             <article>
                 <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
+                        <h2>Hi,<br /> my name is Žiga and I'm <strong>a front-end developer.</strong></h2>
+                        <?php require_once('time_period.php'); ?>
+                        <h4>I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</h4>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: coral;">
+                        <p>Here goes avatar</p>
+                        <ul>
+                            <li><?php echo time_period($date_webindustry, $date_today, 0); ?>+ Years of Experience</li>
+                            <li>90+ Happy Clients</li>
+                            <li>150+ Completed Projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: yellow;">
                         <h2>My main strenghts</h2>
                         <ul>
