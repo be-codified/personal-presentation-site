@@ -8,8 +8,9 @@
 
     $date_today = date_create('now');
 
-    // function for calculating difference between two  
-    // dates and returning it as integer or string
+    // function for calculating difference between
+    // two dates and returning it as integer or string
+    // NOTE: use true or false for $return_string
     function time_period($date_start, $date_end, $return_string) {
         $period = date_diff($date_start, $date_end);
 
@@ -26,9 +27,4 @@
             return $integer_to_string[round($period->days / 365)];            
         }
     }
-
-    // calling function with params: 
-    // start_date, end_date, show number as string
-    echo time_period($date_webindustry, $date_today, 0);
-    echo time_period($date_freelancing, $date_today, 1);
 ?>
