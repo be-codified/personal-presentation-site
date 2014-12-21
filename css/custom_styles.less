@@ -5,30 +5,49 @@
 ***** be-codified | http://www.be-codified.com *********** 
 *********************************************************/
 
+/*** general 
+*********************************************************/
+
 body {
     background-color: #ffffff;
     position: relative;
 }
 
-.avatar {
-    display: block;
-    width: 400px;
-    height: 400px;
-    background-image: url('../img/avatar_testing_image.jpg');
-    position: absolute;
-    top: 50px;
-    left: 150px;
-    border-radius: 50%;
-    border: 5px solid red;
-}
+/*** header 
+*********************************************************/
 
-.circle {
-    display: block;
-    width: 410px;
-    height: 410px;
-    position: absolute;
-    top: 45px;
-    left: 145px;
-    border-radius: 50%;
-    border: 5px solid blue;
+.avatar {
+    .circle {
+        display: block;
+        width: 400px;
+        height: 400px;    
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        border-radius: 50%;
+    }
+
+    .photo {
+        background-image: url('../img/avatar_testing_image.jpg');
+        border: 10px solid red;
+        z-index: 1000;
+        .circle;
+    }
+
+    @circle-small-color: blue;
+    @circle-large-color: blue;
+
+    .circle-small {
+        border: 5px solid @circle-small-color;
+        background-color: lighten(@circle-small-color, 10%);
+        z-index: 999;
+        .circle;
+    }
+
+    .circle-large {
+        border: 5px solid @circle-large-color;
+        background-color: lighten(@circle-large-color, 10%);
+        z-index: 998;
+        .circle;
+    }
 }

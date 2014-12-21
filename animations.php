@@ -19,11 +19,14 @@
         <script type="text/javascript" src="js/lib/respond.min.js"></script>
     </head>
     <body>
-        <div class="avatar"></div>
-        <div class="circle"></div>
+        <div class="avatar">
+            <div class="photo"></div>
+            <div class="circle-small"></div>
+            <div class="circle-large"></div>
+        </div>
 
         <!-- jquery and main script -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/main.js?v=<?php echo time(); ?>"></script>
     </body>
 </html>
