@@ -43,9 +43,9 @@
             <article>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
-                        <h2>Hi,<br /> my name is Žiga and I'm <strong>a front-end developer.</strong></h2>
+                        <p class="lead">Hi,<br /> my name is Žiga and I'm <strong>a front-end developer.</strong></p>
                         <?php require_once('time_period.php'); ?>
-                        <h4>I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</h4>
+                        <h3>I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</h3>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: coral;">
                         <p>Here goes avatar</p>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: yellow;">
-                        <h2>My main strenghts</h2>
+                        <p class="lead">My main strenghts</p>
                         <ul>
                             <li>strong understanding of developing for the web and <strong>a careful eye for design</strong>,</li>
                             <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
@@ -76,11 +76,11 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: pink;">
-                        <h2>Latest work</h2>
+                        <p class="lead">Latest work</p>
                         <p>Here goes image/text</p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: green;">
-                        <h2>My main skills</h2>
+                        <p class="lead">My main skills</p>
                         <ul>
                             <li><strong>HTML5</strong> (modern markup),</li>
                             <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
@@ -93,7 +93,56 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: coral;">
+                        <p class="lead">Magical tools I use on a daily basis</p>
+                        <p>editor Sublime Text 2, Chrome DevTools, task runner Grump, CodeKit and Bootstrap framework; all running on a small thing called MacBook Pro, extended to an external 24” monitor. // note: these should be links</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
+                        <p class="lead">Latest work</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: pink;">
+                        <p class="lead">Want to hire me for a project?</p>
+                        <p>Please feel free to contact me by any communication channel:</p>
+                        <ul>
+                            <li>
+                                e-mail:&nbsp; 
+                                <a href="mailto:ziga@be-codified.com">ziga@be-codified.com</a></li>
+                            <li>
+                                twitter:&nbsp;
+                                <a href="https://twitter.com/be_codified" target="_blank">@be_codified</a>
+                            </li>
+                            <li>skype:&nbsp;
+                                <a href="skype:ziga_vukcevic?call">ziga_vukcevic</a>
+
+                            </li>
+                            <li>phone:&nbsp;
+                                <a href="tel: 0038651313680">00386 51 313 680</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: green;">
+                        <p class="lead">How was this site made?</p>
+                        <ul>
+                            <p>I have coded it with modern technologies such as:</p>
+                            <li>HTML5, CSS3 and jQuery (no website template has been used), checked with grunt-lint5 (HTML5 validator), Csslint (CSS validator), PageSpeed Insights; cross-browser and cross-platform compatibility was tested as well</li>
+                            <li>by using responsive design and Bootstrap framework,</li>
+                            <li>design came under hands of Groga Tanček</li>
+                        </ul>
+                    </div>
+                </div>
             </article>
+            <footer>
+                <div class="row">
+                    <p class="text-center">Business owner info:</p>
+                    <address class="text-center">Digitalna ladja, Žiga Vukčevič s.p., Tržaška 121, 1000 Ljubljana, Slovenia<br />VAT Nr.: SI86291459, Registration Nr.: 6531164000, IBAN: SI56 6100 0000 6613 419, BIC: HDELSI22</address>
+                    <p class="text-center">
+                        <small>Copyright 2015 © be-codified.com</small>
+                    </p>
+                </div>
+            </footer>
         </div>
     
         <!-- jquery and main script -->
