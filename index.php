@@ -51,7 +51,7 @@
                         <p>Here goes avatar</p>
                         <ul>
                             <li><?php echo time_period($date_webindustry, $date_today, 0); ?>+ Years of Experience</li>
-                            <li>90+ Happy Clients</li>
+                            <li><span class="counter">90</span>+ Happy Clients</li>
                             <li>150+ Completed Projects</li>
                         </ul>
                     </div>

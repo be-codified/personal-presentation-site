@@ -1,6 +1,8 @@
 $(document).ready(function() {
-
     // animations
+    // *********************************************
+
+    // water drop (underneath avatar)
     $('.avatar .circle-large').delay(1000).animate({
         opacity: 0,
         top: '50px',
@@ -23,4 +25,11 @@ $(document).ready(function() {
         duration: 1000,
         easing: 'swing'
     })
+
+    // rolling counter (on avatar)
+    $.fn.rolling = function() {
+        this.css('color', 'green');
+    }
+
+    $('.counter').rolling();
 });
