@@ -13,6 +13,69 @@ body {
     position: relative;
 }
 
+@main-color-1: #93b1bb;
+@main-color-2: #33435d;
+@main-color-3: #fcb122;
+
+.main-color-1 { background-color: @main-color-1; }
+.main-color-2 { background-color: @main-color-2; }
+
+ul {
+    padding: 0;
+}
+
+/*** typography
+*********************************************************/
+
+body {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.intro h2 {
+    font-size: 32px;
+    line-height: 130%;
+}
+
+.intro h2 span {
+    display: block;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    line-height: 130%;    
+}
+
+p.lead {
+    font-size: 18px;
+}
+
+ul.colorful {
+    line-height: 180%;
+    list-style: none;
+}
+
+ul.colorful li:before {
+    color: @main-color-3;
+    content: '+';
+    padding-right: 10px;
+}
+
+ul.colorful strong {
+    color: @main-color-3;
+}
+
+/*** layout
+*********************************************************/
+
+
+
+
+
+
+
 /*** header 
 *********************************************************/
 
