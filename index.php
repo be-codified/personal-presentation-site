@@ -52,10 +52,30 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: gray;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                             <h2>Here goes avatar</h2>
-                            <ul>
-                                <li><?php echo time_period($date_webindustry, $date_today, 0); ?>+ Years of Experience</li>
-                                <li><span class="counter">90</span>+ Happy Clients</li>
-                                <li>150+ Completed Projects</li>
+                            <ul class="achievements">
+                                <li>
+                                    <span class="values">
+                                        <span class="counter">
+                                            <?php echo time_period($date_webindustry, $date_today, 0); ?>
+                                        </span>+
+                                    </span>
+                                    <span class="desc">Years of<br />Experience</span>
+                                    <div class="clearfix"></div>
+                                </li>
+                                <li>
+                                    <span class="values">
+                                        <span class="counter">90</span>+
+                                    </span> 
+                                    <span class="desc">Happy<br />Clients</span>
+                                    <div class="clearfix"></div>
+                                </li>
+                                <li>
+                                    <span class="values">
+                                        <span class="counter">150</span>+
+                                    </span>
+                                    <span class="desc">Completed<br />Projects</span>
+                                    <div class="clearfix"></div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +84,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
                             <h2>My main strenghts</h2>
-                            <ul class="colorful">
+                            <ul class="strenghts">
                                 <li>strong understanding of developing for the web and <strong>a careful eye for design</strong>,</li>
                                 <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
                                 <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
@@ -90,7 +110,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                         <h2>My main skills</h2>
-                            <ul>
+                            <ul class="skills">
                                 <li><strong>HTML5</strong> (modern markup),</li>
                                 <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
                                 <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong>compatibility testing</strong>,</li>
@@ -99,6 +119,7 @@
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
                                 <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>basic understanding of PHP and MySQL.</li>
+                                <li>// note: AngularJS, Less, GitHub</li>
                             </ul>
                         </div>
                     </div>

@@ -13,6 +13,10 @@ body {
     position: relative;
 }
 
+.clearfix {
+    clear: both;
+}
+
 @main-color-1: #93b1bb;
 @main-color-2: #33435d;
 @main-color-3: #fcb122;
@@ -22,6 +26,13 @@ body {
 
 ul {
     padding: 0;
+    line-height: 140%;
+    list-style: none;
+}
+
+ul li {
+    text-indent: -20px;
+    padding: 0 0 10px 20px;    
 }
 
 /*** typography
@@ -30,6 +41,10 @@ ul {
 body {
     font-size: 16px;
     color: #ffffff;
+}
+
+ul.achievements {
+    font-size: 18px;    
 }
 
 .intro h2 {
@@ -52,26 +67,50 @@ p.lead {
     font-size: 18px;
 }
 
-ul.colorful {
-    line-height: 180%;
-    list-style: none;
-}
-
-ul.colorful li:before {
-    color: @main-color-3;
+ul.strenghts li:before,
+ul.skills li:before {
     content: '+';
     padding-right: 10px;
 }
 
-ul.colorful strong {
+ul.strenghts li:before {
     color: @main-color-3;
+}
+
+ul.strenghts strong {
+    color: @main-color-3;
+}
+
+ul.skills strong {
+    color: @main-color-2;
 }
 
 /*** layout
 *********************************************************/
 
+ul.achievements {
+    li {
+        text-indent: 0;
+        padding: 0;
+        background-color: @main-color-1;
+        margin-bottom: 20px;
+        width: 300px;
+        display: block;
+        opacity: 0.9;
+    } 
 
+    .values,
+    .desc {
+        float: left;
+    }
 
+    .values {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        background-color: @main-color-3;    
+    }
+}
 
 
 

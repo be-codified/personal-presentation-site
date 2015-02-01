@@ -10,6 +10,9 @@ body {
   background-color: #ffffff;
   position: relative;
 }
+.clearfix {
+  clear: both;
+}
 .main-color-1 {
   background-color: #93b1bb;
 }
@@ -18,12 +21,21 @@ body {
 }
 ul {
   padding: 0;
+  line-height: 140%;
+  list-style: none;
+}
+ul li {
+  text-indent: -20px;
+  padding: 0 0 10px 20px;
 }
 /*** typography
 *********************************************************/
 body {
   font-size: 16px;
   color: #ffffff;
+}
+ul.achievements {
+  font-size: 18px;
 }
 .intro h2 {
   font-size: 32px;
@@ -41,20 +53,41 @@ h2 {
 p.lead {
   font-size: 18px;
 }
-ul.colorful {
-  line-height: 180%;
-  list-style: none;
-}
-ul.colorful li:before {
-  color: #fcb122;
+ul.strenghts li:before,
+ul.skills li:before {
   content: '+';
   padding-right: 10px;
 }
-ul.colorful strong {
+ul.strenghts li:before {
   color: #fcb122;
+}
+ul.strenghts strong {
+  color: #fcb122;
+}
+ul.skills strong {
+  color: #33435d;
 }
 /*** layout
 *********************************************************/
+ul.achievements li {
+  text-indent: 0;
+  padding: 0;
+  background-color: #93b1bb;
+  margin-bottom: 20px;
+  width: 300px;
+  display: block;
+  opacity: 0.9;
+}
+ul.achievements .values,
+ul.achievements .desc {
+  float: left;
+}
+ul.achievements .values {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: #fcb122;
+}
 /*** header 
 *********************************************************/
 .avatar .circle {
