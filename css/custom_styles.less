@@ -28,12 +28,13 @@ ul {
     padding: 0;
     line-height: 140%;
     list-style: none;
+
+    li {
+        text-indent: -20px;
+        padding: 0 0 10px 20px;    
+    }
 }
 
-ul li {
-    text-indent: -20px;
-    padding: 0 0 10px 20px;    
-}
 
 /*** typography
 *********************************************************/
@@ -50,11 +51,11 @@ ul.achievements {
 .intro h2 {
     font-size: 32px;
     line-height: 130%;
-}
 
-.intro h2 span {
-    display: block;
-    padding-bottom: 20px;
+    span {
+        display: block;
+        padding-bottom: 20px;
+    }
 }
 
 h2 {
@@ -73,12 +74,14 @@ ul.skills li:before {
     padding-right: 10px;
 }
 
-ul.strenghts li:before {
-    color: @main-color-3;
-}
+ul.strenghts {
+    li:before {
+        color: @main-color-3;
+    }
 
-ul.strenghts strong {
-    color: @main-color-3;
+    ul.strenghts strong {
+        color: @main-color-3;
+    }
 }
 
 ul.skills strong {
@@ -114,6 +117,10 @@ ul.achievements {
 
 
 
+
+
+
+// to delete at the end of project
 
 /*** header 
 *********************************************************/

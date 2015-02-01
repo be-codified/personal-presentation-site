@@ -61,7 +61,7 @@ ul.skills li:before {
 ul.strenghts li:before {
   color: #fcb122;
 }
-ul.strenghts strong {
+ul.strenghts ul.strenghts strong {
   color: #fcb122;
 }
 ul.skills strong {

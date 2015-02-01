@@ -119,7 +119,7 @@
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
                                 <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>basic understanding of PHP and MySQL.</li>
-                                <li>// note: AngularJS, Less, GitHub</li>
+                                <li>// note: AngularJS, Less, GitHub, Rest API</li>
                             </ul>
                         </div>
                     </div>
