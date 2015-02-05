@@ -17,41 +17,85 @@ body {
   background-color: #93b1bb;
 }
 .main-color-2 {
-  background-color: #33435d;
+  background-color: #b41c1c;
 }
 ul {
   padding: 0;
-  line-height: 140%;
+  line-height: 160%;
   list-style: none;
 }
 ul li {
   text-indent: -20px;
   padding: 0 0 10px 20px;
 }
+/*** logo
+*********************************************************/
+header h1 {
+  margin: 55px 0 65px 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 230px;
+  height: 45px;
+  background: url('../img/logo.svg') no-repeat 0 0 transparent;
+  display: block;
+}
+header h1 a {
+  display: block;
+  width: 230px;
+  height: 45px;
+}
+.no-svg header h1 {
+  background: url('../img/logo.png') no-repeat 0 0 transparent;
+}
+/*** avatar
+*********************************************************/
+.avatar {
+  background: url('../img/avatar.jpg') 0 0 transparent no-repeat;
+  background-size: 100%;
+  height: 500px;
+  padding-top: 260px;
+  display: block;
+}
 /*** typography
 *********************************************************/
+@font-face {
+  font-family: 'ralewayextrabold';
+  src: url('../fonts/raleway-extrabold-webfont.eot');
+  src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'), url('../fonts/raleway-extrabold-webfont.woff') format('woff'), url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'), url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewayextralight';
+  src: url('../fonts/raleway-extralight-webfont.eot');
+  src: url('../fonts/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-extralight-webfont.woff2') format('woff2'), url('../fonts/raleway-extralight-webfont.woff') format('woff'), url('../fonts/raleway-extralight-webfont.ttf') format('truetype'), url('../fonts/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-size: 16px;
   color: #ffffff;
+  font-family: 'ralewayextralight', sans-serif;
 }
 ul.achievements {
   font-size: 18px;
 }
-.intro h2 {
-  font-size: 32px;
-  line-height: 130%;
-}
-.intro h2 span {
-  display: block;
-  padding-bottom: 20px;
-}
 h2 {
   padding-bottom: 20px;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: 50px;
+  line-height: 125%;
+}
+.intro h2 {
+  font-size: 44px;
+  line-height: 125%;
+  padding-bottom: 5px;
+}
+.intro h2 strong {
+  font-family: 'ralewayextrabold', sans-serif;
 }
 p.lead {
-  font-size: 18px;
+  font-size: 22px;
 }
 ul.strenghts li:before,
 ul.skills li:before {
@@ -59,21 +103,34 @@ ul.skills li:before {
   padding-right: 10px;
 }
 ul.strenghts li:before {
-  color: #fcb122;
+  color: #d7e6f0;
 }
-ul.strenghts ul.strenghts strong {
-  color: #fcb122;
+ul.strenghts strong {
+  background-color: #df4d4d;
+  color: #fff;
+  padding: 2px 6px;
 }
-ul.skills strong {
-  color: #33435d;
+ul.skills li {
+  border-bottom: 2px solid red;
+}
+ul.skills li strong {
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #aec5cd;
+  padding: 0px 7px;
+  height: 25px;
 }
 /*** layout
 *********************************************************/
+.intro {
+  padding-right: 70px;
+}
 ul.achievements li {
   text-indent: 0;
   padding: 0;
   background-color: #93b1bb;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 300px;
   display: block;
   opacity: 0.9;
@@ -86,7 +143,7 @@ ul.achievements .values {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-color: #fcb122;
+  background-color: #fcb123;
 }
 /*** header 
 *********************************************************/

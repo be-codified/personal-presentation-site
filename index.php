@@ -7,9 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>be-codified.com | freelance front-end developer</title>
 
-        <!-- fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Raleway:700,400" rel="stylesheet" type="text/css" />
-
         <!-- stylesheets -->
         <link href="css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
         <link href="css/custom_styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
@@ -42,16 +39,17 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right intro">
                             <header>
-                                <h1>be-codified.com</h1>
+                                <h1>
+                                    <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
+                                </h1>
                             </header>
-                            <h2>Hi, my name is Žiga and I'm a <span><strong>front-end developer</strong>.</span></h2>
+                            <h2>Hi, my name is Žiga and I'm a <strong>front-end developer</strong>.</h2>
                             <?php require_once('time_period.php'); ?>
                             <p class="lead">I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: gray;">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
-                            <h2>Here goes avatar</h2>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left avatar">
                             <ul class="achievements">
                                 <li>
                                     <span class="values">
@@ -177,6 +175,7 @@
                                 <li>HTML5, CSS3 and jQuery (no website template has been used), checked with grunt-lint5 (HTML5 validator), Csslint (CSS validator), PageSpeed Insights; cross-browser and cross-platform compatibility was tested as well</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
                                 <li>design came under hands of Groga Tanček</li>
+                                <li>Ana Skobe</li>
                             </ul>
                         </div>
                     </div>
