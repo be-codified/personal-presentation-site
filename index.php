@@ -48,34 +48,32 @@
                             <p class="lead">I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: gray;">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left avatar">
-                            <ul class="achievements">
-                                <li>
-                                    <span class="values">
-                                        <span class="counter">
-                                            <?php echo time_period($date_webindustry, $date_today, 0); ?>
-                                        </span>+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left avatar">
+                        <ul class="achievements">
+                            <li>
+                                <span class="values">
+                                    <span class="counter">
+                                        <?php echo time_period($date_webindustry, $date_today, 0); ?>+
                                     </span>
-                                    <span class="desc">Years of<br />Experience</span>
-                                    <div class="clearfix"></div>
-                                </li>
-                                <li>
-                                    <span class="values">
-                                        <span class="counter">90</span>+
-                                    </span> 
-                                    <span class="desc">Happy<br />Clients</span>
-                                    <div class="clearfix"></div>
-                                </li>
-                                <li>
-                                    <span class="values">
-                                        <span class="counter">150</span>+
-                                    </span>
-                                    <span class="desc">Completed<br />Projects</span>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </ul>
-                        </div>
+                                </span>
+                                <span class="desc">Years of<br />Experience</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span class="values">
+                                    <span class="counter small">90+</span>
+                                </span> 
+                                <span class="desc">Happy<br />Clients</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span class="values">
+                                    <span class="counter smaller">150+</span>
+                                </span>
+                                <span class="desc">Completed<br />Projects</span>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
@@ -83,17 +81,17 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
                             <h2>My main strenghts</h2>
                             <ul class="strenghts">
-                                <li>strong understanding of developing for the web and <strong>a careful eye for design</strong>,</li>
+                                <li>strong understanding of developing for the web and <strong class="reduced-padding">a careful eye for design</strong>,</li>
                                 <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
                                 <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
                                 <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
-                                <li>solid understanding of <strong>designing in a browser</strong>,</li>
+                                <li>solid understanding of <strong class="reduced-padding">designing in a browser</strong>,</li>
                                 <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
-                                <li>solid understanding of <strong>SEO</strong>,</li>
-                                <li>solid understanding and appreciation of <strong>colour and typography</strong>,</li>
+                                <li>solid understanding of <strong class="reduced-padding">SEO</strong>,</li>
+                                <li>solid understanding and appreciation of <strong class="reduced-padding">colour and typography</strong>,</li>
                                 <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
-                                <li>excellent <strong>communication skills</strong>,</li>
-                                <li>ability to dive in and learn new things to <strong>find solutions for technical problems</strong>.</li>
+                                <li>excellent <strong class="reduced-padding">communication skills</strong>,</li>
+                                <li>ability to dive in and learn new things to <strong class="reduced-padding">find solutions for technical problems</strong>.</li>
                             </ul>
                         </div>
                     </div>

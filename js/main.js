@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     // rolling counter (on avatar)
     $.fn.rolling = function() {
-        this.css('color', 'green');
+        this.css('color', 'white');
     }
 
     $('.counter').rolling();

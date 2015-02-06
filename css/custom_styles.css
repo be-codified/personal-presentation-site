@@ -36,33 +36,30 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
   width: 230px;
-  height: 45px;
+  height: 47px;
   background: url('../img/logo.svg') no-repeat 0 0 transparent;
   display: block;
 }
 header h1 a {
   display: block;
   width: 230px;
-  height: 45px;
-}
-.no-svg header h1 {
-  background: url('../img/logo.png') no-repeat 0 0 transparent;
+  height: 47px;
 }
 /*** avatar
 *********************************************************/
 .avatar {
-  background: url('../img/avatar.jpg') 0 0 transparent no-repeat;
-  background-size: 100%;
-  height: 500px;
-  padding-top: 260px;
+  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+  background-size: cover;
+  height: 540px;
+  padding-top: 275px;
   display: block;
 }
 /*** typography
 *********************************************************/
 @font-face {
-  font-family: 'ralewayextrabold';
-  src: url('../fonts/raleway-extrabold-webfont.eot');
-  src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'), url('../fonts/raleway-extrabold-webfont.woff') format('woff'), url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'), url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+  font-family: 'ralewaysemibold';
+  src: url('../fonts/raleway-semibold-webfont.eot');
+  src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-semibold-webfont.woff2') format('woff2'), url('../fonts/raleway-semibold-webfont.woff') format('woff'), url('../fonts/raleway-semibold-webfont.ttf') format('truetype'), url('../fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -81,34 +78,65 @@ body {
 ul.achievements {
   font-size: 18px;
 }
+ul.achievements .values {
+  text-align: center;
+}
+ul.achievements .values .counter {
+  font-size: 40px;
+  line-height: 70px;
+  font-family: 'ralewaysemibold', sans-serif;
+  color: #ffffff;
+}
+ul.achievements .values .counter.small {
+  font-size: 30px;
+}
+ul.achievements .values .counter.smaller {
+  font-size: 25px;
+}
+ul.achievements .desc {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+}
 h2 {
-  padding-bottom: 20px;
+  padding: 40px 0;
   font-size: 50px;
   line-height: 125%;
 }
 .intro h2 {
   font-size: 44px;
   line-height: 125%;
-  padding-bottom: 5px;
+  padding: 0 0 5px 0;
 }
 .intro h2 strong {
-  font-family: 'ralewayextrabold', sans-serif;
+  font-family: 'ralewaysemibold', sans-serif;
 }
 p.lead {
   font-size: 22px;
 }
 ul.strenghts li:before,
 ul.skills li:before {
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size: 20px;
   content: '+';
   padding-right: 10px;
+  position: relative;
+  top: 2px;
+}
+ul.strenghts li:last-child,
+ul.skills li:last-child {
+  padding-bottom: 50px;
 }
 ul.strenghts li:before {
-  color: #d7e6f0;
+  color: #e86868;
 }
 ul.strenghts strong {
-  background-color: #df4d4d;
+  background-color: #e45252;
   color: #fff;
   padding: 2px 6px;
+}
+ul.strenghts strong.reduced-padding {
+  padding-right: 3px;
 }
 ul.skills li {
   border-bottom: 2px solid red;
@@ -117,7 +145,7 @@ ul.skills li strong {
   text-indent: 0;
   display: inline-block;
   color: #ffffff;
-  background-color: #aec5cd;
+  background-color: #b9ccd3;
   padding: 0px 7px;
   height: 25px;
 }
@@ -125,15 +153,16 @@ ul.skills li strong {
 *********************************************************/
 .intro {
   padding-right: 70px;
+  height: 540px;
 }
 ul.achievements li {
   text-indent: 0;
   padding: 0;
   background-color: #93b1bb;
-  margin-bottom: 10px;
-  width: 300px;
+  margin: 0 0 10px 25px;
+  width: 230px;
   display: block;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 ul.achievements .values,
 ul.achievements .desc {
@@ -145,50 +174,11 @@ ul.achievements .values {
   height: 70px;
   background-color: #fcb123;
 }
-/*** header 
+ul.achievements .desc {
+  padding: 11px 0 0 20px;
+}
+/*** long flatten shadows
 *********************************************************/
-.avatar .circle {
-  display: block;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  border-radius: 50%;
-}
-.avatar .photo {
-  background-image: url('../img/avatar_testing_image.jpg');
-  border: 10px solid red;
-  z-index: 1000;
-  display: block;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  border-radius: 50%;
-}
-.avatar .circle-small {
-  border: 5px solid #0000ff;
-  background-color: #3333ff;
-  z-index: 999;
-  display: block;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  border-radius: 50%;
-}
-.avatar .circle-large {
-  border: 5px solid #0000ff;
-  background-color: #3333ff;
-  z-index: 998;
-  display: block;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  border-radius: 50%;
+ul.achievements li {
+  box-shadow: rgba(80, 80, 80, 0.2) 1px 1px, rgba(80, 80, 80, 0.2) 2px 2px, rgba(80, 80, 80, 0.2) 3px 3px, rgba(80, 80, 80, 0.2) 4px 4px, rgba(80, 80, 80, 0.2) 5px 5px, rgba(80, 80, 80, 0.2) 6px 6px, rgba(80, 80, 80, 0.2) 7px 7px, rgba(80, 80, 80, 0.2) 8px 8px, rgba(80, 80, 80, 0.2) 9px 9px, rgba(80, 80, 80, 0.2) 10px 10px;
 }
