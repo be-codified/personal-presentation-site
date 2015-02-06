@@ -81,17 +81,17 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
                             <h2>My main strenghts</h2>
                             <ul class="strenghts">
-                                <li>strong understanding of developing for the web and <strong class="reduced-padding">a careful eye for design</strong>,</li>
+                                <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
                                 <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
                                 <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
                                 <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
-                                <li>solid understanding of <strong class="reduced-padding">designing in a browser</strong>,</li>
+                                <li>solid understanding of <strong class="reduced-right-padding">designing in a browser</strong>,</li>
                                 <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
-                                <li>solid understanding of <strong class="reduced-padding">SEO</strong>,</li>
-                                <li>solid understanding and appreciation of <strong class="reduced-padding">colour and typography</strong>,</li>
+                                <li>solid understanding of <strong class="reduced-right-padding">SEO</strong>,</li>
+                                <li>solid understanding and appreciation of <strong class="reduced-right-padding">colour and typography</strong>,</li>
                                 <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
-                                <li>excellent <strong class="reduced-padding">communication skills</strong>,</li>
-                                <li>ability to dive in and learn new things to <strong class="reduced-padding">find solutions for technical problems</strong>.</li>
+                                <li>excellent <strong class="reduced-right-padding">communication skills</strong>,</li>
+                                <li>ability to dive in and learn new things to <strong class="reduced-right-padding">find solutions for technical problems</strong>.</li>
                             </ul>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                             <ul class="skills">
                                 <li><strong>HTML5</strong> (modern markup),</li>
                                 <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
-                                <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong>compatibility testing</strong>,</li>
+                                <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong class="reduced-right-padding">compatibility testing</strong>,</li>
                                 <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax),</li>
                                 <li><strong>Git</strong> (working with a team of developers, service BitBucket),</li>
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>

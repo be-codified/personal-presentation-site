@@ -135,19 +135,19 @@ ul.strenghts strong {
   color: #fff;
   padding: 2px 6px;
 }
-ul.strenghts strong.reduced-padding {
-  padding-right: 3px;
-}
-ul.skills li {
-  border-bottom: 2px solid red;
+ul.skills li:before {
+  color: #d2dee2;
 }
 ul.skills li strong {
   text-indent: 0;
   display: inline-block;
   color: #ffffff;
-  background-color: #b9ccd3;
-  padding: 0px 7px;
-  height: 25px;
+  background-color: #7a9fab;
+  padding: 2px 6px;
+  border-bottom: 3px solid #93b1bb;
+}
+ul li strong.reduced-right-padding {
+  padding-right: 2px;
 }
 /*** layout
 *********************************************************/
