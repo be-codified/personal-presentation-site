@@ -24,6 +24,16 @@ body {
 .main-color-1 { background-color: @main-color-1; }
 .main-color-2 { background-color: @main-color-2; }
 
+::selection {
+    background-color: @main-color-3;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: @main-color-3;
+    color: #ffffff;
+}
+
 ul {
     padding: 0;
     line-height: 160%;
@@ -163,7 +173,6 @@ ul.skills li:last-child {
     padding-bottom: 50px;
 }
 
-
 ul.strenghts {
     li:before {
         color: lighten(@main-color-2, 25%);
@@ -233,7 +242,45 @@ ul.achievements {
     }
 }
 
-/*** long flatten shadows
+/*** icons
+*********************************************************/
+
+.contacts li {
+    a {
+        display: block;
+        padding-left: 100px;        
+        background-positions: 0 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 100px 160px;
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none;
+        height: 120px;
+        padding-top: 44px;
+    }
+
+    a.email   { 
+        background-image: url('../img/icon_email.svg'); 
+    }
+
+    a.skype   { 
+        background-image: url('../img/icon_skype.svg'); 
+        margin-top: -50px;
+    }
+
+    a.phone   { 
+        background-image: url('../img/icon_phone.svg'); 
+        margin-top: -45px;
+    }
+
+    a.twitter { 
+        background-image: url('../img/icon_twitter.svg');  
+        margin-top: -40px;
+    }
+}
+
+/*** flatten shadows
 *********************************************************/
 
 ul.achievements li {

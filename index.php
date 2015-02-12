@@ -145,20 +145,18 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                             <h2>Want to hire me for a project?</h2>
                             <p>Please feel free to contact me by any communication channel:</p>
-                            <ul>
+                            <ul class="contacts">
                                 <li>
-                                    e-mail:&nbsp; 
-                                    <a href="mailto:ziga@be-codified.com">ziga@be-codified.com</a></li>
+                                    <a href="mailto:ziga@be-codified.com" class="email">ziga@be-codified.com</a>
+                                </li>
                                 <li>
-                                    twitter:&nbsp;
-                                    <a href="https://twitter.com/be_codified" target="_blank">@be_codified</a>
+                                    <a href="skype:ziga_vukcevic?call" class="skype">ziga_vukcevic</a>
                                 </li>
-                                <li>skype:&nbsp;
-                                    <a href="skype:ziga_vukcevic?call">ziga_vukcevic</a>
-
+                                <li>
+                                    <a href="tel: 0038651313680" class="phone">00386 51 313 680</a>
                                 </li>
-                                <li>phone:&nbsp;
-                                    <a href="tel: 0038651313680">00386 51 313 680</a>
+                                <li>
+                                    <a href="https://twitter.com/be_codified" class="twitter" target="_blank">@be_codified</a>
                                 </li>
                             </ul>
                         </div>
