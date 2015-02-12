@@ -115,7 +115,7 @@
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
                                 <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>basic understanding of PHP and MySQL.</li>
-                                <li>// note: AngularJS, Less, GitHub, Rest API</li>
+                                <li>// note: AngularJS, Less, GitHub, Rest API, animations?</li>
                             </ul>
                         </div>
                     </div>
@@ -124,7 +124,22 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <h2>Magical tools I use on a daily basis</h2>
-                            <p>editor Sublime Text 2, Chrome DevTools, task runner Grump, CodeKit and Bootstrap framework; all running on a small thing called MacBook Pro, extended to an external 24” monitor. // note: these should be links</p>
+                            <ul class="tools">
+                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a><br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
+                                <li>
+                                    <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> (framework for faster and easier web development), 
+                                </li>
+                                <li>
+                                    CSS pre-processor <a href="http://lesscss.org/" target="_blank">Less</a>,
+                                </li>
+                                <li>
+                                    <a href="http://jquery.com/" target="_blank">jQuery</a> - fast, small, and feature-rich JavaScript library
+                                </li>
+                                <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome</li>
+                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (note: what libraries should be here?)</li>
+                                <li>all running on a small thing called Apple MacBook Pro 13", extended to an external 24" monitor</li>
+                                <li>//note: animations?</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">

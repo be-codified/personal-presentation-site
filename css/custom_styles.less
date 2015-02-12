@@ -8,8 +8,13 @@
 /*** general 
 *********************************************************/
 
+@main-color-1: #93b1bb; // blue
+@main-color-2: #b41c1c; // red
+@main-color-3: #fcb123; // orange
+@color-white:  #ffffff;
+
 body {
-    background-color: #ffffff;
+    background-color: @color-white;
     position: relative;
 }
 
@@ -17,21 +22,17 @@ body {
     clear: both;
 }
 
-@main-color-1: #93b1bb; // blue
-@main-color-2: #b41c1c; // red
-@main-color-3: #fcb123; // orange
-
 .main-color-1 { background-color: @main-color-1; }
 .main-color-2 { background-color: @main-color-2; }
 
 ::selection {
     background-color: @main-color-3;
-    color: #ffffff;
+    color: @color-white;
 }
 
 ::-moz-selection {
     background-color: @main-color-3;
-    color: #ffffff;
+    color: @color-white;
 }
 
 ul {
@@ -61,7 +62,7 @@ header h1 {
     a {
         display: block;
         width: 230px; 
-        height: 47px; 
+        height: 47px;
     }
 }
 
@@ -105,7 +106,7 @@ header h1 {
 
 body {
     font-size: 16px;
-    color: #ffffff;
+    color: @color-white;
     font-family: 'ralewayextralight', sans-serif;
 }
 
@@ -119,7 +120,7 @@ ul.achievements {
             font-size: 40px;
             line-height: 70px;
             font-family: 'ralewaysemibold', sans-serif;
-            color: #ffffff;
+            color: @color-white;
         }
 
         .counter.small {
@@ -132,7 +133,7 @@ ul.achievements {
     }
 
     .desc {
-        color: #ffffff;
+        color: @color-white;
         font-size: 22px;
         line-height: 24px;
     }
@@ -159,7 +160,8 @@ p.lead {
 }
 
 ul.strenghts li:before,
-ul.skills li:before {
+ul.skills li:before,
+ul.tools li:before {
     font-family: 'ralewaysemibold', sans-serif;
     font-size: 20px;
     content: '+';
@@ -169,7 +171,8 @@ ul.skills li:before {
 }
 
 ul.strenghts li:last-child,
-ul.skills li:last-child {
+ul.skills li:last-child,
+ul.tools li:last-child {
     padding-bottom: 50px;
 }
 
@@ -185,7 +188,8 @@ ul.strenghts {
     }
 }
 
-ul.skills {
+ul.skills,
+ul.tools {
     li {
         &:before {
             color: lighten(@main-color-1, 20%);
@@ -194,7 +198,7 @@ ul.skills {
         strong {
             text-indent: 0;
             display: inline-block;
-            color: #ffffff;
+            color: @color-white;
             background-color: darken(@main-color-1, 8%);
             padding: 2px 6px;
             border-bottom: 3px solid @main-color-1; 
@@ -204,6 +208,30 @@ ul.skills {
 
 ul li strong.reduced-right-padding {
     padding-right: 2px;
+}
+
+ul.tools {
+    a {
+        text-decoration: none;
+        color: @color-white;
+        display: inline-block;
+        border-bottom: 1px solid @color-white;
+        text-indent: 0 !important;
+
+        &:hover,
+        &:active {
+            text-decoration: none;        
+        }
+    }
+
+    .warning {
+        font-size: 13px;
+        color: lighten(@main-color-1, 20%);
+
+        span {
+            text-transform: uppercase;
+        }
+    }
 }
 
 /*** layout
@@ -254,7 +282,7 @@ ul.achievements {
         background-repeat: no-repeat;
         background-size: 100px 160px;
         font-size: 18px;
-        color: #ffffff;
+        color: @color-white;
         text-decoration: none;
         height: 120px;
         padding-top: 44px;
