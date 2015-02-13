@@ -97,10 +97,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-one" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
-                            <h2>Latest work</h2>
-                            <p>Here goes image/text</p>
+                            <p class="latest">Latest work</p>
+                            <h2>Consumer federation of Slovenia</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
@@ -142,18 +143,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-two" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
-                            <h2>Latest work</h2>
-                            <p>Here goes image/text</p>
+                            <p class="latest">Latest work</p>
+                            <h2>Call when hungry</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-three" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
-                            <h2>Latest work</h2>
-                            <p>Here goes image/text</p>
+                            <p class="latest">Latest work</p>
+                            <h2>iPhone giveaway</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">

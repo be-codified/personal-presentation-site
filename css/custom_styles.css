@@ -166,7 +166,7 @@ ul.tools a {
   color: #ffffff;
   display: inline-block;
   border-bottom: 1px solid #ffffff;
-  text-indent: 0 !important;
+  text-indent: 0;
 }
 ul.tools a:hover,
 ul.tools a:active {
@@ -178,6 +178,17 @@ ul.tools .warning {
 }
 ul.tools .warning span {
   text-transform: uppercase;
+}
+.portfolio .latest {
+  font-size: 20px;
+  font-family: 'ralewayextralight', sans-serif;
+  padding-top: 55px;
+}
+.portfolio h2 {
+  font-size: 28px;
+  font-family: 'ralewaysemibold', sans-serif;
+  padding-top: 0;
+  margin-top: -12px;
 }
 /*** layout
 *********************************************************/
@@ -206,6 +217,77 @@ ul.achievements .values {
 }
 ul.achievements .desc {
   padding: 11px 0 0 20px;
+}
+/*
+.portfolio-desc {
+    border-top: 100px solid red;
+    border-left: 0 solid transparent;
+    border-right: 50px solid yellow;
+    height: 200px;
+    display: block;
+}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+
+.portfolio-desc { 
+    display: block; 
+    height: auto; 
+    width: 500px; 
+    padding: 0px; 
+    top: 0px; 
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    transform: rotate(0deg) skew(0deg); 
+    border-top: 0px solid transparent; 
+    border-left: 400px solid #428BCA; 
+    border-bottom: 60px solid transparent; 
+}
+
+.rect {
+    display: block;
+    width: auto;
+    height: 200px;
+    background-color: red;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 100%;
+    padding-left: 10%;
+    overflow: hidden;
+}
+.triangle div {
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    margin-left: -500px;
+    
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #4679BD;
+}
+*/
+/*** portfolio
+*********************************************************/
+.portfolio {
+  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+  background-size: cover;
+  height: 540px;
+  display: block;
+}
+.portfolio .item-one {
+  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+}
+.portfolio .item-two {
+  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+}
+.portfolio .item-three {
+  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
 }
 /*** icons
 *********************************************************/
