@@ -53,10 +53,10 @@ header h1 a {
   width: 230px;
   height: 47px;
 }
-/*** avatar
+/*** profile
 *********************************************************/
-.avatar {
-  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+.profile {
+  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
   background-size: cover;
   height: 540px;
   padding-top: 275px;
@@ -275,19 +275,20 @@ ul.achievements .desc {
 /*** portfolio
 *********************************************************/
 .portfolio {
-  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
   background-size: cover;
   height: 540px;
   display: block;
 }
-.portfolio .item-one {
-  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+.portfolio.item-1 {
+  background: url('../img/portfolio_1.jpg') 50% 50% transparent no-repeat;
+  background-size: cover;
 }
-.portfolio .item-two {
-  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+.portfolio .item-2 {
+  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
 }
-.portfolio .item-three {
-  background: url('../img/avatar.jpg') 50% 50% transparent no-repeat;
+.portfolio .item-3 {
+  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
 }
 /*** icons
 *********************************************************/

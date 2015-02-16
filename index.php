@@ -48,7 +48,7 @@
                             <p class="lead">I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left avatar">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left profile">
                         <ul class="achievements">
                             <li>
                                 <span class="values">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-one" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
@@ -143,7 +143,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-two" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                             <p class="latest">Latest work</p>
                             <h2>Call when hungry</h2>
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-three" style="background-color: beige;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
