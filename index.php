@@ -80,7 +80,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
                             <h2>My main strenghts</h2>
-                            <ul class="strenghts">
+                            <ul class="plus-bullets strenghts">
                                 <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
                                 <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
                                 <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
@@ -107,7 +107,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                         <h2>My main skills</h2>
-                            <ul class="skills">
+                            <ul class="plus-bullets skills">
                                 <li><strong>HTML5</strong> (modern markup),</li>
                                 <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
                                 <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong class="reduced-right-padding">compatibility testing</strong>,</li>
@@ -125,7 +125,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
                             <h2>Magical tools I use on a daily basis</h2>
-                            <ul class="tools">
+                            <ul class="plus-bullets tools">
                                 <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a><br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
                                 <li>
                                     <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> (framework for faster and easier web development), 
@@ -146,7 +146,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2" style="background-color: beige;">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
                             <p class="latest">Latest work</p>
-                            <h2>Call when hungry</h2>
+                            <h2>Some title goes here</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
@@ -184,12 +184,18 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
                             <p class="lead">How was this site made?</p>
-                            <ul>
-                                <p>I have coded it with modern technologies such as:</p>
-                                <li>HTML5, CSS3 and jQuery (no website template has been used), checked with grunt-lint5 (HTML5 validator), Csslint (CSS validator), PageSpeed Insights; cross-browser and cross-platform compatibility was tested as well</li>
+                            <p>No website template has been used. I have coded it with modern technologies:</p>
+                            <ul class="plus-bullets how-made">
+                                <li>HTML5, CSS3 (using Less), jQuery and animations // note: change this,</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
-                                <li>design came under hands of Groga Tanček</li>
-                                <li>Ana Skobe</li>
+                                <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights,</li> 
+                                <li>cross-browser and cross-platform compatibility was tested as well.</li>
+                            </ul>
+                            <ul class="plus-bullets how-made">
+                                <li>Feel free to see whole project code at GitHub.</li>
+                            </ul>
+                            <ul class="plus-bullets how-made">
+                                <li>Design came under hands of Groga Tancek, photography triggered by Ana Skobe. Both made by love. // note: cleaner sentence</li>
                             </ul>
                         </div>
                     </div>
@@ -197,10 +203,9 @@
             </article>
             <footer>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2 business-owner">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
-                            <p class="text-center">Business owner info:</p>
-                            <address class="text-center">Digitalna ladja, Žiga Vukčevič s.p., Tržaška 121, 1000 Ljubljana, Slovenia<br />VAT Nr.: SI86291459, Registration Nr.: 6531164000, IBAN: SI56 6100 0000 6613 419, BIC: HDELSI22</address>
+                            <address class="text-center">Business owner information: Žiga Vukčevič s.p., Tržaška 121, 1000 Ljubljana, Slovenia<br />VAT Nr.: SI86291459, Registration Nr.: 6531164000, IBAN: SI56 6100 0000 6613 419, BIC: HDELSI22</address>
                             <p class="text-center">
                                 <small>Copyright 2015 © be-codified.com</small>
                             </p>

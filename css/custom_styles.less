@@ -11,6 +11,7 @@
 @main-color-1: #93b1bb; // blue
 @main-color-2: #b41c1c; // red
 @main-color-3: #fcb123; // orange
+@main-color-4: #332e2b; // brown
 @color-white:  #ffffff;
 
 body {
@@ -159,24 +160,23 @@ p.lead {
     font-size: 22px;
 }
 
-ul.strenghts li:before,
-ul.skills li:before,
-ul.tools li:before {
-    font-family: 'ralewaysemibold', sans-serif;
-    font-size: 20px;
-    content: '+';
-    padding-right: 10px;
-    position: relative;
-    top: 2px;
+ul.plus-bullets {
+    li:before {
+        font-family: 'ralewaysemibold', sans-serif;
+        font-size: 20px;
+        content: '+';
+        padding-right: 10px;
+        position: relative;
+        top: 2px;        
+    }
+
+    li:last-child {
+        padding-bottom: 50px;
+    }
 }
 
-ul.strenghts li:last-child,
-ul.skills li:last-child,
-ul.tools li:last-child {
-    padding-bottom: 50px;
-}
-
-ul.strenghts {
+ul.strenghts,
+ul.how-made {
     li:before {
         color: lighten(@main-color-2, 25%);
     }
@@ -248,6 +248,22 @@ ul.tools {
         margin-top: -12px;
     }
 } 
+
+ul.how-made {
+    padding: 10px 0;
+
+    li {
+        padding-bottom: 0 !important;
+    }
+}
+
+.business-owner {
+    font-size: 13px;
+
+    small {
+        font-size: 11px;
+    }
+}
 
 /*** layout
 *********************************************************/
@@ -339,6 +355,11 @@ ul.achievements {
     border-left: 500px solid #4679BD;
 }
 */
+
+.business-owner {
+    background-color: @main-color-4;
+    padding: 15px 0;
+}
 
 /*** portfolio
 *********************************************************/
