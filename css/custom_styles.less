@@ -165,7 +165,7 @@ ul.plus-bullets {
 }
 
 ul.strenghts,
-ul.how-made {
+.how-made ul {
     li:before { color: lighten(@main-color-2, 25%); }
 
     strong {
@@ -194,7 +194,7 @@ ul.tools {
 ul li strong.reduced-right-padding { padding-right: 2px; }
 
 ul.tools,
-ul.how-made {
+.how-made {
     a {
         text-decoration: none;
         color: @color-white;
@@ -214,6 +214,9 @@ ul.how-made {
     }
 }
 
+.how-made p.first { padding-bottom: 20px; }
+.how-made p.last { padding-bottom: 50px; }
+
 .portfolio {
     .latest {
         font-size: 20px;
@@ -229,20 +232,17 @@ ul.how-made {
     }
 } 
 
-ul {
-    &.how-made {
-        padding: 10px 0;
-    }    
-
-    &.how-made li:last-child { padding-bottom: 10px; }
-}
-
 .business-owner {
     font-size: 13px;
     
     small { font-size: 11px; }
 }
 
+i[title] {
+    display: inline-block;
+    border-bottom: 1px dotted @color-white;
+    padding-bottom: 7px;
+}
 
 /*** layout
 *********************************************************/

@@ -10,6 +10,7 @@
         <!-- stylesheets -->
         <link href="css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
         <link href="css/custom_styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
         <!-- icons -->
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
@@ -134,7 +135,7 @@
                                 </li>
                                 <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome</li>
                                 <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (note: what libraries should be here?)</li>
-                                <li>all running on a small thing called Apple MacBook Pro 13", extended to an external 24" monitor</li>
+                                <li>all running on a small thing called Apple MacBook Pro 13</i>, extended to an external 24-inch monitor</li>
                                 <li>//note: animations?</li>
                             </ul>
                         </div>
@@ -178,24 +179,20 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1 how-made">
                             <h2 class="smaller">How was this site made?</h2>
-                            <p>No website template has been used. I have coded it with modern technologies:</p>
-                            <ul class="plus-bullets how-made">
+                            <p class="first">No website template has been used. I have coded it with modern technologies:</p>
+                            <ul class="plus-bullets">
                                 <li>HTML5, CSS3 (using Less), jQuery and animations // note: change this,</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
                                 <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights (or yslow.com?),</li> 
                                 <li>logo and contact icons are used in SVG format</li>
                                 <li>CSS and JavaScript files have been minified,</li>
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
-                                <li>time for how long I am working in web industry is calculated automatically.</li>
+                                <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
                             </ul>
-                            <ul class="plus-bullets how-made">
-                                <li>Design came under hands of Groga Tancek, photography triggered by Ana Skobe. Both made by love. // note: cleaner sentence</li>
-                            </ul>
-                            <ul class="plus-bullets how-made last">
-                                <li>Feel free to see whole project code at <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</li>
-                            </ul>
+                            <p>Design made with <i title="The icon reads as: love" class="fa fa-heart fa-lg"></i> by Groga Tancek and excellent profile <i title="The icon reads as: photo" class="fa fa-camera fa-lg"></i> provided by Ana Skobe.</p>
+                            <p class="last">Feel free to see whole project code at <i class="fa fa-github-square fa-2x"></i> <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</p>
                         </div>
                     </div>
                 </div>

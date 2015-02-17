@@ -137,11 +137,11 @@ ul.plus-bullets li:last-child {
   padding-bottom: 50px;
 }
 ul.strenghts li:before,
-ul.how-made li:before {
+.how-made ul li:before {
   color: #e86868;
 }
 ul.strenghts strong,
-ul.how-made strong {
+.how-made ul strong {
   background-color: #e45252;
   color: #fff;
   padding: 2px 6px;
@@ -163,7 +163,7 @@ ul li strong.reduced-right-padding {
   padding-right: 2px;
 }
 ul.tools a,
-ul.how-made a {
+.how-made a {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
@@ -171,19 +171,25 @@ ul.how-made a {
   text-indent: 0;
 }
 ul.tools a:hover,
-ul.how-made a:hover,
+.how-made a:hover,
 ul.tools a:active,
-ul.how-made a:active {
+.how-made a:active {
   text-decoration: none;
 }
 ul.tools .warning,
-ul.how-made .warning {
+.how-made .warning {
   font-size: 13px;
   color: #d2dee2;
 }
 ul.tools .warning span,
-ul.how-made .warning span {
+.how-made .warning span {
   text-transform: uppercase;
+}
+.how-made p.first {
+  padding-bottom: 20px;
+}
+.how-made p.last {
+  padding-bottom: 50px;
 }
 .portfolio .latest {
   font-size: 20px;
@@ -196,17 +202,16 @@ ul.how-made .warning span {
   padding-top: 0;
   margin-top: -12px;
 }
-ul.how-made {
-  padding: 10px 0;
-}
-ul.how-made li:last-child {
-  padding-bottom: 10px;
-}
 .business-owner {
   font-size: 13px;
 }
 .business-owner small {
   font-size: 11px;
+}
+i[title] {
+  display: inline-block;
+  border-bottom: 1px dotted #ffffff;
+  padding-bottom: 7px;
 }
 /*** layout
 *********************************************************/
