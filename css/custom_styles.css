@@ -350,5 +350,5 @@ ul.achievements .desc {
 /*** flatten shadows
 *********************************************************/
 ul.achievements li {
-  box-shadow: rgba(80, 80, 80, 0.2) 1px 1px, rgba(80, 80, 80, 0.2) 2px 2px, rgba(80, 80, 80, 0.2) 3px 3px, rgba(80, 80, 80, 0.2) 4px 4px, rgba(80, 80, 80, 0.2) 5px 5px, rgba(80, 80, 80, 0.2) 6px 6px, rgba(80, 80, 80, 0.2) 7px 7px, rgba(80, 80, 80, 0.2) 8px 8px, rgba(80, 80, 80, 0.2) 9px 9px, rgba(80, 80, 80, 0.2) 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px, rgba(0, 0, 0, 0.05) 2px 2px, rgba(0, 0, 0, 0.05) 3px 3px, rgba(0, 0, 0, 0.05) 4px 4px, rgba(0, 0, 0, 0.05) 5px 5px, rgba(0, 0, 0, 0.05) 6px 6px, rgba(0, 0, 0, 0.05) 7px 7px, rgba(0, 0, 0, 0.05) 8px 8px, rgba(0, 0, 0, 0.05) 9px 9px, rgba(0, 0, 0, 0.05) 10px 10px, rgba(0, 0, 0, 0.05) 11px 11px, rgba(0, 0, 0, 0.045) 12px 12px, rgba(0, 0, 0, 0.04) 13px 13px, rgba(0, 0, 0, 0.035) 14px 14px, rgba(0, 0, 0, 0.03) 15px 15px, rgba(0, 0, 0, 0.025) 16px 16px, rgba(0, 0, 0, 0.02) 17px 17px, rgba(0, 0, 0, 0.015) 18px 18px, rgba(0, 0, 0, 0.01) 19px 19px, rgba(0, 0, 0, 0) 20px 20px;
 }

@@ -187,6 +187,7 @@
                                 <li>by using responsive design and Bootstrap framework,</li>
                                 <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights (or yslow.com?),</li> 
                                 <li>logo and contact icons are used in SVG format</li>
+                                <li>CSS shadows for simple elements</li>
                                 <li>CSS and JavaScript files have been minified,</li>
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
                                 <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
