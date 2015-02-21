@@ -99,6 +99,7 @@
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <a href="#" class="more pull-right"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
@@ -124,6 +125,7 @@
                             <p class="latest">Latest work</p>
                             <h2>Some title goes here</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <a href="#" class="more"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
@@ -154,6 +156,7 @@
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <a href="#" class="more pull-right"></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
@@ -192,7 +195,16 @@
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
                                 <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
                             </ul>
-                            <p>Design made with <i title="The icon reads as: love" class="fa fa-heart fa-lg"></i> by Groga Tancek and excellent profile <i title="The icon reads as: photo" class="fa fa-camera fa-lg"></i> provided by Ana Skobe.</p>
+                            <p>Design made with 
+                                <i class="fa fa-heart fa-lg"></i>
+                                <div class="reference-point">
+                                    <span class="bubble">The icon reads as love.</span>
+                                </div>
+                                by Groga Tancek and excellent profile 
+                                <i class="fa fa-camera fa-lg"></i>
+                                <span class="bubble">The icon reads as photo.</span> 
+                                provided by Ana Skobe.
+                            </p>
                             <p class="last">Feel free to see whole project code at <i class="fa fa-github-square fa-2x"></i> <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</p>
                         </div>
                     </div>

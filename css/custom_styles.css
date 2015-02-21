@@ -187,6 +187,13 @@ ul.tools .warning span,
 .how-made .warning span {
   text-transform: uppercase;
 }
+ul.tools i.fa-heart,
+.how-made i.fa-heart,
+ul.tools i.fa-camera,
+.how-made i.fa-camera {
+  border-bottom: 1px dotted #ffffff;
+  padding-bottom: 7px;
+}
 .how-made p.first {
   padding-bottom: 20px;
 }
@@ -204,16 +211,22 @@ ul.tools .warning span,
   padding-top: 0;
   margin-top: -12px;
 }
+.portfolio .more {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('../img/icon_eye.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: #fcb123;
+  margin-bottom: 25px;
+}
 .business-owner {
   font-size: 13px;
 }
 .business-owner small {
   font-size: 11px;
-}
-i[title] {
-  display: inline-block;
-  border-bottom: 1px dotted #ffffff;
-  padding-bottom: 7px;
 }
 /*** layout
 *********************************************************/
@@ -245,6 +258,26 @@ ul.achievements .desc {
 .business-owner {
   background-color: #332e2b;
   padding: 15px 0;
+  position: relative;
+}
+.how-made .bubble {
+  position: absolute;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  background-color: #e86868;
+  display: block;
+  padding: 0 10px;
+}
+.how-made .bubble:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 40px;
+  border: 10px solid;
+  border-color: #e86868 transparent transparent #e86868;
 }
 /*** portfolio
 *********************************************************/
