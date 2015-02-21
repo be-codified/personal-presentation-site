@@ -32,9 +32,9 @@
     <body>
         <div class="container-fluid">
             <article>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right intro">
+                <div class="row main-color-1">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-push-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 intro">
                             <header>
                                 <h1>
                                     <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
@@ -45,7 +45,7 @@
                             <p class="lead">I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left profile">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 profile">
                         <ul class="achievements">
                             <li>
                                 <span class="values">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
                             <h2>My main strenghts</h2>
                             <ul class="plus-bullets strenghts">
                                 <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
@@ -93,34 +93,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
+                <div class="row main-color-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-push-2 portfolio item-1">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                         <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
                                 <li><strong>HTML5</strong> (modern markup),</li>
                                 <li><strong>CSS3</strong> (modern properties, web font embeding, SVG),</li>
                                 <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong class="reduced-right-padding">compatibility testing</strong>,</li>
-                                <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax),</li>
+                                <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <strong>JavaScript</strong> (// note: put something here),</li>
                                 <li><strong>Git</strong> (working with a team of developers, service BitBucket),</li>
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
                                 <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
-                                <li>basic understanding of PHP and MySQL.</li>
+                                <li>basic understanding of PHP and MySQL</li>
                                 <li>// note: AngularJS, Less, GitHub, Rest API, animations?</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row main-color-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right portfolio item-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                            <p class="latest">Latest work</p>
+                            <h2>Some title goes here</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                        </div>
+                    </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-4">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
                                 <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a><br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
@@ -140,24 +147,17 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
-                            <p class="latest">Latest work</p>
-                            <h2>Some title goes here</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
-                        </div>
-                    </div>
                 </div>
-                <div class="row">
+                <div class="row main-color-4">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-right">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-4">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 pull-left">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <h2>Want to hire me for a project?</h2>
                             <p>Please feel free to contact me by any communication channel:</p>
                             <ul class="contacts">
@@ -179,7 +179,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1 how-made">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2 how-made">
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">
@@ -201,7 +201,7 @@
             <footer>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2 business-owner">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-10 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <address class="text-center">Business owner information: Žiga Vukčevič s.p., Tržaška 121, 1000 Ljubljana, Slovenia<br />VAT Nr.: SI86291459, Registration Nr.: 6531164000, IBAN: SI56 6100 0000 6613 419, BIC: HDELSI22</address>
                             <p class="text-center">
                                 <small>Copyright 2015 © be-codified.com</small>

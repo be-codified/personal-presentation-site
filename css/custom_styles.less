@@ -11,7 +11,8 @@
 @main-color-1: #93b1bb; // blue
 @main-color-2: #b41c1c; // red
 @main-color-3: #fcb123; // orange
-@main-color-4: #332e2b; // brown
+@main-color-4: #9d9d9d; // portfolio
+@main-color-5: #332e2b; // brown
 @color-white:  #ffffff;
 
 body {
@@ -23,6 +24,7 @@ body {
 
 .main-color-1 { background-color: @main-color-1; }
 .main-color-2 { background-color: @main-color-2; }
+.main-color-4 { background-color: @main-color-4; }
 
 ::selection {
     background-color: @main-color-3;
@@ -71,7 +73,6 @@ header h1 {
 .profile {
     background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
     background-size: cover;
-    height: 540px;
     padding-top: 275px;
     display: block;
 }
@@ -247,11 +248,6 @@ i[title] {
 /*** layout
 *********************************************************/
 
-.intro {
-    padding-right: 70px;
-    height: 540px;
-}
-
 ul.achievements {
     li {
         text-indent: 0;
@@ -261,6 +257,10 @@ ul.achievements {
         width: 230px;
         display: block;
         opacity: 0.85;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
     } 
 
     .values,
@@ -276,63 +276,8 @@ ul.achievements {
     .desc { padding: 11px 0 0 20px; }
 }
 
-/*
-.portfolio-desc {
-    border-top: 100px solid red;
-    border-left: 0 solid transparent;
-    border-right: 50px solid yellow;
-    height: 200px;
-    display: block;
-}
-
-*, *:before, *:after{ 
-    box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-} 
-
-.portfolio-desc { 
-    display: block; 
-    height: auto; 
-    width: 500px; 
-    padding: 0px; 
-    top: 0px; 
-    -webkit-transform: rotate(0deg) skew(0deg); 
-    transform: rotate(0deg) skew(0deg); 
-    border-top: 0px solid transparent; 
-    border-left: 400px solid #428BCA; 
-    border-bottom: 60px solid transparent; 
-}
-
-.rect {
-    display: block;
-    width: auto;
-    height: 200px;
-    background-color: red;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    padding-top: 0;
-    padding-bottom: 100%;
-    padding-left: 10%;
-    overflow: hidden;
-}
-.triangle div {
-    width: 0;
-    height: 0;
-    margin-top:-500px;
-    margin-left: -500px;
-    
-    border-top: 500px solid transparent;
-    border-bottom: 500px solid transparent;
-    border-left: 500px solid #4679BD;
-}
-*/
-
 .business-owner {
-    background-color: @main-color-4;
+    background-color: @main-color-5;
     padding: 15px 0;
 }
 
@@ -340,9 +285,8 @@ ul.achievements {
 *********************************************************/
 
 .portfolio {
-    background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
+    /* background: url('../img/profile.jpg') 50% 50% transparent no-repeat; */
     background-size: cover;
-    height: 540px;
     display: block;
 
     &.item-1 {
@@ -350,8 +294,8 @@ ul.achievements {
         background-size: cover;
     }
 
-    .item-2 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; } 
-    .item-3 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; }  
+    &.item-2 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; } 
+    &.item-3 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; }  
 }
 
 /*** icons
