@@ -195,15 +195,8 @@
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
                                 <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
                             </ul>
-                            <p>Design made with 
-                                <i class="fa fa-heart fa-lg"></i>
-                                <div class="reference-point">
-                                    <span class="bubble">The icon reads as love.</span>
-                                </div>
-                                by Groga Tancek and excellent profile 
-                                <i class="fa fa-camera fa-lg"></i>
-                                <span class="bubble">The icon reads as photo.</span> 
-                                provided by Ana Skobe.
+                            <p>
+                                Design made with <i class="fa fa-heart fa-lg"></i><span class="reference-point"><span class="bubble">The icon reads as love.</span></span> by Groga Tancek and excellent profile <i class="fa fa-camera fa-lg"></i><span class="reference-point"><span class="bubble">The icon reads as photo.</span></span> provided by Ana Skobe.
                             </p>
                             <p class="last">Feel free to see whole project code at <i class="fa fa-github-square fa-2x"></i> <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</p>
                         </div>

@@ -194,6 +194,10 @@ ul.tools i.fa-camera,
   border-bottom: 1px dotted #ffffff;
   padding-bottom: 7px;
 }
+ul.tools i:hover + .reference-point .bubble,
+.how-made i:hover + .reference-point .bubble {
+  display: block !important;
+}
 .how-made p.first {
   padding-bottom: 20px;
 }
@@ -210,17 +214,6 @@ ul.tools i.fa-camera,
   font-family: 'ralewaysemibold', sans-serif;
   padding-top: 0;
   margin-top: -12px;
-}
-.portfolio .more {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url('../img/icon_eye.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-color: #fcb123;
-  margin-bottom: 25px;
 }
 .business-owner {
   font-size: 13px;
@@ -260,17 +253,23 @@ ul.achievements .desc {
   padding: 15px 0;
   position: relative;
 }
-.how-made .bubble {
+.how-made .reference-point {
+  position: relative;
+}
+.how-made .reference-point .bubble {
+  display: none;
   position: absolute;
-  width: auto;
+  top: -73px;
+  left: -41px;
+  width: 200px;
   height: 40px;
   line-height: 40px;
   background-color: #e86868;
-  display: block;
   padding: 0 10px;
+  text-align: center;
 }
-.how-made .bubble:before {
-  content: ' ';
+.how-made .reference-point .bubble:before {
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -295,6 +294,17 @@ ul.achievements .desc {
 }
 .portfolio.item-3 {
   background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
+}
+.portfolio .more {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('../img/icon_eye.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-color: #fcb123;
+  margin-bottom: 25px;
 }
 /*** icons
 *********************************************************/

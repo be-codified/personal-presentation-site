@@ -219,6 +219,11 @@ ul.tools,
         border-bottom: 1px dotted @color-white;
         padding-bottom: 7px;
     }
+
+    i:hover + .reference-point .bubble {
+        display: block !important;
+    } 
+
 }
 
 .how-made p.first { padding-bottom: 20px; }
@@ -236,18 +241,6 @@ ul.tools,
         font-family: 'ralewaysemibold', sans-serif;
         padding-top: 0;
         margin-top: -12px;
-    }
-
-    .more {
-        display: block;
-        width: 60px;
-        height: 60px;
-        background-image: url('../img/icon_eye.svg');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
-        background-color: @main-color-3;
-        margin-bottom: 25px;
     }
 } 
 
@@ -295,24 +288,31 @@ ul.achievements {
 }
 
 .how-made {
-    .bubble {
-        position: absolute;
-        width: auto;
-        height: 40px;
-        line-height: 40px;
-        background-color: lighten(@main-color-2, 25%);
-        display: block;
-        padding: 0 10px; 
+    .reference-point {
+        position: relative;
 
-        &:before {
-            content: ' ';
+        .bubble {
+            display: none;
             position: absolute;
-            width: 0;
-            height: 0;
-            left: 30px;
-            top: 40px;
-            border: 10px solid;
-            border-color: lighten(@main-color-2, 25%) transparent transparent lighten(@main-color-2, 25%);        
+            top: -73px;
+            left: -41px;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: lighten(@main-color-2, 25%);
+            padding: 0 10px;
+            text-align: center; 
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 30px;
+                top: 40px;
+                border: 10px solid;
+                border-color: lighten(@main-color-2, 25%) transparent transparent lighten(@main-color-2, 25%);        
+            }
         }
     }
 }
@@ -332,6 +332,18 @@ ul.achievements {
 
     &.item-2 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; } 
     &.item-3 { background: url('../img/profile.jpg') 50% 50% transparent no-repeat; }  
+
+    .more {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url('../img/icon_eye.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-color: @main-color-3;
+        margin-bottom: 25px;
+    }
 }
 
 /*** icons
