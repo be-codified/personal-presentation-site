@@ -20,7 +20,7 @@ body {
   background-color: #b41c1c;
 }
 .main-color-4 {
-  background-color: #9d9d9d;
+  background-color: #7f9fa9;
 }
 ::selection {
   background-color: #fcb123;
@@ -181,7 +181,7 @@ ul.tools a:active,
 ul.tools .warning,
 .how-made .warning {
   font-size: 13px;
-  color: #d2dee2;
+  color: #e1eaec;
 }
 ul.tools .warning span,
 .how-made .warning span {
@@ -261,7 +261,7 @@ ul.achievements .desc {
   position: absolute;
   top: -73px;
   left: -41px;
-  width: 200px;
+  width: 250px;
   height: 40px;
   line-height: 40px;
   background-color: #e86868;
@@ -286,14 +286,14 @@ ul.achievements .desc {
   display: block;
 }
 .portfolio.item-1 {
-  background: url('../img/portfolio_1.jpg') 50% 50% transparent no-repeat;
+  background: url('../img/portfolio_1.png') 50% 50% transparent no-repeat;
   background-size: cover;
 }
 .portfolio.item-2 {
-  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
+  background: url('../img/portfolio_2.png') 50% 50% transparent no-repeat;
 }
 .portfolio.item-3 {
-  background: url('../img/profile.jpg') 50% 50% transparent no-repeat;
+  background: url('../img/portfolio_3.png') 50% 50% transparent no-repeat;
 }
 .portfolio .more {
   display: block;
