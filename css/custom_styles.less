@@ -11,9 +11,13 @@
 @main-color-1: #93b1bb; // blue
 @main-color-2: #b41c1c; // red
 @main-color-3: #fcb123; // orange
-@main-color-4: #7f9fa9; // portfolio
+@main-color-4: #bfbfbf; // portfolio
 @main-color-5: #332e2b; // brown
 @color-white:  #ffffff;
+
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: @color-white;
@@ -321,17 +325,16 @@ ul.achievements {
 *********************************************************/
 
 .portfolio {
-    /* background: url('../img/profile.jpg') 50% 50% transparent no-repeat; */
-    background-size: cover;
-    display: block;
 
-    &.item-1 {
-        background: url('../img/portfolio_1.png') 50% 50% transparent no-repeat;
-        background-size: cover;
+    &.item-1 { background: url('../img/portfolio_1.png') 50% 100% transparent no-repeat; }
+    &.item-2 { background: url('../img/portfolio_2.png') 50% 100% transparent no-repeat; } 
+    &.item-3 { background: url('../img/portfolio_3.png') 50% 100% transparent no-repeat; }  
+
+    &.item-1,
+    &.item-2,
+    &.item-3 {
+        background-size: 100%;        
     }
-
-    &.item-2 { background: url('../img/portfolio_2.png') 50% 50% transparent no-repeat; } 
-    &.item-3 { background: url('../img/portfolio_3.png') 50% 50% transparent no-repeat; }  
 
     .more {
         display: block;
@@ -343,6 +346,16 @@ ul.achievements {
         background-size: 25px 25px;
         background-color: @main-color-3;
         margin-bottom: 25px;
+    }
+}
+
+.equal-columns-height {
+    display: table;
+
+    .equal-col {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
     }
 }
 
