@@ -9,7 +9,7 @@
 
         <!-- stylesheets -->
         <link href="css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
-        <link href="css/custom_styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
+        <link href="css/custom-styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
         <!-- icons -->

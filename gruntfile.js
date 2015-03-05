@@ -4,23 +4,23 @@ module.exports = function(grunt) {
 
         // watching over files and running plugins
         watch: {
-            html_php: {
+            htmlPhp: {
                 files: ['*.html','*.php']
             },
-            minify_css_styles: {
-                files: ['css/custom_styles.css'],
+            minifyCssStyles: {
+                files: ['css/custom-styles.css'],
                 tasks: ['cssmin:styles']
             },
-            minify_css_bootstrap: {
+            minifyCssBootstrap: {
                 files: ['css/bootstrap.css'],
                 tasks: ['cssmin:bootstrap']
             },
-            less_styles: {
-                files: ['css/custom_styles.less'],
+            lessStyles: {
+                files: ['css/custom-styles.less'],
                 tasks: ['less:styles']
             },
-            less_bootstrap: {
-                files: ['css/custom_variables.less'],
+            lessBootstrap: {
+                files: ['css/custom-variables.less'],
                 tasks: ['less:bootstrap']
             },
             options: {
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                     paths: ['.']
                 },
                 files: {
-                    'css/custom_styles.css': 'css/custom_styles.less'
+                    'css/custom-styles.css': 'css/custom-styles.less'
                 }
             },
             bootstrap: {
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                     paths: ['.']
                 },
                 files: {
-                    'css/bootstrap.css': 'css/bootstrap_less/bootstrap.less'
+                    'css/bootstrap.css': 'css/bootstrap-less/bootstrap.less'
                 }
             }
         },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'css/',
-                    src: ['custom_styles.css'],
+                    src: ['custom-styles.css'],
                     dest: 'css/',
                     ext: '.min.css'
                 }]

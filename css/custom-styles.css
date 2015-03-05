@@ -4,12 +4,8 @@
 **********************************************************
 ***** be-codified | http://www.be-codified.com *********** 
 *********************************************************/
-/*** general 
+/*** general
 *********************************************************/
-html,
-body {
-  height: 100%;
-}
 body {
   background-color: #ffffff;
   position: relative;
@@ -285,13 +281,13 @@ ul.achievements .desc {
 /*** portfolio
 *********************************************************/
 .portfolio.item-1 {
-  background: url('../img/portfolio_1.png') 50% 100% transparent no-repeat;
+  background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat;
 }
 .portfolio.item-2 {
-  background: url('../img/portfolio_2.png') 50% 100% transparent no-repeat;
+  background: url('../img/portfolio-2.png') 50% 100% transparent no-repeat;
 }
 .portfolio.item-3 {
-  background: url('../img/portfolio_3.png') 50% 100% transparent no-repeat;
+  background: url('../img/portfolio-3.png') 50% 100% transparent no-repeat;
 }
 .portfolio.item-1,
 .portfolio.item-2,
@@ -302,7 +298,7 @@ ul.achievements .desc {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url('../img/icon_eye.svg');
+  background-image: url('../img/icon-eye.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 25px 25px;
@@ -333,18 +329,18 @@ ul.achievements .desc {
   padding-top: 44px;
 }
 .contacts li a.email {
-  background-image: url('../img/icon_email.svg');
+  background-image: url('../img/icon-email.svg');
 }
 .contacts li a.skype {
-  background-image: url('../img/icon_skype.svg');
+  background-image: url('../img/icon-skype.svg');
   margin-top: -50px;
 }
 .contacts li a.phone {
-  background-image: url('../img/icon_phone.svg');
+  background-image: url('../img/icon-phone.svg');
   margin-top: -45px;
 }
 .contacts li a.twitter {
-  background-image: url('../img/icon_twitter.svg');
+  background-image: url('../img/icon-twitter.svg');
   margin-top: -40px;
 }
 /*** flatten shadows
