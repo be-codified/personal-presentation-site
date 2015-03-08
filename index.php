@@ -191,6 +191,7 @@
                                 <li>CSS shadows for simple elements</li>
                                 <li>CSS and JavaScript files have been minified,</li>
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
+                                <li>animations (<a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>)</li>
                                 <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
                             </ul>
                             <p>
