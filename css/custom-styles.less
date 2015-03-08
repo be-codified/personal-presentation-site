@@ -321,8 +321,7 @@ ul.achievements {
 *********************************************************/
 
 .portfolio {
-
-    &.item-1 { background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat; }
+    /* &.item-1 { background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat; } */
     &.item-2 { background: url('../img/portfolio-2.png') 50% 100% transparent no-repeat; } 
     &.item-3 { background: url('../img/portfolio-3.png') 50% 100% transparent no-repeat; }  
 
@@ -330,6 +329,10 @@ ul.achievements {
     &.item-2,
     &.item-3 {
         background-size: 100%;        
+    }
+
+    img {
+
     }
 
     .more {
@@ -342,16 +345,6 @@ ul.achievements {
         background-size: 25px 25px;
         background-color: @main-color-3;
         margin-bottom: 25px;
-    }
-}
-
-.equal-columns-height {
-    display: table;
-
-    .equal-col {
-        float: none;
-        display: table-cell;
-        vertical-align: top;
     }
 }
 

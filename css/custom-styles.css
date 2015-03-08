@@ -280,8 +280,8 @@ ul.achievements .desc {
 }
 /*** portfolio
 *********************************************************/
-.portfolio.item-1 {
-  background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat;
+.portfolio {
+  /* &.item-1 { background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat; } */
 }
 .portfolio.item-2 {
   background: url('../img/portfolio-2.png') 50% 100% transparent no-repeat;
@@ -304,14 +304,6 @@ ul.achievements .desc {
   background-size: 25px 25px;
   background-color: #fcb123;
   margin-bottom: 25px;
-}
-.equal-columns-height {
-  display: table;
-}
-.equal-columns-height .equal-col {
-  float: none;
-  display: table-cell;
-  vertical-align: top;
 }
 /*** icons
 *********************************************************/
