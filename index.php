@@ -48,7 +48,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 profile">
                         <ul class="achievements">
                             <li>
-                                <span class="values">
+                                <span class="values text-center">
                                     <span class="counter normal">
                                         <?php echo time_period($date_webindustry, $date_today, 0); ?>+
                                     </span>
@@ -57,14 +57,14 @@
                                 <div class="clearfix"></div>
                             </li>
                             <li>
-                                <span class="values">
+                                <span class="values text-right">
                                     <span class="counter small">90+</span>
                                 </span> 
                                 <span class="desc">Happy<br />Clients</span>
                                 <div class="clearfix"></div>
                             </li>
                             <li>
-                                <span class="values">
+                                <span class="values text-right">
                                     <span class="counter smaller">150+</span>
                                 </span>
                                 <span class="desc">Completed<br />Projects</span>
