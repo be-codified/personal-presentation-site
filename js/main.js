@@ -15,27 +15,21 @@ $(document).ready(function() {
     // NOTE: use true or false for $return_string
 
     function timePeriod(dateStart, dateEnd, returnString) {
-        var period = Math.ceil(new Date(dateEnd - dateStart)/1000/60/60/24/365);
+        var period = Math.floor(new Date(dateEnd - dateStart)/1000/60/60/24/365);
 
         if (returnString) {
             console.log(period);
             return period;            
         }
-        /* 
         else {
-            $integer_to_string = array(
-                1 => 'one',
-                2 => 'two',
-                3 => 'three',
-                4 => 'four',
-                5 => 'five',
-            );
-            return $integer_to_string[round($period->days / 365)];            
-        }*/
+            var integerToString = ['two', 'three', 'four', 'five', 'six'];
+            return integerToString[period - 1];            
+        }
     }
 
-    timePeriod(dateWebindustry, dateToday, true);
+    timePeriod(dateFreelancing, dateToday, false);
 
+    // TODO: apply calculations to html holders
 
     // counter animations
     // *********************************************
