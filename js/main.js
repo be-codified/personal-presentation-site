@@ -1,35 +1,19 @@
 $(document).ready(function() {
-    // animations
+    // counter animations
     // *********************************************
 
-    // water drop (underneath avatar)
-    $('.avatar .circle-large').delay(1000).animate({
-        opacity: 0,
-        top: '50px',
-        left: '50px',
-        width: '+=300px',
-        height: '+=300px',
-    },{
-        duration: 1000,
-        easing: 'swing',
-        queue: false
-    })
+    function counterAnimate(selector, number, sign){
+        var counter = $.animateNumber.numberStepFactories.append(sign);            
 
-    $('.avatar .circle-small').delay(250).animate({
-        opacity: 0,
-        top: '75px',
-        left: '75px',
-        width: '+=250px',
-        height: '+=250px',
-    },{
-        duration: 1000,
-        easing: 'swing'
-    })
-
-    // rolling counter (on avatar)
-    $.fn.rolling = function() {
-        this.css('color', 'white');
+        $(selector).animateNumber({
+                number: number,
+                easing: 'easeInQuad',
+                numberStep: counter
+            }, 2000
+        );        
     }
 
-    $('.counter').rolling();
+    counterAnimate('.counter.normal', 8, '');
+    counterAnimate('.counter.small', 90, '+');
+    counterAnimate('.counter.smaller', 150, '+');
 });

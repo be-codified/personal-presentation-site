@@ -49,7 +49,7 @@
                         <ul class="achievements">
                             <li>
                                 <span class="values">
-                                    <span class="counter">
+                                    <span class="counter normal">
                                         <?php echo time_period($date_webindustry, $date_today, 0); ?>+
                                     </span>
                                 </span>
@@ -214,8 +214,9 @@
             </footer>
         </div>
     
-        <!-- jquery and main script -->
+        <!-- jquerya, animations and main script -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.animateNumber.min.js"></script>
         <script type="text/javascript" src="js/main.js?v=<?php echo time(); ?>"></script>
     </body>
 </html>
