@@ -34,11 +34,17 @@ $(document).ready(function() {
     function counterAnimate(selector, number, sign){
         var counter = $.animateNumber.numberStepFactories.append(sign);            
 
+        console.log(selector);
+
         $(selector).animateNumber({
                 number: number,
                 easing: 'easeInQuad',
                 numberStep: counter
-            }, 2000
+            }, 2000, function() {
+                if (sign) {
+                    $(selector).append('');
+                }
+            }
         );        
     }
 

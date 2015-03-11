@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>be-codified.com | freelance front-end developer</title>
+        <title>be-codified.com | freelance front-end web developer</title>
 
         <!-- stylesheets -->
         <link href="css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
@@ -40,7 +40,7 @@
                                     <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
                                 </h1>
                             </header>
-                            <h2>Hi,<br />my name is Žiga and I'm a <strong>front-end developer</strong>.</h2>
+                            <h2>Hi,<br />my name is Žiga and I'm a <strong>front-end web developer</strong>.</h2>
                             <p class="lead">I have been working in the web industry for the past <span class="years-web"></span> years, for the last <span class="years-freelance"></span> years as a freelancer.</p>
                         </div>
                     </div>
@@ -48,23 +48,21 @@
                         <ul class="achievements">
                             <li>
                                 <span class="values text-center">
-                                    <span class="counter normal">
-                                        +
-                                    </span>
+                                    <span class="counter normal"></span>
                                 </span>
                                 <span class="desc">Years of<br />Experience</span>
                                 <div class="clearfix"></div>
                             </li>
                             <li>
                                 <span class="values text-right">
-                                    <span class="counter small">90+</span>
+                                    <span class="counter small"></span>
                                 </span> 
                                 <span class="desc">Happy<br />Clients</span>
                                 <div class="clearfix"></div>
                             </li>
                             <li>
                                 <span class="values text-right">
-                                    <span class="counter smaller">150+</span>
+                                    <span class="counter smaller"></span>
                                 </span>
                                 <span class="desc">Completed<br />Projects</span>
                                 <div class="clearfix"></div>

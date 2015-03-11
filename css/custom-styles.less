@@ -114,8 +114,6 @@ ul.achievements {
     font-size: 18px;
 
     .values {
-        text-align: center;
-
         .counter {
             font-size: 40px;
             line-height: 70px;
@@ -125,6 +123,14 @@ ul.achievements {
 
         .counter.small { font-size: 30px; }
         .counter.smaller { font-size: 25px; }
+
+        .counter.normal { text-align: center; }
+
+        .counter.small,
+        .counter.smaller {
+            text-align: right;
+            padding-right: 7px;
+        }
     }
 
     .desc {

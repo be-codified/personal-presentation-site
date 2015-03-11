@@ -88,9 +88,6 @@ body {
 ul.achievements {
   font-size: 18px;
 }
-ul.achievements .values {
-  text-align: center;
-}
 ul.achievements .values .counter {
   font-size: 40px;
   line-height: 70px;
@@ -102,6 +99,14 @@ ul.achievements .values .counter.small {
 }
 ul.achievements .values .counter.smaller {
   font-size: 25px;
+}
+ul.achievements .values .counter.normal {
+  text-align: center;
+}
+ul.achievements .values .counter.small,
+ul.achievements .values .counter.smaller {
+  text-align: right;
+  padding-right: 7px;
 }
 ul.achievements .desc {
   color: #ffffff;
