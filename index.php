@@ -41,8 +41,7 @@
                                 </h1>
                             </header>
                             <h2>Hi,<br />my name is Žiga and I'm a <strong>front-end developer</strong>.</h2>
-                            <?php require_once('time_period.php'); ?>
-                            <p class="lead">I have been working in the web industry for the past <?php echo time_period($date_webindustry, $date_today, 0); ?> years, for the last <?php echo time_period($date_freelancing, $date_today, 0); ?> years as a freelancer.</p>
+                            <p class="lead">I have been working in the web industry for the past <span class="years-web"></span> years, for the last <span class="years-freelance"></span> years as a freelancer.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 profile">
@@ -50,7 +49,7 @@
                             <li>
                                 <span class="values text-center">
                                     <span class="counter normal">
-                                        <?php echo time_period($date_webindustry, $date_today, 0); ?>+
+                                        +
                                     </span>
                                 </span>
                                 <span class="desc">Years of<br />Experience</span>
