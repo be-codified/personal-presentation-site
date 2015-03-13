@@ -34,7 +34,7 @@
             <article>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2 intro">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1 intro">
                             <header>
                                 <h1>
                                     <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
@@ -72,27 +72,27 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
-                            <h2>My main strenghts</h2>
-                            <ul class="plus-bullets strenghts">
-                                <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
-                                <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
-                                <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
-                                <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
-                                <li>solid understanding of <strong class="reduced-right-padding">designing in a browser</strong>,</li>
-                                <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
-                                <li>solid understanding of <strong class="reduced-right-padding">SEO</strong>,</li>
-                                <li>solid understanding and appreciation of <strong class="reduced-right-padding">colour and typography</strong>,</li>
-                                <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
-                                <li>excellent <strong class="reduced-right-padding">communication skills</strong>,</li>
-                                <li>ability to dive in and learn new things to <strong class="reduced-right-padding">find solutions for technical problems</strong>.</li>
-                            </ul>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h2>My main strenghts</h2>
+                                <ul class="plus-bullets strenghts">
+                                    <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
+                                    <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
+                                    <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
+                                    <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
+                                    <li>solid understanding of <strong class="reduced-right-padding">designing in a browser</strong>,</li>
+                                    <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
+                                    <li>solid understanding of <strong class="reduced-right-padding">SEO</strong>,</li>
+                                    <li>solid understanding and appreciation of <strong class="reduced-right-padding">colour and typography</strong>,</li>
+                                    <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
+                                    <li>excellent <strong class="reduced-right-padding">communication skills</strong>,</li>
+                                    <li>ability to dive in and learn new things to <strong class="reduced-right-padding">find solutions for technical problems</strong>.</li>
+                                </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row main-color-4">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 portfolio item-1" style="background-color: red;">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="background-color: blue;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="row main-color-4">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
                                 <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a><br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
@@ -135,8 +135,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2" style="background-color: red;">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" style="background-color: blue;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Some title goes here</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="row main-color-4">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
