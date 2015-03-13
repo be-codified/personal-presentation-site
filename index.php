@@ -138,7 +138,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
-                            <h2>Some title goes here</h2>
+                            <h2>Encyclopedia for adults</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
                         <a href="#" class="more"></a>
