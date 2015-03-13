@@ -91,14 +91,13 @@
                     </div>
                 </div>
                 <div class="row main-color-4">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-push-1 portfolio item-1" style="background-color: red;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 portfolio item-1" style="background-color: red;">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="background-color: blue;">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
-                            <img class="col-lg-12" src="img/portfolio-1.png" />
-                            <a href="#" class="more"></a>
                         </div>
+                        <a href="#" class="more"></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-1">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -115,8 +114,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row main-color-4 equal-columns-height">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 equal-col">
+                <div class="row main-color-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
@@ -136,25 +135,25 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 equal-col portfolio item-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2" style="background-color: red;">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" style="background-color: blue;">
                             <p class="latest">Latest work</p>
                             <h2>Some title goes here</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
-                            <a href="#" class="more"></a>
                         </div>
+                        <a href="#" class="more"></a>
                     </div>
                 </div>
-                <div class="row main-color-4 equal-columns-height">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 equal-col portfolio item-3">
+                <div class="row main-color-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
-                            <a href="#" class="more pull-right"></a>
                         </div>
+                        <a href="#" class="more pull-right"></a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 equal-col">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-3">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>Want to hire me for a project?</h2>
                             <p>Please feel free to contact me by any communication channel:</p>

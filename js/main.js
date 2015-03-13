@@ -54,15 +54,17 @@ $(document).ready(function() {
     // ***************************************************
 
     function setColumnHeight(number) {
-        var heightNeighbour = $('.neighbour-1').height();
+        var heightNeighbour = $('.neighbour-' + number).height();
         $('.item-' + number).height(heightNeighbour);        
     }
 
-    for (var i = 1; i <= 3; i++) {
-        $(window).resize(function() {
+    $(window).resize(function() {
+        for (var i = 1; i <= 3; i++) {
             setColumnHeight(i);
-        });
+        }
+    });
 
+    for (var i = 1; i <= 3; i++) {
         setColumnHeight(i);
-    };
+    }
 });

@@ -286,7 +286,10 @@ ul.achievements .desc {
 /*** portfolio
 *********************************************************/
 .portfolio {
-  /* &.item-1 { background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat; } */
+  position: relative;
+}
+.portfolio.item-1 {
+  background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat;
 }
 .portfolio.item-2 {
   background: url('../img/portfolio-2.png') 50% 100% transparent no-repeat;
@@ -297,9 +300,12 @@ ul.achievements .desc {
 .portfolio.item-1,
 .portfolio.item-2,
 .portfolio.item-3 {
-  background-size: 100%;
+  background-size: 90%;
 }
 .portfolio .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: block;
   width: 60px;
   height: 60px;
@@ -308,7 +314,7 @@ ul.achievements .desc {
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-color: #fcb123;
-  margin-bottom: 25px;
+  margin: 0 25px 25px 0;
 }
 /*** icons
 *********************************************************/
