@@ -100,7 +100,7 @@
                             <a href="#" class="more"></a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-1">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">

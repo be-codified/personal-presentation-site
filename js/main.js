@@ -34,8 +34,6 @@ $(document).ready(function() {
     function counterAnimate(selector, number, sign){
         var counter = $.animateNumber.numberStepFactories.append(sign);            
 
-        console.log(selector);
-
         $(selector).animateNumber({
                 number: number,
                 easing: 'easeInQuad',
@@ -51,4 +49,20 @@ $(document).ready(function() {
     counterAnimate('.counter.normal', timePeriod(dateWebindustry, dateToday, false), '');
     counterAnimate('.counter.small', 90, '+');
     counterAnimate('.counter.smaller', 150, '+');
+
+    // portfolio column (same heigth as neighbour element)
+    // ***************************************************
+
+    function setColumnHeight(number) {
+        var heightNeighbour = $('.neighbour-1').height();
+        $('.item-' + number).height(heightNeighbour);        
+    }
+
+    for (var i = 1; i <= 3; i++) {
+        $(window).resize(function() {
+            setColumnHeight(i);
+        });
+
+        setColumnHeight(i);
+    };
 });
