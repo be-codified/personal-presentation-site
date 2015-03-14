@@ -58,6 +58,8 @@ $(document).ready(function() {
         $('.item-' + number).height(heightNeighbour);        
     }
 
+    // TODO: trying not to call code same thing twice
+
     $(window).resize(function() {
         for (var i = 1; i <= 3; i++) {
             setColumnHeight(i);
@@ -67,4 +69,16 @@ $(document).ready(function() {
     for (var i = 1; i <= 3; i++) {
         setColumnHeight(i);
     }
+
+    // portfolio see more animations
+    // *********************************************
+
+    $('.more').on('click', function(event) {
+        console.log('resizing ...');
+
+        $('.portfolio.item-1').addClass('col-lg-push-1');
+
+        event.preventDefault();
+    });
+
 });

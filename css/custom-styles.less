@@ -328,16 +328,20 @@ ul.achievements {
 
 .portfolio {
     position: relative;
+    z-index: 1;
     
-    &.item-1 { background: url('../img/portfolio-1.png') 50% 100% transparent no-repeat; }
-    &.item-2 { background: url('../img/portfolio-2.png') 50% 100% transparent no-repeat; } 
-    &.item-3 { background: url('../img/portfolio-3.png') 50% 100% transparent no-repeat; }  
-
     &.item-1,
     &.item-2,
     &.item-3 {
-        background-size: 90%;        
+        background-color: @main-color-4;
+        background-size: 90%;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;        
     }
+
+    &.item-1 { background-image: url('../img/portfolio-1.png'); }
+    &.item-2 { background-image: url('../img/portfolio-2.png'); } 
+    &.item-3 { background-image: url('../img/portfolio-3.png'); }
 
     .more {
         position: absolute;
