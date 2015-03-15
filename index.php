@@ -80,7 +80,7 @@
                                     <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
                                     <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
                                     <li>solid understanding of <strong class="reduced-right-padding">designing in a browser</strong>,</li>
-                                    <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Joomla, Magento),</li>
+                                    <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Magento),</li>
                                     <li>solid understanding of <strong class="reduced-right-padding">SEO</strong>,</li>
                                     <li>solid understanding and appreciation of <strong class="reduced-right-padding">colour and typography</strong>,</li>
                                     <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
@@ -95,7 +95,8 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-lg-push-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <p>HTML5, CSS3 with responsive design, integration with CMS, project managment with group of people.</p>
+                            <p>You can see it in action <a href="http://www.zps.si" target="_blank">here</a>.</p>
                         </div>
                         <a href="#" class="more-close">close</a>
                         <a href="#" class="more"></a>
@@ -104,13 +105,13 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
-                                <li><strong>HTML5</strong> (modern markup), <strong>CSS3</strong> (modern properties, web font embeding, SVG, animations) with CSS pre-processor <strong>LESS</strong></li>
+                                <li><strong>HTML5</strong> (modern markup), <strong>CSS3</strong> (modern properties, web font embeding, SVG, animations) with CSS pre-processor <strong class="reduced-right-padding">LESS</strong>,</li>
+                                <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <strong>JavaScript</strong></li>
+                                <li><strong>Git</strong> (working with a team of developers, service GitHub and BitBucket),</li>
                                 <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
-                                <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <strong>JavaScript</strong></li>
                                 <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong class="reduced-right-padding">compatibility testing</strong>,</li>
-                                <li><strong>Git</strong> (working with a team of developers, service GitHub and BitBucket),</li>
-                                <li>basic understanding of PHP and MySQL</li>
+                                <li>basic understanding of PHP and MySQL.</li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
-                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a><br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
+                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>,<br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
                                 <li>
                                     <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> (framework for faster and easier web development), 
                                 </li>
@@ -128,11 +129,11 @@
                                     CSS pre-processor <a href="http://lesscss.org/" target="_blank">Less</a>,
                                 </li>
                                 <li>
-                                    <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library
+                                    <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library,
                                 </li>
-                                <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome</li>
-                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, compiling from LESS, CSS minify, HTML and CSS validation, deployment)</li>
-                                <li>all running on a small thing called <a href="http://www.apple.com/macbook-pro/" target="_blank">Apple MacBook Pro 13</a></i>, extended to an external 24-inch monitor</li>
+                                <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome,</li>
+                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, HTML and CSS validation, CSS minify, LESS compiler, deployment),</li>
+                                <li>all running on a small thing called <a href="http://www.apple.com/macbook-pro/" target="_blank">Apple MacBook Pro</a> 13-inch</i>, extended to an external 24-inch monitor.</li>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +141,8 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Encyclopedia for adults</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <p>HTML5, CSS3, integration with CMS, plugins integration.</p>
+                            <p>You can see it in action <a href="http://www.sex2.si" target="_blank">here</a>.</p>
                         </div>
                         <a href="#" class="more"></a>
                     </div>
@@ -150,7 +152,8 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
+                            <p>HTML5, CSS3, jQuery, animations, back-end functionallity.</p>
+                            <p>You can see it in action <a href="http://showcase.social-amaze.com/giveaway_iphone/index.php/giveaway/index" target="_blank">here</a>.</p>
                         </div>
                         <a href="#" class="more pull-right"></a>
                     </div>
@@ -181,15 +184,14 @@
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">
-                                <li>HTML5, CSS3 (using Less), jQuery and animations // note: change this,</li>
+                                <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>),</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
-                                <li>checked with HTML5 and CSS validator (grunt-lint5, CSS validator) and PageSpeed Insights (or yslow.com?),</li> 
-                                <li>logo and contact icons are used in SVG format</li>
-                                <li>CSS shadows for simple elements</li>
+                                <li>calculation for working periods (how many years) are calculated automatically,</li>
+                                <li>logo and contact icons are used in SVG format,</li>
+                                <li>CSS shadows are used with simple elements,</li>
                                 <li>CSS and JavaScript files have been minified,</li>
-                                <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well,</li>
-                                <li>animations (<a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>)</li>
-                                <li>time for how long I am working in web industry is calculated automatically.// note: change this</li>
+                                <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbe-codified.com%2Fdevelopment%2F&tab=desktop" target="_blank">PageSpeed Insights</a>,</li> 
+                                <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well.</li>
                             </ul>
                             <p>
                                 Design made with <i class="fa fa-heart fa-lg"></i><span class="reference-point"><span class="bubble">The icon should read as love.</span></span> by Groga Tancek and excellent profile <i class="fa fa-camera fa-lg"></i><span class="reference-point"><span class="bubble">The icon should read as photo.</span></span> provided by Ana Skobe.

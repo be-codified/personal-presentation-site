@@ -220,6 +220,12 @@ ul.tools i:hover + .reference-point .bubble,
   padding-top: 0;
   margin-top: -12px;
 }
+.portfolio > div a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  border-bottom: 1px solid #ffffff;
+}
 .business-owner {
   font-size: 13px;
 }
