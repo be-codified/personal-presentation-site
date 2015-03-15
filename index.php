@@ -91,16 +91,16 @@
                     </div>
                 </div>
                 <div class="row main-color-1">
-                    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1"> -->
-                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 portfolio item-1"> 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 portfolio item-1"> 
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-lg-push-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et efficitur ipsum. Fusce accumsan congue diam, et bibendum mauris aliquam</p>
                         </div>
+                        <a href="#" class="more-close">close</a>
                         <a href="#" class="more"></a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 main-color-1 neighbour-1 col-lg-pull-1">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-1">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">

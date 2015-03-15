@@ -20,7 +20,7 @@ body {
   background-color: #b41c1c;
 }
 .main-color-4 {
-  background-color: #695e60;
+  background-color: #7a7a7a;
 }
 ::selection {
   background-color: #fcb123;
@@ -292,7 +292,7 @@ ul.achievements .desc {
 .portfolio.item-1,
 .portfolio.item-2,
 .portfolio.item-3 {
-  background-color: #695e60;
+  background-color: #7a7a7a;
   background-size: 90%;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -306,11 +306,14 @@ ul.achievements .desc {
 .portfolio.item-3 {
   background-image: url('../img/portfolio-3.png');
 }
-.portfolio .more {
+.portfolio .more,
+.portfolio .more-close {
   position: absolute;
   right: 0;
-  bottom: 0;
   display: block;
+}
+.portfolio .more {
+  bottom: 0;
   width: 60px;
   height: 60px;
   background-image: url('../img/icon-eye.svg');
@@ -319,6 +322,14 @@ ul.achievements .desc {
   background-size: 25px 25px;
   background-color: #fcb123;
   margin: 0 25px 25px 0;
+}
+.portfolio .more-close {
+  top: 0;
+  margin: 25px 25px 0 0;
+  color: blue;
+}
+.neighbour-1.opened {
+  margin-left: -50%;
 }
 /*** icons
 *********************************************************/

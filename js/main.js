@@ -74,11 +74,25 @@ $(document).ready(function() {
     // *********************************************
 
     $('.more').on('click', function(event) {
-        console.log('resizing ...');
-
-        $('.portfolio.item-1').addClass('col-lg-push-1');
+        $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-1').animate({
+                width: '+=40%' 
+            }, 1000);
+            $('.neighbour-1').addClass('opened');
+        });
 
         event.preventDefault();
     });
 
+    $('.more-close').on('click', function(event) {
+        $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-1').animate({
+                width: '-=40%' 
+            }, 1000, function() {
+                $('.portfolio.item-1 > div').fadeIn(500, 'swing')
+            });
+        });
+
+        event.preventDefault();
+    });
 });

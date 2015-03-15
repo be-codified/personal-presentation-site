@@ -11,7 +11,7 @@
 @main-color-1: #93b1bb; // blue
 @main-color-2: #b41c1c; // red
 @main-color-3: #fcb123; // orange
-@main-color-4: #695e60; // portfolio
+@main-color-4: #7a7a7a; // portfolio
 @main-color-5: #332e2b; // brown
 @color-white:  #ffffff;
 
@@ -343,11 +343,15 @@ ul.achievements {
     &.item-2 { background-image: url('../img/portfolio-2.png'); } 
     &.item-3 { background-image: url('../img/portfolio-3.png'); }
 
-    .more {
-        position: absolute;
+    .more,
+    .more-close {
+        position: absolute;        
         right: 0;
-        bottom: 0;
         display: block;
+    }
+
+    .more {
+        bottom: 0;
         width: 60px;
         height: 60px;
         background-image: url('../img/icon-eye.svg');
@@ -357,6 +361,16 @@ ul.achievements {
         background-color: @main-color-3;
         margin: 0 25px 25px 0;
     }
+
+    .more-close {
+        top: 0;
+        margin: 25px 25px 0 0;
+        color: blue;
+    }
+}
+
+.neighbour-1.opened {
+    margin-left: -50%;
 }
 
 /*** icons
