@@ -184,12 +184,26 @@ ul.tools a,
   display: inline-block;
   border-bottom: 1px solid #ffffff;
   text-indent: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 ul.tools a:hover,
 .how-made a:hover,
 ul.tools a:active,
 .how-made a:active {
   text-decoration: none;
+}
+ul.tools a:hover,
+.how-made a:hover {
+  border-bottom: 1px solid #ffffff;
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 ul.tools .warning,
 .how-made .warning {

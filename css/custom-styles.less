@@ -219,6 +219,21 @@ ul.tools,
 
         &:hover,
         &:active { text-decoration: none; }
+
+        -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+             -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+
+        &:hover {
+            border-bottom: 1px solid @color-white;
+            display: inline-block;
+            margin-left: -10px;
+            margin-right: -10px;      
+            padding-left: 10px;
+            padding-right: 10px;  
+        }
     }
 
     .warning {
