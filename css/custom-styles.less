@@ -110,8 +110,20 @@ header h1 {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('Raleway-Light-webfont.eot');
+    src: url('Raleway-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Raleway-Light-webfont.woff2') format('woff2'),
+         url('Raleway-Light-webfont.woff') format('woff'),
+         url('Raleway-Light-webfont.ttf') format('truetype'),
+         url('Raleway-Light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-size: 16px;
+    font-size: 17px;
     color: @color-white;
     font-family: 'ralewayextralight', sans-serif;
 }
@@ -158,11 +170,18 @@ h2.smaller { font-size: 35px; }
     font-size: 44px;
     line-height: 125%;
     padding: 120px 0 5px 0;
-
-    strong { font-family: 'ralewaysemibold', sans-serif; }
 }
 
 p.lead { font-size: 22px; }
+
+span.exposed,
+span.strong {
+    font-family: 'ralewaysemibold', sans-serif;    
+}
+
+span.strong { 
+    -webkit-font-smoothing: antialiased; 
+}
 
 ul.plus-bullets {
     li:before {
@@ -181,7 +200,7 @@ ul.strenghts,
 .how-made ul {
     li:before { color: lighten(@main-color-2, 25%); }
 
-    strong {
+    span.strong {
         background-color: lighten(@main-color-2, 20%);
         color: #fff;
         padding: 2px 6px;
@@ -193,7 +212,7 @@ ul.tools {
     li {
         &:before { color: lighten(@main-color-1, 20%); }
 
-        strong {
+        span.strong {
             text-indent: 0;
             display: inline-block;
             color: @color-white;
@@ -206,7 +225,7 @@ ul.tools {
 
 .additional-left-margin { padding-left: 5%; }
 
-ul li strong.reduced-right-padding { padding-right: 2px; }
+ul li span.strong.reduced-right-padding { padding-right: 2px; }
 
 ul.tools,
 .how-made {
@@ -276,6 +295,24 @@ ul.tools,
         color: @color-white;
         display: inline-block;
         border-bottom: 1px solid @color-white;
+
+        &:hover,
+        &:active { text-decoration: none; }
+
+        -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+             -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+
+        &:hover {
+            border-bottom: 1px solid @color-white;
+            display: inline-block;
+            margin-left: -10px;
+            margin-right: -10px;      
+            padding-left: 10px;
+            padding-right: 10px;  
+        }
     }
 } 
 

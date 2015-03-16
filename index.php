@@ -40,7 +40,7 @@
                                     <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
                                 </h1>
                             </header>
-                            <h2>Hi,<br />my name is Žiga and I'm a <strong>front-end web developer</strong>.</h2>
+                            <h2>Hi,<br />my name is Žiga and I'm a <span class="exposed">front-end web developer</span>.</h2>
                             <p class="lead">I have been working in the web industry for the past <span class="years-web"></span> years, for the last <span class="years-freelance"></span> years as a freelancer.</p>
                         </div>
                     </div>
@@ -75,17 +75,17 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-margin">
                                 <h2>My main strenghts</h2>
                                 <ul class="plus-bullets strenghts">
-                                    <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
-                                    <li>exceptional ability to <strong>translate designs</strong> into semantic, accessible front-end code,</li>
-                                    <li>strong understanding of <strong>modern web technologies</strong> and workflows,</li>
-                                    <li>strong understanding of mobile and <strong>responsive design</strong> and development practices,</li>
-                                    <li>solid understanding of <strong class="reduced-right-padding">designing in a browser</strong>,</li>
-                                    <li>solid understanding of <strong>integration or modification of front-end code</strong> with CMSs (i.e. Wordpress, Magento),</li>
-                                    <li>solid understanding of <strong class="reduced-right-padding">SEO</strong>,</li>
-                                    <li>solid understanding and appreciation of <strong class="reduced-right-padding">colour and typography</strong>,</li>
-                                    <li>ability to work directly with designers to <strong>implement designs</strong> and provide feedback on design if needed,</li>
-                                    <li>excellent <strong class="reduced-right-padding">communication skills</strong>,</li>
-                                    <li>ability to dive in and learn new things to <strong class="reduced-right-padding">find solutions for technical problems</strong>.</li>
+                                    <li>strong understanding of developing for the web and <span class="strong reduced-right-padding">a careful eye for design</span>,</li>
+                                    <li>exceptional ability to <span class="strong">translate designs</span> into semantic, accessible front-end code,</li>
+                                    <li>strong understanding of <span class="strong">modern web technologies</span> and workflows,</li>
+                                    <li>strong understanding of mobile and <span class="strong">responsive design</span> and development practices,</li>
+                                    <li>solid understanding of <span class="strong reduced-right-padding">designing in a browser</span>,</li>
+                                    <li>solid understanding of <span class="strong">integration or modification of front-end code</span> with CMSs (i.e. Wordpress, Magento),</li>
+                                    <li>solid understanding of <span class="strong reduced-right-padding">SEO</span>,</li>
+                                    <li>solid understanding and appreciation of <span class="strong reduced-right-padding">colour and typography</span>,</li>
+                                    <li>ability to work directly with designers to <span class="strong">implement designs</span> and provide feedback on design if needed,</li>
+                                    <li>excellent <span class="strong reduced-right-padding">communication skills</span>,</li>
+                                    <li>ability to dive in and learn new things to <span class="strong reduced-right-padding">find solutions for technical problems</span>.</li>
                                 </ul>
                         </div>
                     </div>
@@ -105,12 +105,12 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
-                                <li><strong>HTML5</strong> (modern markup), <strong>CSS3</strong> (modern properties, web font embeding, SVG, animations) with CSS pre-processor <strong class="reduced-right-padding">LESS</strong>,</li>
-                                <li><strong>jQuery</strong> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <strong>JavaScript</strong></li>
-                                <li><strong>Git</strong> (working with a team of developers, service GitHub and BitBucket),</li>
-                                <li><strong>graphic tools</strong> (i.e. Adobe Photoshop and Illustrator),</li>
-                                <li>experienced in <strong>frameworks or theme starters</strong> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
-                                <li><strong>cross-browser</strong> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <strong>cross-platform</strong> (Android, iOS iPhone/iPad) <strong class="reduced-right-padding">compatibility testing</strong>,</li>
+                                <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, animations) with CSS pre-processor <span class="strong reduced-right-padding">LESS</span>,</li>
+                                <li><span class="strong">jQuery</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <span class="strong">JavaScript</span></li>
+                                <li><span class="strong">Git</span> (working with a team of developers, service GitHub and BitBucket),</li>
+                                <li><span class="strong">graphic tools</span> (i.e. Adobe Photoshop and Illustrator),</li>
+                                <li>experienced in <span class="strong">frameworks or theme starters</span> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
+                                <li><span class="strong">cross-browser</span> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <span class="strong">cross-platform</span> (Android, iOS iPhone/iPad) <span class="strong reduced-right-padding">compatibility testing</span>,</li>
                                 <li>basic understanding of PHP and MySQL.</li>
                             </ul>
                         </div>
