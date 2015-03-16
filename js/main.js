@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    // logo animation
+    // *********************************************
+
+    $('header h1').animate({
+        marginTop: '+=90px',
+        opacity: 1 
+    }, 500, 'swing');
+
+
     // achievements calculations
     // *********************************************
 
@@ -74,11 +83,12 @@ $(document).ready(function() {
     // *********************************************
 
     $('.more').on('click', function(event) {
-        $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
-            $('.portfolio.item-1').animate({
-                width: '+=40%' 
-            }, 1000);
-            $('.neighbour-1').addClass('opened');
+        $('.neighbour-1').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
+                $('.portfolio.item-1').animate({
+                    width: '+=40%' 
+                }, 1000);
+            });     
         });
 
         event.preventDefault();
@@ -89,7 +99,10 @@ $(document).ready(function() {
             $('.portfolio.item-1').animate({
                 width: '-=40%' 
             }, 1000, function() {
-                $('.portfolio.item-1 > div').fadeIn(500, 'swing')
+                $('.portfolio.item-1 > div').fadeIn(500, 'swing', function() {
+                    $('.portfolio.item-1').css('width', '50%'); // cutting off decimal numbers                   
+                    $('.neighbour-1').fadeIn(500, 'swing');
+                })
             });
         });
 

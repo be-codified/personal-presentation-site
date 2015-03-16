@@ -72,7 +72,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-margin">
                                 <h2>My main strenghts</h2>
                                 <ul class="plus-bullets strenghts">
                                     <li>strong understanding of developing for the web and <strong class="reduced-right-padding">a careful eye for design</strong>,</li>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1 how-made">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 how-made additional-left-margin">
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">

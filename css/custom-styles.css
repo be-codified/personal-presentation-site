@@ -41,8 +41,13 @@ ul li {
 }
 /*** logo
 *********************************************************/
+header {
+  position: relative;
+}
 header h1 {
-  margin: 55px 0 65px 0;
+  position: absolute;
+  opacity: 0;
+  top: -65px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -124,7 +129,7 @@ h2.smaller {
 .intro h2 {
   font-size: 44px;
   line-height: 125%;
-  padding: 0 0 5px 0;
+  padding: 120px 0 5px 0;
 }
 .intro h2 strong {
   font-family: 'ralewaysemibold', sans-serif;
@@ -165,6 +170,9 @@ ul.tools li strong {
   background-color: #7a9fab;
   padding: 2px 6px;
   border-bottom: 3px solid #93b1bb;
+}
+.additional-left-margin {
+  padding-left: 5%;
 }
 ul li strong.reduced-right-padding {
   padding-right: 2px;
@@ -300,7 +308,7 @@ ul.achievements .desc {
 .portfolio.item-3 {
   background-color: #7a7a7a;
   background-size: 90%;
-  background-position: 50% 100%;
+  background-position: 50% 80%;
   background-repeat: no-repeat;
 }
 .portfolio.item-1 {
