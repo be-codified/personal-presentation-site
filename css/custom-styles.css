@@ -186,7 +186,7 @@ ul.tools li span.strong {
   padding-left: 5%;
 }
 ul li span.strong.reduced-right-padding {
-  padding-right: 2px;
+  padding-right: 3px;
 }
 ul.tools a,
 .how-made a {
@@ -322,7 +322,7 @@ ul.achievements .desc {
   position: absolute;
   top: -73px;
   left: -41px;
-  width: 250px;
+  width: 275px;
   height: 40px;
   line-height: 40px;
   background-color: #e86868;
