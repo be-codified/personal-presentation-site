@@ -190,7 +190,7 @@
                                 <li>logo and contact icons are used in SVG format,</li>
                                 <li>CSS shadows are used with simple elements,</li>
                                 <li>CSS and JavaScript files have been minified,</li>
-                                <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbe-codified.com%2Fdevelopment%2F&tab=desktop" target="_blank">PageSpeed Insights</a>,</li> 
+                                <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.be-codified.com" target="_blank">PageSpeed Insights</a>,</li> 
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well.</li>
                             </ul>
                             <p>
