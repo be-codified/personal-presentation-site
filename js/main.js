@@ -82,29 +82,69 @@ $(document).ready(function() {
     // portfolio see more animations
     // *********************************************
 
+    var width = '40%';
+
+    // opening panel
+
     $('.more').on('click', function(event) {
-        $('.neighbour-1').fadeOut(500, 'swing', function() {
-            $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
-                $('.portfolio.item-1').animate({
-                    width: '+=40%' 
-                }, 1000);
-            });     
+        id = $(this).data().id;
+
+        $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
+            $('.neighbour-' + id).fadeOut(500, 'swing', function() {
+                $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
+                    $('.portfolio.item-' + id).animate({
+                        width: '+=' + width 
+                    }, 1000, function() {
+                        $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
+                    });
+                });     
+            });
         });
 
         event.preventDefault();
     });
 
-    $('.more-close').on('click', function(event) {
-        $('.portfolio.item-1 > div').fadeOut(500, 'swing', function() {
-            $('.portfolio.item-1').animate({
-                width: '-=40%' 
-            }, 1000, function() {
-                $('.portfolio.item-1 > div').fadeIn(500, 'swing', function() {
-                    $('.portfolio.item-1').css('width', '50%'); // cutting off decimal numbers                   
-                    $('.neighbour-1').fadeIn(500, 'swing');
-                })
+    // TODO: check what is going on with portfoliko element 2 and include it in above code
+
+    $('.more').on('click', function(event) {
+        id = 2;
+
+        $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
+            $('.neighbour-' + id).fadeOut(500, 'swing', function() {
+                /*
+                $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
+                    $('.portfolio.item-' + id).animate({
+                        width: '+=' + width 
+                    }, 1000, function() {
+                        $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
+                    });
+                });
+                */     
             });
         });
+
+        event.preventDefault();
+    });
+
+    // closing panel
+
+    $('.more-close').on('click', function(event) {
+        id = $(this).data().id;
+
+        $('.portfolio.item-' + id + ' .more-close').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
+                $('.portfolio.item-' + id).animate({
+                    width: '-=' + width 
+                }, 1000, function() {
+                    $('.portfolio.item-' + id + ' > div').fadeIn(500, 'swing', function() {
+                        $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
+                        $('.neighbour-' + id).fadeIn(500, 'swing', function() {
+                            $('.portfolio.item-' + id + ' .more').fadeIn(500, 'swing');
+                        });
+                    })
+                });
+            });
+        })
 
         event.preventDefault();
     });

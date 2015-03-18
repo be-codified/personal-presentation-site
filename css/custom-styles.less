@@ -8,16 +8,20 @@
 /*** general
 *********************************************************/
 
-@main-color-1: #93b1bb; // blue
-@main-color-2: #b41c1c; // red
-@main-color-3: #fcb123; // orange
-@main-color-4: #7a7a7a; // portfolio
-@main-color-5: #332e2b; // brown
+@main-color-1: #93b1bb;                    // blue
+@main-color-2: #b41c1c;                    // red
+@main-color-3: #fcb123;                    // orange
+@main-color-4: darken(@main-color-1, 8%);; // portfolio
+@main-color-5: #332e2b;                    // brown
 @color-white:  #ffffff;
 
 body {
     background-color: @color-white;
     position: relative;
+}
+
+.container-fluid {
+    max-width: 1200px;
 }
 
 .clearfix { clear: both; }
@@ -432,6 +436,7 @@ ul.achievements {
         top: 0;
         margin: 25px 25px 0 0;
         color: blue;
+        display: none;
     }
 }
 
