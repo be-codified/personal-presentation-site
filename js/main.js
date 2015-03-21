@@ -148,4 +148,14 @@ $(document).ready(function() {
 
         event.preventDefault();
     });
+
+    // contacts animations
+    // *********************************************
+
+    $('.contacts li a').hover(function() {
+        $(this).animate({ marginLeft: '10px' }, 200);
+    }, function() {
+        $(this).animate({ marginLeft: '0px' }, 200);
+    });
+
 });
