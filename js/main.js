@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     function setColumnHeight(number) {
         var heightNeighbour = $('.neighbour-' + number).height();
-        $('.item-' + number).height(heightNeighbour);        
+        $('.item-' + number).height(heightNeighbour);         
     }
 
     // TODO: trying not to call code same thing twice
@@ -91,35 +91,15 @@ $(document).ready(function() {
 
         $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
             $('.neighbour-' + id).fadeOut(500, 'swing', function() {
+                $('.portfolio.item-' + id).addClass('colorful');
                 $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
                     $('.portfolio.item-' + id).animate({
                         width: '+=' + width 
                     }, 1000, function() {
                         $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
                     });
-                });     
-            });
-        });
+                });   
 
-        event.preventDefault();
-    });
-
-    // TODO: check what is going on with portfoliko element 2 and include it in above code
-
-    $('.more').on('click', function(event) {
-        id = 2;
-
-        $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
-            $('.neighbour-' + id).fadeOut(500, 'swing', function() {
-                /*
-                $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
-                    $('.portfolio.item-' + id).animate({
-                        width: '+=' + width 
-                    }, 1000, function() {
-                        $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
-                    });
-                });
-                */     
             });
         });
 
@@ -136,6 +116,7 @@ $(document).ready(function() {
                 $('.portfolio.item-' + id).animate({
                     width: '-=' + width 
                 }, 1000, function() {
+                    $('.portfolio.item-' + id).removeClass('colorful');
                     $('.portfolio.item-' + id + ' > div').fadeIn(500, 'swing', function() {
                         $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
                         $('.neighbour-' + id).fadeIn(500, 'swing', function() {

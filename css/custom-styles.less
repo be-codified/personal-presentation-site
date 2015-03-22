@@ -16,8 +16,9 @@
 @color-white:  #ffffff;
 
 body {
-    background-color: @color-white;
     position: relative;
+    background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
+    background-attachment: fixed;
 }
 
 .container-fluid {
@@ -407,11 +408,28 @@ ul.achievements {
         background-size: 90%;
         background-position: 50% 80%;
         background-repeat: no-repeat;        
+        -webkit-transition: background-image 2s ease-in-out;
+           -moz-transition: background-image 2s ease-in-out;
+            -ms-transition: background-image 2s ease-in-out;
+             -o-transition: background-image 2s ease-in-out;
+                transition: background-image 2s ease-in-out;
     }
 
-    &.item-1 { background-image: url('../img/portfolio-1.png'); }
-    &.item-2 { background-image: url('../img/portfolio-2.png'); } 
-    &.item-3 { background-image: url('../img/portfolio-3.png'); }
+    &.item-1 { background-image: url('../img/portfolio-1-initial.jpg'); }
+    &.item-2 { background-image: url('../img/portfolio-2-initial.jpg'); } 
+    &.item-3 { background-image: url('../img/portfolio-3-initial.jpg'); }
+
+    &.item-1.colorful {
+        -webkit-transition: all 2s ease-in-out;
+           -moz-transition: all 2s ease-in-out;
+            -ms-transition: all 2s ease-in-out;
+             -o-transition: all 2s ease-in-out;
+                transition: all 2s ease-in-out;
+    }
+
+    &.item-1.colorful { background-image: url('../img/portfolio-1.jpg'); }
+    &.item-2.colorful { background-image: url('../img/portfolio-2.jpg'); }
+    &.item-3.colorful { background-image: url('../img/portfolio-3.jpg'); }
 
     .more,
     .more-close {

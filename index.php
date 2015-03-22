@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="row main-color-1">
-                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 portfolio item-1"> 
+                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 portfolio item-1">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row main-color-4">
+                <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
@@ -137,7 +137,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2 pull-right">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Encyclopedia for adults</h2>
@@ -156,7 +156,7 @@
                             <p>HTML5, CSS3, jQuery, animations, back-end functionallity.</p>
                             <p>You can see it in action <a href="http://showcase.social-amaze.com/giveaway_iphone/index.php/giveaway/index" target="_blank">here</a>.</p>
                         </div>
-                        <a href="#" class="more-close pullright" data-id="3">close</a>
+                        <a href="#" class="more-close pull-right" data-id="3">close</a>
                         <a href="#" class="more" data-id="3"></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-3">
