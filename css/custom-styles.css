@@ -6,10 +6,12 @@
 *********************************************************/
 /*** general
 *********************************************************/
-body {
-  position: relative;
+html {
   background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
   background-attachment: fixed;
+}
+body {
+  position: relative;
 }
 .container-fluid {
   max-width: 1200px;
