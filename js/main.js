@@ -82,7 +82,7 @@ $(document).ready(function() {
     // portfolio see more animations
     // *********************************************
 
-    var width = '40%';
+    var width = '30%';
 
     // opening panel
 
@@ -91,11 +91,11 @@ $(document).ready(function() {
 
         $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
             $('.neighbour-' + id).fadeOut(500, 'swing', function() {
-                $('.portfolio.item-' + id).addClass('colorful');
                 $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
                     $('.portfolio.item-' + id).animate({
                         width: '+=' + width 
                     }, 1000, function() {
+                        $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
                         $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
                     });
                 });   
@@ -112,11 +112,11 @@ $(document).ready(function() {
         id = $(this).data().id;
 
         $('.portfolio.item-' + id + ' .more-close').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
             $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
                 $('.portfolio.item-' + id).animate({
                     width: '-=' + width 
                 }, 1000, function() {
-                    $('.portfolio.item-' + id).removeClass('colorful');
                     $('.portfolio.item-' + id + ' > div').fadeIn(500, 'swing', function() {
                         $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
                         $('.neighbour-' + id).fadeIn(500, 'swing', function() {
