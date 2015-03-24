@@ -15,6 +15,10 @@ module.exports = function(grunt) {
                 files: ['css/bootstrap.css'],
                 tasks: ['cssmin:bootstrap']
             },
+            minifyJs: {
+                files: ['js/main.js'],
+                tasks: ['minified']
+            },
             lessStyles: {
                 files: ['css/custom-styles.less'],
                 tasks: ['less:styles']
@@ -67,6 +71,19 @@ module.exports = function(grunt) {
                     dest: 'css/',
                     ext: '.min.css'
                 }]
+            }
+        },
+
+        // minifying js files        
+        minified : {
+            files: {
+                src: ['js/*.js'],
+                dest: 'js/'
+            },
+            options : {
+                ext: '.min.js',
+                sourcemap: false,
+                allinone: false
             }
         },
 
@@ -130,6 +147,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-minified');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-notify');
 
