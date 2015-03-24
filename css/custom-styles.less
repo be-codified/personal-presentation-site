@@ -15,13 +15,11 @@
 @main-color-5: #332e2b;                    // brown
 @color-white:  #ffffff;
 
-html {
-    background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
-    background-attachment: fixed;   
-}
-
 body {
     position: relative;
+    background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
+    background-attachment: fixed; 
+    background-size: 100%;
 }
 
 .container-fluid {
@@ -431,7 +429,7 @@ ul.achievements {
     }
 
     .more {
-        bottom: 0;
+        top: 0;
         width: 60px;
         height: 60px;
         background-image: url('../img/icon-eye.svg');
@@ -439,7 +437,7 @@ ul.achievements {
         background-repeat: no-repeat;
         background-size: 25px 25px;
         background-color: @main-color-3;
-        margin: 0 25px 25px 0;
+        margin: 50px 25px 25px 0;
     }
 
     .more-close {

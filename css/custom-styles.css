@@ -6,12 +6,11 @@
 *********************************************************/
 /*** general
 *********************************************************/
-html {
-  background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
-  background-attachment: fixed;
-}
 body {
   position: relative;
+  background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 .container-fluid {
   max-width: 1200px;
@@ -375,7 +374,7 @@ ul.achievements .desc {
   display: block;
 }
 .portfolio .more {
-  bottom: 0;
+  top: 0;
   width: 60px;
   height: 60px;
   background-image: url('../img/icon-eye.svg');
@@ -383,7 +382,7 @@ ul.achievements .desc {
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-color: #fcb123;
-  margin: 0 25px 25px 0;
+  margin: 50px 25px 25px 0;
 }
 .portfolio .more-close {
   top: 0;
