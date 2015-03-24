@@ -164,11 +164,11 @@ ul.plus-bullets li:before {
 ul.plus-bullets li:last-child {
   padding-bottom: 50px;
 }
-ul.strenghts li:before,
+ul.strengths li:before,
 .how-made ul li:before {
   color: #e86868;
 }
-ul.strenghts span.strong,
+ul.strengths span.strong,
 .how-made ul span.strong {
   background-color: #e45252;
   color: #fff;
@@ -296,7 +296,7 @@ ul.achievements li {
   margin: 0 0 10px 25px;
   width: 230px;
   display: block;
-  opacity: 0.85;
+  opacity: 1;
 }
 ul.achievements li:last-child {
   margin-bottom: 30px;
@@ -327,7 +327,7 @@ ul.achievements .desc {
   position: absolute;
   top: -73px;
   left: -41px;
-  width: 275px;
+  width: 295px;
   height: 40px;
   line-height: 40px;
   background-color: #e86868;
@@ -379,14 +379,26 @@ ul.achievements .desc {
   height: 60px;
   background-color: #fcb123;
   margin: 50px 25px 25px 0;
+  /* TODO: make a fancy animation of pupil fading in
+
+        &:hover:after {
+            background-image: url('../img/icon-eye-pupil.svg');
+
+            -webkit-transition: all 0.3s ease;
+               -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                 -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+        }
+        */
 }
 .portfolio .more:after {
   content: '';
   background-image: url('../img/icon-eye.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
-  opacity: 0.7;
+  background-size: 30px 30px;
+  opacity: 1;
   width: 60px;
   height: 60px;
   display: block;
@@ -395,9 +407,6 @@ ul.achievements .desc {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.portfolio .more:hover:after {
-  opacity: 1;
 }
 .portfolio .more-close {
   top: 0;
@@ -440,9 +449,4 @@ ul.achievements .desc {
 .contacts li a.twitter {
   background-image: url('../img/icon-twitter.svg');
   margin-top: -40px;
-}
-/*** flatten shadows
-*********************************************************/
-ul.achievements li {
-  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px, rgba(0, 0, 0, 0.05) 2px 2px, rgba(0, 0, 0, 0.05) 3px 3px, rgba(0, 0, 0, 0.05) 4px 4px, rgba(0, 0, 0, 0.05) 5px 5px, rgba(0, 0, 0, 0.05) 6px 6px, rgba(0, 0, 0, 0.05) 7px 7px, rgba(0, 0, 0, 0.05) 8px 8px, rgba(0, 0, 0, 0.05) 9px 9px, rgba(0, 0, 0, 0.05) 10px 10px, rgba(0, 0, 0, 0.05) 11px 11px, rgba(0, 0, 0, 0.045) 12px 12px, rgba(0, 0, 0, 0.04) 13px 13px, rgba(0, 0, 0, 0.035) 14px 14px, rgba(0, 0, 0, 0.03) 15px 15px, rgba(0, 0, 0, 0.025) 16px 16px, rgba(0, 0, 0, 0.02) 17px 17px, rgba(0, 0, 0, 0.015) 18px 18px, rgba(0, 0, 0, 0.01) 19px 19px, rgba(0, 0, 0, 0) 20px 20px;
 }

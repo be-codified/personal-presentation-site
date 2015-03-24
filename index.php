@@ -73,8 +73,8 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-margin">
-                                <h2>My main strenghts</h2>
-                                <ul class="plus-bullets strenghts">
+                                <h2>My main strengths</h2>
+                                <ul class="plus-bullets strengths">
                                     <li>strong understanding of developing for the web and <span class="strong reduced-right-padding">a careful eye for design</span>,</li>
                                     <li>exceptional ability to <span class="strong">translate designs</span> into semantic, accessible front-end code,</li>
                                     <li>strong understanding of <span class="strong">modern web technologies</span> and workflows,</li>
@@ -107,8 +107,8 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
-                                <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, transitions, animations) with CSS pre-processor <span class="strong reduced-right-padding">LESS</span>,</li>
-                                <li><span class="strong">jQuery</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <span class="strong">JavaScript</span></li>
+                                <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, transitions, animations) with CSS pre-processor <span class="strong reduced-right-padding">Less</span>,</li>
+                                <li><span class="strong">jQuery</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <span class="strong reduced-right-padding">JavaScript</span>,</li>
                                 <li><span class="strong">Git</span> (working with a team of developers, service GitHub and BitBucket),</li>
                                 <li><span class="strong">graphic tools</span> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>experienced in <span class="strong">frameworks or theme starters</span> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
@@ -123,7 +123,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
-                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>,<br /><span class="warning"><span>Warning:</span> You can easly fall in love with. Proceed to link with caution!</span></li>
+                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>,<br /><span class="warning"><span>Warning:</span> You can easily fall in love with it. Proceed to link with caution!</span></li>
                                 <li>
                                     <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> (framework for faster and easier web development), 
                                 </li>
@@ -134,7 +134,7 @@
                                     <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library,
                                 </li>
                                 <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome,</li>
-                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, HTML and CSS validation, CSS minify, LESS compiler, deployment),</li>
+                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, HTML and CSS validation, CSS minify, Less compiler, deployment),</li>
                                 <li>all running on a small thing called <a href="http://www.apple.com/macbook-pro/" target="_blank">Apple MacBook Pro</a> 13-inch</i>, extended to an external 24-inch monitor.</li>
                             </ul>
                         </div>
@@ -194,17 +194,16 @@
                             <ul class="plus-bullets">
                                 <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>),</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
-                                <li>calculation for working periods (how many years) are calculated automatically,</li>
+                                <li>calculation for working periods (the number of years) are calculated automatically,</li>
                                 <li>logo and contact icons are used in SVG format,</li>
-                                <li>CSS shadows are used with simple elements,</li>
                                 <li>CSS and JavaScript files have been minified,</li>
                                 <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.be-codified.com" target="_blank">PageSpeed Insights</a>,</li> 
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well.</li>
                             </ul>
                             <p>
-                                Design made with <i class="fa fa-heart fa-lg"></i><span class="reference-point"><span class="bubble">The icon should read as love.</span></span> by Groga Tancek and excellent profile <i class="fa fa-camera fa-lg"></i><span class="reference-point"><span class="bubble">The icon should read as photo.</span></span> provided by Ana Skobe.
+                                Design made with <i class="fa fa-heart fa-lg"></i><span class="reference-point"><span class="bubble">This icon should be read as love.</span></span> by Groga Tancek and excellent profile <i class="fa fa-camera fa-lg"></i><span class="reference-point"><span class="bubble">This icon should be read as photo.</span></span> provided by Ana Skobe.
                             </p>
-                            <p class="last">Feel free to see whole project code at <i class="fa fa-github-square fa-2x"></i> <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</p>
+                            <p class="last">Feel free to see the whole project code at the <i class="fa fa-github-square fa-2x"></i> <a href="https://github.com/be-codified/personal-presentation-site" target="_blank">GitHub</a> site.</p>
                         </div>
                     </div>
                 </div>
