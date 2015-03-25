@@ -73,6 +73,17 @@ header h1 a {
   background-size: cover;
   padding-top: 275px;
   display: block;
+  position: relative;
+}
+.profile .hire {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  padding: 15px 20px;
+  display: block;
+  line-height: 20px;
+  background-color: #b41c1c;
 }
 /*** typography
 *********************************************************/
@@ -129,6 +140,30 @@ ul.achievements .desc {
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
+}
+.hire a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  border-bottom: 1px solid #ffffff;
+  text-indent: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.hire a:hover,
+.hire a:active {
+  text-decoration: none;
+}
+.hire a:hover {
+  border-bottom: 1px solid #fcb123;
+  display: inline-block;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 h2 {
   padding: 40px 0;

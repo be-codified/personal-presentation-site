@@ -45,6 +45,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 profile">
+                        <p class="hire"><a href="#">I can be hired!</a></p>
                         <ul class="achievements">
                             <li>
                                 <span class="values text-center">
