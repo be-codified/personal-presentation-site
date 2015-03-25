@@ -315,7 +315,7 @@ ul.achievements .desc {
   padding: 11px 0 0 20px;
 }
 .business-owner {
-  background-color: #332e2b;
+  background-color: #646464;
   padding: 15px 0;
   position: relative;
 }
@@ -379,18 +379,6 @@ ul.achievements .desc {
   height: 60px;
   background-color: #fcb123;
   margin: 50px 25px 25px 0;
-  /* TODO: make a fancy animation of pupil fading in
-
-        &:hover:after {
-            background-image: url('../img/icon-eye-pupil.svg');
-
-            -webkit-transition: all 0.3s ease;
-               -moz-transition: all 0.3s ease;
-                -ms-transition: all 0.3s ease;
-                 -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
-        }
-        */
 }
 .portfolio .more:after {
   content: '';
@@ -419,34 +407,40 @@ ul.achievements .desc {
 }
 /*** icons
 *********************************************************/
+.contacts {
+  margin-top: 40px;
+}
 .contacts li {
   display: block;
+  text-indent: 0;
+  padding: 0 0 25px 0;
 }
 .contacts li a {
   display: inline-block;
-  padding-left: 100px;
-  background-positions: 0 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 100px 160px;
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
-  height: 120px;
-  padding-top: 44px;
 }
-.contacts li a.email {
+.contacts li a span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #b41c1c;
+  background-size: 35px 35px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+.contacts li a span.email {
   background-image: url('../img/icon-email.svg');
 }
-.contacts li a.skype {
+.contacts li a span.skype {
   background-image: url('../img/icon-skype.svg');
-  margin-top: -50px;
 }
-.contacts li a.phone {
+.contacts li a span.phone {
   background-image: url('../img/icon-phone.svg');
-  margin-top: -45px;
 }
-.contacts li a.twitter {
+.contacts li a span.twitter {
   background-image: url('../img/icon-twitter.svg');
-  margin-top: -40px;
 }

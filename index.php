@@ -171,16 +171,24 @@
                             <p>Please feel free to contact me by any communication channel:</p>
                             <ul class="contacts">
                                 <li>
-                                    <a href="mailto:ziga@be-codified.com" class="email">ziga@be-codified.com</a>
+                                    <a href="mailto:ziga@be-codified.com">
+                                        <span class="email"></span>ziga@be-codified.com
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="skype:ziga_vukcevic?call" class="skype">ziga_vukcevic</a>
+                                    <a href="skype:ziga_vukcevic?call">
+                                        <span class="skype"></span>ziga_vukcevic
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="tel: 0038651313680" class="phone">00386 51 313 680</a>
+                                    <a href="tel: 0038651313680">
+                                        <span class="phone"></span>00386 51 313 680
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/be_codified" class="twitter" target="_blank">@be_codified</a>
+                                    <a href="https://twitter.com/be_codified" target="_blank">
+                                        <span class="twitter"></span>@be_codified
+                                    </a>
                                 </li>
                             </ul>
                         </div>
