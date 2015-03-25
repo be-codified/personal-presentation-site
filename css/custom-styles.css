@@ -377,24 +377,21 @@ ul.achievements .desc {
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: #fcb123;
   margin: 50px 25px 25px 0;
-}
-.portfolio .more:after {
-  content: '';
+  background-color: #fcb123;
   background-image: url('../img/icon-eye.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  opacity: 1;
-  width: 60px;
-  height: 60px;
   display: block;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+}
+.portfolio .more:hover {
+  background-color: #f8a303;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .portfolio .more-close {
   top: 0;
@@ -443,4 +440,12 @@ ul.achievements .desc {
 }
 .contacts li a span.twitter {
   background-image: url('../img/icon-twitter.svg');
+}
+.contacts li a span:hover {
+  background-color: #951717;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }

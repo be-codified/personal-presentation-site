@@ -40,7 +40,7 @@ $(document).ready(function() {
     // counter animations
     // *********************************************
 
-    function counterAnimate(selector, number, sign){
+    function counterAnimate(selector, number, sign) {
         var counter = $.animateNumber.numberStepFactories.append(sign);            
 
         $(selector).animateNumber({

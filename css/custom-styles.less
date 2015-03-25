@@ -432,25 +432,21 @@ ul.achievements {
         top: 0;
         width: 60px;
         height: 60px;
-        background-color: @main-color-3;
         margin: 50px 25px 25px 0;
+        background-color: @main-color-3;
+        background-image: url('../img/icon-eye.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        display: block;
 
-        &:after {
-            content: '';
-            background-image: url('../img/icon-eye.svg');
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: 30px 30px;
-            opacity: 1;
-            width: 60px;
-            height: 60px;
-            display: block;
-
-            -webkit-transition: all 0.3s ease;
-               -moz-transition: all 0.3s ease;
-                -ms-transition: all 0.3s ease;
-                 -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
+        &:hover {
+            background-color: darken(@main-color-3, 7%); 
+            -webkit-transition: all 0.5s ease;
+               -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;            
         }
     }
 
@@ -508,6 +504,15 @@ ul.achievements {
 
                 &.twitter { 
                     background-image: url('../img/icon-twitter.svg');  
+                }
+            
+                &:hover {
+                    background-color: darken(@main-color-2, 7%);            
+                    -webkit-transition: all 0.5s ease;
+                       -moz-transition: all 0.5s ease;
+                        -ms-transition: all 0.5s ease;
+                         -o-transition: all 0.5s ease;
+                            transition: all 0.5s ease;  
                 }
             }
         }
