@@ -469,24 +469,18 @@ ul.achievements {
     .more,
     .more-close {
         position: absolute;        
+        top: 0;
         right: 0;
         display: block;
-    }
-
-    .more {
-        top: 0;
         width: 60px;
         height: 60px;
         margin: 50px 25px 25px 0;
-        background-color: @main-color-3;
-        background-image: url('../img/icon-eye.svg');
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 30px 30px;
         display: block;
 
         &:hover {
-            background-color: darken(@main-color-3, 7%); 
             -webkit-transition: all 0.5s ease;
                -moz-transition: all 0.5s ease;
                 -ms-transition: all 0.5s ease;
@@ -495,11 +489,18 @@ ul.achievements {
         }
     }
 
+    .more {
+        background-color: @main-color-3;
+        background-image: url('../img/icon-eye.svg');
+        
+        &:hover {
+            background-color: darken(@main-color-3, 7%);
+        }
+    }
+
     .more-close {
-        top: 0;
-        margin: 25px 25px 0 0;
-        color: blue;
         display: none;
+        background-image: url('../img/icon-cross.svg');
     }
 }
 

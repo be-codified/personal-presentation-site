@@ -101,7 +101,7 @@
                         </div>
                         <img src="img/portfolio-1.jpg" />
                         <img class="initial" src="img/portfolio-1-initial.jpg" />
-                        <a href="#" class="more-close" data-id="1">close</a>
+                        <a href="#" class="more-close" data-id="1"></a>
                         <a href="#" class="more" data-id="1"></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-1">
@@ -149,7 +149,7 @@
                         </div>
                         <img src="img/portfolio-2.jpg" />
                         <img class="initial" src="img/portfolio-2-initial.jpg" />
-                        <a href="#" class="more-close" data-id="2">close</a>
+                        <a href="#" class="more-close" data-id="2"></a>
                         <a href="#" class="more" data-id="2"></a>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                         </div>
                         <img src="img/portfolio-3.jpg" />
                         <img class="initial" src="img/portfolio-3-initial.jpg" />
-                        <a href="#" class="more-close pull-right" data-id="3">close</a>
+                        <a href="#" class="more-close pull-right" data-id="3"></a>
                         <a href="#" class="more" data-id="3"></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-3">

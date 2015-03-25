@@ -412,34 +412,34 @@ ul.achievements .desc {
 .portfolio .more,
 .portfolio .more-close {
   position: absolute;
-  right: 0;
-  display: block;
-}
-.portfolio .more {
   top: 0;
+  right: 0;
   width: 60px;
   height: 60px;
   margin: 50px 25px 25px 0;
-  background-color: #fcb123;
-  background-image: url('../img/icon-eye.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
   display: block;
 }
-.portfolio .more:hover {
-  background-color: #f8a303;
+.portfolio .more:hover,
+.portfolio .more-close:hover {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.portfolio .more {
+  background-color: #fcb123;
+  background-image: url('../img/icon-eye.svg');
+}
+.portfolio .more:hover {
+  background-color: #f8a303;
+}
 .portfolio .more-close {
-  top: 0;
-  margin: 25px 25px 0 0;
-  color: blue;
   display: none;
+  background-image: url('../img/icon-cross.svg');
 }
 .neighbour-1.opened {
   margin-left: -50%;
