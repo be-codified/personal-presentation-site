@@ -8,6 +8,14 @@ $(document).ready(function() {
         opacity: 1 
     }, 500, 'swing');
 
+    // scroll down animation to contact info
+    // *********************************************
+
+    $('.hire').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $('.neighbour-3').offset().top
+        }, 2000);
+    });
 
     // achievements calculations
     // *********************************************
