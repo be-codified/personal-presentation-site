@@ -109,7 +109,7 @@
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
                                 <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, transitions, animations) with CSS pre-processor <span class="strong reduced-right-padding">Less</span>,</li>
-                                <li><span class="strong">jQuery</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax) and <span class="strong reduced-right-padding">JavaScript</span>,</li>
+                                <li><span class="strong">jQuery</span> and <span class="strong">JavaScript</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax),</li>
                                 <li><span class="strong">Git</span> (working with a team of developers, service GitHub and BitBucket),</li>
                                 <li><span class="strong">graphic tools</span> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>experienced in <span class="strong">frameworks or theme starters</span> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
