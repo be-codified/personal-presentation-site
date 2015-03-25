@@ -80,8 +80,8 @@ header h1 a {
   top: 0;
   right: 0;
   margin-right: 40px;
-  padding: 15px 20px;
-  display: block;
+  padding: 20px 20px;
+  display: inline-block;
   line-height: 20px;
   background-color: #b41c1c;
 }
