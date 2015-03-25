@@ -42,8 +42,12 @@ $(document).ready(function() {
         }
     }
 
-    $('.years-web').html(timePeriod(dateWebindustry, dateToday, false));
-    $('.years-freelance').html(timePeriod(dateFreelancing, dateToday, true));
+    $('.years-web').html(
+        timePeriod(dateWebindustry, dateToday, false)
+    );
+    $('.years-freelance').html(
+        timePeriod(dateFreelancing, dateToday, true)
+    );
 
     // counter animations
     // *********************************************
