@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         // minifying js files        
         minified : {
             files: {
-                src: ['js/*.js'],
+                src: ['js/main.js'],
                 dest: 'js/'
             },
             options : {
