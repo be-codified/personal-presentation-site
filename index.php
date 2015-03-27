@@ -135,7 +135,7 @@
                                     <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library,
                                 </li>
                                 <li>debugging tools <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a> built into Google Chrome,</li>
-                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, HTML and CSS validation, CSS minify, Less compiler, deployment),</li>
+                                <li>JavaScript task runner <a href="http://gruntjs.com/" target="_blank">Grunt</a> (e.g. watch, livereload, HTML/CSS validation, CSS/JS minify, Less compiler, deployment),</li>
                                 <li>all running on a small thing called <a href="http://www.apple.com/macbook-pro/" target="_blank">Apple MacBook Pro</a> 13-inch</i>, extended to an external 24-inch monitor.</li>
                             </ul>
                         </div>
@@ -203,8 +203,8 @@
                             <ul class="plus-bullets">
                                 <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>),</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
+                                <li>logo, portfolio and contact icons are used in SVG format,</li>
                                 <li>calculation for working periods (the number of years) are calculated automatically,</li>
-                                <li>logo and contact icons are used in SVG format,</li>
                                 <li>CSS and JavaScript files have been minified,</li>
                                 <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.be-codified.com" target="_blank">PageSpeed Insights</a>,</li> 
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well.</li>
