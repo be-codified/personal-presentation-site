@@ -5,7 +5,7 @@ date:   2015-04-15 20:01:48
 categories: 
 ---
 
-> As I have started a new blog, I needed to define some rules how basic elements (pretty much the typography), should be displayed. For writing articles I am using [Jekyll][1], a simple static site generator. In addition to style guide I have been adding also a markdown syntax and CSS code.
+> As I have started a new blog, I needed to define some rules how basic elements (pretty much the typography), should be displayed. For writing articles I am using [Jekyll][1], a simple static site generator. In addition to style guide I have been adding also a [markdown syntax][2] and CSS code.
 
 ## What is a style guide?
 
@@ -41,7 +41,7 @@ Lorem ipsum, lorem ipsum. In the next reading you will get familiar with it.
 
 ###### Markdown syntax 
     
-    ###Heading 4 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+    ### Heading 3 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 
 ###### CSS code 
 
@@ -59,7 +59,7 @@ Lorem ipsum, lorem ipsum. In the next reading you will get familiar with it.
 
 ###### Markdown syntax 
     
-    ####Heading 4 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+    #### Heading 4 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 
 ###### CSS code 
 
@@ -151,7 +151,8 @@ NOTE: As I was using HTML elements e.g. title "Headings" or "Paragraph (includin
 
 * * *
 
-[1]: http://jekyllrb.com "Jekyll.com"
+[1]: http://jekyllrb.com "Jekyll"
+[2]: http://daringfireball.net/projects/markdown/ "Markdown"
 
 #### Sources:
 
