@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Test post"
-date:   2015-03-25 20:01:48
-categories: 
----
-
-Blah, blah.
