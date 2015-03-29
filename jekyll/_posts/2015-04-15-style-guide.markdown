@@ -147,7 +147,7 @@ Lorem [ipsum dolor](http://www.some-site.com) sit amet, consectetur adipisicing 
 
 This style guide will be live (as any style guide should be) and updated when needed so.
 
-NOTE: As I was using HTML elements e.g. title "Headings" or "Paragraph (including bold, italic, link)") in this blog post, they were specificly slighty modified for the proper display just in this post.
+NOTE: As I was using HTML elements e.g. title "Headings" or "Paragraph (including bold, italic, link)") in this blog post, they were specifically slightly modified for the proper display just in this post.
 
 * * *
 
