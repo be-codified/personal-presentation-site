@@ -5,8 +5,8 @@ date:   2015-04-15 20:01:48
 categories: 
 ---
 
-#Main heading Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+#Main heading... lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 
+##Subheading... lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 
-
+This is a paragraph.
