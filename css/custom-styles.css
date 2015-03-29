@@ -501,16 +501,25 @@ ul.achievements .desc {
 .blog h2,
 .blog h3,
 .blog h4 {
-  color: #749aa7;
-  margin-bottom: 20px;
-  padding: 0;
+  color: #b41c1c;
 }
 .blog h2 {
+  padding: 40px 0 0 0;
   font-size: 45px;
 }
 .blog h3 {
   font-size: 32px;
 }
 .blog h4 {
-  font-size: 24px;
+  font-size: 28px;
+}
+.blog h5 {
+  padding-top: 20px;
+  color: #93b1bb;
+  font-size: 22px;
+}
+.blog h6 {
+  padding-top: 20px;
+  color: #e99903;
+  font-size: 16px;
 }
