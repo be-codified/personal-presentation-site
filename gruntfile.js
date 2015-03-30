@@ -98,7 +98,8 @@ module.exports = function(grunt) {
                 src: '/Users/Ziga/Projekti/be_codified/site',
                 dest: '/public_html/development',
                 exclusions: [
-                    'node_modules', 
+                    'node_modules',
+                    'jekyll', 
                     '.git', '.gitignore', 'readme.md',
                     'gruntfile.js', 'package.json', 
                     'licence.txt', '.ftppass', 
