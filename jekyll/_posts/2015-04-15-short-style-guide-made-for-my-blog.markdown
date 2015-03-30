@@ -7,6 +7,12 @@ categories:
 
 > As I have started a new blog, I needed to define some rules how basic elements (pretty much the typography), should be displayed. For writing articles I am using [Jekyll][1], a simple static site generator. In addition to style guide I have been adding also a [markdown syntax][2] and CSS code.
 
+
+
+A style guide is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. A style guide establishes and enforces style to improve communication. To do that, it ensures consistency (within a document and across multiple documents) and enforces best practice in usage and in language composition, visual composition, orthography (including spelling, capitalization, hyphenation, and other punctuation), and typography. For academic and technical documents, a guide may also enforce best practice in ethics (such as authorship, research ethics, and disclosure), pedagogy (such as exposition and clarity), and compliance (technical and regulatory).
+
+
+
 ## What is a style guide?
 
 Lorem ipsum, lorem ipsum. In the next reading you will get familiar with it.
@@ -156,5 +162,5 @@ NOTE: As I was using HTML elements e.g. title "Headings" or "Paragraph (includin
 
 #### Sources:
 
-1. [Jekyll.com](http://jekyllrb.com) by Tom Preston-Werner, GitHub's co-founder
-2. [test.com](http://www.test.com) lorem ipsum 
+1. [test.com](http://en.wikipedia.org/wiki/Style_guide) lorem ipsum 
+2. [Jekyll.com](http://jekyllrb.com) by Tom Preston-Werner, GitHub's co-founder
