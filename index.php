@@ -73,7 +73,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-margin">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-padding">
                                 <h2>My main strengths</h2>
                                 <ul class="plus-bullets strengths">
                                     <li>strong understanding of developing for the web and <span class="strong reduced-right-padding">a careful eye for design,</span></li>
@@ -120,6 +120,18 @@
                     </div>
                 </div>
                 <div class="row main-color-1">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                            <p class="latest">Latest work</p>
+                            <h2>Encyclopedia for adults</h2>
+                            <p>HTML5, CSS3, integration with CMS, plugins integration.</p>
+                            <p>You can see it in action <a href="http://www.sex2.si" target="_blank">here</a>.</p>
+                        </div>
+                        <img src="img/portfolio-2.jpg" />
+                        <img class="initial" src="img/portfolio-2-initial.jpg" />
+                        <a href="#" class="more-close" data-id="2"></a>
+                        <a href="#" class="more" data-id="2"></a>
+                    </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
@@ -139,18 +151,6 @@
                                 <li>all running on a small thing called <a href="http://www.apple.com/macbook-pro/" target="_blank">Apple MacBook Pro</a> 13-inch</i>, extended to an external 24-inch monitor.</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-                            <p class="latest">Latest work</p>
-                            <h2>Encyclopedia for adults</h2>
-                            <p>HTML5, CSS3, integration with CMS, plugins integration.</p>
-                            <p>You can see it in action <a href="http://www.sex2.si" target="_blank">here</a>.</p>
-                        </div>
-                        <img src="img/portfolio-2.jpg" />
-                        <img class="initial" src="img/portfolio-2-initial.jpg" />
-                        <a href="#" class="more-close" data-id="2"></a>
-                        <a href="#" class="more" data-id="2"></a>
                     </div>
                 </div>
                 <div class="row main-color-1">

@@ -223,8 +223,8 @@ ul.tools li span.strong {
   padding: 2px 6px;
   border-bottom: 3px solid #93b1bb;
 }
-.additional-left-margin {
-  padding-left: 5%;
+.additional-left-padding {
+  padding-left: 2.5%;
 }
 ul li span.strong.reduced-right-padding {
   padding-right: 3px;
@@ -270,7 +270,6 @@ ul.tools i.fa-heart,
 .how-made i.fa-heart,
 ul.tools i.fa-camera,
 .how-made i.fa-camera {
-  border-bottom: 1px dotted #ffffff;
   padding-bottom: 7px;
 }
 ul.tools i:hover + .reference-point .bubble,
@@ -525,11 +524,8 @@ ul.achievements .desc {
 }
 /*** media behavour
 *********************************************************/
-/* Extra Small */
+/* extra small devices */
 @media (max-width: 767px) {
-  .portfolio.item-2 {
-    background-color: red;
-  }
   .portfolio .more {
     display: none;
   }
@@ -541,11 +537,24 @@ ul.achievements .desc {
     position: relative;
   }
 }
-/* Small */
-/* Medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .portfolio.item-2 {
-    float: right;
+/* small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .how-made i.fa-heart,
+  .how-made i.fa-camera {
+    border-bottom: 1px dotted #ffffff;
   }
 }
-/* Large */
+/* medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .how-made i.fa-heart,
+  .how-made i.fa-camera {
+    border-bottom: 1px dotted #ffffff;
+  }
+}
+/* large devices */
+@media (min-width: 1200px) {
+  .how-made i.fa-heart,
+  .how-made i.fa-camera {
+    border-bottom: 1px dotted #ffffff;
+  }
+}

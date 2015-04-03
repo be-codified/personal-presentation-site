@@ -268,7 +268,7 @@ ul.tools {
     }
 }
 
-.additional-left-margin { padding-left: 5%; }
+.additional-left-padding { padding-left: 2.5%; }
 
 ul li span.strong.reduced-right-padding { padding-right: 3px; }
 
@@ -309,7 +309,6 @@ ul.tools,
 
     i.fa-heart,
     i.fa-camera {
-        border-bottom: 1px dotted @color-white;
         padding-bottom: 7px;
     }
 
@@ -590,16 +589,11 @@ ul.achievements {
 /*** media behavour
 *********************************************************/
 
-/* Extra Small */
-@media(max-width: 767px) {
-    .neighbour-2 {
+// TODO: group properties
 
-    }
-
+/* extra small devices */
+@media (max-width: 767px) {
     .portfolio {
-        &.item-2 {
-            background-color: red;
-        }
         .more {
             display: none;
         }
@@ -615,15 +609,32 @@ ul.achievements {
     }
 }
 
-/* Small */
-@media(min-width:768px) and (max-width:991px) {}
-
-/* Medium */
-@media(min-width:992px) and (max-width:1199px) {
-    .portfolio.item-2 {
-        float: right;
+/* small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .how-made {
+        i.fa-heart,
+        i.fa-camera {
+            border-bottom: 1px dotted @color-white;
+        }
     }
 }
 
-/* Large */
-@media(min-width:1200px){}
+/* medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .how-made {
+        i.fa-heart,
+        i.fa-camera {
+            border-bottom: 1px dotted @color-white;
+        }
+    }
+}
+
+/* large devices */
+@media (min-width: 1200px) {
+    .how-made {
+        i.fa-heart,
+        i.fa-camera {
+            border-bottom: 1px dotted @color-white;
+        }
+    }
+}
