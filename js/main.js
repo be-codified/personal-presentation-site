@@ -101,14 +101,14 @@ $(document).ready(function() {
     $('.more').on('click', function(event) {
         id = $(this).data().id;
 
-        $('.portfolio.item-' + id + ' .more').fadeOut(500, 'swing', function() {
-            $('.neighbour-' + id).fadeOut(500, 'swing', function() {
-                $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
+        $('.portfolio.item-' + id + ' .more').fadeOut(300, 'swing', function() {
+            $('.neighbour-' + id).fadeOut(300, 'swing', function() {
+                $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
                     $('.portfolio.item-' + id).animate({
                         width: '+=' + width 
-                    }, 1000, function() {
+                    }, 750, 'easeInOutQuint', function() {
                         $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
-                        $('.portfolio.item-' + id + ' .more-close').fadeIn(500, 'swing');
+                        $('.portfolio.item-' + id + ' .more-close').fadeIn(300, 'swing');
                     });
                 });   
 
@@ -123,16 +123,16 @@ $(document).ready(function() {
     $('.more-close').on('click', function(event) {
         id = $(this).data().id;
 
-        $('.portfolio.item-' + id + ' .more-close').fadeOut(500, 'swing', function() {
+        $('.portfolio.item-' + id + ' .more-close').fadeOut(300, 'swing', function() {
             $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
-            $('.portfolio.item-' + id + ' > div').fadeOut(500, 'swing', function() {
+            $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
                 $('.portfolio.item-' + id).animate({
                     width: '-=' + width 
-                }, 1000, function() {
-                    $('.portfolio.item-' + id + ' > div').fadeIn(500, 'swing', function() {
+                }, 750, 'easeInOutQuint', function() {
+                    $('.portfolio.item-' + id + ' > div').fadeIn(300, 'swing', function() {
                         $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
-                        $('.neighbour-' + id).fadeIn(500, 'swing', function() {
-                            $('.portfolio.item-' + id + ' .more').fadeIn(500, 'swing');
+                        $('.neighbour-' + id).fadeIn(300, 'swing', function() {
+                            $('.portfolio.item-' + id + ' .more').fadeIn(300, 'swing');
                         });
                     })
                 });

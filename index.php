@@ -232,6 +232,7 @@
     
         <!-- jquery, animations and main script -->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/lib/jquery.animateNumber.min.js"></script>
         <script type="text/javascript" src="js/main.min.js?v=<?php echo time(); ?>"></script>
     </body>
