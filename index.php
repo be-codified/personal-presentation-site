@@ -76,17 +76,17 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 additional-left-margin">
                                 <h2>My main strengths</h2>
                                 <ul class="plus-bullets strengths">
-                                    <li>strong understanding of developing for the web and <span class="strong reduced-right-padding">a careful eye for design</span>,</li>
+                                    <li>strong understanding of developing for the web and <span class="strong reduced-right-padding">a careful eye for design,</span></li>
                                     <li>exceptional ability to <span class="strong">translate designs</span> into semantic, accessible front-end code,</li>
                                     <li>strong understanding of <span class="strong">modern web technologies</span> and workflows,</li>
                                     <li>strong understanding of mobile and <span class="strong">responsive design</span> and development practices,</li>
-                                    <li>solid understanding of <span class="strong reduced-right-padding">designing in a browser</span>,</li>
+                                    <li>solid understanding of <span class="strong reduced-right-padding">designing in a browser,</span></li>
                                     <li>solid understanding of <span class="strong">integration or modification of front-end code</span> with CMSs (i.e. Wordpress, Magento),</li>
-                                    <li>solid understanding of <span class="strong reduced-right-padding">SEO</span>,</li>
-                                    <li>solid understanding and appreciation of <span class="strong reduced-right-padding">colour and typography</span>,</li>
+                                    <li>solid understanding of <span class="strong reduced-right-padding">SEO,</span></li>
+                                    <li>solid understanding and appreciation of <span class="strong reduced-right-padding">colour and typography,</span></li>
                                     <li>ability to work directly with designers to <span class="strong">implement designs</span> and provide feedback on design if needed,</li>
-                                    <li>excellent <span class="strong reduced-right-padding">communication skills</span>,</li>
-                                    <li>ability to dive in and learn new things to <span class="strong reduced-right-padding">find solutions for technical problems</span>.</li>
+                                    <li>excellent <span class="strong reduced-right-padding">communication skills,</span></li>
+                                    <li>ability to dive in and learn new things to <span class="strong reduced-right-padding">find solutions for technical problems.</span></li>
                                 </ul>
                         </div>
                     </div>
@@ -108,12 +108,12 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>My main skills</h2>
                             <ul class="plus-bullets skills">
-                                <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, transitions, animations) with CSS pre-processor <span class="strong reduced-right-padding">Less</span>,</li>
+                                <li><span class="strong">HTML5</span> (modern markup), <span class="strong">CSS3</span> (modern properties, web font embeding, SVG, transitions, animations) with CSS pre-processor <span class="strong reduced-right-padding">Less,</span></li>
                                 <li><span class="strong">jQuery</span> and <span class="strong">JavaScript</span> (DOM elements manipulation, handling events, JSON parsing and using Ajax),</li>
                                 <li><span class="strong">Git</span> (working with a team of developers, service GitHub and BitBucket),</li>
                                 <li><span class="strong">graphic tools</span> (i.e. Adobe Photoshop and Illustrator),</li>
                                 <li>experienced in <span class="strong">frameworks or theme starters</span> (i.e. Bootstrap, Html5Boilerplate, _s),</li>
-                                <li><span class="strong">cross-browser</span> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <span class="strong">cross-platform</span> (Android, iOS iPhone/iPad) <span class="strong reduced-right-padding">compatibility testing</span>,</li>
+                                <li><span class="strong">cross-browser</span> (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and <span class="strong">cross-platform</span> (Android, iOS iPhone/iPad) <span class="strong reduced-right-padding">compatibility testing,</span></li>
                                 <li>basic understanding of PHP and MySQL.</li>
                             </ul>
                         </div>
