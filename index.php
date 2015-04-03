@@ -201,7 +201,7 @@
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">
-                                <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber">animateNumber</a>),</li>
+                                <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber" target="_blank">animateNumber</a> and <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a>),</li>
                                 <li>by using responsive design and Bootstrap framework,</li>
                                 <li>logo, portfolio and contact icons are used in SVG format,</li>
                                 <li>calculation for working periods (the number of years) are calculated automatically,</li>
