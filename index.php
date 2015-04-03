@@ -124,12 +124,12 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
-                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>,<br /><span class="warning"><span>Warning:</span> You can easily fall in love with it. Proceed to link with caution!</span></li>
+                                <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2,</a><br /><span class="warning"><span>Warning:</span> You can easily fall in love with it. Proceed to link with caution!</span></li>
                                 <li>
                                     <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> (framework for faster and easier web development), 
                                 </li>
                                 <li>
-                                    CSS pre-processor <a href="http://lesscss.org/" target="_blank">Less</a>,
+                                    CSS pre-processor <a href="http://lesscss.org/" target="_blank">Less,</a>
                                 </li>
                                 <li>
                                     <a href="http://jquery.com/" target="_blank">jQuery</a> &ndash; fast, small, and feature-rich JavaScript library,
@@ -140,7 +140,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2 pull-right">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Encyclopedia for adults</h2>
@@ -201,12 +201,12 @@
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">
-                                <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber" target="_blank">animateNumber</a> and <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a>),</li>
+                                <li>HTML5, CSS3 (using Less), jQuery and animations (plugin <a href="https://github.com/aishek/jquery-animateNumber" target="_blank">animateNumber</a> and <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing),</a></li>
                                 <li>by using responsive design and Bootstrap framework,</li>
                                 <li>logo, portfolio and contact icons are used in SVG format,</li>
                                 <li>calculation for working periods (the number of years) are calculated automatically,</li>
                                 <li>CSS and JavaScript files have been minified,</li>
-                                <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.be-codified.com" target="_blank">PageSpeed Insights</a>,</li> 
+                                <li>site was checked with HTML5 and CSS3 validator and <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.be-codified.com" target="_blank">PageSpeed Insights,</a></li> 
                                 <li>cross-browser (i.e. Chrome, Firefox, Safari, Internet Explorer 9+) and cross-platform (Android, iOS iPhone/iPad) compatibility was tested as well.</li>
                             </ul>
                             <p>

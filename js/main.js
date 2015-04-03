@@ -81,15 +81,18 @@ $(document).ready(function() {
 
     // TODO: trying not to call code same thing twice
 
-    $(window).resize(function() {
+    if ($(window).width() > 1000) {
+        console.log('i am large');
+        $(window).resize(function() {
+            for (var i = 1; i <= 3; i++) {
+                setColumnHeight(i);
+            }
+        });
+
         for (var i = 1; i <= 3; i++) {
             setColumnHeight(i);
-        }
-    });
-
-    for (var i = 1; i <= 3; i++) {
-        setColumnHeight(i);
-    }
+        }    
+    } 
 
     // portfolio see more animations
     // *********************************************

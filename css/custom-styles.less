@@ -586,3 +586,44 @@ ul.achievements {
         font-size: 16px; 
     }     
 }
+
+/*** media behavour
+*********************************************************/
+
+/* Extra Small */
+@media(max-width: 767px) {
+    .neighbour-2 {
+
+    }
+
+    .portfolio {
+        &.item-2 {
+            background-color: red;
+        }
+        .more {
+            display: none;
+        }
+
+        img:not(.initial) {
+            display: none;
+        }
+
+        img {
+            margin-top: 30px;
+            position: relative;
+        }
+    }
+}
+
+/* Small */
+@media(min-width:768px) and (max-width:991px) {}
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px) {
+    .portfolio.item-2 {
+        float: right;
+    }
+}
+
+/* Large */
+@media(min-width:1200px){}
