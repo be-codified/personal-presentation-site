@@ -9,9 +9,9 @@
     ExpiresByType image/png "access plus 3 months"
     ExpiresByType image/x-png "access plus 3 months"
     ExpiresByType text/css "access plus 1 second"
-    ExpiresByType text/javascript "access plus 1 second"
-    ExpiresByType application/x-javascript "access plus 1 second"
-    ExpiresByType application/javascript "access plus 1 second"
+    ExpiresByType text/javascript "access 1 hour"
+    ExpiresByType application/x-javascript "access 1 hour"
+    ExpiresByType application/javascript "access 1 hour"
     ExpiresByType image/x-icon "access plus 1 month"
 
     # Add correct content-type for fonts 
