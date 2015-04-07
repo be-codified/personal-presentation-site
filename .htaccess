@@ -3,20 +3,20 @@
     ExpiresActive On 
 
     # Default directive
-    ExpiresDefault "access plus 1 minute"
+    ExpiresDefault "access 1 minute"
 
     # My favicon
-    ExpiresByType image/x-icon "access plus 1 minute
+    ExpiresByType image/x-icon "access 1 minute
 
     # Images
-    ExpiresByType image/gif "access plus 1 minute"
-    ExpiresByType image/png "access plus 1 minute"
-    ExpiresByType image/jpg "access plus 1 minute"
-    ExpiresByType image/jpeg "access plus 1 minute"
+    ExpiresByType image/gif "access 1 minute"
+    ExpiresByType image/png "access 1 minute"
+    ExpiresByType image/jpg "access 1 minute"
+    ExpiresByType image/jpeg "access 1 minute"
 
     # CSS
     ExpiresByType text/css "access 1 minute”
 
     # Javascript
-    ExpiresByType application/javascript "access plus 1 minute"
+    ExpiresByType application/javascript "access 1 minute"
 </IfModule>
