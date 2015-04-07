@@ -8,8 +8,8 @@
         <title>be-codified.com | freelance front-end web developer</title>
 
         <!-- stylesheets -->
-        <link href="css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
-        <link href="css/custom-styles.min.css?v=<?php echo time(); ?>" rel="stylesheet" media="screen" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+        <link href="css/custom-styles.min.css" rel="stylesheet" media="screen" />
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
         <!-- icons -->
@@ -234,6 +234,6 @@
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/lib/jquery.animateNumber.min.js"></script>
-        <script type="text/javascript" src="js/main.min.js?v=<?php echo time(); ?>"></script>
+        <script type="text/javascript" src="js/main.min.js"></script>
     </body>
 </html>
