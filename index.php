@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="row main-color-1">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-2">
+                    <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-6 col-lg-6 portfolio item-2">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <p class="latest">Latest work</p>
                             <h2>Encyclopedia for adults</h2>
@@ -132,7 +132,7 @@
                         <a href="#" class="more-close" data-id="2"></a>
                         <a href="#" class="more" data-id="2"></a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main-color-1 neighbour-2">
+                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-6 col-lg-6 main-color-1 neighbour-2 ">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
