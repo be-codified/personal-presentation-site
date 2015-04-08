@@ -79,12 +79,13 @@ header h1 a {
 .profile .hire {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  margin-right: 40px;
   padding: 20px 20px;
   display: inline-block;
   line-height: 20px;
   background-color: #b41c1c;
+  text-align: center;
 }
 /*** typography
 *********************************************************/
@@ -334,8 +335,8 @@ ul.achievements li {
   text-indent: 0;
   padding: 0;
   background-color: #93b1bb;
-  margin: 0 0 10px 25px;
-  width: 230px;
+  margin: 0 0 10px 2.5%;
+  width: 95%;
   display: block;
   opacity: 1;
 }
@@ -535,6 +536,9 @@ ul.achievements .desc {
   .portfolio img {
     margin-top: 30px;
     position: relative;
+  }
+  .bubble {
+    display: none;
   }
 }
 /* small devices */
