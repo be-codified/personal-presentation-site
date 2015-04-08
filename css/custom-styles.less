@@ -555,6 +555,20 @@ ul.achievements {
     }
 }
 
+/*** preloader
+*********************************************************/
+
+.preloader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    z-index: 2;
+    text-align: center;
+}
+
 /*** blog
 *********************************************************/
 
@@ -590,57 +604,44 @@ ul.achievements {
 /*** media behavour
 *********************************************************/
 
-// TODO: group properties
-
-/* extra small devices */
-@media (max-width: 767px) {
+/* extra small devices and above */
+@media (min-width: 0) {
     .portfolio {
         .more {
-            display: none;
-        }
-
-        img:not(.initial) {
             display: none;
         }
 
         img {
             margin-top: 30px;
             position: relative;
+
+            &:not(.initial) {
+                display: none;
+            }
         }
     }
 
     .bubble {
         display: none;
     }
+}
+
+/* small devices and above */
+@media (min-width: 768px) {
 
 }
 
-/* small devices */
-@media (min-width: 768px) and (max-width: 991px) {
+/* medium devices and above */
+@media (min-width: 992px) {
     .how-made {
         i.fa-heart,
         i.fa-camera {
             border-bottom: 1px dotted @color-white;
         }
-    }
+    }  
 }
 
-/* medium devices */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .how-made {
-        i.fa-heart,
-        i.fa-camera {
-            border-bottom: 1px dotted @color-white;
-        }
-    }
-}
-
-/* large devices */
+/* large devices and above */
 @media (min-width: 1200px) {
-    .how-made {
-        i.fa-heart,
-        i.fa-camera {
-            border-bottom: 1px dotted @color-white;
-        }
-    }
+
 }

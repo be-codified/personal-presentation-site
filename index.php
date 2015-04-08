@@ -30,6 +30,9 @@
         </script>
     </head>
     <body>
+        <div class="preloader">
+            Some preloader content
+        </div>
         <div class="container-fluid">
             <article>
                 <div class="row main-color-1">
