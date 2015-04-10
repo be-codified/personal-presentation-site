@@ -500,9 +500,12 @@ ul.achievements .desc {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: #93b1bb;
   z-index: 2;
   text-align: center;
+}
+.preloader img {
+  margin-top: 150px;
 }
 /*** blog
 *********************************************************/

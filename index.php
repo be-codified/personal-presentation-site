@@ -31,7 +31,7 @@
     </head>
     <body>
         <div class="preloader">
-            Some preloader content
+            <img src="img/loading.gif" alt="Loading..." />
         </div>
         <div class="container-fluid">
             <article>
