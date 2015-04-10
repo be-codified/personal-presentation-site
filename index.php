@@ -233,7 +233,8 @@
             </footer>
         </div>
     
-        <!-- jquery, animations and main script -->
+        <!-- images loaded, jquery, animations and main script -->
+        <script type="text/javascript" src="js/lib/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.easing.1.3.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.animateNumber.min.js"></script>

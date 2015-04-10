@@ -1,147 +1,155 @@
 $(document).ready(function() {
 
-    // logo animation
+    // preloader
     // *********************************************
 
-    $('header h1').animate({
-        marginTop: '+=90px',
-        opacity: 1 
-    }, 500, 'swing');
+    imagesLoaded(document.querySelector('body'), function(instance) {
+        $('.preloader img').fadeOut(500, function() {
+            $('.preloader').fadeOut(1000, function() {
+                // logo animation
+                // *********************************************
 
-    // scroll down animation to contact info
-    // *********************************************
+                $('header h1').animate({
+                    marginTop: '+=90px',
+                    opacity: 1 
+                }, 500, 'swing');
 
-    $('.hire a').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('.neighbour-3').offset().top
-        }, 2000);
-    });
+                // scroll down animation to contact info
+                // *********************************************
 
-    // achievements calculations
-    // *********************************************
+                $('.hire a').on('click', function() {
+                    $('html, body').animate({
+                        scrollTop: $('.neighbour-3').offset().top
+                    }, 2000);
+                });
 
-    // setting two important dates and today
+                // achievements calculations
+                // *********************************************
 
-    var dateWebindustry = new Date('2007-06-01'),
-        dateFreelancing = new Date('2013-01-01'),
-        dateToday       = new Date();
+                // setting two important dates and today
 
-    // function for calculating difference between
-    // two dates and returning it as integer or string
-    // NOTE: use true or false for $return_string
+                var dateWebindustry = new Date('2007-06-01'),
+                    dateFreelancing = new Date('2013-01-01'),
+                    dateToday       = new Date();
 
-    function timePeriod(dateStart, dateEnd, returnString) {
-        var period = Math.round(new Date(dateEnd - dateStart)/1000/60/60/24/365);
+                // function for calculating difference between
+                // two dates and returning it as integer or string
+                // NOTE: use true or false for $return_string
 
-        if (returnString) {
-            var integerToString = ['two', 'three', 'four', 'five', 'six'];
-            return integerToString[period - 2];             
-        }
-        else {
-            return period;          
-        }
-    }
+                function timePeriod(dateStart, dateEnd, returnString) {
+                    var period = Math.round(new Date(dateEnd - dateStart)/1000/60/60/24/365);
 
-    $('.years-web').html(
-        timePeriod(dateWebindustry, dateToday, false)
-    );
-    $('.years-freelance').html(
-        timePeriod(dateFreelancing, dateToday, true)
-    );
-
-    // counter animations
-    // *********************************************
-
-    function counterAnimate(selector, number, sign) {
-        var counter = $.animateNumber.numberStepFactories.append(sign);            
-
-        $(selector).animateNumber({
-                number: number,
-                easing: 'easeInQuad',
-                numberStep: counter
-            }, 2000, function() {
-                if (sign) {
-                    $(selector).append('');
+                    if (returnString) {
+                        var integerToString = ['two', 'three', 'four', 'five', 'six'];
+                        return integerToString[period - 2];             
+                    }
+                    else {
+                        return period;          
+                    }
                 }
-            }
-        );        
-    }
 
-    counterAnimate('.counter.normal', timePeriod(dateWebindustry, dateToday, false), '');
-    counterAnimate('.counter.small', 90, '+');
-    counterAnimate('.counter.smaller', 150, '+');
+                $('.years-web').html(
+                    timePeriod(dateWebindustry, dateToday, false)
+                );
+                $('.years-freelance').html(
+                    timePeriod(dateFreelancing, dateToday, true)
+                );
 
-    // portfolio column (same heigth as neighbour element)
-    // ***************************************************
+                // counter animations
+                // *********************************************
 
-    function setColumnHeight(number) {
-        var heightNeighbour = $('.neighbour-' + number).height();
-        $('.item-' + number).height(heightNeighbour);         
-    }
+                function counterAnimate(selector, number, sign) {
+                    var counter = $.animateNumber.numberStepFactories.append(sign);            
 
-    // TODO: trying not to call code same thing twice
+                    $(selector).animateNumber({
+                            number: number,
+                            easing: 'easeInQuad',
+                            numberStep: counter
+                        }, 2000, function() {
+                            if (sign) {
+                                $(selector).append('');
+                            }
+                        }
+                    );        
+                }
 
-    if ($(window).width() > 1000) {
-        console.log('i am large');
-        $(window).resize(function() {
-            for (var i = 1; i <= 3; i++) {
-                setColumnHeight(i);
-            }
-        });
+                counterAnimate('.counter.normal', timePeriod(dateWebindustry, dateToday, false), '');
+                counterAnimate('.counter.small', 90, '+');
+                counterAnimate('.counter.smaller', 150, '+');
 
-        for (var i = 1; i <= 3; i++) {
-            setColumnHeight(i);
-        }    
-    } 
+                // portfolio column (same heigth as neighbour element)
+                // ***************************************************
 
-    // portfolio see more animations
-    // *********************************************
+                function setColumnHeight(number) {
+                    var heightNeighbour = $('.neighbour-' + number).height();
+                    $('.item-' + number).height(heightNeighbour);         
+                }
 
-    var width = '30%';
+                // TODO: trying not to call code same thing twice
 
-    // opening panel
-
-    $('.more').on('click', function(event) {
-        id = $(this).data().id;
-
-        $('.portfolio.item-' + id + ' .more').fadeOut(300, 'swing', function() {
-            $('.neighbour-' + id).fadeOut(300, 'swing', function() {
-                $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                    $('.portfolio.item-' + id).animate({
-                        width: '+=' + width 
-                    }, 750, 'easeInOutQuint', function() {
-                        $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
-                        $('.portfolio.item-' + id + ' .more-close').fadeIn(300, 'swing');
+                if ($(window).width() > 1000) {
+                    $(window).resize(function() {
+                        for (var i = 1; i <= 3; i++) {
+                            setColumnHeight(i);
+                        }
                     });
-                });   
 
-            });
-        });
+                    for (var i = 1; i <= 3; i++) {
+                        setColumnHeight(i);
+                    }    
+                } 
 
-        event.preventDefault();
-    });
+                // portfolio see more animations
+                // *********************************************
 
-    // closing panel
+                var width = '30%';
 
-    $('.more-close').on('click', function(event) {
-        id = $(this).data().id;
+                // opening panel
 
-        $('.portfolio.item-' + id + ' .more-close').fadeOut(300, 'swing', function() {
-            $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
-            $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                $('.portfolio.item-' + id).animate({
-                    width: '-=' + width 
-                }, 750, 'easeInOutQuint', function() {
-                    $('.portfolio.item-' + id + ' > div').fadeIn(300, 'swing', function() {
-                        $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
-                        $('.neighbour-' + id).fadeIn(300, 'swing', function() {
-                            $('.portfolio.item-' + id + ' .more').fadeIn(300, 'swing');
+                $('.more').on('click', function(event) {
+                    id = $(this).data().id;
+
+                    $('.portfolio.item-' + id + ' .more').fadeOut(300, 'swing', function() {
+                        $('.neighbour-' + id).fadeOut(300, 'swing', function() {
+                            $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
+                                $('.portfolio.item-' + id).animate({
+                                    width: '+=' + width 
+                                }, 750, 'easeInOutQuint', function() {
+                                    $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
+                                    $('.portfolio.item-' + id + ' .more-close').fadeIn(300, 'swing');
+                                });
+                            });   
+
+                        });
+                    });
+
+                    event.preventDefault();
+                });
+
+                // closing panel
+
+                $('.more-close').on('click', function(event) {
+                    id = $(this).data().id;
+
+                    $('.portfolio.item-' + id + ' .more-close').fadeOut(300, 'swing', function() {
+                        $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
+                        $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
+                            $('.portfolio.item-' + id).animate({
+                                width: '-=' + width 
+                            }, 750, 'easeInOutQuint', function() {
+                                $('.portfolio.item-' + id + ' > div').fadeIn(300, 'swing', function() {
+                                    $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
+                                    $('.neighbour-' + id).fadeIn(300, 'swing', function() {
+                                        $('.portfolio.item-' + id + ' .more').fadeIn(300, 'swing');
+                                    });
+                                })
+                            });
                         });
                     })
+
+                    event.preventDefault();
                 });
             });
-        })
-
-        event.preventDefault();
+        });
     });
 });
