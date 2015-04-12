@@ -269,8 +269,6 @@ ul.tools {
     }
 }
 
-.additional-left-padding { padding-left: 2.5%; }
-
 ul li span.strong.reduced-right-padding { padding-right: 3px; }
 
 ul.tools,
@@ -415,6 +413,7 @@ ul.achievements {
         position: relative;
 
         .bubble {
+            display: none;
             visibility: hidden;
             opacity: 0;
             position: absolute;
@@ -469,17 +468,16 @@ ul.achievements {
 
     .more,
     .more-close {
+        display: none;
         position: absolute;        
         top: 0;
         right: 0;
-        display: block;
         width: 60px;
         height: 60px;
         margin: 50px 25px 25px 0;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 30px 30px;
-        display: block;
 
         &:hover {
             -webkit-transition: all 0.5s ease;
@@ -610,11 +608,10 @@ ul.achievements {
 
 /* extra small devices and above */
 @media (min-width: 0) {
-    .portfolio {
-        .more {
-            display: none;
-        }
 
+    /* .additional-left-padding { padding-left: 2.5%; } */ 
+
+    .portfolio {
         img {
             margin-top: 30px;
             position: relative;
@@ -624,23 +621,46 @@ ul.achievements {
             }
         }
     }
-
-    .bubble {
-        display: none;
-    }
 }
 
 /* small devices and above */
 @media (min-width: 768px) {
+    .profile {
+        padding-top: 310px;
 
+        .hire {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 12.5%;
+            width: 175px;
+        }
+    }
+
+    ul.achievements li {
+        width: 250px;
+    }
 }
 
 /* medium devices and above */
 @media (min-width: 992px) {
+    .profile {
+        padding-top: 275px;
+    }
+
+    .portfolio .more, 
+    .portfolio .more-close {
+        display: block;
+    }
+
     .how-made {
         i.fa-heart,
         i.fa-camera {
             border-bottom: 1px dotted @color-white;
+        }
+
+        .reference-point .bubble {
+            display: block;
         }
     }  
 }

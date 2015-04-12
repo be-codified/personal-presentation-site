@@ -88,7 +88,7 @@ $(document).ready(function() {
 
                     // TODO: trying not to call code same thing twice
 
-                    if ($(window).width() > 1000) {
+                    if ($(window).width() >= 768) {
                         $(window).resize(function() {
                             for (var i = 1; i <= 3; i++) {
                                 setColumnHeight(i);

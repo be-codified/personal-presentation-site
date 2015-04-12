@@ -224,9 +224,6 @@ ul.tools li span.strong {
   padding: 2px 6px;
   border-bottom: 3px solid #93b1bb;
 }
-.additional-left-padding {
-  padding-left: 2.5%;
-}
 ul li span.strong.reduced-right-padding {
   padding-right: 3px;
 }
@@ -365,6 +362,7 @@ ul.achievements .desc {
   position: relative;
 }
 .how-made .reference-point .bubble {
+  display: none;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -412,6 +410,7 @@ ul.achievements .desc {
 }
 .portfolio .more,
 .portfolio .more-close {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -421,7 +420,6 @@ ul.achievements .desc {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  display: block;
 }
 .portfolio .more:hover,
 .portfolio .more-close:hover {
@@ -542,9 +540,7 @@ ul.achievements .desc {
 *********************************************************/
 /* extra small devices and above */
 @media (min-width: 0) {
-  .portfolio .more {
-    display: none;
-  }
+  /* .additional-left-padding { padding-left: 2.5%; } */
   .portfolio img {
     margin-top: 30px;
     position: relative;
@@ -552,16 +548,38 @@ ul.achievements .desc {
   .portfolio img:not(.initial) {
     display: none;
   }
-  .bubble {
-    display: none;
-  }
 }
 /* small devices and above */
+@media (min-width: 768px) {
+  .profile {
+    padding-top: 310px;
+  }
+  .profile .hire {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 12.5%;
+    width: 175px;
+  }
+  ul.achievements li {
+    width: 250px;
+  }
+}
 /* medium devices and above */
 @media (min-width: 992px) {
+  .profile {
+    padding-top: 275px;
+  }
+  .portfolio .more,
+  .portfolio .more-close {
+    display: block;
+  }
   .how-made i.fa-heart,
   .how-made i.fa-camera {
     border-bottom: 1px dotted #ffffff;
+  }
+  .how-made .reference-point .bubble {
+    display: block;
   }
 }
 /* large devices and above */
