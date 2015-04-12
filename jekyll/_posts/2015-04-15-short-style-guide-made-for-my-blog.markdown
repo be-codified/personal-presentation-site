@@ -5,7 +5,7 @@ date:   2015-04-15 20:01:48
 categories: 
 ---
 
-> TODO: At the end of article. 
+> TODO: When article is finished. 
 As I have started a new blog, I needed to define some rules how basic elements (pretty much the typography), should be displayed. For writing articles I am using [Jekyll][1], a simple static site generator. In addition to style guide I have been adding also a [markdown syntax][2] and CSS code.
 
 ## What is a style guide?
@@ -18,19 +18,19 @@ Here are the rules for the folowing HTML elements.
 
 ## Typography
 
-### 1. Headings
+### <span class="indent-1">1. Headings</span>
 
-##### Heading 2
+##### <span class="indent-2">Heading 2</span>
 
-###### Sample
+###### <span class="indent-3">Sample</span>
 
-## Heading 2 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+## <span class="indent-3">Heading 2 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
 
-###### Markdown syntax 
-    
+###### <span class="indent-3">Markdown syntax</span> 
+
     ## Heading 2 lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 
-###### CSS code 
+###### <span class="indent-3">CSS code</span> 
 
     h2 {
         property: value;

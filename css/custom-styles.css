@@ -508,16 +508,32 @@ ul.achievements .desc {
 /*** blog
 *********************************************************/
 .blog {
+  padding: 60px;
   background-color: #ffffff;
-  color: #000000;
+  color: #303030;
+  font-size: 18px;
+  font-family: 'ralewaylight', sans-serif;
 }
+.blog h1,
 .blog h2,
 .blog h3,
 .blog h4 {
   color: #b41c1c;
 }
+.blog h1.post-title {
+  font-family: 'ralewaysemibold', sans-serif;
+  font-size: 54px;
+  opacity: 1;
+  background: none;
+  width: auto;
+  height: auto;
+  position: relative;
+  text-indent: 0;
+  top: auto;
+  line-height: 120%;
+}
 .blog h2 {
-  padding: 40px 0 0 0;
+  padding: 0 0 0 0;
   font-size: 45px;
 }
 .blog h3 {
@@ -535,6 +551,19 @@ ul.achievements .desc {
   padding-top: 20px;
   color: #e99903;
   font-size: 16px;
+}
+.blog .indent-1 {
+  padding-left: 30px;
+  display: block;
+}
+.blog .indent-2 {
+  padding-left: 60px;
+  display: block;
+}
+.blog .indent-3,
+.blog pre {
+  margin-left: 90px;
+  display: block;
 }
 /*** media behavour
 *********************************************************/
