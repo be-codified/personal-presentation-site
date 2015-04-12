@@ -96,7 +96,7 @@
                 </div>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1">
-                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>HTML5, CSS3 with responsive design, integration with CMS, project managment with group of people.</p>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-6 col-lg-6 portfolio item-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11">
                             <p class="latest">Latest work</p>
                             <h2>Encyclopedia for adults</h2>
                             <p>HTML5, CSS3, integration with CMS, plugins integration.</p>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
-                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>HTML5, CSS3, jQuery, animations, back-end functionallity.</p>
