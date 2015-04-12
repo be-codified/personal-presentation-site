@@ -608,9 +608,6 @@ ul.achievements {
 
 /* extra small devices and above */
 @media (min-width: 0) {
-
-    /* .additional-left-padding { padding-left: 2.5%; } */ 
-
     .portfolio {
         img {
             margin-top: 30px;
@@ -632,7 +629,7 @@ ul.achievements {
             position: absolute;
             top: 0;
             left: auto;
-            right: 12.5%;
+            right: 5%;
             width: 175px;
         }
     }
@@ -653,15 +650,19 @@ ul.achievements {
         display: block;
     }
 
+    .portfolio h2 {
+        padding-right: 50px;
+    }
+
+    .additional-left-padding { padding-left: 5%; }
+
     .how-made {
         i.fa-heart,
         i.fa-camera {
             border-bottom: 1px dotted @color-white;
         }
 
-        .reference-point .bubble {
-            display: block;
-        }
+        .reference-point .bubble { display: block; }
     }  
 }
 

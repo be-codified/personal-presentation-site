@@ -37,7 +37,7 @@
             <article>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1 intro">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1 intro">
                             <header>
                                 <h1>
                                     <a href="http://www.be-codified.com" title="be-codified.com">be-codified.com</a>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-1">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>Consumer federation of Slovenia</h2>
                             <p>HTML5, CSS3 with responsive design, integration with CMS, project managment with group of people.</p>
@@ -136,7 +136,7 @@
                         <a href="#" class="more" data-id="2"></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-6 col-lg-6 main-color-1 neighbour-2 ">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
                             <h2>Magical tools I use on a daily basis</h2>
                             <ul class="plus-bullets tools">
                                 <li>sophisticated text editor <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2,</a><br /><span class="warning"><span>Warning:</span> You can easily fall in love with it. Proceed to link with caution!</span></li>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="row main-color-1">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 portfolio item-3">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
+                        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-1">
                             <p class="latest">Latest work</p>
                             <h2>iPhone giveaway</h2>
                             <p>HTML5, CSS3, jQuery, animations, back-end functionallity.</p>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 how-made additional-left-margin">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 how-made additional-left-padding">
                             <h2 class="smaller">How was this site made?</h2>
                             <p class="first">No website template has been used. I have coded it with modern technologies:</p>
                             <ul class="plus-bullets">

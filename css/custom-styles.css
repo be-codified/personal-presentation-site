@@ -540,7 +540,6 @@ ul.achievements .desc {
 *********************************************************/
 /* extra small devices and above */
 @media (min-width: 0) {
-  /* .additional-left-padding { padding-left: 2.5%; } */
   .portfolio img {
     margin-top: 30px;
     position: relative;
@@ -558,7 +557,7 @@ ul.achievements .desc {
     position: absolute;
     top: 0;
     left: auto;
-    right: 12.5%;
+    right: 5%;
     width: 175px;
   }
   ul.achievements li {
@@ -573,6 +572,12 @@ ul.achievements .desc {
   .portfolio .more,
   .portfolio .more-close {
     display: block;
+  }
+  .portfolio h2 {
+    padding-right: 50px;
+  }
+  .additional-left-padding {
+    padding-left: 5%;
   }
   .how-made i.fa-heart,
   .how-made i.fa-camera {
