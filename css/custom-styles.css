@@ -602,6 +602,11 @@ ul.achievements .desc {
   .portfolio .more-close {
     display: block;
   }
+  .portfolio img {
+    position: absolute;
+    bottom: 0;
+    display: block !important;
+  }
   .portfolio h2 {
     padding-right: 50px;
   }
