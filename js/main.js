@@ -7,6 +7,7 @@ $(document).ready(function() {
         setTimeout(function(){
             $('.preloader img').fadeOut(500, function() {
                 $('.preloader').fadeOut(1000, function() {
+
                     // logo animation
                     // *********************************************
 
@@ -14,6 +15,15 @@ $(document).ready(function() {
                         marginTop: '+=90px',
                         opacity: 1 
                     }, 500, 'swing');
+
+                    // want to hire me animation
+                    // *********************************************
+
+                    if ($(window).width() >= 992) {
+                        $('.hire').animate({
+                            marginTop: '0' 
+                        }, 500, 'swing');
+                    }
 
                     // scroll down animation to contact info
                     // *********************************************
@@ -86,7 +96,7 @@ $(document).ready(function() {
                         $('.item-' + number).height(heightNeighbour);         
                     }
 
-                    // TODO: trying not to call code same thing twice
+                    // TODO: try not to call same thing code twice
 
                     if ($(window).width() >= 768) {
                         $(window).resize(function() {

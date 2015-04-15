@@ -598,6 +598,9 @@ ul.achievements .desc {
   .profile {
     padding-top: 275px;
   }
+  .hire {
+    margin-top: -60px;
+  }
   .portfolio .more {
     display: block;
   }
