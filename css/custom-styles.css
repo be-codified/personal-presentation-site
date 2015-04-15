@@ -598,8 +598,7 @@ ul.achievements .desc {
   .profile {
     padding-top: 275px;
   }
-  .portfolio .more,
-  .portfolio .more-close {
+  .portfolio .more {
     display: block;
   }
   .portfolio img {

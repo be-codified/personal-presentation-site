@@ -103,19 +103,29 @@ $(document).ready(function() {
                     // portfolio see more animations
                     // *********************************************
 
-                    var width = '30%';
+                    var width = '30%',
+                        negativeMargin = '-30%';
 
                     // opening panel
 
                     $('.more').on('click', function(event) {
                         id = $(this).data().id;
 
+                        // checking if portfolio item position is on left or right
+                        
+                        if (id == 2) {
+                            animateParams = { width: '+=' + width, marginLeft: negativeMargin };
+                        }
+                        else {
+                            animateParams = { width: '+=' + width };
+                        }
+
+                        // animating
+                        
                         $('.portfolio.item-' + id + ' .more').fadeOut(300, 'swing', function() {
                             $('.neighbour-' + id).fadeOut(300, 'swing', function() {
                                 $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                                    $('.portfolio.item-' + id).animate({
-                                        width: '+=' + width 
-                                    }, 750, 'easeInOutQuint', function() {
+                                    $('.portfolio.item-' + id).animate(animateParams, 750, 'easeInOutQuint', function() {
                                         $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
                                         $('.portfolio.item-' + id + ' .more-close').fadeIn(300, 'swing');
                                     });
@@ -132,12 +142,21 @@ $(document).ready(function() {
                     $('.more-close').on('click', function(event) {
                         id = $(this).data().id;
 
+                        // checking if portfolio item position is on left or right
+                        
+                        if (id == 2) {
+                            animateParams = { width: '-=' + width, marginLeft: 0 };
+                        }
+                        else {
+                            animateParams = { width: '-=' + width };
+                        }
+
+                        // animating
+
                         $('.portfolio.item-' + id + ' .more-close').fadeOut(300, 'swing', function() {
                             $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
                             $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                                $('.portfolio.item-' + id).animate({
-                                    width: '-=' + width 
-                                }, 750, 'easeInOutQuint', function() {
+                                $('.portfolio.item-' + id).animate(animateParams, 750, 'easeInOutQuint', function() {
                                     $('.portfolio.item-' + id + ' > div').fadeIn(300, 'swing', function() {
                                         $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers                   
                                         $('.neighbour-' + id).fadeIn(300, 'swing', function() {
