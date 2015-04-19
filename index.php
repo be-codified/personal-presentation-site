@@ -8,8 +8,8 @@
         <title>be-codified.com | freelance front-end web developer</title>
 
         <!-- stylesheets -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-        <link href="css/custom-styles.min.css" rel="stylesheet" media="screen" />
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <link href="css/custom-styles.css" rel="stylesheet" media="screen" />
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
         <!-- icons -->
