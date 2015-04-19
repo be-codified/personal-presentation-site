@@ -10,20 +10,6 @@ module.exports = function(grunt) {
                 htmlPhp: {
                     files: ['*.html','*.php']
                 },
-                /*
-                minifyCssStyles: {
-                    files: ['css/custom-styles.css'],
-                    tasks: ['cssmin:styles']
-                },
-                minifyCssBootstrap: {
-                    files: ['css/bootstrap.css'],
-                    tasks: ['cssmin:bootstrap']
-                },
-                minifyJs: {
-                    files: ['js/main.js'],
-                    tasks: ['minified']
-                },
-                */
                 lessStyles: {
                     files: ['css/custom-styles.less'],
                     tasks: ['less:styles']
@@ -68,38 +54,37 @@ module.exports = function(grunt) {
 
             // minifying css files
             cssmin: {
-                styles: {
+                stylesDevelopment: {
                     files: [{
                         expand: true,
-                        cwd: 'css/',
+                        cwd: 'build/development/css/',
                         src: ['custom-styles.css'],
-                        dest: 'css/',
+                        dest: 'build/development/css/',
                         ext: '.min.css'
                     }]
                 },
-                bootstrap: {
+                bootstrapDevelopment: {
                     files: [{
                         expand: true,
-                        cwd: 'css/',
+                        cwd: 'build/development/css/',
                         src: ['bootstrap.css'],
-                        dest: 'css/',
+                        dest: 'build/development/css/',
                         ext: '.min.css'
                     }]
                 }
             },
 
-            // minifying js files        
-            minified : {
-                files: {
-                    src: ['js/main.js'],
-                    dest: 'js/'
+            // minifying js files    
+            uglify: {
+                options: {
+                  mangle: false
                 },
-                options : {
-                    ext: '.min.js',
-                    sourcemap: false,
-                    allinone: false
+                mainDevelopment: {
+                    files: {
+                        'build/development/js/main.min.js': ['build/development/js/main.js']
+                    }
                 }
-            },
+            },            
 
             // file revisions 
             filerev: {
@@ -133,10 +118,21 @@ module.exports = function(grunt) {
                 },
             },
 
+            // using minified files in html
+            useminPrepare: {
+                html: 'index.html',
+                options: {
+                    dest: '.'
+                }
+            },
+            usemin: {
+                html: ['build/development/index.html']
+            },
+
             // cleaning build folder
             clean: {
                 cleanDevelopment: {
-                    src: [ 'build/development' ]
+                    src: ['build/development']
                 },
             },
 
@@ -160,15 +156,26 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-minified');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-filerev');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
+
     /*** building and deploying process
     *********************************************************/
 
-    grunt.registerTask('deploy-development', ['clean:cleanDevelopment', 'copy:buildDevelopment', 'ftp-deploy:development']);    
+    grunt.registerTask('deploy-development', [
+        'clean:cleanDevelopment', 
+        'copy:buildDevelopment',
+        'useminPrepare:html',
+        'cssmin:stylesDevelopment',
+        'cssmin:bootstrapDevelopment',
+        'uglify:mainDevelopment',
+        'usemin' 
+        /* 'ftp-deploy:development' */
+    ]);    
 };

@@ -12,6 +12,10 @@
         <link href="css/custom-styles.css" rel="stylesheet" media="screen" />
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
+    <!-- build:css css/bootstrap.min.css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
+    <!-- endbuild -->
+
         <!-- icons -->
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -238,6 +242,6 @@
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.easing.1.3.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.animateNumber.min.js"></script>
-        <script type="text/javascript" src="js/main.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
