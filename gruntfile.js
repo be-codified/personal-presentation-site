@@ -133,6 +133,13 @@ module.exports = function(grunt) {
                 },
             },
 
+            // cleaning build folder
+            clean: {
+                cleanDevelopment: {
+                    src: [ 'build/development' ]
+                },
+            },
+
             // deployment
             'ftp-deploy': {
                 development: {
@@ -158,9 +165,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-filerev');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     /*** building and deploying process
     *********************************************************/
 
-    grunt.registerTask('deploy-development', ['copy:buildDevelopment', 'ftp-deploy:development']);    
+    grunt.registerTask('deploy-development', ['clean:cleanDevelopment', 'copy:buildDevelopment', 'ftp-deploy:development']);    
 };
