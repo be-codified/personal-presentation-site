@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                     tasks: ['less:styles']
                 },
                 lessBootstrap: {
-                    files: ['css/custom-variables.less'],
+                    files: ['css/bootstrap-less/bootstrap.less'],
                     tasks: ['less:bootstrap']
                 },
                 /*
@@ -175,7 +175,7 @@ module.exports = function(grunt) {
         'cssmin:stylesDevelopment',
         'cssmin:bootstrapDevelopment',
         'uglify:mainDevelopment',
-        'usemin' 
-        /* 'ftp-deploy:development' */
+        'usemin',
+        'ftp-deploy:development'
     ]);    
 };

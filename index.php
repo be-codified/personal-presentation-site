@@ -12,9 +12,9 @@
         <link href="css/custom-styles.css" rel="stylesheet" media="screen" />
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
 
-    <!-- build:css css/bootstrap.min.css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
-    <!-- endbuild -->
+        <!-- build:css css/somefile.min.css -->
+            <link rel="stylesheet" type="text/css" href="css/somefile.css" media="screen" />
+        <!-- endbuild -->
 
         <!-- icons -->
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
