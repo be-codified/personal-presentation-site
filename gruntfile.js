@@ -118,15 +118,13 @@ module.exports = function(grunt) {
                 },
             },
 
-            // using minified files in html
-            useminPrepare: {
-                html: 'index.html',
+            // using applymin
+            applymin: {
                 options: {
-                    dest: '.'
-                }
-            },
-            usemin: {
-                html: ['build/development/index.html']
+                    staticPattern: /(css\/.*?\.(css|js))/i
+                },
+                beginmin: 'build/development/index.html',
+                endmin: 'build/development/css'
             },
 
             // cleaning build folder
@@ -159,7 +157,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-applymin');
     grunt.loadNpmTasks('grunt-filerev');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -171,11 +169,11 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy-development', [
         'clean:cleanDevelopment', 
         'copy:buildDevelopment',
-        'useminPrepare:html',
+        'applymin:beginmin',
         'cssmin:stylesDevelopment',
         'cssmin:bootstrapDevelopment',
         'uglify:mainDevelopment',
-        'usemin',
-        'ftp-deploy:development'
+        'applymin:endmin',
+        /*'ftp-deploy:development'*/
     ]);    
 };
