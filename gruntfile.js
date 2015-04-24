@@ -18,12 +18,6 @@ module.exports = function(grunt) {
                     files: ['css/bootstrap-less/bootstrap.less'],
                     tasks: ['less:bootstrap']
                 },
-                /*
-                fileRevision: {
-                    files: ['css/custom-styles.min.css'],
-                    tasks: ['filerev']
-                },
-                */
                 options: {
                     livereload: true
                 }
@@ -200,6 +194,6 @@ module.exports = function(grunt) {
         'filerev:jsDevelopment',
         'usemin',
         'clean:cleanDevelopmentAfterDeployment', 
-        /*'ftp-deploy:development'*/
+        'ftp-deploy:development'
     ]);    
 };
