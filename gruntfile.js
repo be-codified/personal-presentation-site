@@ -92,9 +92,18 @@ module.exports = function(grunt) {
                     algorithm: 'md5',
                     length: 8
                 },
-                images: {
-                    src: ['img/portfolio-1.jpg', 'img2.png'],
-                    dest: 'tmp'
+                cssDevelopment: {
+                    src: [
+                        'build/development/css/bootstrap.min.css',
+                        'build/development/css/custom-styles.min.css'
+                    ],
+                    dest: 'build/development/css'
+                },
+                jsDevelopment: {
+                    src: [
+                        'build/development/js/main.min.js'
+                    ],
+                    dest: 'build/development/js'
                 }
             },
 
@@ -105,12 +114,14 @@ module.exports = function(grunt) {
                     src: ['**/*',
                         '!**/node_modules/**',
                         '!**/jekyll/**',
-                        '!**/build/**', 
-                        '!**/tmp/**', 
+                        '!**/build/**',
+                        '!**/css/bootstrap-less/**', 
+                        '!**/tmp/**',
                         '!**/.git/**', '!.gitignore', '!readme.md',
                         '!gruntfile.js', '!package.json', 
                         '!licence.txt', '!.ftppass', 
-                        '!.DS_Store', '!*/.DS_Store'
+                        '!.DS_Store', '!*/.DS_Store',
+                        '!**/*.less'
                     ],
                     dest: 'build/development',
                     dot: true,
@@ -118,19 +129,31 @@ module.exports = function(grunt) {
                 },
             },
 
-            // using applymin
-            applymin: {
+            // using minified files in html
+            useminPrepare: {
+                html: 'index.html',
                 options: {
-                    staticPattern: /(css\/.*?\.(css|js))/i
-                },
-                beginmin: 'build/development/index.html',
-                endmin: 'build/development/css'
+                    dest: '.'
+                }
+            },
+            usemin: {
+                html: ['build/development/index.html']
             },
 
             // cleaning build folder
             clean: {
                 cleanDevelopment: {
                     src: ['build/development']
+                },
+                cleanDevelopmentAfterDeployment: {
+                    src: [
+                        'build/development/css/bootstrap.css',
+                        'build/development/css/bootstrap.min.css',
+                        'build/development/css/custom-styles.css',
+                        'build/development/css/custom-styles.min.css',
+                        'build/development/js/main.js',
+                        'build/development/js/main.min.js'
+                    ]
                 },
             },
 
@@ -157,7 +180,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-applymin');
+    grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-filerev');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -169,11 +192,14 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy-development', [
         'clean:cleanDevelopment', 
         'copy:buildDevelopment',
-        'applymin:beginmin',
+        'useminPrepare:html',
         'cssmin:stylesDevelopment',
         'cssmin:bootstrapDevelopment',
         'uglify:mainDevelopment',
-        'applymin:endmin',
+        'filerev:cssDevelopment',
+        'filerev:jsDevelopment',
+        'usemin',
+        'clean:cleanDevelopmentAfterDeployment', 
         /*'ftp-deploy:development'*/
     ]);    
 };
