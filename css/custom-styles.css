@@ -211,6 +211,9 @@ ul.strengths span.strong,
   color: #fff;
   padding: 2px 6px;
 }
+.how-made ul {
+  line-height: 190%;
+}
 ul.skills li:before,
 ul.tools li:before {
   color: #d2dee2;
