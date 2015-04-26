@@ -8,23 +8,6 @@ $(document).ready(function() {
             $('.preloader img').fadeOut(500, function() {
                 $('.preloader').fadeOut(1000, function() {
 
-                    // logo animation
-                    // *********************************************
-
-                    $('header h1').animate({
-                        marginTop: '+=90px',
-                        opacity: 1 
-                    }, 500, 'swing');
-
-                    // want to hire me animation
-                    // *********************************************
-
-                    if ($(window).width() >= 992) {
-                        $('.hire').animate({
-                            marginTop: '0' 
-                        }, 500, 'swing');
-                    }
-
                     // scroll down animation to contact info
                     // *********************************************
 
@@ -88,6 +71,17 @@ $(document).ready(function() {
                     counterAnimate('.counter.small', 90, '+');
                     counterAnimate('.counter.smaller', 150, '+');
 
+                    // want to hire me animation
+                    // *********************************************
+
+                    setTimeout(function () {
+                        if ($(window).width() >= 992) {
+                            $('.hire').animate({
+                                marginTop: '0' 
+                            }, 1000, 'easeInOutElastic');
+                        }
+                    }, 500);
+
                     // portfolio column (same heigth as neighbour element)
                     // ***************************************************
 
@@ -95,8 +89,6 @@ $(document).ready(function() {
                         var heightNeighbour = $('.neighbour-' + number).height();
                         $('.item-' + number).height(heightNeighbour);         
                     }
-
-                    // TODO: try not to call same thing code twice
 
                     if ($(window).width() >= 768) {
                         $(window).resize(function() {
