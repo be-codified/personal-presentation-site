@@ -8,10 +8,8 @@
 *********************************************************/
 body {
   position: relative;
-  background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
+  background: url('../img/background-pattern.svg') 0 0 #f3f5f5;
+  background-size: 0.5%;
 }
 .container-fluid {
   max-width: 1280px;
@@ -27,6 +25,9 @@ body {
 }
 .main-color-4 {
   background-color: #7a9fab;
+}
+.main-color-6 {
+  background-color: #628d9b;
 }
 ::selection {
   background-color: #fcb123;
@@ -54,7 +55,6 @@ header h1 {
   position: absolute;
   opacity: 0;
   top: -65px;
-  text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   width: 230px;
@@ -63,9 +63,15 @@ header h1 {
   display: block;
 }
 header h1 a {
+  text-indent: 100%;
   display: block;
   width: 230px;
   height: 47px;
+  border-bottom: none;
+}
+header h1 a:hover,
+header h1 a:active {
+  border-bottom: none;
 }
 /*** profile
 *********************************************************/
@@ -143,7 +149,7 @@ ul.achievements .desc {
   font-size: 22px;
   line-height: 24px;
 }
-.hire a {
+a {
   text-decoration: none;
   color: #ffffff;
   display: inline-block;
@@ -155,17 +161,18 @@ ul.achievements .desc {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.hire a:hover,
-.hire a:active {
+a:hover,
+a:active {
   text-decoration: none;
 }
-.hire a:hover {
-  border-bottom: 1px solid #fcb123;
+a:hover {
+  border-bottom: 1px solid #ffffff;
   display: inline-block;
   margin-left: -10px;
   margin-right: -10px;
   padding-left: 10px;
   padding-right: 10px;
+  color: #ffffff;
 }
 h2 {
   padding: 40px 0;
@@ -201,12 +208,10 @@ ul.plus-bullets li:before {
 ul.plus-bullets li:last-child {
   padding-bottom: 50px;
 }
-ul.strengths li:before,
-.how-made ul li:before {
+ul.strengths li:before {
   color: #e86868;
 }
-ul.strengths span.strong,
-.how-made ul span.strong {
+ul.strengths span.strong {
   background-color: #e45252;
   color: #fff;
   padding: 2px 6px;
@@ -229,34 +234,6 @@ ul.tools li span.strong {
 }
 ul li span.strong.reduced-right-padding {
   padding-right: 3px;
-}
-ul.tools a,
-.how-made a {
-  text-decoration: none;
-  color: #ffffff;
-  display: inline-block;
-  border-bottom: 1px solid #ffffff;
-  text-indent: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-ul.tools a:hover,
-.how-made a:hover,
-ul.tools a:active,
-.how-made a:active {
-  text-decoration: none;
-}
-ul.tools a:hover,
-.how-made a:hover {
-  border-bottom: 1px solid #fcb123;
-  display: inline-block;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 ul.tools .warning,
 .how-made .warning {
@@ -305,23 +282,6 @@ ul.tools i:hover + .reference-point .bubble,
   color: #ffffff;
   display: inline-block;
   border-bottom: 1px solid #ffffff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.portfolio > div a:hover,
-.portfolio > div a:active {
-  text-decoration: none;
-}
-.portfolio > div a:hover {
-  border-bottom: 1px solid #fcb123;
-  display: inline-block;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .business-owner {
   font-size: 13px;
@@ -423,6 +383,7 @@ ul.achievements .desc {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
+  border-bottom: none;
 }
 .portfolio .more:hover,
 .portfolio .more-close:hover {
@@ -449,26 +410,27 @@ ul.achievements .desc {
 /*** icons
 *********************************************************/
 .contacts {
-  margin-top: 40px;
+  margin: 40px 0 50px 0;
 }
 .contacts li {
   display: block;
   text-indent: 0;
-  padding: 0 0 25px 0;
+  padding: 0 0 20px 0;
 }
 .contacts li a {
   display: inline-block;
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
+  border-bottom: none;
 }
 .contacts li a span {
   vertical-align: middle;
   display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-color: #b41c1c;
-  background-size: 35px 35px;
+  width: 50px;
+  height: 50px;
+  background-color: #7da1ad;
+  background-size: 30px 30px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-right: 25px;
@@ -486,7 +448,7 @@ ul.achievements .desc {
   background-image: url('../img/icon-twitter.svg');
 }
 .contacts li a span:hover {
-  background-color: #951717;
+  background-color: #67919f;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;

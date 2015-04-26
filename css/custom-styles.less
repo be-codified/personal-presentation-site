@@ -11,16 +11,17 @@
 @main-color-1: #93b1bb;                    // blue
 @main-color-2: #b41c1c;                    // red
 @main-color-3: #fcb123;                    // orange
+
 @main-color-4: darken(@main-color-1, 8%);; // portfolio
 @main-color-5: #1f2227;                    // dark gray
+@main-color-6: darken(@main-color-1, 16%); // how made
+
 @color-white:  #ffffff;
 
 body {
     position: relative;
-    background: url('../img/main-background.jpg') 50% 0 no-repeat transparent;
-    background-attachment: fixed;
-    background-size: cover; 
-    height: 100%;
+    background: url('../img/background-pattern.svg') 0 0 #f3f5f5;
+    background-size: 0.5%;
 }
 
 .container-fluid {
@@ -32,6 +33,7 @@ body {
 .main-color-1 { background-color: @main-color-1; }
 .main-color-2 { background-color: @main-color-2; }
 .main-color-4 { background-color: @main-color-4; }
+.main-color-6 { background-color: @main-color-6; }
 
 ::selection {
     background-color: @main-color-3;
@@ -65,7 +67,6 @@ header h1 {
     position: absolute;
     opacity: 0;
     top: -65px;
-    text-indent: 100%; 
     white-space: nowrap; 
     overflow: hidden; 
     width: 230px; 
@@ -74,9 +75,16 @@ header h1 {
     display: block;
 
     a {
+        text-indent: 100%;
         display: block;
         width: 230px; 
         height: 47px;
+        border-bottom: none;
+
+        &:hover,
+        &:active {
+            border-bottom: none;
+        }
     }
 }
 
@@ -178,7 +186,7 @@ ul.achievements {
     }
 }
 
-.hire a {
+a {
     text-decoration: none;
     color: @color-white;
     display: inline-block;
@@ -195,12 +203,13 @@ ul.achievements {
             transition: all 0.3s ease;
 
     &:hover {
-        border-bottom: 1px solid @main-color-3;
+        border-bottom: 1px solid @color-white;
         display: inline-block;
         margin-left: -10px;
         margin-right: -10px;    
         padding-left: 10px;
-        padding-right: 10px;  
+        padding-right: 10px;
+        color: @color-white;  
     }
 }
 
@@ -208,9 +217,9 @@ h2 {
     padding: 40px 0;
     font-size: 50px;
     line-height: 125%;    
-}
 
-h2.smaller { font-size: 35px; }
+    &.smaller { font-size: 35px; }
+}
 
 .intro h2 {
     font-size: 44px;
@@ -220,13 +229,11 @@ h2.smaller { font-size: 35px; }
 
 p.lead { font-size: 22px; }
 
-span.exposed,
-span.strong {
-    font-family: 'ralewaysemibold', sans-serif;    
-}
+span {
+    &.exposed,
+    &.strong { font-family: 'ralewaysemibold', sans-serif; }
 
-span.strong { 
-    -webkit-font-smoothing: antialiased; 
+    &.strong { -webkit-font-smoothing: antialiased; }
 }
 
 ul.plus-bullets {
@@ -242,8 +249,7 @@ ul.plus-bullets {
     li:last-child { padding-bottom: 50px; }
 }
 
-ul.strengths,
-.how-made ul {
+ul.strengths {
     li:before { color: lighten(@main-color-2, 25%); }
 
     span.strong {
@@ -277,32 +283,6 @@ ul li span.strong.reduced-right-padding { padding-right: 3px; }
 
 ul.tools,
 .how-made {
-    a {
-        text-decoration: none;
-        color: @color-white;
-        display: inline-block;
-        border-bottom: 1px solid @color-white;
-        text-indent: 0;
-
-        &:hover,
-        &:active { text-decoration: none; }
-
-        -webkit-transition: all 0.3s ease;
-           -moz-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-             -o-transition: all 0.3s ease;
-                transition: all 0.3s ease;
-
-        &:hover {
-            border-bottom: 1px solid @main-color-3;
-            display: inline-block;
-            margin-left: -10px;
-            margin-right: -10px;    
-            padding-left: 10px;
-            padding-right: 10px;  
-        }
-    }
-
     .warning {
         font-size: 13px;
         color: lighten(@main-color-1, 25%);
@@ -348,24 +328,6 @@ ul.tools,
         color: @color-white;
         display: inline-block;
         border-bottom: 1px solid @color-white;
-
-        &:hover,
-        &:active { text-decoration: none; }
-
-        -webkit-transition: all 0.3s ease;
-           -moz-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-             -o-transition: all 0.3s ease;
-                transition: all 0.3s ease;
-
-        &:hover {
-            border-bottom: 1px solid @main-color-3;
-            display: inline-block;
-            margin-left: -10px;
-            margin-right: -10px;      
-            padding-left: 10px;
-            padding-right: 10px;  
-        }
     }
 } 
 
@@ -482,6 +444,7 @@ ul.achievements {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 30px 30px;
+        border-bottom: none;
 
         &:hover {
             -webkit-transition: all 0.5s ease;
@@ -515,26 +478,27 @@ ul.achievements {
 *********************************************************/
 
 .contacts {
-    margin-top: 40px;
+    margin: 40px 0 50px 0;
 
     li {
         display: block;
         text-indent: 0;
-        padding: 0 0 25px 0;
+        padding: 0 0 20px 0;
 
         a {
             display: inline-block;
             font-size: 18px;
             color: @color-white;
             text-decoration: none;
+            border-bottom: none;
 
             span {
                 vertical-align: middle;
                 display: inline-block;
-                width: 60px;
-                height: 60px;
-                background-color: @main-color-2;
-                background-size: 35px 35px;
+                width: 50px;
+                height: 50px;
+                background-color: darken(@main-color-1, 7%);
+                background-size: 30px 30px;
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 margin-right: 25px;
@@ -545,7 +509,7 @@ ul.achievements {
                 &.twitter { background-image: url('../img/icon-twitter.svg'); }
             
                 &:hover {
-                    background-color: darken(@main-color-2, 7%);            
+                    background-color: darken(@main-color-1, 14%);            
                     -webkit-transition: all 0.5s ease;
                        -moz-transition: all 0.5s ease;
                         -ms-transition: all 0.5s ease;
