@@ -110,7 +110,7 @@ $(document).ready(function() {
 
                     // opening panel
 
-                    $('.more').on('click', function(event) {
+                    $('img.initial, .more').on('click', function(event) {
                         id = $(this).data().id;
 
                         // checking if portfolio item position is on left or right

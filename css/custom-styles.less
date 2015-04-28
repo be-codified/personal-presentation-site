@@ -306,8 +306,12 @@ ul.tools,
     } 
 }
 
-.how-made p.first { padding-bottom: 20px; }
-.how-made p.last { padding-bottom: 50px; }
+.how-made {
+    p.first { padding-bottom: 20px; }
+    p.last { padding-bottom: 50px; }
+    p.credits { line-height: 170%; }
+}
+
 
 .portfolio {
     .latest {
@@ -658,6 +662,10 @@ ul.achievements {
             position: absolute;
             bottom: 0;
             display: block !important;
+        }
+
+        img.initial {
+            cursor: pointer;
         }
     }
 

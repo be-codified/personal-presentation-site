@@ -266,6 +266,9 @@ ul.tools i:hover + .reference-point .bubble,
 .how-made p.last {
   padding-bottom: 50px;
 }
+.how-made p.credits {
+  line-height: 170%;
+}
 .portfolio .latest {
   font-size: 20px;
   font-family: 'ralewayextralight', sans-serif;
@@ -573,6 +576,9 @@ ul.achievements .desc {
     position: absolute;
     bottom: 0;
     display: block !important;
+  }
+  .portfolio img.initial {
+    cursor: pointer;
   }
   .portfolio h2 {
     padding-right: 50px;
