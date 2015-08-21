@@ -92,12 +92,12 @@ $(document).ready(function() {
 
                     if ($(window).width() >= 768) {
                         $(window).resize(function() {
-                            for (var i = 1; i <= 3; i++) {
+                            for (var i = 1; i <= 4; i++) {
                                 setColumnHeight(i);
                             }
                         });
 
-                        for (var i = 1; i <= 3; i++) {
+                        for (var i = 1; i <= 4; i++) {
                             setColumnHeight(i);
                         }    
                     } 
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
                         // checking if portfolio item position is on left or right
                         
-                        if (id == 2) {
+                        if (id % 2 == 0) {
                             animateParams = { width: '+=' + width, marginLeft: negativeMargin };
                         }
                         else {
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
                         // checking if portfolio item position is on left or right
                         
-                        if (id == 2) {
+                        if (id % 2 == 0) {
                             animateParams = { width: '-=' + width, marginLeft: 0 };
                         }
                         else {
