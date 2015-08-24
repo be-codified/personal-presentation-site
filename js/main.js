@@ -115,7 +115,7 @@ $(document).ready(function() {
 
                         // checking if portfolio item position is on left or right
                         
-                        if (id % 2 == 0) {
+                        if (id % 2 == 1) {
                             animateParams = { width: '+=' + width, marginLeft: negativeMargin };
                         }
                         else {
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
                         // checking if portfolio item position is on left or right
                         
-                        if (id % 2 == 0) {
+                        if (id % 2 == 1) {
                             animateParams = { width: '-=' + width, marginLeft: 0 };
                         }
                         else {
