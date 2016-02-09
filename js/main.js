@@ -9,7 +9,7 @@ $(document).ready(function() {
           // Scroll down animation to contact info
           $('.hire a').on('click', function() {
             $('html, body').animate({
-              scrollTop: $('.neighbour-3').offset().top,
+              scrollTop: $('.neighbour-4').offset().top,
             }, 2000);
           });
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
           // Function for calculating difference between
           // two dates and returning it as integer or string
-          // @NOTE: use true or false for $return_string
+          // @NOTE: use true or false for returnString
 
           function timePeriod(dateStart, dateEnd, returnString) {
             var period = Math.round(new Date(dateEnd - dateStart) / 1000 / 60 / 60 / 24 / 365);
