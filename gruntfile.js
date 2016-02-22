@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                 }
             },
 
-            // minifying js files    
+            // minifying js files
             uglify: {
                 options: {
                   mangle: false
@@ -78,9 +78,9 @@ module.exports = function(grunt) {
                         'build/development/js/main.min.js': ['build/development/js/main.js']
                     }
                 }
-            },            
+            },
 
-            // file revisions 
+            // file revisions
             filerev: {
                 options: {
                     algorithm: 'md5',
@@ -109,11 +109,11 @@ module.exports = function(grunt) {
                         '!**/node_modules/**',
                         '!**/jekyll/**',
                         '!**/build/**',
-                        '!**/css/bootstrap-less/**', 
+                        '!**/css/bootstrap-less/**',
                         '!**/tmp/**',
                         '!**/.git/**', '!.gitignore', '!readme.md',
-                        '!gruntfile.js', '!package.json', 
-                        '!licence.txt', '!.ftppass', 
+                        '!gruntfile.js', '!package.json',
+                        '!licence.txt', '!.ftppass',
                         '!.DS_Store', '!*/.DS_Store',
                         '!**/*.less'
                     ],
@@ -159,7 +159,7 @@ module.exports = function(grunt) {
                         port: 21,
                         authKey: 'credentials'
                     },
-                    src: '/Users/Ziga/Projekti/be_codified/site/build/development',
+                    src: '/Users/ziga/Development/be-codified/build/development',
                     dest: '/public_html/development',
                     exclusions: [
                         '.DS_Store', '*/.DS_Store'
@@ -184,7 +184,7 @@ module.exports = function(grunt) {
     *********************************************************/
 
     grunt.registerTask('deploy-development', [
-        'clean:cleanDevelopment', 
+        'clean:cleanDevelopment',
         'copy:buildDevelopment',
         'useminPrepare:html',
         'cssmin:stylesDevelopment',
@@ -193,7 +193,7 @@ module.exports = function(grunt) {
         'filerev:cssDevelopment',
         'filerev:jsDevelopment',
         'usemin',
-        'clean:cleanDevelopmentAfterDeployment', 
+        'clean:cleanDevelopmentAfterDeployment',
         'ftp-deploy:development'
-    ]);    
+    ]);
 };
