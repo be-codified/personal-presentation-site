@@ -2,7 +2,7 @@
 ***** custom styles for overriding ***********************
 ***** bootstrap styles or adding new ones ****************
 **********************************************************
-***** be-codified | http://www.be-codified.com *********** 
+***** be-codified | http://www.be-codified.com ***********
 *********************************************************/
 /*** general
 *********************************************************/
@@ -125,7 +125,7 @@ ul.achievements {
   font-size: 18px;
 }
 ul.achievements .values .counter {
-  font-size: 40px;
+  font-size: 34px;
   line-height: 70px;
   font-family: 'ralewaysemibold', sans-serif;
   color: #ffffff;
@@ -298,13 +298,13 @@ ul.achievements li {
   text-indent: 0;
   padding: 0;
   background-color: #93b1bb;
-  margin: 0 0 10px 2.5%;
+  margin: 0 0 10px 30px;
   width: 95%;
   display: block;
   opacity: 1;
 }
 ul.achievements li:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 ul.achievements .values,
 ul.achievements .desc {

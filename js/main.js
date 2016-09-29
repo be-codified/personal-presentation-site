@@ -15,15 +15,14 @@ $(document).ready(function() {
 
           // Achievements calculations
           // Setting two important dates and today
-
           var dateWebindustry = new Date('2007-06-01');
+          var dateProgramming = new Date('2012-01-01');
           var dateFreelancing = new Date('2013-01-01');
           var dateToday       = new Date();
 
           // Function for calculating difference between
           // two dates and returning it as integer or string
           // @NOTE: use true or false for returnString
-
           function timePeriod(dateStart, dateEnd, returnString) {
             var period = Math.round(new Date(dateEnd - dateStart) / 1000 / 60 / 60 / 24 / 365);
 
@@ -38,6 +37,9 @@ $(document).ready(function() {
           $('.years-web').html(
             timePeriod(dateWebindustry, dateToday, false)
           );
+          $('.years-programming').html(
+              timePeriod(dateProgramming, dateToday, false)
+          );
           $('.years-freelance').html(
             timePeriod(dateFreelancing, dateToday, true)
           );
@@ -50,16 +52,15 @@ $(document).ready(function() {
               number: number,
               easing: 'easeInQuad',
               numberStep: counter,
-            }, 2000, function() {
+            }, 750, function() {
               if (sign) {
                 $(selector).append('');
               }
             });
           }
 
-          counterAnimate('.counter.normal', timePeriod(dateWebindustry, dateToday, false), '');
-          counterAnimate('.counter.small', 90, '+');
-          counterAnimate('.counter.smaller', 150, '+');
+          counterAnimate('.counter.normal.block-1', timePeriod(dateWebindustry, dateToday, false), '+');
+          counterAnimate('.counter.normal.block-2', timePeriod(dateProgramming, dateToday, false), '+');
 
           // Want to hire me animation
           setTimeout(function() {
@@ -70,7 +71,7 @@ $(document).ready(function() {
             }
           }, 500);
 
-          // Portfolio column (same heigth as neighbour element)
+          // Portfolio column (same height as neighbour element)
           function setColumnHeight(number) {
             var heightNeighbour = $('.neighbour-' + number).height();
             $('.item-' + number).height(heightNeighbour);

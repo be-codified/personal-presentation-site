@@ -2,7 +2,7 @@
 ***** custom styles for overriding ***********************
 ***** bootstrap styles or adding new ones ****************
 **********************************************************
-***** be-codified | http://www.be-codified.com *********** 
+***** be-codified | http://www.be-codified.com ***********
 *********************************************************/
 
 /*** general
@@ -53,7 +53,7 @@ ul {
 
     li {
         text-indent: -20px;
-        padding: 0 0 10px 20px;    
+        padding: 0 0 10px 20px;
     }
 }
 
@@ -64,20 +64,20 @@ header {
     position: relative;
 }
 
-header h1 { 
+header h1 {
     position: absolute;
     margin-top: 55px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    width: 230px; 
-    height: 47px; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 230px;
+    height: 47px;
     background: url('../img/logo.svg') no-repeat 0 0 transparent;
     display: block;
 
     a {
         text-indent: 100%;
         display: block;
-        width: 230px; 
+        width: 230px;
         height: 47px;
         border-bottom: none;
 
@@ -107,7 +107,7 @@ header h1 {
         display: inline-block;
         line-height: 20px;
         background-color: @main-color-2;
-        text-align: center; 
+        text-align: center;
     }
 }
 
@@ -161,7 +161,7 @@ ul.achievements {
 
     .values {
         .counter {
-            font-size: 40px;
+            font-size: 34px;
             line-height: 70px;
             font-family: 'ralewaysemibold', sans-serif;
             color: @color-white;
@@ -170,7 +170,9 @@ ul.achievements {
         .counter.small { font-size: 30px; }
         .counter.smaller { font-size: 25px; }
 
-        .counter.normal { text-align: center; }
+        .counter.normal {
+            text-align: center;
+        }
 
         .counter.small,
         .counter.smaller {
@@ -206,17 +208,17 @@ a {
         border-bottom: 1px solid @color-white;
         display: inline-block;
         margin-left: -10px;
-        margin-right: -10px;    
+        margin-right: -10px;
         padding-left: 10px;
         padding-right: 10px;
-        color: @color-white;  
+        color: @color-white;
     }
 }
 
 h2 {
     padding: 40px 0;
     font-size: 50px;
-    line-height: 125%;    
+    line-height: 125%;
 
     &.smaller { font-size: 35px; }
 }
@@ -243,7 +245,7 @@ ul.plus-bullets {
         content: '+';
         padding-right: 10px;
         position: relative;
-        top: 2px;        
+        top: 2px;
     }
 
     li:last-child { padding-bottom: 50px; }
@@ -274,7 +276,7 @@ ul.tools {
             color: @color-white;
             background-color: darken(@main-color-1, 8%);
             padding: 2px 6px;
-            border-bottom: 3px solid @main-color-1; 
+            border-bottom: 3px solid @main-color-1;
         }
     }
 }
@@ -303,7 +305,7 @@ ul.tools,
             -ms-transition: all 0.3s ease;
              -o-transition: all 0.3s ease;
                 transition: all 0.3s ease;
-    } 
+    }
 }
 
 .how-made {
@@ -317,7 +319,7 @@ ul.tools,
     .latest {
         font-size: 20px;
         font-family: 'ralewayextralight', sans-serif;
-        padding-top: 55px;              
+        padding-top: 55px;
     }
 
     h2 {
@@ -333,11 +335,11 @@ ul.tools,
         display: inline-block;
         border-bottom: 1px solid @color-white;
     }
-} 
+}
 
 .business-owner {
     font-size: 13px;
-    
+
     small { font-size: 11px; }
 }
 
@@ -349,15 +351,15 @@ ul.achievements {
         text-indent: 0;
         padding: 0;
         background-color: @main-color-1;
-        margin: 0 0 10px 2.5%;
+        margin: 0 0 10px 30px;
         width: 95%;
         display: block;
         opacity: 1;
 
         &:last-child {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
-    } 
+    }
 
     .values,
     .desc { float: left; }
@@ -366,7 +368,7 @@ ul.achievements {
         display: inline-block;
         width: 70px;
         height: 70px;
-        background-color: @main-color-3;    
+        background-color: @main-color-3;
     }
 
     .desc { padding: 11px 0 0 20px; }
@@ -394,7 +396,7 @@ ul.achievements {
             line-height: 40px;
             background-color: lighten(@main-color-2, 25%);
             padding: 0 10px;
-            text-align: center; 
+            text-align: center;
 
             &:before {
                 content: '';
@@ -404,7 +406,7 @@ ul.achievements {
                 left: 30px;
                 top: 40px;
                 border: 10px solid;
-                border-color: lighten(@main-color-2, 25%) transparent transparent lighten(@main-color-2, 25%);        
+                border-color: lighten(@main-color-2, 25%) transparent transparent lighten(@main-color-2, 25%);
             }
         }
     }
@@ -429,7 +431,7 @@ ul.achievements {
              -o-transition: opacity 2s ease-in-out;
                 transition: opacity 2s ease-in-out;
     }
-    
+
     &.item-1,
     &.item-2,
     &.item-3,
@@ -440,7 +442,7 @@ ul.achievements {
     .more,
     .more-close {
         display: none;
-        position: absolute;        
+        position: absolute;
         top: 0;
         right: 0;
         width: 60px;
@@ -456,14 +458,14 @@ ul.achievements {
                -moz-transition: all 0.5s ease;
                 -ms-transition: all 0.5s ease;
                  -o-transition: all 0.5s ease;
-                    transition: all 0.5s ease;            
+                    transition: all 0.5s ease;
         }
     }
 
     .more {
         background-color: @main-color-3;
         background-image: url('../img/icon-eye.svg');
-        
+
         &:hover {
             background-color: darken(@main-color-3, 7%);
         }
@@ -512,14 +514,14 @@ ul.achievements {
                 &.skype   { background-image: url('../img/icon-skype.svg'); }
                 &.phone   { background-image: url('../img/icon-phone.svg'); }
                 &.twitter { background-image: url('../img/icon-twitter.svg'); }
-            
+
                 &:hover {
-                    background-color: darken(@main-color-1, 14%);            
+                    background-color: darken(@main-color-1, 14%);
                     -webkit-transition: all 0.5s ease;
                        -moz-transition: all 0.5s ease;
                         -ms-transition: all 0.5s ease;
                          -o-transition: all 0.5s ease;
-                            transition: all 0.5s ease;  
+                            transition: all 0.5s ease;
                 }
             }
         }
@@ -568,28 +570,28 @@ ul.achievements {
         position: relative;
         text-indent: 0;
         top: auto;
-        line-height: 120%; 
+        line-height: 120%;
     }
 
-    h2 { 
+    h2 {
         padding: 0 0 0 0;
-        font-size: 45px; 
+        font-size: 45px;
     }
 
     h3 { font-size: 32px; }
     h4 { font-size: 28px; }
 
-    h5 { 
+    h5 {
         padding-top: 20px;
         color: @main-color-1;
-        font-size: 22px; 
+        font-size: 22px;
     }
-    
+
     h6 {
-        padding-top: 20px;     
+        padding-top: 20px;
         color: darken(@main-color-3, 10%);
-        font-size: 16px; 
-    } 
+        font-size: 16px;
+    }
 
     .indent-1 {
         padding-left: 30px;
@@ -599,13 +601,13 @@ ul.achievements {
     .indent-2 {
         padding-left: 60px;
         display: block;
-    } 
+    }
 
     .indent-3,
     pre {
         margin-left: 90px;
         display: block;
-    } 
+    }
 }
 
 /*** media behavour
@@ -683,7 +685,7 @@ ul.achievements {
         }
 
         .reference-point .bubble { display: block; }
-    }  
+    }
 }
 
 /* large devices and above */
