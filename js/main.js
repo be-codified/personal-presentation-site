@@ -61,6 +61,7 @@ $(document).ready(function() {
 
           counterAnimate('.counter.normal.block-1', timePeriod(dateWebindustry, dateToday, false), '+');
           counterAnimate('.counter.normal.block-2', timePeriod(dateProgramming, dateToday, false), '+');
+          counterAnimate('.counter.normal.block-3', 2, '+');
 
           // Want to hire me animation
           setTimeout(function() {

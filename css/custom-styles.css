@@ -298,8 +298,8 @@ ul.achievements li {
   text-indent: 0;
   padding: 0;
   background-color: #93b1bb;
-  margin: 0 0 10px 30px;
-  width: 95%;
+  margin: 0 30px 10px 30px;
+  width: 85%;
   display: block;
   opacity: 1;
 }
