@@ -105,7 +105,7 @@ module.exports = function(grunt) {
       },
     },
 
-    // coping files and folders
+    // copying files and folders
     copy: {
       buildDevelopment: {
         cwd: '',
