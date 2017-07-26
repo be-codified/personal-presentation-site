@@ -1,39 +1,33 @@
-    'use strict';
-    // =======================================================================
-    // Gulp Plugins
-    // =======================================================================
-    var gulp = require('gulp'),
-        nunjucks = require('nunjucks'),
-        markdown = require('nunjucks-markdown'),
-        marked = require('marked'),
-        rename = require('gulp-rename'),
-        gulpnunjucks = require('gulp-nunjucks');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const rename = require("gulp-rename");
+const nunjucksRender = require('gulp-nunjucks-render');
 
-    // =======================================================================
-    // ENV Vars
-    // =======================================================================
-    var dist = 'dist'; //Set this as your target you be compiling into
-    var src = 'src'; //Set this as the location of your source files
-    var templates = src + '/templates'; //Set this as the folder that contains your nunjuck files
+// Compiling nunjucks files, copying to dist
 
-    var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(templates));
+gulp.task('njk', () => {
+  return gulp.src('src/templates/layouts/base.njk')
+    .pipe(nunjucksRender({
+      path: ['src/templates/']
+    }))
+		.pipe(rename('index.html'))
+    .pipe(gulp.dest('dist'));
+});
 
-    marked.setOptions({
-        renderer: new marked.Renderer(),
-        gfm: true,
-        tables: true,
-        breaks: false,
-        pedantic: false,
-        sanitize: true,
-        smartLists: true,
-        smartypants: false
-    });
+// Browser-sync
 
-    markdown.register(env, marked);
+gulp.task('browser-sync', () => {
+  browserSync.init({
+    server: {
+      baseDir: "./dist"
+    }
+  });
+});
 
-    gulp.task('pages', function() {
-        return gulp.src([templates + '/*.njk', templates + '/**/*.njk'])
-            .pipe(gulpnunjucks.compile("", {env: env}))
-            .pipe(rename(function (path) { path.extname=".html" }))
-            .pipe(gulp.dest(dist))
-    });
+gulp.task('devel', ['njk', 'browser-sync']);
+
+/* TODO
+
+- live reload with wathers
+
+*/

@@ -9,14 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-nunjucks": "^3.0.0",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-rename": "^1.2.2",
-    "marked": "^0.3.6",
-    "nunjucks-markdown": "^2.0.1"
-  },
-  "dependencies": {
-    "nunjucks-highlight.js": "0.0.5"
+    "gulp-server-livereload": "^1.9.2",
   }
 }
