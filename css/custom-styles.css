@@ -442,9 +442,6 @@ ul.achievements .desc {
 .contacts li a span.email {
   background-image: url('../img/icon-email.svg');
 }
-.contacts li a span.skype {
-  background-image: url('../img/icon-skype.svg');
-}
 .contacts li a span.phone {
   background-image: url('../img/icon-phone.svg');
 }
