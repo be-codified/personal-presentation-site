@@ -111,7 +111,49 @@ const checklist = [
     list: [
       {
         type: 'HTML5 Semantic Elements',
-        description: 'HTML5 Semantic Elements are used appropriately (header, section, footer, main...).',
+        description: 'HTML5 Semantic Elements are used appropriately (header, section, footer, main,...).',
+        tags: ['html', 'best practices'],
+        checked: false,
+      },
+      {
+        type: 'Error pages',
+        description: 'Error 404 page and 5xx exist.',
+        tags: ['html', 'best practices'],
+        checked: false,
+      },
+      {
+        type: 'Noopener',
+        description: 'If project uses external links with target="_blank", link should have a rel="noopener" attribute to prevent tab nabbing.',
+        tags: ['html', 'best practices', 'security'],
+        checked: false,
+      },
+      {
+        type: 'Clean up comments',
+        description: 'Unnecessary code needs to be removed before sending the page to production.',
+        tags: ['html', 'best practices'],
+        checked: false,
+      },
+      {
+        type: 'W3C compliant',
+        description: 'All pages need to be tested with the W3C validator to identify possible issues in the HTML code.',
+        tags: ['html', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'HTML Lint',
+        description: 'Using tools to help analyze any issues that could be in HTML code.',
+        tags: ['html', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Link checker',
+        description: 'There are no broken links in project, verify that there isn\'t any 404 error.',
+        tags: ['html', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Adblockers test',
+        description: 'Website shows content correctly with adblockers enabled.',
         tags: ['html', 'best practices'],
         checked: false,
       }
