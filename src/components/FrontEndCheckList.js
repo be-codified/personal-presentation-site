@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 
 class FrontEndCheckList extends Component {
+  calculateProgress(items) {
+    const total = items.length;
+
+    let counter = 0;
+    items.forEach((item) => {
+      if (item.checked) {
+        counter = counter + 1;
+      }
+    });
+
+    const procentage = Math.round(counter / total * 100);
+
+    return `${counter}/${total} (${procentage}%)`;
+  }
+
   render() {
     return (<div>
       <a href="https://frontendchecklist.io/">https://frontendchecklist.io/</a>
@@ -9,8 +24,10 @@ class FrontEndCheckList extends Component {
         this.props.data.map((segment) => {
           return (
             <React.Fragment>
-              {/* Outputting heading */}
+              {/* Heading */}
               <h2>{segment.heading}</h2>
+              {/* Progress */}
+              <p>Progress: {this.calculateProgress(segment.list)}</p>
               {
                 /* For each list item */
                 segment.list.map((item) => {
@@ -20,7 +37,7 @@ class FrontEndCheckList extends Component {
 
                   return (
                     <React.Fragment>
-                      {/* Outputting status, type, description and tags */}
+                      {/* Status, type, description and tags */}
                       <p>{status} {item.type}: {item.description}<br />
                         <small>{item.tags.join(', ')}</small>
                       </p>

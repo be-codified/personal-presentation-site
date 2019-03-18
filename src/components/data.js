@@ -158,6 +158,113 @@ const checklist = [
         checked: false,
       }
     ]
+  },
+  {
+    heading: 'CSS',
+    list: [
+      {
+        type: 'Responsive Web Design',
+        description: 'The website is using responsive web design.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'CSS Print',
+        description: 'A print stylesheet is provided and is correct on each page.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'Unique ID',
+        description: 'If IDs are used, they are unique to a page.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'Reset CSS',
+        description: 'A CSS reset (reset, normalize or reboot) is used and up to date.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'JS prefix',
+        description: 'All classes (or IDs used in JavaScript files) begin with \'js-\' and are not styled in the CSS files.',
+        tags: ['javascript', 'best practices'],
+        checked: false,
+      },
+      {
+        type: 'Embedded or inline CSS',
+        description: 'Avoid at all cost embeding CSS in <style> tags or using inline CSS.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'Vendor prefixes',
+        description: 'CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.',
+        tags: ['css'],
+        checked: false,
+      },
+      {
+        type: 'Concatenation',
+        description: 'CSS files are concatenated in a single file (Not for HTTP/2).',
+        tags: ['css', 'performance'],
+        checked: false,
+      },
+      {
+        type: 'Minification',
+        description: 'All CSS files are minified.',
+        tags: ['css', 'performance'],
+        checked: false,
+      },
+      {
+        type: 'Non-blocking',
+        description: 'CSS files need to be non-blocking to prevent the DOM from taking time to load.',
+        tags: ['css', 'performance'],
+        checked: false,
+      },
+      {
+        type: 'Stylelint',
+        description: 'All CSS or SCSS files are without any errors.',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Responsive web design',
+        description: 'All pages were tested with the correct breakpoints.',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'CSS Validator',
+        description: 'The CSS was tested and pertinent errors were corrected.',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Desktop browsers',
+        description: 'All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE,...).',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Mobile browsers',
+        description: 'All pages were tested on all current mobile browsers (Native browser, Chrome, Safari, ...).',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Operating systems',
+        description: 'All pages were tested on all current OS (Windows, Android, iOS, macOS, ...).',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Reading direction',
+        description: 'All pages were tested for LTR and RTL languages if they need to be supported.',
+        tags: ['css', 'testing'],
+        checked: false,
+      },
+    ]
   }
 ]
 
