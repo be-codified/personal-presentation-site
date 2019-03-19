@@ -1,60 +1,66 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import shortid from 'shortid';
+
+
 class FrontEndCheckList extends Component {
-  calculateProgress(items) {
+  calculateProgress = (items) => {
     const total = items.length;
 
     let counter = 0;
     items.forEach((item) => {
       if (item.checked) {
-        counter = counter + 1;
+        counter += 1;
       }
     });
 
-    const procentage = Math.round(counter / total * 100);
+    const percentage = Math.round(counter / total * 100);
 
-    return `${counter}/${total} (${procentage}%)`;
+    return `${counter}/${total} (${percentage}%)`;
   }
 
   render() {
-    return (<div>
-      <a href="https://frontendchecklist.io/">https://frontendchecklist.io/</a>
-      {
-        /* For each segment */
-        this.props.data.map((segment, index) => {
-          return (
-            <React.Fragment key={index}>
+    const { data } = this.props;
+
+    return (
+      <div>
+        <a href="https://frontendchecklist.io/">https://frontendchecklist.io/</a>
+        {
+          /* For each segment */
+          data.map(segment => (
+            <React.Fragment key={shortid.generate()}>
               {/* Heading */}
               <h2>{segment.heading}</h2>
               {/* Progress */}
               <p>Progress: {this.calculateProgress(segment.list)}</p>
               {
                 /* For each list item */
-                segment.list.map((item, index) => {
+                segment.list.map((item) => {
                   const status = item.checked
                     ? <input type="checkbox" checked disabled />
                     : <input type="checkbox" disabled />;
 
                   return (
-                    <React.Fragment key={index}>
+                    <React.Fragment key={shortid.generate()}>
                       {/* Status, type, description and tags */}
                       <p>{status} {item.type}: {item.description}<br />
                         <small>{item.tags.join(', ')}</small>
                       </p>
                     </React.Fragment>
-                  )
+                  );
                 })
               }
             </React.Fragment>
-          )
+          ))
         }
-      )}
-    </div>)
+      </div>
+    );
   }
 }
 
 FrontEndCheckList.propTypes = {
-  data: PropTypes.array
+  // TODO: lock this with child properties
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default FrontEndCheckList;
