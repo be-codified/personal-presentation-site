@@ -103,8 +103,8 @@ const checklist = [
         description: 'Tags with attributes are added correctly.',
         tags: ['social meta', 'testing'],
         checked: false,
-      }
-    ]
+      },
+    ],
   },
   {
     heading: 'Html',
@@ -156,8 +156,8 @@ const checklist = [
         description: 'Website shows content correctly with adblockers enabled.',
         tags: ['html', 'best practices'],
         checked: false,
-      }
-    ]
+      },
+    ],
   },
   {
     heading: 'CSS',
@@ -188,7 +188,7 @@ const checklist = [
       },
       {
         type: 'JS prefix',
-        description: 'All classes (or IDs used in JavaScript files) begin with \'js-\' and are not styled in the CSS files.',
+        description: 'All classes (or IDs used in JavaScript files) begin with `js-` and are not styled in the CSS files.',
         tags: ['javascript', 'best practices'],
         checked: false,
       },
@@ -200,7 +200,7 @@ const checklist = [
       },
       {
         type: 'Vendor prefixes',
-        description: 'CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.',
+        description: 'CSS vendor prefixes are used and are generated accordingly with project\'s browser support compatibility.',
         tags: ['css'],
         checked: false,
       },
@@ -264,8 +264,55 @@ const checklist = [
         tags: ['css', 'testing'],
         checked: false,
       },
-    ]
-  }
-]
+    ],
+  },
+  {
+    heading: 'JavaScript',
+    list: [
+      {
+        type: 'JavaScript Inline',
+        description: 'There isn\'t any JavaScript code inline (mixed with HTML code).',
+        tags: ['javascript'],
+        checked: false,
+      },
+      {
+        type: 'Concatenation',
+        description: 'JavaScript files are concatenated.',
+        tags: ['javascript'],
+        checked: false,
+      },
+      {
+        type: 'Minification',
+        description: 'JavaScript files are minified (there can be .min suffix added).',
+        tags: ['javascript'],
+        checked: false,
+      },
+      {
+        type: 'Noscript tag',
+        description: 'Use `<noscript>` tag in the HTML body if a script type on the page is unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering heavy apps such as React.js.',
+        tags: ['javascript'],
+        checked: false,
+      },
+      {
+        type: 'Non-blocking',
+        description: 'JavaScript files are loaded asynchronously using async or deferred using defer attribute.',
+        tags: ['javascript', 'performance'],
+        checked: false,
+      },
+      {
+        type: 'Modernizr',
+        description: 'If there is need to target some specific features, there can be used a custom Modernizr to add classes in `<html>` tag.',
+        tags: ['javascript'],
+        checked: false,
+      },
+      {
+        type: 'ESLint',
+        description: 'No errors are flagged by ESLint (based on project configuration or standards rules).',
+        tags: ['javascript', 'testing'],
+        checked: false,
+      },
+    ],
+  },
+];
 
 export default checklist;

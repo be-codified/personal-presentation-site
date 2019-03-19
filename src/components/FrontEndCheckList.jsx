@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
-
 class FrontEndCheckList extends Component {
   calculateProgress = (items) => {
     const total = items.length;
