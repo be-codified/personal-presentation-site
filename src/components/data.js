@@ -58,7 +58,7 @@ const checklist = [
       },
       {
         type: 'Language attribute',
-        description: 'The <code>lang</code> attribute of website is specified and related to the language of the current page.',
+        description: 'The `<code>lang</code>` attribute of website is specified and related to the language of the current page.',
         tags: ['meta tag'],
         checked: false,
       },
@@ -194,7 +194,7 @@ const checklist = [
       },
       {
         type: 'Embedded or inline CSS',
-        description: 'Avoid at all cost embeding CSS in <style> tags or using inline CSS.',
+        description: 'Avoid at all cost embeding CSS in `<style>` tags or using inline CSS.',
         tags: ['css'],
         checked: false,
       },
@@ -270,7 +270,7 @@ const checklist = [
     heading: 'JavaScript',
     list: [
       {
-        type: 'JavaScript Inline',
+        type: 'JavaScript inline',
         description: 'There isn\'t any JavaScript code inline (mixed with HTML code).',
         tags: ['javascript'],
         checked: false,
@@ -309,6 +309,53 @@ const checklist = [
         type: 'ESLint',
         description: 'No errors are flagged by ESLint (based on project configuration or standards rules).',
         tags: ['javascript', 'testing'],
+        checked: false,
+      },
+    ],
+  },
+  {
+    heading: 'Images',
+    list: [
+      {
+        type: 'Optimization',
+        description: 'All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).',
+        tags: ['images, best practices'],
+        checked: false,
+      },
+      {
+        type: 'Picture and srcset',
+        description: 'Use picture and srcset to provide the most appropriate image for the current viewport of the user.',
+        tags: ['images'],
+        checked: false,
+      },
+      {
+        type: 'Retina',
+        description: 'Provide layout images 2x or 3x, support retina display.',
+        tags: ['images'],
+        checked: false,
+      },
+      {
+        type: 'Sprite',
+        description: 'Small images are in a sprite file (in the case of icons, they can be in an SVG sprite image).',
+        tags: ['images'],
+        checked: false,
+      },
+      {
+        type: 'Width and height',
+        description: 'Set width and height attributes on `<img>` if the final rendered image size is known (can be omitted for CSS sizing).',
+        tags: ['images'],
+        checked: false,
+      },
+      {
+        type: 'Alternative text',
+        description: 'All `<img>` have an alternative text which describe the image visually.',
+        tags: ['images'],
+        checked: false,
+      },
+      {
+        type: 'Lazy loading',
+        description: 'Images are lazyloaded (A `<noscript>` fallback is always provided).',
+        tags: ['images', 'performance'],
         checked: false,
       },
     ],
