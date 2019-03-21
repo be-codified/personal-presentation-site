@@ -314,7 +314,7 @@ const checklist = [
     ],
   },
   {
-    heading: 'Images',
+    heading: 'Performance',
     list: [
       {
         type: 'Optimization',
@@ -356,6 +356,65 @@ const checklist = [
         type: 'Lazy loading',
         description: 'Images are lazyloaded (A `<noscript>` fallback is always provided).',
         tags: ['images', 'performance'],
+        checked: false,
+      },
+    ],
+  },
+  {
+    heading: 'Images',
+    list: [
+      {
+        type: 'Page weight',
+        description: 'The weight of each page is between 0 and 500 KB.',
+        tags: ['performance'],
+        checked: false,
+      },
+      {
+        type: 'Minified HTML',
+        description: 'HTML has been minified.',
+        tags: ['html', 'performance'],
+        checked: false,
+      },
+      {
+        type: 'Lazy loading',
+        description: 'Images, scripts and CSS need to be lazy loaded to improve the response time of the current page (see details in their respective sections).',
+        tags: ['best practices'],
+        checked: false,
+      },
+      {
+        type: 'Cookie size',
+        description: 'If there are cookies being used, be sure each cookie doesn\'t exceed 4096 bytes and domain name doesn\'t have more than 20 cookies.',
+        tags: ['best practices'],
+        checked: false,
+      },
+      {
+        type: 'DNS resolution',
+        description: 'DNS of third-party services that may be needed are resolved in advance during idle time using dns-prefetch.',
+        tags: ['requests'],
+        checked: false,
+      },
+      {
+        type: 'Preconnection',
+        description: 'DNS lookup, TCP handshake and TLS negotiation with services that will be needed soon is done in advance during idle time using preconnect.',
+        tags: ['requests'],
+        checked: false,
+      },
+      {
+        type: 'Prefetching',
+        description: 'Resources that will be needed soon (e.g. lazy loaded images) are requested in advance during idle time using prefetch.',
+        tags: ['requests'],
+        checked: false,
+      },
+      {
+        type: 'Preloading',
+        description: 'Resources needed in the current page (e.g. scripts placed at the end of `<body>`) in advance using preload.',
+        tags: ['requests'],
+        checked: false,
+      },
+      {
+        type: 'Google PageSpeed',
+        description: 'All pages were tested (not only the homepage) and have a score of at least 90/100.',
+        tags: ['testing'],
         checked: false,
       },
     ],
