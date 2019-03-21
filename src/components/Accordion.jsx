@@ -8,23 +8,21 @@ class Accordion extends Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { children } = this.props;
 
     return (
       <div>
         {
-          /* For each segment */
-          data.items.map(item => (
+          /* For each item */
+          children.map(item => (
             <React.Fragment key={shortid.generate()}>
-              <h3 className="handorgel__header">
-                <button className="handorgel__header__button">
-                  {item.heading.text}
+              <h1 className="accordion__header">
+                <button type="button">
+                  {item.props.children[0].props.children}
                 </button>
-              </h3>
-              <div className="handorgel__content">
-                <div className="handorgel__content__inner">
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </div>
+              </h1>
+              <div className="accordion__content">
+                {item.props.children[1].props.children}
               </div>
             </React.Fragment>
           ))
@@ -36,7 +34,7 @@ class Accordion extends Component {
 
 Accordion.propTypes = {
   // TODO: lock this with child properties
-  data: PropTypes.objectOf(PropTypes.object).isRequired,
+  children: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default Accordion;

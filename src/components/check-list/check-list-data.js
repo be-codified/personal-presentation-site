@@ -314,7 +314,7 @@ const checklist = [
     ],
   },
   {
-    heading: 'Performance',
+    heading: 'Images',
     list: [
       {
         type: 'Optimization',
@@ -361,7 +361,7 @@ const checklist = [
     ],
   },
   {
-    heading: 'Images',
+    heading: 'Performance',
     list: [
       {
         type: 'Page weight',
