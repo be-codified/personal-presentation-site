@@ -35,6 +35,20 @@ class App extends Component {
           </accordion-item>
         </Accordion>
         <hr />
+
+        {/* Section check list */}
+        <div>
+          {/* Sidebar */}
+          <ul className="ziga1">
+            {
+              checkListData.map(item => (
+                <li>
+                  <a href={`#${item.id}`} title={item.heading}>{item.heading}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
         <CheckList data={checkListData} />
       </div>
     );

@@ -29,7 +29,7 @@ class FrontEndCheckList extends Component {
           data.map(segment => (
             <React.Fragment key={shortid.generate()}>
               {/* Heading */}
-              <h2>{segment.heading}</h2>
+              <h2 id={segment.id}>{segment.heading}</h2>
               {/* Progress */}
               <p>Progress: {this.calculateProgress(segment.list)}</p>
               {

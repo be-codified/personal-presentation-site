@@ -1,5 +1,6 @@
 const checklist = [
   {
+    id: 'check-list-head',
     heading: 'Head',
     list: [
       {
@@ -107,6 +108,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-html',
     heading: 'HTML',
     list: [
       {
@@ -160,6 +162,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-css',
     heading: 'CSS',
     list: [
       {
@@ -267,6 +270,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-javascript',
     heading: 'JavaScript',
     list: [
       {
@@ -314,6 +318,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-images',
     heading: 'Images',
     list: [
       {
@@ -361,6 +366,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-performance',
     heading: 'Performance',
     list: [
       {
@@ -420,6 +426,7 @@ const checklist = [
     ],
   },
   {
+    id: 'check-list-seo',
     heading: 'SEO',
     list: [
       {
