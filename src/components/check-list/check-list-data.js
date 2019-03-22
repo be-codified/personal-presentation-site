@@ -107,7 +107,7 @@ const checklist = [
     ],
   },
   {
-    heading: 'Html',
+    heading: 'HTML',
     list: [
       {
         type: 'HTML5 Semantic Elements',
@@ -415,6 +415,53 @@ const checklist = [
         type: 'Google PageSpeed',
         description: 'All pages were tested (not only the homepage) and have a score of at least 90/100.',
         tags: ['testing'],
+        checked: false,
+      },
+    ],
+  },
+  {
+    heading: 'SEO',
+    list: [
+      {
+        type: 'Google Analytics',
+        description: 'Google Analytics is installed and correctly configured.',
+        tags: ['seo'],
+        checked: false,
+      },
+      {
+        type: 'Headings logic',
+        description: 'Heading text helps to understand the content in the current page.',
+        tags: ['seo', 'accessibility', 'html'],
+        checked: false,
+      },
+      {
+        type: 'sitemap.xml',
+        description: 'A `sitemap.xml` exists and was submitted to Google search console.',
+        tags: ['seo'],
+        checked: false,
+      },
+      {
+        type: 'robots.txt',
+        description: 'The `robots.txt` is not blocking webpages.',
+        tags: ['seo', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Structured data',
+        description: 'Pages using structured data are tested and are without errors. Structured data helps crawlers understand the content in the current page.',
+        tags: ['seo', 'testing'],
+        checked: false,
+      },
+      {
+        type: 'Sitemap HTML',
+        description: 'An HTML sitemap is provided and is accessible via a link in the footer of your website.',
+        tags: ['seo', 'html'],
+        checked: false,
+      },
+      {
+        type: 'Pagination link tags',
+        description: 'Provide `rel="prev"` and `rel="next"` to indicate paginated content.',
+        tags: ['seo', 'html'],
         checked: false,
       },
     ],
