@@ -16,6 +16,7 @@ class Accordion extends Component {
           /* For each item */
           children.map(item => (
             <React.Fragment key={shortid.generate()}>
+              {/* TODO: get tag instead of h1 */}
               <h1 className="accordion__header">
                 <button type="button">
                   {item.props.children[0].props.children}

@@ -4,6 +4,7 @@ import Accordion from './components/Accordion';
 import checkListData from './components/check-list/check-list-data';
 
 import './App.css';
+import ForEach from './components/ForEach';
 
 class App extends Component {
   someFunction = () => {
@@ -13,6 +14,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <ul>
+          <ForEach items={['value 1', 'value 2']}>
+            <li />
+          </ForEach>
+        </ul>
+
         <Accordion>
           <accordion-item>
             <h6>I am a heading 1</h6>
