@@ -11,20 +11,12 @@ class Accordion extends Component {
     const { children } = this.props;
 
     return (
-      <div>
+      <div className="accordion">
         {
           /* For each item */
           children.map(item => (
             <React.Fragment key={shortid.generate()}>
-              {/* TODO: get tag instead of h1 */}
-              <h1 className="accordion__header">
-                <button type="button">
-                  {item.props.children[0].props.children}
-                </button>
-              </h1>
-              <div className="accordion__content">
-                {item.props.children[1].props.children}
-              </div>
+              {item}
             </React.Fragment>
           ))
         }
@@ -35,7 +27,7 @@ class Accordion extends Component {
 
 Accordion.propTypes = {
   // TODO: lock this with child properties
-  children: PropTypes.objectOf(PropTypes.object).isRequired,
+  // children: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default Accordion;

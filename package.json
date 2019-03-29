@@ -11,9 +11,10 @@
     "shortid": "^2.2.14"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "develop": "react-scripts start",
     "build": "react-scripts build",
     "start": "serve -s build",
+    "react-component-hierarchy": "./node_modules/react-component-hierarchy/bin/rch.js $PWD/src",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx src/ --ext .js src/"
@@ -31,6 +32,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "react-component-hierarchy": "^1.1.0"
   }
 }

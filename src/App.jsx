@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import CheckList from './components/check-list/CheckList';
-import Accordion from './components/Accordion';
+import Accordion from './components/accordion/Accordion';
+import AccordionItem from './components/accordion/AccordionItem';
+import AccordionItemHeading from './components/accordion/AccordionItemHeading';
+import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
 
 import './App.css';
@@ -21,25 +24,29 @@ class App extends Component {
         </ul>
 
         <Accordion>
-          <accordion-item>
-            <h6>I am a heading 1</h6>
-            <div>
-              <h2>I am content 1</h2>
-            </div>
-          </accordion-item>
-          <accordion-item>
-            <h6>I am a heading 2</h6>
-            <div>
-              <strong>I am content 2</strong>
-            </div>
-          </accordion-item>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <h6>I am a heading 1</h6>
+            </AccordionItemHeading>
+            <AccordionItemContent isCollapsed="false">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam impedit veniam porro dolor mollitia sunt itaque blanditiis officiis amet perspiciatis voluptatem id consequatur, placeat, recusandae vero vel aspernatur doloremque. 1</p>
+            </AccordionItemContent>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <h6>I am a heading 2</h6>
+            </AccordionItemHeading>
+            <AccordionItemContent>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam impedit veniam porro dolor mollitia sunt itaque blanditiis officiis amet perspiciatis voluptatem id consequatur, placeat, recusandae vero vel aspernatur doloremque. 2</p>
+            </AccordionItemContent>
+          </AccordionItem>
         </Accordion>
         <hr />
 
-        {/* Section check list */}
+        {/* --- Section check list --- */}
         <div>
           {/* Sidebar */}
-          <ul className="ziga1">
+          <ul>
             {
               checkListData.map(item => (
                 <li>
@@ -50,6 +57,7 @@ class App extends Component {
           </ul>
         </div>
         <CheckList data={checkListData} />
+        {/* /--- Section check list --- */}
       </div>
     );
   }
