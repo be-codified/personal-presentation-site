@@ -29,7 +29,7 @@ class App extends Component {
               <h6>I am a heading 1</h6>
             </AccordionItemHeading>
             <AccordionItemContent isCollapsed="false">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam impedit veniam porro dolor mollitia sunt itaque blanditiis officiis amet perspiciatis voluptatem id consequatur, placeat, recusandae vero vel aspernatur doloremque. 1</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit 1</p>
             </AccordionItemContent>
           </AccordionItem>
           <AccordionItem>
@@ -37,7 +37,7 @@ class App extends Component {
               <h6>I am a heading 2</h6>
             </AccordionItemHeading>
             <AccordionItemContent>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam impedit veniam porro dolor mollitia sunt itaque blanditiis officiis amet perspiciatis voluptatem id consequatur, placeat, recusandae vero vel aspernatur doloremque. 2</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit 2</p>
             </AccordionItemContent>
           </AccordionItem>
         </Accordion> */}
