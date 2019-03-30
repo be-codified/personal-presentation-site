@@ -473,6 +473,96 @@ const checklist = [
       },
     ],
   },
+  {
+    id: 'check-list-webfonts',
+    heading: 'Webfonts',
+    list: [
+      {
+        type: 'Webfont format',
+        description: 'WOFF, WOFF2 and TTF are supported by all modern browsers.',
+        tags: ['webfont'],
+        checked: false,
+      },
+      {
+        type: 'Webfont size',
+        description: 'Webfont sizes don\'t exceed 2 MB (all variants included).',
+        tags: ['webfont'],
+        checked: false,
+      },
+      {
+        type: 'Webfont loader',
+        description: 'Control loading behavior with a webfont loader.',
+        tags: ['webfont'],
+        checked: false,
+      },
+    ],
+  },
+  {
+    id: 'check-list-accessibility',
+    heading: 'Accessibility',
+    list: [
+      {
+        type: 'Progressive enhancement',
+        description: 'Major functionality like main navigation and search should work without JavaScript enabled.',
+        tags: ['best practices'],
+        checked: false,
+      },
+      {
+        type: 'Color contrast',
+        description: 'Color contrast should at least pass WCAG AA (AAA for mobile).',
+        tags: ['best practices'],
+        checked: false,
+      },
+      {
+        type: 'H1',
+        description: 'All pages have an `<h1>` tag which is not the title of the website.',
+        tags: ['best practices', 'seo'],
+        checked: false,
+      },
+      {
+        type: 'Headings',
+        description: 'Headings should be used properly and in the right order (H1 to H6).',
+        tags: ['best practices'],
+        checked: false,
+      },
+      {
+        type: 'Specific HTML5 input types are used',
+        description: 'This is especially important for mobile devices that show customized keypads and widgets for different types.',
+        tags: false,
+        checked: false,
+      },
+      {
+        type: 'Label',
+        description: 'A label is associated with each input form element. In case a label can\'t be displayed, use aria-label instead.',
+        tags: false,
+        checked: false,
+      },
+      {
+        type: 'Accessibility standards testing',
+        description: 'Use the WAVE tool to test if your page respects the accessibility standards.',
+        tags: ['testing'],
+        checked: false,
+      },
+      {
+        type: 'Keyboard navigation',
+        description: 'Test your website using only your keyboard in a previsible order. All interactive elements are reachable and usable.',
+        tags: ['testing'],
+        checked: false,
+      },
+      {
+        type: 'Screen reader',
+        description: 'All pages were tested in two or more screen readers (such as JAWS, VoiceOver and NVDA).',
+        tags: ['testing'],
+        checked: false,
+      },
+      {
+        type: 'Focus style',
+        description: 'If the focus is disabled, it is replaced by visible state in CSS.',
+        tags: ['testing'],
+        checked: false,
+      },
+    ],
+  },
 ];
 
 export default checklist;

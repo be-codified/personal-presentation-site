@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import CheckList from './components/check-list/CheckList';
-import Accordion from './components/accordion/Accordion';
-import AccordionItem from './components/accordion/AccordionItem';
-import AccordionItemHeading from './components/accordion/AccordionItemHeading';
-import AccordionItemContent from './components/accordion/AccordionItemContent';
+// import Accordion from './components/accordion/Accordion';
+// import AccordionItem from './components/accordion/AccordionItem';
+// import AccordionItemHeading from './components/accordion/AccordionItemHeading';
+// import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
 
 import './App.css';
@@ -23,7 +23,7 @@ class App extends Component {
           </ForEach>
         </ul>
 
-        <Accordion>
+        {/* <Accordion>
           <AccordionItem>
             <AccordionItemHeading>
               <h6>I am a heading 1</h6>
@@ -40,7 +40,7 @@ class App extends Component {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam impedit veniam porro dolor mollitia sunt itaque blanditiis officiis amet perspiciatis voluptatem id consequatur, placeat, recusandae vero vel aspernatur doloremque. 2</p>
             </AccordionItemContent>
           </AccordionItem>
-        </Accordion>
+        </Accordion> */}
         <hr />
 
         {/* --- Section check list --- */}

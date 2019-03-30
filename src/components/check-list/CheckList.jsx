@@ -39,12 +39,14 @@ class FrontEndCheckList extends Component {
                     ? <input type="checkbox" checked disabled />
                     : <input type="checkbox" disabled />;
 
+                  const tags = item.tags
+                    ? <small><br />{item.tags.join(', ')}</small>
+                    : null;
+
                   return (
                     <React.Fragment key={shortid.generate()}>
                       {/* Status, type, description and tags */}
-                      <p>{status} {item.type}: {item.description}<br />
-                        <small>{item.tags.join(', ')}</small>
-                      </p>
+                      <p>{status} {item.type}: {item.description} {tags}</p>
                     </React.Fragment>
                   );
                 })
