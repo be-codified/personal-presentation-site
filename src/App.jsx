@@ -5,9 +5,10 @@ import CheckList from './components/check-list/CheckList';
 // import AccordionItemHeading from './components/accordion/AccordionItemHeading';
 // import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
+import shortid from 'shortid';
 
 import './App.css';
-import ForEach from './components/ForEach';
+// import ForEach from './components/ForEach';
 
 class App extends Component {
   someFunction = () => {
@@ -17,13 +18,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ul>
+        {/* <ul>
           <ForEach items={['value 1', 'value 2']}>
             <li />
           </ForEach>
         </ul>
 
-        {/* <Accordion>
+        <Accordion>
           <AccordionItem>
             <AccordionItemHeading>
               <h6>I am a heading 1</h6>
@@ -40,8 +41,9 @@ class App extends Component {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit 2</p>
             </AccordionItemContent>
           </AccordionItem>
-        </Accordion> */}
+        </Accordion>
         <hr />
+        */}
 
         {/* --- Section check list --- */}
         <div>
@@ -49,7 +51,7 @@ class App extends Component {
           <ul>
             {
               checkListData.map(item => (
-                <li>
+                <li key={shortid.generate()}>
                   <a href={`#${item.id}`} title={item.heading}>{item.heading}</a>
                 </li>
               ))

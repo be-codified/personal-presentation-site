@@ -7,7 +7,7 @@ const checklist = [
         type: 'Doctype',
         description: 'The Doctype is HTML5 and is at the top of all HTML pages.',
         tags: ['meta tag'],
-        checked: false,
+        checked: true,
       },
       {
         type: 'Charset',

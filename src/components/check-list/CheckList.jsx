@@ -23,7 +23,6 @@ class FrontEndCheckList extends Component {
 
     return (
       <div>
-        <a href="https://frontendchecklist.io/">https://frontendchecklist.io/</a>
         {
           /* For each segment */
           data.map(segment => (
@@ -32,25 +31,27 @@ class FrontEndCheckList extends Component {
               <h2 id={segment.id}>{segment.heading}</h2>
               {/* Progress */}
               <p>Progress: {this.calculateProgress(segment.list)}</p>
-              {
-                /* For each list item */
-                segment.list.map((item) => {
-                  const status = item.checked
-                    ? <input type="checkbox" checked disabled />
-                    : <input type="checkbox" disabled />;
+              <ul>
+                {
+                  /* For each list item */
+                  segment.list.map((item) => {
+                    const status = item.checked
+                      ? <input type="checkbox" checked disabled />
+                      : <input type="checkbox" disabled />;
 
-                  const tags = item.tags
-                    ? <small><br />{item.tags.join(', ')}</small>
-                    : null;
+                    const tags = item.tags
+                      ? <small><br />{item.tags.join(', ')}</small>
+                      : null;
 
-                  return (
-                    <React.Fragment key={shortid.generate()}>
-                      {/* Status, type, description and tags */}
-                      <p>{status} {item.type}: {item.description} {tags}</p>
-                    </React.Fragment>
-                  );
-                })
-              }
+                    return (
+                      <li key={shortid.generate()}>
+                        {/* Status, type, description and tags */}
+                        <p>{status} {item.type}: {item.description} {tags}</p>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
             </React.Fragment>
           ))
         }
