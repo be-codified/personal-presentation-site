@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
-import './CheckList.scss';
+import './checkList.scss';
 
-class FrontEndCheckList extends Component {
+class CheckList extends Component {
   calculateProgress = (items) => {
     const total = items.length;
 
@@ -63,9 +63,9 @@ class FrontEndCheckList extends Component {
   }
 }
 
-FrontEndCheckList.propTypes = {
+CheckList.propTypes = {
   // TODO: lock this with child properties
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default FrontEndCheckList;
+export default CheckList;
