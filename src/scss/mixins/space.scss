@@ -1,0 +1,50 @@
+@mixin space() {
+  $directions: (top, bottom);
+
+  $sizes: (
+    tiny: (
+      mobile: 5px,
+      tablet: 10px,
+      desktop: 15px,
+      desktopHD: 20px
+    ),
+    small: (
+      mobile: 10px,
+      tablet: 20px,
+      desktop: 30px,
+      desktopHD: 40px
+    ),
+    large: (
+      mobile: 15px,
+      tablet: 30px,
+      desktop: 45px,
+      desktopHD: 60px
+    ),
+    xlarge: (
+      mobile: 20px,
+      tablet: 40px,
+      desktop: 60px,
+      desktopHD: 80px
+    )
+  );
+
+  // For each size
+  @each $size in map-keys($sizes) {
+    $sizeSet: map-get($sizes, $size);
+
+    // For each direction
+    @each $direction in $directions {
+      .space-padding-#{$direction}-#{$size} {
+        // For mobile screen
+        padding-#{$direction}: #{map-get($sizeSet, mobile)};
+
+        // For each other screen
+        @each $breakpoint in map-keys($breakpoints) {
+          @include breakpoint(#{$breakpoint}) {
+            padding-#{$direction}: #{map-get($sizeSet, $breakpoint)};
+          }
+        }
+      }
+    }
+  }
+}

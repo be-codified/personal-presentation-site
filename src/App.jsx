@@ -7,7 +7,6 @@ import CheckList from './components/check-list/CheckList';
 // import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
 
-import './App.css';
 // import ForEach from './components/ForEach';
 
 class App extends Component {

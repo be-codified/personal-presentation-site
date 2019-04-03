@@ -1,0 +1,15 @@
+@if $debug == true {
+  html {
+    &:before {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 3px 5px;
+      content: 'Screen mobile';
+
+      @include breakpoint('tablet') { content: 'Screen tablet'; };
+      @include breakpoint('desktop') { content: 'Screen desktop '; };
+      @include breakpoint('desktopHD') { content: 'Screen desktop HD'; };
+    }
+  }
+}

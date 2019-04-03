@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
+import './CheckList.scss';
 class FrontEndCheckList extends Component {
   calculateProgress = (items) => {
     const total = items.length;
@@ -20,9 +21,10 @@ class FrontEndCheckList extends Component {
 
   render() {
     const { data } = this.props;
+    const className = 'check-list';
 
     return (
-      <div>
+      <div className={`${className} space-padding-bottom-xlarge`}>
         {
           /* For each segment */
           data.map(segment => (
