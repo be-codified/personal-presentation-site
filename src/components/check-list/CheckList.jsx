@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
 import './CheckList.scss';
+
 class FrontEndCheckList extends Component {
   calculateProgress = (items) => {
     const total = items.length;
