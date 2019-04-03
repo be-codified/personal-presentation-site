@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import shortid from 'shortid';
 import CheckList from './components/check-list/CheckList';
 // import Accordion from './components/accordion/Accordion';
 // import AccordionItem from './components/accordion/AccordionItem';
 // import AccordionItemHeading from './components/accordion/AccordionItemHeading';
 // import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
-import shortid from 'shortid';
 
 import './App.css';
 // import ForEach from './components/ForEach';
