@@ -1,39 +1,74 @@
 @mixin space() {
-  $directions: (top, bottom);
+  // Config for fraction size and its multiplication for all dimensions
+
+  $fraction: 4px;
 
   $sizes: (
     tiny: (
-      mobile: 5px,
-      tablet: 10px,
-      desktop: 15px,
-      desktopHD: 20px
+      mobile: $fraction,
+      tablet: $fraction * 2,
+      desktop: $fraction * 3,
+      desktopHD: $fraction * 4
     ),
     small: (
-      mobile: 10px,
-      tablet: 20px,
-      desktop: 30px,
-      desktopHD: 40px
+      mobile: $fraction * 2,
+      tablet: $fraction * 4,
+      desktop: $fraction * 6,
+      desktopHD: $fraction * 8
     ),
     large: (
-      mobile: 15px,
-      tablet: 30px,
-      desktop: 45px,
-      desktopHD: 60px
+      mobile: $fraction * 3,
+      tablet: $fraction * 6,
+      desktop: $fraction * 9,
+      desktopHD: $fraction * 12
     ),
     xlarge: (
-      mobile: 20px,
-      tablet: 40px,
-      desktop: 60px,
-      desktopHD: 80px
+      mobile: $fraction * 4,
+      tablet: $fraction * 8,
+      desktop: $fraction * 12,
+      desktopHD: $fraction * 16
     )
   );
+
+  // Creating classes for specific direction
+
+  $directions: (top, right, bottom, left);
 
   // For each size
   @each $size in map-keys($sizes) {
     $sizeSet: map-get($sizes, $size);
 
+    //--- For all directions
+
+    // For all padding
+    .space-padding-#{$size} {
+      // For mobile screen
+      padding: #{map-get($sizeSet, mobile)};
+
+      // For each other screen
+      @each $breakpoint in map-keys($breakpoints) {
+        @include breakpoint(#{$breakpoint}) {
+          padding: #{map-get($sizeSet, $breakpoint)};
+        }
+      }
+    }
+
+    // For all margin
+    .space-margin-#{$size} {
+      // For mobile screen
+      margin: #{map-get($sizeSet, mobile)};
+
+      // For each other screen
+      @each $breakpoint in map-keys($breakpoints) {
+        @include breakpoint(#{$breakpoint}) {
+          margin: #{map-get($sizeSet, $breakpoint)};
+        }
+      }
+    }
+
     // For each direction
     @each $direction in $directions {
+      // For specific padding direction
       .space-padding-#{$direction}-#{$size} {
         // For mobile screen
         padding-#{$direction}: #{map-get($sizeSet, mobile)};
@@ -45,6 +80,48 @@
           }
         }
       }
+
+       // For specific margin direction
+      .space-margin-#{$direction}-#{$size} {
+        // For mobile screen
+        margin-#{$direction}: #{map-get($sizeSet, mobile)};
+
+        // For each other screen
+        @each $breakpoint in map-keys($breakpoints) {
+          @include breakpoint(#{$breakpoint}) {
+            margin-#{$direction}: #{map-get($sizeSet, $breakpoint)};
+          }
+        }
+      }
+    }
+  }
+
+  // Creating reset classes
+
+  // For no padding
+  .space-no-padding {
+    @each $direction in $directions {
+      padding-#{$direction}: 0 !important;
+    }
+  }
+
+  // For no margin
+  .space-no-margin {
+    @each $direction in $directions {
+      margin-#{$direction}: 0 !important;
+    }
+  }
+
+  // For each direction
+  @each $direction in $directions {
+    // For specific padding direction
+    .space-no-padding-#{$direction} {
+      padding-#{$direction}: 0 !important;
+    }
+
+    // For specific margin direction
+    .space-no-margin-#{$direction} {
+      margin-#{$direction}: 0 !important;
     }
   }
 }

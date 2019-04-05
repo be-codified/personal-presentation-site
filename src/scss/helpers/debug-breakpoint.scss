@@ -2,9 +2,9 @@
   html {
     &:before {
       display: inline-block;
-      background-color: red;
-      color: white;
-      padding: 3px 5px;
+      background-color: #FF4136;
+      color: #ffffff;
+      padding: 5px 8px;
       content: 'Screen mobile';
 
       @include breakpoint('tablet') { content: 'Screen tablet'; };
