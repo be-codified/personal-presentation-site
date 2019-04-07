@@ -7,8 +7,6 @@ import CheckList from './components/check-list/CheckList';
 // import AccordionItemContent from './components/accordion/AccordionItemContent';
 import checkListData from './components/check-list/check-list-data';
 
-// import ForEach from './components/ForEach';
-
 class App extends Component {
   someFunction = () => {
     // TODO: something
@@ -16,12 +14,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        {/* <ul>
-          <ForEach items={['value 1', 'value 2']}>
-            <li />
-          </ForEach>
-        </ul>
+      <div className="space-padding-large">
+        {/*
 
         <Accordion>
           <AccordionItem>

@@ -53,7 +53,7 @@ const checklist = [
       },
       {
         type: 'Canonical',
-        description: 'Use rel="canonical" are being used to avoid duplicate content.',
+        description: 'Use `rel="canonical"` are being used to avoid duplicate content.',
         tags: ['meta tag'],
         checked: false,
       },
@@ -125,7 +125,7 @@ const checklist = [
       },
       {
         type: 'Noopener',
-        description: 'If project uses external links with target="_blank", link should have a rel="noopener" attribute to prevent tab nabbing.',
+        description: 'If project uses external links with `target="_blank"`, link should have a `rel="noopener"` attribute to prevent tab nabbing.',
         tags: ['html', 'best practices', 'security'],
         checked: false,
       },
