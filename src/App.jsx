@@ -39,8 +39,9 @@ class App extends Component {
           }
         }
         >
-          <h2 id={`${section}-test-1`}>test 1</h2>
-          <h2 id={`${section}-test-2`}>test 1</h2>
+          <h2>How was made title</h2>
+          <h3 id={`${section}-test-1`}>How was made subtitle</h3>
+          <h3 id={`${section}-test-2`}>How was made subtitle</h3>
           <Highlight language="scss">
             <p>test</p>
           </Highlight>
