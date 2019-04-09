@@ -37,9 +37,9 @@ class HowWasMade extends Component {
 }
 
 HowWasMade.propTypes = {
-  sidebar: PropTypes.shape({
+  sidebar: PropTypes.PropTypes.shape({
     section: PropTypes.string,
-    items: PropTypes.ArrayOf(
+    items: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string,
         heading: PropTypes.string,
