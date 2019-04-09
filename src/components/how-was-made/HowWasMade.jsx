@@ -38,13 +38,13 @@ class HowWasMade extends Component {
 
 HowWasMade.propTypes = {
   sidebar: PropTypes.PropTypes.shape({
-    section: PropTypes.string,
+    section: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(
       PropTypes.shape({
-        id: PropTypes.string,
-        heading: PropTypes.string,
-      }),
-    ),
+        id: PropTypes.string.isRequired,
+        heading: PropTypes.string.isRequired,
+      }).isRequired,
+    ).isRequired,
   }).isRequired,
   children: PropTypes.node.isRequired,
 };
