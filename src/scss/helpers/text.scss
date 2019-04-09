@@ -1,0 +1,50 @@
+.text {
+  // Alignment
+  &-left {
+    text-align: left !important;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  // Decoration
+  &-underline {
+    text-decoration: underline;
+
+    &-cursor-pointer {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &-no-underline {
+    text-decoration: none;
+
+    &-cursor-text {
+      cursor: text;
+    }
+  }
+
+  // Transform
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-lowercase {
+    text-transform: lowercase !important;
+  }
+
+  // White space
+  &-no-wrap {
+    white-space: nowrap;
+  }
+}

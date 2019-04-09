@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Highlight from 'react-highlight.js';
 import shortid from 'shortid';
 import CheckList from './components/check-list/CheckList';
 // import Accordion from './components/accordion/Accordion';
@@ -15,6 +16,12 @@ class App extends Component {
   render() {
     return (
       <div className="space-padding-large">
+        <div className="how-was-made space-padding-large">
+          <Highlight language="scss">
+            <p>test</p>
+          </Highlight>
+        </div>
+
         {/*
 
         <Accordion>
@@ -41,7 +48,7 @@ class App extends Component {
         {/* --- Section check list --- */}
         <div>
           {/* Sidebar */}
-          <ul>
+          <ul className="list-no-style-type">
             {
               checkListData.map(item => (
                 <li key={shortid.generate()}>
