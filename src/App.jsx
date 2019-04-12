@@ -19,12 +19,12 @@ class App extends Component {
   render() {
     const section = 'some-section';
 
-    const test = React.createRef();
-    console.log(test);
+    // const test = React.createRef();
+    // console.log(test);
 
     return (
       <div className="space-padding-large">
-        <span ref={this.test}></span>
+        <span ref={this.test} />
 
         {/* How was made */}
 

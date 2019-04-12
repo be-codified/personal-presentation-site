@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// import shortid from 'shortid';
 import ScrollToAnchorLink from '../scroll-to-anchor-link/ScrollToAnchorLink';
-import shortid from 'shortid';
 
 class HowWasMade extends Component {
   constructor(props) {
@@ -10,7 +10,8 @@ class HowWasMade extends Component {
   }
 
   render() {
-    const { sidebar, children } = this.props;
+    // const { sidebar, children } = this.props;
+    const { children } = this.props;
     const className = 'check-list';
 
     // const ref = React.createRef();
