@@ -32,7 +32,7 @@ class CheckList extends Component {
               <h2 id={segment.id}>{segment.heading}</h2>
               {/* Progress */}
               <p>Progress: {this.calculateProgress(segment.list)}</p>
-              <ul>
+              <ul className="list-no-style-type">
                 {
                   /* For each list item */
                   segment.list.map((item) => {
@@ -40,14 +40,17 @@ class CheckList extends Component {
                       ? <input type="checkbox" checked disabled />
                       : <input type="checkbox" disabled />;
 
-                    const tags = item.tags
-                      ? <small><br />{item.tags.join(', ')}</small>
-                      : null;
+                    let tags;
+
+                    if (item.tags) {
+                      tags = <ul className="list-no-style-type list-inline-block">{item.tags.map(tag => <li>{tag}</li>)}</ul>;
+                    }
 
                     return (
                       <li key={shortid.generate()}>
                         {/* Status, type, description and tags */}
-                        <p>{status} {item.type}: {item.description} {tags}</p>
+                        <p>{status} {item.type}: {item.description}</p>
+                        {tags}
                       </li>
                     );
                   })
