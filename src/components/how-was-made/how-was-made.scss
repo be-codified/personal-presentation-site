@@ -1,5 +1,11 @@
+/**
+ *
+ * How was made styles
+ *
+ */
+
 $class-name: 'how-was-made';
 
 .#{$class-name} {
-  background-color: yellow;
+  @extend .background-color-debug;
 }

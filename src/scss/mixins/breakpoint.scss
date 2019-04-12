@@ -1,3 +1,9 @@
+/**
+ *
+ * Breakpoint mixin
+ *
+ */
+
 // Config for breakpoints for different screens
 
 $breakpoints: (
@@ -11,8 +17,10 @@ $breakpoints: (
     @media (min-width: #{map-get($breakpoints, $screen)}) {
       @content;
     }
-  } @else {
+  }
+  @else {
+    // stylelint-disable-next-line at-rule-no-unknown
     @warn "Unfortunately, no width could be retrieved from `#{$screen}`. "
-          + "Please make sure it is defined in `$breakpoints`.";
+      + "Please make sure it is defined in `$breakpoints`.";
   }
 }

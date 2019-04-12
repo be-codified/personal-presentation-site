@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
-import './check-list.scss';
-
 class CheckList extends Component {
   calculateProgress = (items) => {
     const total = items.length;

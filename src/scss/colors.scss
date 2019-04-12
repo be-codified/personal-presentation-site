@@ -1,0 +1,23 @@
+/**
+ *
+ * Colors styles
+ *
+ */
+
+$colors: (
+  debug: #FF4136,
+  white: #FFFFFF,
+  black: #000000,
+  yellow: yellow,
+);
+
+// For each color
+@each $color in map-keys($colors) {
+  .color-#{$color} {
+    color: #{map-get($colors, $color)};
+  }
+
+  .background-color-#{$color} {
+    background-color: #{map-get($colors, $color)};
+  }
+}

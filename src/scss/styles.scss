@@ -1,5 +1,14 @@
+/**
+ *
+ * Including all styles
+ *
+ */
+
 // Variables
 $debug: true;
+
+// Styles
+@import 'colors.scss';
 
 // Mixins
 @import 'mixins/breakpoint.scss';
@@ -13,8 +22,9 @@ $debug: true;
 // Functions
 @include space();
 
-// Styles
-// TODO
+// Components
+@import '../components/how-was-made/how-was-made.scss';
+@import '../components/check-list/check-list.scss';
 
 // Highlight theme
 @import url('https://highlightjs.org/static/demo/styles/railscasts.css');

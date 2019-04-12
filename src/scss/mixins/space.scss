@@ -1,3 +1,9 @@
+/**
+ *
+ * Space mixin
+ *
+ */
+
 @mixin space() {
   // Config for fraction size and its multiplication for all dimensions
 
@@ -38,7 +44,7 @@
   @each $size in map-keys($sizes) {
     $sizeSet: map-get($sizes, $size);
 
-    //--- For all directions
+    // --- For all directions
 
     // For all padding
     .space-padding-#{$size} {
@@ -81,7 +87,7 @@
         }
       }
 
-       // For specific margin direction
+      // For specific margin direction
       .space-margin-#{$direction}-#{$size} {
         // For mobile screen
         margin-#{$direction}: #{map-get($sizeSet, mobile)};

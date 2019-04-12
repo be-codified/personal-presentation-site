@@ -1,3 +1,9 @@
+/**
+ *
+ * Check list styles
+ *
+ */
+
 .check-list {
-  background-color: yellow;
+  @extend .background-color-yellow;
 }

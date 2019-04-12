@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
 import Highlight from 'react-highlight.js';
 import shortid from 'shortid';
 import CheckList from './components/check-list/CheckList';
 import HowWasMade from './components/how-was-made/HowWasMade';
-import scrollToAnchor from './js/scroll-to-anchor';
+// import scrollToAnchor from './js/scroll-to-anchor';
 // import Accordion from './components/accordion/Accordion';
 // import AccordionItem from './components/accordion/AccordionItem';
 // import AccordionItemHeading from './components/accordion/AccordionItemHeading';
@@ -12,17 +13,23 @@ import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
   componentDidMount() {
-    scrollToAnchor();
+    // scrollToAnchor();
   }
-
-  someFunction = () => {}
 
   render() {
     const section = 'some-section';
 
+    const test = React.createRef();
+    console.log(test);
+
     return (
       <div className="space-padding-large">
+        <span ref={this.test}></span>
+
         {/* How was made */}
+
+        {/* TODO: move in */}
+
         <HowWasMade sidebar={
           {
             section,
@@ -40,8 +47,8 @@ class App extends Component {
         }
         >
           <h2>How was made title</h2>
-          <h3 id={`${section}-test-1`}>How was made subtitle</h3>
-          <h3 id={`${section}-test-2`}>How was made subtitle</h3>
+          <h3 id={`${section}-test-1`} ref={`${section}-test-1`}>How was made subtitle</h3>
+          <h3 id={`${section}-test-2`} ref={`${section}-test-2`}>How was made subtitle</h3>
           <Highlight language="scss">
             <p>test</p>
           </Highlight>
