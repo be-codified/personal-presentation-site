@@ -11,7 +11,7 @@ const checklist = [
       },
       {
         type: 'Charset',
-        description: 'The charset declared (UTF-8) is declared correctly.',
+        description: 'The charset UTF-8 is declared correctly.',
         tags: ['meta tag'],
         checked: false,
       },
@@ -89,18 +89,18 @@ const checklist = [
       },
       {
         type: 'CSS order',
-        description: 'All CSS files are loaded before any JavaScript files in the HEAD tag.',
+        description: 'All CSS files are loaded before any JavaScript files in the `<head>` tag.',
         tags: ['html tag'],
         checked: false,
       },
       {
-        type: 'Facebook Open Graph',
+        type: 'Facebook open graph',
         description: 'Tags with attributes are added correctly.',
         tags: ['social meta', 'testing'],
         checked: false,
       },
       {
-        type: 'Twitter Card',
+        type: 'Twitter card',
         description: 'Tags with attributes are added correctly.',
         tags: ['social meta', 'testing'],
         checked: false,
@@ -112,8 +112,8 @@ const checklist = [
     heading: 'HTML',
     list: [
       {
-        type: 'HTML5 Semantic Elements',
-        description: 'HTML5 Semantic Elements are used appropriately (header, section, footer, main,...).',
+        type: 'HTML5 semantic elements',
+        description: 'HTML5 semantic elements are used appropriately (e.g. header, section, footer, main...).',
         tags: ['html', 'best practices'],
         checked: false,
       },
@@ -131,25 +131,25 @@ const checklist = [
       },
       {
         type: 'Clean up comments',
-        description: 'Unnecessary code needs to be removed before sending the page to production.',
+        description: 'Unnecessary code is removed before sending the page to production.',
         tags: ['html', 'best practices'],
         checked: false,
       },
       {
         type: 'W3C compliant',
-        description: 'All pages need to be tested with the W3C validator to identify possible issues in the HTML code.',
+        description: 'All pages are tested with the W3C validator to identify possible issues in the HTML code.',
         tags: ['html', 'testing'],
         checked: false,
       },
       {
         type: 'HTML Lint',
-        description: 'Using tools to help analyze any issues that could be in HTML code.',
+        description: 'Tools are being used to help analyze any issues that could be in HTML code.',
         tags: ['html', 'testing'],
         checked: false,
       },
       {
         type: 'Link checker',
-        description: 'There are no broken links in project, verify that there isn\'t any 404 error.',
+        description: 'There are no broken links on website, verified that there isn\'t any 404 error.',
         tags: ['html', 'testing'],
         checked: false,
       },
@@ -166,20 +166,20 @@ const checklist = [
     heading: 'CSS',
     list: [
       {
-        type: 'Responsive Web Design',
+        type: 'Responsive web design',
         description: 'The website is using responsive web design.',
         tags: ['css'],
         checked: false,
       },
       {
-        type: 'CSS Print',
+        type: 'CSS print',
         description: 'A print stylesheet is provided and is correct on each page.',
         tags: ['css'],
         checked: false,
       },
       {
         type: 'Unique ID',
-        description: 'If IDs are used, they are unique to a page.',
+        description: 'If IDs are used, they are unique for a page.',
         tags: ['css'],
         checked: false,
       },
@@ -197,7 +197,7 @@ const checklist = [
       },
       {
         type: 'Embedded or inline CSS',
-        description: 'Avoid at all cost embeding CSS in `<style>` tags or using inline CSS.',
+        description: 'Embeding CSS in `<style>` tags or using inline CSS are being avoided at all cost.',
         tags: ['css'],
         checked: false,
       },
@@ -239,25 +239,25 @@ const checklist = [
       },
       {
         type: 'CSS Validator',
-        description: 'The CSS was tested and pertinent errors were corrected.',
+        description: 'The CSS was tested and potential errors were corrected.',
         tags: ['css', 'testing'],
         checked: false,
       },
       {
         type: 'Desktop browsers',
-        description: 'All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE,...).',
+        description: 'All pages were tested on all current desktop browsers (Chrome, Firefox, Safari, Internet Explorer and Edge).',
         tags: ['css', 'testing'],
         checked: false,
       },
       {
         type: 'Mobile browsers',
-        description: 'All pages were tested on all current mobile browsers (Native browser, Chrome, Safari, ...).',
+        description: 'All pages were tested on all current mobile browsers (Chrome, Firefox, Safari and native browser).',
         tags: ['css', 'testing'],
         checked: false,
       },
       {
         type: 'Operating systems',
-        description: 'All pages were tested on all current OS (Windows, Android, iOS, macOS, ...).',
+        description: 'All pages were tested on all current OS (macOS, iOS, Android and Windows).',
         tags: ['css', 'testing'],
         checked: false,
       },
@@ -287,13 +287,13 @@ const checklist = [
       },
       {
         type: 'Minification',
-        description: 'JavaScript files are minified (there can be .min suffix added).',
+        description: 'JavaScript files are minified (there is .min suffix added).',
         tags: ['javascript'],
         checked: false,
       },
       {
         type: 'Noscript tag',
-        description: 'Use `<noscript>` tag in the HTML body if a script type on the page is unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering heavy apps such as React.js.',
+        description: '`<noscript>` tag has been used in the HTML body if a script type on the page is unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering heavy apps such as React.js.',
         tags: ['javascript'],
         checked: false,
       },
@@ -301,12 +301,6 @@ const checklist = [
         type: 'Non-blocking',
         description: 'JavaScript files are loaded asynchronously using async or deferred using defer attribute.',
         tags: ['javascript', 'performance'],
-        checked: false,
-      },
-      {
-        type: 'Modernizr',
-        description: 'If there is need to target some specific features, there can be used a custom Modernizr to add classes in `<html>` tag.',
-        tags: ['javascript'],
         checked: false,
       },
       {
@@ -323,19 +317,19 @@ const checklist = [
     list: [
       {
         type: 'Optimization',
-        description: 'All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).',
+        description: 'All images are optimized to be rendered in the browser. WebP format can be used for critical pages (like Homepage).',
         tags: ['images, best practices'],
         checked: false,
       },
       {
         type: 'Picture and srcset',
-        description: 'Use picture and srcset to provide the most appropriate image for the current viewport of the user.',
+        description: 'Picture and srcset is being used to provide the most appropriate image for the current viewport of the user.',
         tags: ['images'],
         checked: false,
       },
       {
         type: 'Retina',
-        description: 'Provide layout images 2x or 3x, support retina display.',
+        description: 'Layout images 2x or 3x to supported high density displays are being provided.',
         tags: ['images'],
         checked: false,
       },
@@ -347,13 +341,13 @@ const checklist = [
       },
       {
         type: 'Width and height',
-        description: 'Set width and height attributes on `<img>` if the final rendered image size is known (can be omitted for CSS sizing).',
+        description: 'Width and height attributes on `<img>` tag are being set if the final rendered image size is known (can be omitted for CSS sizing).',
         tags: ['images'],
         checked: false,
       },
       {
         type: 'Alternative text',
-        description: 'All `<img>` have an alternative text which describe the image visually.',
+        description: 'All `<img>` tags have an alternative text which describe the image visually.',
         tags: ['images'],
         checked: false,
       },
@@ -389,7 +383,7 @@ const checklist = [
       },
       {
         type: 'Cookie size',
-        description: 'If there are cookies being used, be sure each cookie doesn\'t exceed 4096 bytes and domain name doesn\'t have more than 20 cookies.',
+        description: 'If there are cookies being used, each cookie doesn\'t exceed 4096 bytes and domain name doesn\'t have more than 20 cookies.',
         tags: ['best practices'],
         checked: false,
       },
@@ -413,7 +407,7 @@ const checklist = [
       },
       {
         type: 'Preloading',
-        description: 'Resources needed in the current page (e.g. scripts placed at the end of `<body>`) in advance using preload.',
+        description: 'Resources needed in the current page (e.g. scripts placed at the end of `<body>` tag) in advance are using preload.',
         tags: ['requests'],
         checked: false,
       },
@@ -430,8 +424,8 @@ const checklist = [
     heading: 'SEO',
     list: [
       {
-        type: 'Google Analytics',
-        description: 'Google Analytics is installed and correctly configured.',
+        type: 'Google analytics',
+        description: 'Google analytics is installed and correctly configured.',
         tags: ['seo'],
         checked: false,
       },
@@ -443,13 +437,13 @@ const checklist = [
       },
       {
         type: 'sitemap.xml',
-        description: 'A `sitemap.xml` exists and was submitted to Google search console.',
+        description: 'A `sitemap.xml` file exists and was submitted to Google search console.',
         tags: ['seo'],
         checked: false,
       },
       {
         type: 'robots.txt',
-        description: 'The `robots.txt` is not blocking webpages.',
+        description: 'The `robots.txt` file is not blocking webpages.',
         tags: ['seo', 'testing'],
         checked: false,
       },
@@ -467,7 +461,7 @@ const checklist = [
       },
       {
         type: 'Pagination link tags',
-        description: 'Provide `rel="prev"` and `rel="next"` to indicate paginated content.',
+        description: 'Attributes `rel="prev"` and `rel="next"` to indicate paginated content are being provided.',
         tags: ['seo', 'html'],
         checked: false,
       },
@@ -491,7 +485,7 @@ const checklist = [
       },
       {
         type: 'Webfont loader',
-        description: 'Control loading behavior with a webfont loader.',
+        description: 'Loading behavior with a webfont loader is being controlled.',
         tags: ['webfont'],
         checked: false,
       },
@@ -503,13 +497,13 @@ const checklist = [
     list: [
       {
         type: 'Progressive enhancement',
-        description: 'Major functionality like main navigation and search should work without JavaScript enabled.',
+        description: 'Major functionality like main navigation and search are working without JavaScript enabled.',
         tags: ['best practices'],
         checked: false,
       },
       {
         type: 'Color contrast',
-        description: 'Color contrast should at least pass WCAG AA (AAA for mobile).',
+        description: 'Color contrast is passing at least WCAG AA (AAA for mobile).',
         tags: ['best practices'],
         checked: false,
       },
@@ -521,31 +515,31 @@ const checklist = [
       },
       {
         type: 'Headings',
-        description: 'Headings should be used properly and in the right order (H1 to H6).',
+        description: 'Headings are being used properly and in the right order (H1 to H6).',
         tags: ['best practices'],
         checked: false,
       },
       {
-        type: 'Specific HTML5 input types are used',
-        description: 'This is especially important for mobile devices that show customized keypads and widgets for different types.',
+        type: 'Specific HTML5 input types',
+        description: 'They are being used - this is especially important for mobile devices that show customized keypads and widgets for different types.',
         tags: false,
         checked: false,
       },
       {
         type: 'Label',
-        description: 'A label is associated with each input form element. In case a label can\'t be displayed, use aria-label instead.',
+        description: 'A label is associated with each input form element. In case a label can\'t be displayed, aria-label is used instead.',
         tags: false,
         checked: false,
       },
       {
         type: 'Accessibility standards testing',
-        description: 'Use the WAVE tool to test if your page respects the accessibility standards.',
+        description: 'WAVE tool is being used to test if page respects the accessibility standards.',
         tags: ['testing'],
         checked: false,
       },
       {
         type: 'Keyboard navigation',
-        description: 'Test your website using only your keyboard in a previsible order. All interactive elements are reachable and usable.',
+        description: 'Website has been used using only keyboard in a previsible order. All interactive elements are reachable and usable.',
         tags: ['testing'],
         checked: false,
       },
