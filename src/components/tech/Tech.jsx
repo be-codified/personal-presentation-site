@@ -3,11 +3,16 @@ import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
 
-class HowWasMade extends Component {
+class Tech extends Component {
+  constructor(props) {
+    super(props);
+    this.refTech = React.createRef();
+  }
+
   selectAnchor = (hash) => {
-    // Method called from child to be able to select anchor element
-    const elementAnchor = this.element.querySelector(hash);
-    return elementAnchor;
+    // Method called from child component to be able to select anchor
+    const nodeAnchor = this.refTech.current.querySelector(hash);
+    return nodeAnchor;
   }
 
   render() {
@@ -16,7 +21,7 @@ class HowWasMade extends Component {
 
     return (
       <div
-        ref={(element) => { this.element = element; }}
+        ref={this.refTech}
         className={`${className} space-padding-large`}
       >
         <ul className={`${className}__sidebar list-no-style-type`}>
@@ -42,7 +47,7 @@ class HowWasMade extends Component {
   }
 }
 
-HowWasMade.propTypes = {
+Tech.propTypes = {
   sidebar: PropTypes.PropTypes.shape({
     section: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(
@@ -55,4 +60,4 @@ HowWasMade.propTypes = {
   children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
-export default HowWasMade;
+export default Tech;

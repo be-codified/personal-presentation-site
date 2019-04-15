@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// TODO: update url with hash
-
 class ScrollToAnchor extends Component {
   constructor(props) {
     super(props);
@@ -14,15 +12,15 @@ class ScrollToAnchor extends Component {
     const { selectAnchor } = this.props;
     event.preventDefault();
 
-    // Get hash of clicked anchor link element
+    // Get hash of clicked anchor link
     const { hash } = event.currentTarget;
-    // Selecting anchor element with method from parent
-    const element = selectAnchor(hash);
-    // Get position of anchor element
-    const elementPosition = window.pageYOffset + element.getBoundingClientRect().top;
+    // Selecting anchor node with method from parent
+    const node = selectAnchor(hash);
+    // Get position of anchor
+    const nodePosition = window.pageYOffset + node.getBoundingClientRect().top;
 
     // Calculate scroll position
-    const scrollPosition = elementPosition - this.offset;
+    const scrollPosition = nodePosition - this.offset;
 
     // Scroll to position
     window.scrollTo({
@@ -30,6 +28,9 @@ class ScrollToAnchor extends Component {
       left: 0,
       behavior: 'smooth',
     });
+
+    // Update URL
+    history.replaceState({}, false, hash); // eslint-disable-line no-restricted-globals
   }
 
   render() {

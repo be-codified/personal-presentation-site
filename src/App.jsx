@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Highlight from 'react-highlight.js';
 import shortid from 'shortid';
 import CheckList from './components/check-list/CheckList';
-import HowWasMade from './components/how-was-made/HowWasMade';
+import Tech from './components/tech/Tech';
 import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
@@ -14,10 +14,10 @@ class App extends Component {
 
     return (
       <div className="space-padding-large">
-        {/* How was made */}
+        {/* Tech */}
         {/* TODO: move in config */}
 
-        <HowWasMade
+        <Tech
           sidebar={
             {
               section,
@@ -40,8 +40,8 @@ class App extends Component {
           <Highlight language="scss">
             <p>test</p>
           </Highlight>
-        </HowWasMade>
-        {/* / How was made */}
+        </Tech>
+        {/* / Tech */}
 
         {/* --- Section check list --- */}
         <div>
