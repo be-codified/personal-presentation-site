@@ -1,0 +1,16 @@
+/**
+ *
+ * Knowledge styles
+ *
+ */
+
+.knowledge {
+  &__highlight {
+    @extend .color-white;
+    @extend .background-color-gray;
+  }
+
+  &__code {
+    background-color: pink;
+  }
+}

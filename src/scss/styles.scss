@@ -23,6 +23,7 @@ $debug: true;
 @include space();
 
 // Components
+@import '../components/knowledge/knowledge.scss';
 @import '../components/tech/tech.scss';
 @import '../components/check-list/check-list.scss';
 
