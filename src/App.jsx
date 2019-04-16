@@ -5,6 +5,7 @@ import shortid from 'shortid';
 import Tech from './components/tech/Tech';
 import CheckList from './components/check-list/CheckList';
 import Knowledge from './components/knowledge/Knowledge';
+import Sidebar from './components/sidebar/Sidebar';
 import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
 
     return (
       <div className="space-padding-large">
+        <Sidebar />
         {/* My main strengths */}
         <Knowledge heading="// TODO: My main strengths">
           <ul>

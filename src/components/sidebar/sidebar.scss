@@ -1,0 +1,22 @@
+/**
+ *
+ * Sidebar styles
+ *
+ */
+
+.sidebar {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 10px;
+
+  &__indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 10px;
+    background-color: yellow;
+  }
+}
