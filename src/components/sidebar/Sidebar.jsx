@@ -9,7 +9,14 @@ class Sidebar extends Component {
     super(props);
 
     // Setting default properties
-    this.nodes = { body: null, html: null };
+    this.document = {
+      node: null,
+      heights: {
+        client: 0,
+        scroll: 0,
+      }
+    }
+
     this.indicator = { height: 0, top: 0 };
 
     // Setting default properties for state
@@ -19,49 +26,67 @@ class Sidebar extends Component {
   }
 
   setIndicatorPosition = () => {
+    console.log('---');
     console.log('Setting position');
-    this.indicator.top = 200;
+
+    console.log(document.documentElement.scrollHeight, document.documentElement.clientHeight);
+    console.log(this.document.heights.scroll, this.document.heights.client);
+
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = height !== 0 ? (document.documentElement.scrollTop / height) : 0;
+
+    const distance = parseInt(scrolled * (document.documentElement.scrollHeight - this.indicator.height), 10);
+
+    const indicator = {...this.state.indicator};
+    indicator.top = distance;
+    this.setState({indicator});
   }
 
   setIndicatorHeight = () => {
     console.log('Setting height');
 
-    const heightIndicator = parseInt((this.nodes.html.clientHeight / this.nodes.body.scrollHeight) * this.nodes.html.clientHeight, 10);
-
+    const heightIndicator = parseInt((this.document.heights.client / this.document.heights.scroll) * this.document.heights.client, 10);
     console.log('Calculated height', heightIndicator);
 
     this.indicator.height = heightIndicator;
   }
 
-  getHtmlAndBodyNodes = () => {
-    this.nodes.html = document.documentElement;
-    this.nodes.body = document.body;
+  getDocument = () => {
+    // document.documentElement.scrollHeight, document.documentElement.clientHeight
 
-    // console.log(this.nodes.body.scrollHeight, this.nodes.body.offsetHeight, this.nodes.html.clientHeight, this.nodes.html.scrollHeight, this.nodes.html.offsetHeight, document.documentElement.getBoundingClientRect().height);
+    const nodeDocument = document.documentElement;
+
+    this.document = {
+      node: nodeDocument,
+      heights: {
+        client: nodeDocument.clientHeight,
+        scroll: nodeDocument.scrollHeight,
+      }
+    }
+
+    console.log('here', document.documentElement.scrollHeight);
   }
 
   handleScroll = (event) => {
     console.log('scrolling');
-    const indicator = {...this.state.indicator};
-
-    indicator.top = indicator.top + 10;
-
-    console.log(indicator.top);
-    this.setState({indicator});
+    this.setIndicatorPosition();
   }
 
   componentDidMount() {
-    this.getHtmlAndBodyNodes();
-    this.setIndicatorHeight();
-    this.setIndicatorPosition();
+    // TODO: try to work rather with refs to avoid timeout
+    setTimeout(() => {
+      this.getDocument();
+      this.setIndicatorHeight();
+      this.setIndicatorPosition();
 
-    const indicator = {...this.state.indicator};
+      const indicator = {...this.state.indicator};
 
-    indicator.height = this.indicator.height;
-    indicator.top = this.indicator.top;
+      indicator.height = this.indicator.height;
+      indicator.top = this.indicator.top;
 
-    this.setState({indicator});
-    window.addEventListener('scroll', this.handleScroll);
+      this.setState({indicator});
+      window.addEventListener('scroll', this.handleScroll);
+    }, 0);
   }
 
   componentWillUnmount() {
