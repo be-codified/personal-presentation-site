@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
 
 class CheckList extends Component {
@@ -20,10 +21,10 @@ class CheckList extends Component {
 
   render() {
     const { data } = this.props;
-    const className = 'check-list';
+    const classNames = new BEMHelper('check-list');
 
     return (
-      <div className={`${className} space-padding-bottom-xlarge`}>
+      <div {...classNames('', '', 'space-padding-bottom-xlarge')}>
         {
           /* For each segment */
           data.map(segment => (

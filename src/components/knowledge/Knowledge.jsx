@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import BEMHelper from 'react-bem-helper';
 
 class Knowledge extends Component {
   constructor(props) {
@@ -13,10 +14,10 @@ class Knowledge extends Component {
 
   render() {
     const { heading, children } = this.props;
-    const className = 'knowledge';
+    const classNames = new BEMHelper('knowledge');
 
     return (
-      <div className={className}>
+      <div {...classNames()}>
         <h2>{heading}</h2>
         {children}
       </div>

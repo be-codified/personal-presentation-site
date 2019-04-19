@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
+import BEMHelper from 'react-bem-helper';
 
 // TODO: debounce
 
@@ -68,11 +69,11 @@ class Sidebar extends Component {
   }
 
   render() {
-    const className = 'sidebar';
+    const classNames = new BEMHelper('sidebar');
 
     return (
-      <div className={className}>
-        <div className={`${className}__indicator`} style={this.state.indicator}></div>
+      <div {...classNames()}>
+        <div {...classNames('indicator')} style={this.state.indicator}></div>
       </div>
     );
   }

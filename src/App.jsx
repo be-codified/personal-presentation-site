@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
+import BEMHelper from 'react-bem-helper';
 import Highlight from 'react-highlight.js';
 import shortid from 'shortid';
 import Tech from './components/tech/Tech';
@@ -15,7 +16,7 @@ class App extends Component {
     const section = 'some-section';
 
     const classNames = {
-      knowledge: 'knowledge',
+      knowledge: new BEMHelper('knowledge'),
     };
 
     return (
@@ -43,14 +44,14 @@ class App extends Component {
         <Knowledge heading="My skills to produce visual output">
           <ul>
             <li>
-              <span className={`${classNames.knowledge}__highlight`}>HTML5</span>
+              <span {...classNames.knowledge('highlight')}>HTML5</span>
               (using modern markup e.g.&nbsp;
-              <span className={`${classNames.knowledge}__code`}>{['<article>']}</span>&nbsp;
-              <span className={`${classNames.knowledge}__code`}>{['<aside>']}</span>&nbsp;
-              <span className={`${classNames.knowledge}__code`}>{['<main>']}</span>
+              <span {...classNames.knowledge('code')}>{['<article>']}</span>&nbsp;
+              <span {...classNames.knowledge('code')}>{['<aside>']}</span>&nbsp;
+              <span {...classNames.knowledge('code')}>{['<main>']}</span>
               ),
             </li>
-            <li><span className={`${classNames.knowledge}__highlight`}>CSS3</span> within large scale projects,
+            <li><span {...classNames.knowledge('highlight')}>CSS3</span> within large scale projects,
               <ul>
                 <li>using modern properties</li>
                 <li>highly reusability, no duplicates</li>
@@ -60,6 +61,7 @@ class App extends Component {
                 <li>transitions and animations</li>
                 <li>SVG</li>
                 <li>CSS pre-processor Sass (?)</li>
+                <li>nunjuck</li>
               </ul>
 
             </li>
@@ -71,7 +73,7 @@ class App extends Component {
         {/* My skills to ??? */}
         <Knowledge heading="My skills to ???">
           <ul>
-            <li><span className={`${classNames.knowledge}__highlight`}>JavaScript</span>
+            <li><span {...classNames.knowledge('highlight')}>JavaScript</span>
               <ul>
                 <li>object-oriented programming,</li>
                 <li>

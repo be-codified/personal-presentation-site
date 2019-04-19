@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
 import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
 
@@ -17,14 +18,14 @@ class Tech extends Component {
 
   render() {
     const { sidebar, children } = this.props;
-    const className = 'check-list';
+    const classNames = new BEMHelper('tech');
 
     return (
       <div
         ref={this.refTech}
-        className={`${className} space-padding-large`}
+        {...classNames('', '', 'space-padding-large')}
       >
-        <ul className={`${className}__sidebar list-no-style-type`}>
+        <ul {...classNames('sidebar', '', 'list-no-style-type')}>
           {
             sidebar.items.map(item => (
               <li key={shortid.generate()}>
@@ -39,7 +40,7 @@ class Tech extends Component {
             ))
           }
         </ul>
-        <div className={`${className}__content`}>
+        <div {...classNames('content')}>
           {children}
         </div>
       </div>
