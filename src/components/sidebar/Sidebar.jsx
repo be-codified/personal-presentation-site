@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
-// TODO: debounce
+// TODO:
+// - debounce
+// - styles (perhaps transform for cleaner scroll)
+// - on drag
 
 class Sidebar extends Component {
   constructor(props) {
