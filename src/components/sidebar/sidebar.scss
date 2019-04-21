@@ -4,19 +4,23 @@
  *
  */
 
+$sidebar-width: 8px;
+$sidebar-indicator-color: map-get($colors, orange);
+
 .sidebar {
-  background-color: red;
+  background-color: lighten($sidebar-indicator-color, 35%);
   position: absolute;
   top: 0;
   right: 10px;
   bottom: 0;
-  width: 10px;
+  width: $sidebar-width;
 
   &__indicator {
     position: absolute;
     left: 0;
     right: 0;
-    width: 10px;
-    background-color: yellow;
+    width: $sidebar-width;
+    background-color: $sidebar-indicator-color;
+    border-radius: $sidebar-width / 2;
   }
 }

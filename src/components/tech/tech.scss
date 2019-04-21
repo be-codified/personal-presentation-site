@@ -7,5 +7,5 @@
 $class-name: 'how-was-made';
 
 .#{$class-name} {
-  @extend .background-color-debug;
+  background-color: map-get($colors, debug);
 }

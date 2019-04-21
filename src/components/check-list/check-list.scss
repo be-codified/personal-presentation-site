@@ -5,5 +5,5 @@
  */
 
 .check-list {
-  @extend .background-color-yellow;
+  background-color: map-get($colors, yellow);
 }

@@ -60,10 +60,9 @@ class App extends Component {
                 <li>web font embedding</li>
                 <li>transitions and animations</li>
                 <li>SVG</li>
-                <li>CSS pre-processor Sass (?)</li>
-                <li>nunjuck</li>
+                <li>CSS pre-processor Sass (use word like Css style isolation, reusable, scalable)</li>
+                <li>nunjucks</li>
               </ul>
-
             </li>
             <li>graphic tools (e.g. Sketch, Adobe Photoshop & Illustrator).</li>
           </ul>

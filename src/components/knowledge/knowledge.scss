@@ -6,8 +6,8 @@
 
 .knowledge {
   &__highlight {
-    @extend .color-white;
-    @extend .background-color-gray;
+    color: map-get($colors, white);
+    background-color: map-get($colors, gray);
   }
 
   &__code {

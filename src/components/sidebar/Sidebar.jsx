@@ -4,6 +4,7 @@ import BEMHelper from 'react-bem-helper';
 
 // TODO:
 // - debounce
+// - optimize logic
 // - styles (perhaps transform for cleaner scroll)
 // - on drag
 
@@ -12,13 +13,14 @@ class Sidebar extends Component {
     super(props);
 
     // Setting default properties
-    this.document = {
-      node: null,
-      heights: {
-        client: 0,
-        scroll: 0,
-      }
-    }
+
+    // this.document = {
+    //   node: null,
+    //   heights: {
+    //     client: 0,
+    //     scroll: 0,
+    //   }
+    // }
 
     this.indicator = { height: 0, top: 0 };
 
@@ -28,72 +30,81 @@ class Sidebar extends Component {
     };
   }
 
-  setIndicatorPosition = () => {
-    console.log('---');
-    console.log('Setting position');
+  setIndicatorTop = () => {
+    console.log('--- Setting position');
 
-    console.log(document.documentElement.scrollHeight, document.documentElement.clientHeight);
-    console.log(this.document.heights.scroll, this.document.heights.client);
+    // console.log(document.documentElement.scrollHeight, document.documentElement.clientHeight);
+    // console.log(this.document.scroll.height, this.document.client.height);
 
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = height !== 0 ? (document.documentElement.scrollTop / height) : 0;
+    const height = this.document.scroll.height - this.document.client.height;
+    const scrollPosition = height ? (this.document.scroll.top / height) : 0;
+    const top = scrollPosition * (this.document.scroll.height - this.indicator.height);
 
-    const distance = parseInt(scrolled * (document.documentElement.scrollHeight - this.indicator.height), 10);
-
-    const indicator = {...this.state.indicator};
-    indicator.top = distance;
-    this.setState({indicator});
+    return top;
+    // const indicator = {...this.state.indicator};
+    // indicator.top = parseInt(top, 10);
+    // this.setState({indicator});
   }
 
   setIndicatorHeight = () => {
-    console.log('Setting height');
+    console.log('--- Setting height');
 
-    const heightIndicator = parseInt((this.document.heights.client / this.document.heights.scroll) * this.document.heights.client, 10);
-    console.log('Calculated height', heightIndicator);
+    const height = (this.document.client.height / this.document.scroll.height) * this.document.client.height;
+    this.indicator.height = parseInt(height, 10);
 
-    this.indicator.height = heightIndicator;
+    console.log('Calculated height', this.indicator.height);
+  }
+
+  setIndicatorState = (top, height) => {
+    const indicator = {...this.state.indicator};
+
+    indicator.top = top;
+    indicator.height = height;
+
+    this.setState({indicator});
   }
 
   getDocument = () => {
-    // document.documentElement.scrollHeight, document.documentElement.clientHeight
-
     const nodeDocument = document.documentElement;
 
     this.document = {
       node: nodeDocument,
-      heights: {
-        client: nodeDocument.clientHeight,
-        scroll: nodeDocument.scrollHeight,
+      client: {
+        height: nodeDocument.clientHeight,
+      },
+      scroll: {
+        height: nodeDocument.scrollHeight,
+        top: nodeDocument.scrollTop,
       }
     }
-
-    console.log('here', document.documentElement.scrollHeight);
   }
 
   handleScroll = (event) => {
     console.log('scrolling');
-    this.setIndicatorPosition();
+    this.getDocument();
+    this.setIndicatorState(this.setIndicatorTop(), this.indicator.height);
+  }
+
+  handleResize = (event) => {
+    console.log('resizing');
+    this.getDocument();
+    this.setIndicatorState(this.setIndicatorTop(), this.setIndicatorHeight());
   }
 
   componentDidMount() {
     // TODO: try to work rather with refs to avoid timeout
     setTimeout(() => {
       this.getDocument();
-      this.setIndicatorHeight();
-      this.setIndicatorPosition();
+      this.setIndicatorState(this.setIndicatorTop(), this.setIndicatorHeight());
 
-      const indicator = {...this.state.indicator};
-
-      indicator.height = this.indicator.height;
-      indicator.top = this.indicator.top;
-
-      this.setState({indicator});
       window.addEventListener('scroll', this.handleScroll);
+      window.addEventListener('resize', this.handleResize);
     }, 0);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   render() {

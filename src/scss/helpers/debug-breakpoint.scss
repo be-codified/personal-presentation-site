@@ -7,8 +7,8 @@
 @if $debug == true {
   html {
     &::before {
-      @extend .color-white;
-      @extend .background-color-debug;
+      color: map-get($colors, white);
+      background-color: map-get($colors, debug);
       display: inline-block;
       padding: 5px 8px;
       content: 'Screen mobile';
