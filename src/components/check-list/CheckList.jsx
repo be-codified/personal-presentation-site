@@ -20,14 +20,14 @@ class CheckList extends Component {
   }
 
   render() {
-    const { data } = this.props;
+    const props = { ...this.props };
     const classNames = new BEMHelper('check-list');
 
     return (
       <div {...classNames('', '', 'space-padding-bottom-xlarge')}>
         {
           /* For each segment */
-          data.map(segment => (
+          props.data.map(segment => (
             <React.Fragment key={shortid.generate()}>
               {/* Heading */}
               <h2 id={segment.id}>{segment.heading}</h2>
@@ -46,7 +46,7 @@ class CheckList extends Component {
                     if (item.tags) {
                       /* TODO: Any better way to code indenting and no linter issues? */
 
-                      tags = <ul className="list-no-style-type list-inline-block">{item.tags.map(tag => <li key={shortid.generate()}>{tag}</li>)}</ul>;
+                      tags = <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>{item.tags.map(tag => <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>{tag}</li>)}</ul>;
                     }
 
                     return (

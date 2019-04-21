@@ -4,7 +4,9 @@
  *
  */
 
-.knowledge {
+$class-name: knowledge;
+
+.#{$class-name} {
   &__highlight {
     color: map-get($colors, white);
     background-color: map-get($colors, gray);

@@ -34,11 +34,11 @@ class ScrollToAnchor extends Component {
   }
 
   render() {
-    const { href, children } = this.props;
+    const props = { ...this.props };
 
     return (
-      <a href={href} onClick={this.handleClick}>
-        {children}
+      <a href={props.href} onClick={this.handleClick}>
+        {props.children}
       </a>
     );
   }

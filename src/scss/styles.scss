@@ -8,7 +8,6 @@
 $debug: true;
 
 // Styles
-@import '../../node_modules/normalize.css/normalize.css';
 @import 'main.scss';
 @import 'colors.scss';
 
@@ -26,6 +25,7 @@ $debug: true;
 @include space();
 
 // Components
+@import '../components/portfolio/portfolio.scss';
 @import '../components/knowledge/knowledge.scss';
 @import '../components/tech/tech.scss';
 @import '../components/sidebar/sidebar.scss';

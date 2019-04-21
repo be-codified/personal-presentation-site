@@ -30,67 +30,6 @@ class Sidebar extends Component {
     };
   }
 
-  setIndicatorTop = () => {
-    console.log('--- Setting position');
-
-    // console.log(document.documentElement.scrollHeight, document.documentElement.clientHeight);
-    // console.log(this.document.scroll.height, this.document.client.height);
-
-    const height = this.document.scroll.height - this.document.client.height;
-    const scrollPosition = height ? (this.document.scroll.top / height) : 0;
-    const top = scrollPosition * (this.document.scroll.height - this.indicator.height);
-
-    return top;
-    // const indicator = {...this.state.indicator};
-    // indicator.top = parseInt(top, 10);
-    // this.setState({indicator});
-  }
-
-  setIndicatorHeight = () => {
-    console.log('--- Setting height');
-
-    const height = (this.document.client.height / this.document.scroll.height) * this.document.client.height;
-    this.indicator.height = parseInt(height, 10);
-
-    console.log('Calculated height', this.indicator.height);
-  }
-
-  setIndicatorState = (top, height) => {
-    const indicator = {...this.state.indicator};
-
-    indicator.top = top;
-    indicator.height = height;
-
-    this.setState({indicator});
-  }
-
-  getDocument = () => {
-    const nodeDocument = document.documentElement;
-
-    this.document = {
-      node: nodeDocument,
-      client: {
-        height: nodeDocument.clientHeight,
-      },
-      scroll: {
-        height: nodeDocument.scrollHeight,
-        top: nodeDocument.scrollTop,
-      }
-    }
-  }
-
-  handleScroll = (event) => {
-    console.log('scrolling');
-    this.getDocument();
-    this.setIndicatorState(this.setIndicatorTop(), this.indicator.height);
-  }
-
-  handleResize = (event) => {
-    console.log('resizing');
-    this.getDocument();
-    this.setIndicatorState(this.setIndicatorTop(), this.setIndicatorHeight());
-  }
-
   componentDidMount() {
     // TODO: try to work rather with refs to avoid timeout
     setTimeout(() => {
@@ -107,12 +46,74 @@ class Sidebar extends Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
+  setIndicatorTop = () => {
+    // console.log('--- Setting position');
+
+    // console.log(document.documentElement.scrollHeight, document.documentElement.clientHeight);
+    // console.log(this.document.scroll.height, this.document.client.height);
+
+    const height = this.document.scroll.height - this.document.client.height;
+    const scrollPosition = height ? (this.document.scroll.top / height) : 0;
+    const top = scrollPosition * (this.document.scroll.height - this.indicator.height);
+
+    return top;
+    // const indicator = {...this.state.indicator};
+    // indicator.top = parseInt(top, 10);
+    // this.setState({indicator});
+  }
+
+  setIndicatorHeight = () => {
+    // console.log('--- Setting height');
+
+    const height = (this.document.client.height / this.document.scroll.height) * this.document.client.height; // eslint-disable-line max-len
+    this.indicator.height = parseInt(height, 10);
+
+    // console.log('Calculated height', this.indicator.height);
+  }
+
+  setIndicatorState = (top, height) => {
+    const state = { ...this.state };
+
+    state.indicator.top = top;
+    state.indicator.height = height;
+
+    this.setState({ state });
+  }
+
+  getDocument = () => {
+    const nodeDocument = document.documentElement;
+
+    this.document = {
+      node: nodeDocument,
+      client: {
+        height: nodeDocument.clientHeight,
+      },
+      scroll: {
+        height: nodeDocument.scrollHeight,
+        top: nodeDocument.scrollTop,
+      },
+    };
+  }
+
+  handleScroll = () => {
+    // console.log('scrolling');
+    this.getDocument();
+    this.setIndicatorState(this.setIndicatorTop(), this.indicator.height);
+  }
+
+  handleResize = () => {
+    // console.log('resizing');
+    this.getDocument();
+    this.setIndicatorState(this.setIndicatorTop(), this.setIndicatorHeight());
+  }
+
   render() {
+    const state = { ...this.state };
     const classNames = new BEMHelper('sidebar');
 
     return (
       <div {...classNames()}>
-        <div {...classNames('indicator')} style={this.state.indicator}></div>
+        <div {...classNames('indicator')} style={state.indicator} />
       </div>
     );
   }

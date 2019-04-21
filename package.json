@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
-    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-bem-helper": "^1.4.1",
@@ -12,7 +11,8 @@
     "react-highlight.js": "^1.0.7",
     "react-scripts": "2.1.5",
     "serve": "^10.1.2",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "source-map-explorer": "^1.8.0"
   },
   "scripts": {
     "develop": "react-scripts start",
@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "eslint": "eslint --ext .jsx src/ --ext .js src/",
     "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
-    "lint": "npm run eslint && npm run stylelint"
+    "lint": "npm run eslint && npm run stylelint",
+    "formatAllCode": "./node_modules/.bin/prettier --write ./src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,7 +40,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.17.0",
+    "prettier-eslint": "^8.8.2",
     "react-component-hierarchy": "^1.1.0",
     "stylelint": "^9.10.1"
   }

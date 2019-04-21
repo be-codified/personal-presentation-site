@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import BEMHelper from 'react-bem-helper';
-import Highlight from 'react-highlight.js';
+// import BEMHelper from 'react-bem-helper';
+// import Highlight from 'react-highlight.js';
 import shortid from 'shortid';
-import Tech from './components/tech/Tech';
+// import Tech from './components/tech/Tech';
+import Portfolio from './components/portfolio/Portfolio';
 import CheckList from './components/check-list/CheckList';
-import Knowledge from './components/knowledge/Knowledge';
+// import Knowledge from './components/knowledge/Knowledge';
 import Sidebar from './components/sidebar/Sidebar';
 import checkListData from './components/check-list/check-list-data';
 
@@ -13,35 +14,57 @@ class App extends Component {
   someMethod = () => {}
 
   render() {
-    const section = 'some-section';
+    // const section = 'some-section';
 
-    const classNames = {
-      knowledge: new BEMHelper('knowledge'),
-    };
+    // const classNames = {
+    //   knowledge: new BEMHelper('knowledge'),
+    // };
 
     return (
       <div className="space-padding-large">
         <Sidebar />
+
+        <Portfolio
+          heading={{
+            intro: 'Latest work',
+            main: 'Portfolio item heading',
+          }}
+          desc="Some description of portfolio item"
+          tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'React']}
+          client="Client name"
+          link={{
+            text: 'link text',
+            href: 'https://store.sportradar.com/en/widget/nfl/index.php',
+            title: 'link title',
+          }}
+          image={{
+            src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+            srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+            alt: 'Some portfolio image',
+          }}
+        />
+
+        {/* eslint-disable max-len */}
         {/* My main strengths */}
-        <Knowledge heading="// TODO: My main strengths">
+        {/* <Knowledge heading="// TODO: My main strengths">
           <ul>
-            <li>strong understanding of developing for the web and a <span>careful eye for design,</span></li> {/* eslint-disable-line max-len */}
-            <li>exceptional ability to translate designs into semantic, accessible front-end code,</li> {/* eslint-disable-line max-len */}
+            <li>strong understanding of developing for the web and a <span>careful eye for design,</span></li>
+            <li>exceptional ability to translate designs into semantic, accessible front-end code,</li>
             <li>strong understanding of modern web technologies and workflows,</li>
             <li>strong understanding of mobile and responsive design and development practices,</li>
             <li>solid understanding of designing in a browser,</li>
             <li>solid understanding of integration or modification of front-end code with CMSs,</li>
             <li>solid understanding of SEO,</li>
             <li>strong understanding and appreciation of colour and typography,</li>
-            <li>ability to work directly with UX/UI and designers to implement designs and provide feedback on design if needed,</li> {/* eslint-disable-line max-len */}
+            <li>ability to work directly with UX/UI and designers to implement designs and provide feedback on design if needed,</li>
             <li>excellent communication skills,</li>
-            <li>ability to dive in and learn new things to find solutions for technical problems.</li> {/* eslint-disable-line max-len */}
+            <li>ability to dive in and learn new things to find solutions for technical problems.</li>
           </ul>
-        </Knowledge>
+        </Knowledge> */}
         {/* / My main strengths */}
 
         {/* My skills to produce visual output */}
-        <Knowledge heading="My skills to produce visual output">
+        {/* <Knowledge heading="My skills to produce visual output">
           <ul>
             <li>
               <span {...classNames.knowledge('highlight')}>HTML5</span>
@@ -66,11 +89,12 @@ class App extends Component {
             </li>
             <li>graphic tools (e.g. Sketch, Adobe Photoshop & Illustrator).</li>
           </ul>
-        </Knowledge>
+        </Knowledge> */}
         {/* / My skills to produce visual output */}
+        {/* eslint-enable max-len */}
 
         {/* My skills to ??? */}
-        <Knowledge heading="My skills to ???">
+        {/* <Knowledge heading="My skills to ???">
           <ul>
             <li><span {...classNames.knowledge('highlight')}>JavaScript</span>
               <ul>
@@ -86,13 +110,13 @@ class App extends Component {
               and
             </li>
           </ul>
-        </Knowledge>
+        </Knowledge> */}
         {/* / My skills to ??? */}
 
         {/* Tech */}
         {/* TODO: move in config */}
 
-        <Tech
+        {/* <Tech
           sidebar={
             {
               section,
@@ -115,7 +139,7 @@ class App extends Component {
           <Highlight language="scss">
             <p>test</p>
           </Highlight>
-        </Tech>
+        </Tech> */}
         {/* / Tech */}
 
         {/* --- Section check list --- */}

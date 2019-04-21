@@ -4,10 +4,11 @@
  *
  */
 
+$class-name: sidebar;
 $sidebar-width: 8px;
 $sidebar-indicator-color: map-get($colors, orange);
 
-.sidebar {
+.#{$class-name} {
   background-color: lighten($sidebar-indicator-color, 35%);
   position: absolute;
   top: 0;
