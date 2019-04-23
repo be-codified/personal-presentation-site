@@ -24,6 +24,26 @@ class ScrollBarVertical extends Component {
     this.state = {
       indicator: { top: 0, height: 0 },
     };
+
+    // Listeners
+    this.listeners = [
+      {
+        name: 'scroll',
+        method: this.handleScroll,
+      },
+      {
+        name: 'touchstart',
+        method: this.handleTouchMove,
+      },
+      {
+        name: 'touchmove',
+        method: this.handleTouchMove,
+      },
+      {
+        name: 'resize',
+        method: this.handleResize,
+      },
+    ];
   }
 
   componentDidMount() {
@@ -34,18 +54,18 @@ class ScrollBarVertical extends Component {
       this.setDocument();
       this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
 
-      window.addEventListener('scroll', this.handleScroll);
-      window.addEventListener('touchstart', this.handleTouchMove);
-      window.addEventListener('touchmove', this.handleTouchMove);
-      window.addEventListener('resize', this.handleResize);
+      // Adding listeners
+      this.listeners.forEach((listener) => {
+        window.addEventListener(listener.name, listener.method);
+      });
     }, 0);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener('touchstart', this.handleTouchMove);
-    window.removeEventListener('touchmove', this.handleTouchMove);
-    window.removeEventListener('resize', this.handleResize);
+    // Removing listeners
+    this.listeners.forEach((listener) => {
+      window.removeEventListener(listener.name, listener.method);
+    });
   }
 
   getIndicatorTop = () => {
