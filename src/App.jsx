@@ -7,7 +7,7 @@ import shortid from 'shortid';
 import Portfolio from './components/portfolio/Portfolio';
 import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
-import Sidebar from './components/sidebar/Sidebar';
+import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div className="space-padding-large">
-        <Sidebar />
+        <ScrollBarVertical />
 
         <Portfolio
           heading={{

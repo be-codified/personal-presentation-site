@@ -13,13 +13,13 @@ class Knowledge extends Component {
   }
 
   render() {
-    const props = { ...this.props };
+    const { heading, children } = this.props;
     const classNames = new BEMHelper('knowledge');
 
     return (
       <div {...classNames()}>
-        <h2>{props.heading}</h2>
-        {props.children}
+        <h2>{heading}</h2>
+        {children}
       </div>
     );
   }

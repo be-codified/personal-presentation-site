@@ -9,23 +9,25 @@ class Portfolio extends Component {
   }
 
   render() {
-    const props = { ...this.props };
+    const {
+      tags, heading, desc, link, client, image,
+    } = this.props;
     const classNames = new BEMHelper('portfolio');
 
     /* TODO: Any better way to code indenting and no linter issues? */
-    const tags = <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>{props.tags.map(tag => <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>{tag}</li>)}</ul>;
+    const tagsNode = <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>{tags.map(tag => <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>{tag}</li>)}</ul>;
 
     return (
       <div {...classNames()}>
-        <span>{props.heading.intro}</span>
-        <h2>{props.heading.main}</h2>
-        <p>{props.desc}</p>
-        <span>Technologies used: </span>{tags}
+        <span>{heading.intro}</span>
+        <h2>{heading.main}</h2>
+        <p>{desc}</p>
+        <span>Technologies used: </span>{tagsNode}
         <p>
-          See it live at <a href={props.link.href} title={props.link.title}>{props.link.text}.</a>
+          See it live at <a href={link.href} title={link.title}>{link.text}.</a>
         </p>
-        <p>Client: {props.client}</p>
-        <img src={props.image.src} srcSet={props.image.srcSet} alt={props.image.alt} />
+        <p>Client: {client}</p>
+        <img src={image.src} srcSet={image.srcSet} alt={image.alt} />
       </div>
     );
   }

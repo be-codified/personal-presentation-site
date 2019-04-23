@@ -17,7 +17,7 @@ class Tech extends Component {
   }
 
   render() {
-    const props = { ...this.props };
+    const { sidebar, children } = this.props;
     const classNames = new BEMHelper('tech');
 
     return (
@@ -27,7 +27,7 @@ class Tech extends Component {
       >
         <ul {...classNames('sidebar', '', 'list-no-style-type')}>
           {
-            props.sidebar.items.map(item => (
+            sidebar.items.map(item => (
               <li key={shortid.generate()}>
                 <ScrollToAnchor
                   href={`#${item.id}`}
@@ -41,7 +41,7 @@ class Tech extends Component {
           }
         </ul>
         <div {...classNames('content')}>
-          {props.children}
+          {children}
         </div>
       </div>
     );

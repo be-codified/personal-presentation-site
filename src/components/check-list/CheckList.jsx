@@ -20,14 +20,14 @@ class CheckList extends Component {
   }
 
   render() {
-    const props = { ...this.props };
+    const { data } = this.props;
     const classNames = new BEMHelper('check-list');
 
     return (
       <div {...classNames('', '', 'space-padding-bottom-xlarge')}>
         {
           /* For each segment */
-          props.data.map(segment => (
+          data.map(segment => (
             <React.Fragment key={shortid.generate()}>
               {/* Heading */}
               <h2 id={segment.id}>{segment.heading}</h2>
