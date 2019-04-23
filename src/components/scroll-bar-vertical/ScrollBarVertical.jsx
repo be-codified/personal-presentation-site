@@ -4,9 +4,10 @@ import BEMHelper from 'react-bem-helper';
 
 // TODO:
 // - debounce
-// - optimize logic
 // - styles (perhaps transform for cleaner scroll)
 // - on drag
+// - listeners for each
+// - touchmove
 
 class ScrollBarVertical extends Component {
   constructor(props) {
@@ -98,18 +99,16 @@ class ScrollBarVertical extends Component {
 
   handleTouchMove = () => {
     // console.log('--- Touchmove');
-
     this.setDocument();
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
   handleResize = () => {
-    // console.log('--- Resizing');
+    console.log('--- Resizing');
 
     this.setDocument();
-    const { indicator } = this.state;
-    this.setIndicatorState(this.getIndicatorTop(), indicator.height);
+    this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
   }
 
   render() {

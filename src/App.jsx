@@ -155,7 +155,7 @@ class App extends Component {
             }
           </ul>
         </div>
-        <CheckList data={checkListData} />
+        {/* <CheckList data={checkListData} /> */}
         {/* /--- Section check list --- */}
       </div>
     );
