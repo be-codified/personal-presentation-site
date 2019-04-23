@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
 // TODO:
@@ -145,13 +144,5 @@ class ScrollBarVertical extends Component {
     );
   }
 }
-
-// ScrollBarVertical.defaultProps = {
-//   somePropName: 'someValue',
-// };
-
-// ScrollBarVertical.propTypes = {
-//   somePropName: PropTypes.string.isRequired,
-// };
 
 export default ScrollBarVertical;
