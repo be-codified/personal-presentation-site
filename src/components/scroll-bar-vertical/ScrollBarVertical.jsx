@@ -105,7 +105,7 @@ class ScrollBarVertical extends Component {
   }
 
   handleResize = () => {
-    console.log('--- Resizing');
+    // console.log('--- Resizing');
 
     this.setDocument();
     this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
