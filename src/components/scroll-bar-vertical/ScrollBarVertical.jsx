@@ -20,7 +20,6 @@ class ScrollBarVertical extends Component {
       scroll: { height: 0, top: 0 },
     };
 
-    // Setting default properties for state
     this.state = {
       indicator: { top: 0, height: 0 },
     };
