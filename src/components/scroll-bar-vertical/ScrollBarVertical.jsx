@@ -35,13 +35,15 @@ class ScrollBarVertical extends Component {
       this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
 
       window.addEventListener('scroll', this.handleScroll);
-      window.addEventListener('touchmove', this.handleTouchMove, { passive: false });
+      window.addEventListener('touchstart', this.handleTouchMove);
+      window.addEventListener('touchmove', this.handleTouchMove);
       window.addEventListener('resize', this.handleResize);
     }, 0);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('touchstart', this.handleTouchMove);
     window.removeEventListener('touchmove', this.handleTouchMove);
     window.removeEventListener('resize', this.handleResize);
   }
