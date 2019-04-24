@@ -7,13 +7,14 @@ import BEMHelper from 'react-bem-helper';
 // - on drag
 // - listeners for each
 // - touchmove
+// - fix inconsistent indicator height cross browsers
 
 class ScrollBarVertical extends Component {
   constructor(props) {
     super(props);
 
     // Setting default properties
-    this.document = {
+    this.doc = {
       node: {},
       client: { height: 0 },
       scroll: { height: 0, top: 0 },
@@ -49,7 +50,7 @@ class ScrollBarVertical extends Component {
 
     // TODO: try to work rather with refs to avoid timeout
     setTimeout(() => {
-      this.setDocument();
+      this.setDoc();
       this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
 
       // Adding listeners
@@ -69,12 +70,11 @@ class ScrollBarVertical extends Component {
   getIndicatorTop = () => {
     // console.log('--- Getting position');
 
-    const doc = this.document;
+    const { doc } = this;
+    const { indicator } = this.state;
 
     const height = doc.scroll.height - doc.client.height;
     const scrollPosition = height ? doc.scroll.top / height : 0;
-
-    const { indicator } = this.state;
     const top = scrollPosition * (doc.scroll.height - indicator.height);
 
     return top;
@@ -83,8 +83,7 @@ class ScrollBarVertical extends Component {
   getIndicatorHeight = () => {
     // console.log('--- Getting height');
 
-    const doc = this.document;
-
+    const { doc } = this;
     const height = parseInt((doc.client.height / doc.scroll.height) * doc.client.height, 10); // eslint-disable-line max-len
 
     return height;
@@ -94,40 +93,39 @@ class ScrollBarVertical extends Component {
     this.setState(() => ({ indicator: { top, height } }));
   }
 
-  setDocument = () => {
-    const nodeDocument = document.documentElement;
+  setDoc = () => {
+    const nodeHtml = document.documentElement;
+    const nodeBody = nodeHtml.querySelector('body');
 
-    this.document = {
-      node: nodeDocument,
+    this.doc = {
+      node: nodeHtml,
       client: {
-        height: nodeDocument.clientHeight,
+        height: nodeHtml.clientHeight,
       },
       scroll: {
-        height: nodeDocument.scrollHeight,
-        top: nodeDocument.scrollTop,
+        height: nodeHtml.scrollHeight,
+        top: Math.max(nodeHtml.scrollTop, nodeBody.scrollTop),
       },
     };
   }
 
   handleScroll = () => {
     // console.log('--- Scrolling');
-
-    this.setDocument();
+    this.setDoc();
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
   handleTouchMove = () => {
     // console.log('--- Touchmove');
-    this.setDocument();
+    this.setDoc();
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
   handleResize = () => {
     // console.log('--- Resizing');
-
-    this.setDocument();
+    this.setDoc();
     this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
   }
 
