@@ -21,7 +21,10 @@ class ScrollBarVertical extends Component {
     };
 
     this.state = {
-      indicator: { top: 0, height: 0 },
+      indicator: {
+        height: 0,
+        transform: 'none',
+      },
     };
 
     // Listeners
@@ -47,7 +50,6 @@ class ScrollBarVertical extends Component {
 
   componentDidMount() {
     // console.log('--- Component did mount');
-
     // TODO: try to work rather with refs to avoid timeout
     setTimeout(() => {
       this.setDoc();
@@ -69,7 +71,6 @@ class ScrollBarVertical extends Component {
 
   getIndicatorTop = () => {
     // console.log('--- Getting position');
-
     const { doc } = this;
     const { indicator } = this.state;
 
@@ -82,7 +83,6 @@ class ScrollBarVertical extends Component {
 
   getIndicatorHeight = () => {
     // console.log('--- Getting height');
-
     const { doc } = this;
     const height = parseInt((doc.client.height / doc.scroll.height) * doc.client.height, 10); // eslint-disable-line max-len
 
@@ -90,7 +90,12 @@ class ScrollBarVertical extends Component {
   }
 
   setIndicatorState = (top, height) => {
-    this.setState(() => ({ indicator: { top, height } }));
+    this.setState(() => ({
+      indicator: {
+        transform: `translateX(0) translateY(${top}px)`,
+        height,
+      },
+    }));
   }
 
   setDoc = () => {
@@ -131,7 +136,6 @@ class ScrollBarVertical extends Component {
 
   render() {
     // console.log('--- Rendering');
-
     const state = { ...this.state };
     const classNames = new BEMHelper('scroll-bar-vertical');
 

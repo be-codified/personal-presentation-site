@@ -4,9 +4,9 @@
  *
  */
 
-$class-name: check-list;
+$className: check-list;
 
-.#{$class-name} {
+.#{$className} {
   &__tags {
     &-item {
       border: 1px solid map-get($colors, gray);

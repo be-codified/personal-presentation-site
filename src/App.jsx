@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import shortid from 'shortid';
 // import Tech from './components/tech/Tech';
 import Portfolio from './components/portfolio/Portfolio';
-// import CheckList from './components/check-list/CheckList';
+import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 import checkListData from './components/check-list/check-list-data';
@@ -155,7 +155,7 @@ class App extends Component {
             }
           </ul>
         </div>
-        {/* <CheckList data={checkListData} /> */}
+        <CheckList data={checkListData} />
         {/* /--- Section check list --- */}
       </div>
     );

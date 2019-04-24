@@ -4,9 +4,9 @@
  *
  */
 
-$class-name: portfolio;
+$className: portfolio;
 
-.#{$class-name} {
+.#{$className} {
   &__tags {
     &-item {
       border: 1px solid map-get($colors, gray);
