@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
-import shortid from 'shortid';
-import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
+// import shortid from 'shortid';
+// import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
+import Navigation from '../navigation/Navigation';
 
 class Tech extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Tech extends Component {
   }
 
   render() {
-    const { sidebar, children } = this.props;
+    const { navigation, children } = this.props;
     const classNames = new BEMHelper('tech');
 
     return (
@@ -25,21 +26,7 @@ class Tech extends Component {
         ref={this.refTech}
         {...classNames('', '', 'space-padding-large')}
       >
-        <ul {...classNames('sidebar', '', 'list-no-style-type')}>
-          {
-            sidebar.items.map(item => (
-              <li key={shortid.generate()}>
-                <ScrollToAnchor
-                  href={`#${item.id}`}
-                  selectAnchor={this.selectAnchor}
-                  offset={10}
-                >
-                  {item.text}
-                </ScrollToAnchor>
-              </li>
-            ))
-          }
-        </ul>
+        <Navigation items={navigation.items} />
         <div {...classNames('content')}>
           {children}
         </div>
@@ -49,7 +36,7 @@ class Tech extends Component {
 }
 
 Tech.propTypes = {
-  sidebar: PropTypes.PropTypes.shape({
+  navigation: PropTypes.PropTypes.shape({
     section: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(
       PropTypes.shape({

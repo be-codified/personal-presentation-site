@@ -8,29 +8,30 @@
 $debug: true;
 
 // Styles
-@import 'main.scss';
-@import 'colors.scss';
-@import 'easing.scss';
+@import 'main';
+@import 'colors';
+@import 'easing';
 
 // Mixins
-@import 'mixins/breakpoint.scss';
-@import 'mixins/space.scss';
+@import 'mixins/breakpoint';
+@import 'mixins/space';
 
 // Helpers
-@import 'helpers/position.scss';
-@import 'helpers/list.scss';
-@import 'helpers/text.scss';
-@import 'helpers/debug-breakpoint.scss';
+@import 'helpers/position';
+@import 'helpers/list';
+@import 'helpers/text';
+@import 'helpers/debug-breakpoint';
 
 // Functions
 @include space();
 
 // Components
-@import '../components/portfolio/portfolio.scss';
-@import '../components/knowledge/knowledge.scss';
-@import '../components/tech/tech.scss';
-@import '../components/scroll-bar-vertical/scroll-bar-vertical.scss';
-@import '../components/check-list/check-list.scss';
+@import '../components/portfolio/portfolio';
+@import '../components/knowledge/knowledge';
+@import '../components/tech/tech';
+@import '../components/scroll-bar-vertical/scroll-bar-vertical';
+@import '../components/check-list/check-list';
+@import '../components/navigation/navigation';
 
 // Highlight theme
 @import url('https://highlightjs.org/static/demo/styles/railscasts.css');

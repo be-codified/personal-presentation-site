@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 // import BEMHelper from 'react-bem-helper';
-// import Highlight from 'react-highlight.js';
-import shortid from 'shortid';
-// import Tech from './components/tech/Tech';
+import Highlight from 'react-highlight.js';
+// import shortid from 'shortid';
+import Tech from './components/tech/Tech';
 import Portfolio from './components/portfolio/Portfolio';
 import CheckList from './components/check-list/CheckList';
-// import Knowledge from './components/knowledge/Knowledge';
+// import Navigation from './components/navigation/Navigation';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 import checkListData from './components/check-list/check-list-data';
 
@@ -14,7 +14,9 @@ class App extends Component {
   someMethod = () => {}
 
   render() {
-    // const section = 'some-section';
+    const techSections = {
+      componentScrollToAnchor: 'tech-comp-scroll-to-anchor',
+    };
 
     // const classNames = {
     //   knowledge: new BEMHelper('knowledge'),
@@ -116,45 +118,64 @@ class App extends Component {
         {/* Tech */}
         {/* TODO: move in config */}
 
-        {/* <Tech
-          sidebar={
+        <Tech
+          navigation={
             {
-              section,
+              section: techSections.componentScrollToAnchor,
               items: [
                 {
-                  id: `${section}-test-1`,
-                  text: 'test 1',
+                  id: `${techSections.componentScrollToAnchor}-component-methods`,
+                  text: 'Component methods',
+                  items: [
+                    {
+                      id: `${techSections.componentScrollToAnchor}-component-methods-constructor`,
+                      text: 'Method constructor()',
+                    },
+                    {
+                      id: `${techSections.componentScrollToAnchor}-component-methods-render`,
+                      text: 'Method render()',
+                    },
+                    {
+                      id: `${techSections.componentScrollToAnchor}-component-methods-handle-click`,
+                      text: 'Method handleClick()',
+                    },
+                  ],
                 },
                 {
-                  id: `${section}-test-2`,
+                  id: `${techSections.componentScrollToAnchor}-test-2`,
                   text: 'test 2',
+                  items: [],
                 },
               ],
             }
           }
         >
-          <h2>How was made title</h2>
-          <h3 id={`${section}-test-1`}>How was made subtitle 1</h3>
-          <h3 id={`${section}-test-2`}>How was made subtitle 2</h3>
-          <Highlight language="scss">
-            <p>test</p>
+          <h2>React component: Scroll to anchor</h2>
+          <p>What does it do?</p>
+          <p>Short description</p>
+          <h3>Component methods</h3>
+
+          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-constructor`}>Method constructor()</h4>
+          <p>Short description</p>
+          <Highlight language="javascriptreact">
+            <p>Method constructor()</p>
           </Highlight>
-        </Tech> */}
+
+          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-render`}>Method render()</h4>
+          <p>Short description</p>
+          <Highlight language="javascriptreact">
+            <p>Method render()</p>
+          </Highlight>
+
+          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-handle-click`}>Method handleClick()</h4>
+          <p>Short description</p>
+          <Highlight language="javascriptreact">
+            <p>Method handleClick()</p>
+          </Highlight>
+        </Tech>
         {/* / Tech */}
 
         {/* --- Section check list --- */}
-        <div>
-          {/* Sidebar */}
-          <ul className="list-no-style-type">
-            {
-              checkListData.map(item => (
-                <li key={shortid.generate()}>
-                  <a href={`#${item.id}`} title={item.heading}>{item.heading}</a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
         <CheckList data={checkListData} />
         {/* /--- Section check list --- */}
       </div>

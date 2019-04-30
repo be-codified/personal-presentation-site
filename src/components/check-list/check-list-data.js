@@ -1,7 +1,7 @@
 const checklist = [
   {
     id: 'check-list-head',
-    heading: 'Head',
+    text: 'Head',
     list: [
       {
         type: 'Doctype',
@@ -109,7 +109,7 @@ const checklist = [
   },
   {
     id: 'check-list-html',
-    heading: 'HTML',
+    text: 'HTML',
     list: [
       {
         type: 'HTML5 semantic elements',
@@ -163,7 +163,7 @@ const checklist = [
   },
   {
     id: 'check-list-css',
-    heading: 'CSS',
+    text: 'CSS',
     list: [
       {
         type: 'Responsive web design',
@@ -271,7 +271,7 @@ const checklist = [
   },
   {
     id: 'check-list-javascript',
-    heading: 'JavaScript',
+    text: 'JavaScript',
     list: [
       {
         type: 'JavaScript inline',
@@ -313,7 +313,7 @@ const checklist = [
   },
   {
     id: 'check-list-images',
-    heading: 'Images',
+    text: 'Images',
     list: [
       {
         type: 'Optimization',
@@ -361,7 +361,7 @@ const checklist = [
   },
   {
     id: 'check-list-performance',
-    heading: 'Performance',
+    text: 'Performance',
     list: [
       {
         type: 'Page weight',
@@ -421,7 +421,7 @@ const checklist = [
   },
   {
     id: 'check-list-seo',
-    heading: 'SEO',
+    text: 'SEO',
     list: [
       {
         type: 'Google analytics',
@@ -430,8 +430,8 @@ const checklist = [
         checked: false,
       },
       {
-        type: 'Headings logic',
-        description: 'Heading text helps to understand the content in the current page.',
+        type: 'texts logic',
+        description: 'text text helps to understand the content in the current page.',
         tags: ['seo', 'accessibility', 'html'],
         checked: false,
       },
@@ -469,7 +469,7 @@ const checklist = [
   },
   {
     id: 'check-list-webfonts',
-    heading: 'Webfonts',
+    text: 'Webfonts',
     list: [
       {
         type: 'Webfont format',
@@ -493,7 +493,7 @@ const checklist = [
   },
   {
     id: 'check-list-accessibility',
-    heading: 'Accessibility',
+    text: 'Accessibility',
     list: [
       {
         type: 'Progressive enhancement',
@@ -514,8 +514,8 @@ const checklist = [
         checked: false,
       },
       {
-        type: 'Headings',
-        description: 'Headings are being used properly and in the right order (H1 to H6).',
+        type: 'texts',
+        description: 'texts are being used properly and in the right order (H1 to H6).',
         tags: ['best practices'],
         checked: false,
       },

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
+import Navigation from '../navigation/Navigation';
 
 class CheckList extends Component {
   calculateProgress = (items) => {
@@ -25,6 +26,7 @@ class CheckList extends Component {
 
     return (
       <div {...classNames('', '', 'space-padding-bottom-xlarge')}>
+        <Navigation items={data} />
         {
           /* For each segment */
           data.map(segment => (
