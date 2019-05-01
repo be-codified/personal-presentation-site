@@ -46,9 +46,17 @@ class CheckList extends Component {
                     let tags;
 
                     if (item.tags) {
-                      /* TODO: Any better way to code indenting and no linter issues? */
-
-                      tags = <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>{item.tags.map(tag => <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>{tag}</li>)}</ul>;
+                      tags = (
+                        <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>    {item.tags.map(tag => (
+                          <li
+                            {...classNames('tags-item', '', 'text-uppercase')}
+                            key={shortid.generate()}
+                          >
+                            {tag}
+                          </li>
+                        ))}
+                        </ul>
+                      );
                     }
 
                     return (

@@ -30,9 +30,9 @@ class Navigation extends Component {
   }
 }
 
-Navigation.defaultProps = {
-  somePropName: 'someValue',
-};
+// Navigation.defaultProps = {
+//   somePropName: 'someValue',
+// };
 
 Navigation.propTypes = {
   items: PropTypes.arrayOf(

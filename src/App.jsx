@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 // import BEMHelper from 'react-bem-helper';
-import Highlight from 'react-highlight.js';
 // import shortid from 'shortid';
-import Tech from './components/tech/Tech';
+// import techCompScrollToAnchor from './components/tech/data/techCompScrollToAnchor';
 import Portfolio from './components/portfolio/Portfolio';
-import CheckList from './components/check-list/CheckList';
+// import CheckList from './components/check-list/CheckList';
+// import Knowledge from './components/knowledge/Knowledge';
 // import Navigation from './components/navigation/Navigation';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
-import checkListData from './components/check-list/check-list-data';
+// import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
   someMethod = () => {}
 
   render() {
-    const techSections = {
-      componentScrollToAnchor: 'tech-comp-scroll-to-anchor',
-    };
-
     // const classNames = {
     //   knowledge: new BEMHelper('knowledge'),
     // };
@@ -28,23 +24,105 @@ class App extends Component {
 
         <Portfolio
           heading={{
-            intro: 'Latest work',
-            main: 'Portfolio item heading',
+            pre: 'Latest work',
+            main: 'NFL American Football Widgets',
           }}
           desc="Some description of portfolio item"
-          tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'React']}
-          client="Client name"
+          tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'React', 'cross-browser testing']}
+          client="Sportradar d.o.o."
+          type="team of developers"
           link={{
-            text: 'link text',
+            text: 'live at official page',
             href: 'https://store.sportradar.com/en/widget/nfl/index.php',
-            title: 'link title',
+            title: 'Go to official page',
           }}
-          image={{
-            src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-            alt: 'Some portfolio image',
-          }}
+          images={[
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+          ]}
         />
+
+        <Portfolio
+          heading={{
+            pre: 'Latest work',
+            main: 'Petrol website &ndash; the largest Slovenian energy company',
+          }}
+          desc="Some description of portfolio item"
+          tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing']}
+          client="Petrol d.d. and Renderspace d.o.o."
+          type="team of developers"
+          link={{
+            text: 'live at official page',
+            href: 'https://www.petrol.si/',
+            title: 'Go to official page',
+          }}
+          images={[
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+          ]}
+        />
+
+
+        <Portfolio
+          heading={{
+            pre: 'Latest work',
+            main: 'BTC city Ljubljana shopping mall',
+          }}
+          desc="Some description of portfolio item"
+          tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing']}
+          client="BTC d.d. and Renderspace d.o.o."
+          type="team of developers"
+          link={{
+            text: 'live at official page',
+            href: 'http://www.btc-city.com/',
+            title: 'Go to official page',
+          }}
+          images={[
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+            {
+              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
+              alt: 'Some portfolio image',
+            },
+          ]}
+        />
+
+        {/* {techCompScrollToAnchor} */}
 
         {/* eslint-disable max-len */}
         {/* My main strengths */}
@@ -115,68 +193,8 @@ class App extends Component {
         </Knowledge> */}
         {/* / My skills to ??? */}
 
-        {/* Tech */}
-        {/* TODO: move in config */}
-
-        <Tech
-          navigation={
-            {
-              section: techSections.componentScrollToAnchor,
-              items: [
-                {
-                  id: `${techSections.componentScrollToAnchor}-component-methods`,
-                  text: 'Component methods',
-                  items: [
-                    {
-                      id: `${techSections.componentScrollToAnchor}-component-methods-constructor`,
-                      text: 'Method constructor()',
-                    },
-                    {
-                      id: `${techSections.componentScrollToAnchor}-component-methods-render`,
-                      text: 'Method render()',
-                    },
-                    {
-                      id: `${techSections.componentScrollToAnchor}-component-methods-handle-click`,
-                      text: 'Method handleClick()',
-                    },
-                  ],
-                },
-                {
-                  id: `${techSections.componentScrollToAnchor}-test-2`,
-                  text: 'test 2',
-                  items: [],
-                },
-              ],
-            }
-          }
-        >
-          <h2>React component: Scroll to anchor</h2>
-          <p>What does it do?</p>
-          <p>Short description</p>
-          <h3>Component methods</h3>
-
-          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-constructor`}>Method constructor()</h4>
-          <p>Short description</p>
-          <Highlight language="javascriptreact">
-            <p>Method constructor()</p>
-          </Highlight>
-
-          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-render`}>Method render()</h4>
-          <p>Short description</p>
-          <Highlight language="javascriptreact">
-            <p>Method render()</p>
-          </Highlight>
-
-          <h4 id={`${techSections.componentScrollToAnchor}-component-methods-handle-click`}>Method handleClick()</h4>
-          <p>Short description</p>
-          <Highlight language="javascriptreact">
-            <p>Method handleClick()</p>
-          </Highlight>
-        </Tech>
-        {/* / Tech */}
-
         {/* --- Section check list --- */}
-        <CheckList data={checkListData} />
+        {/* <CheckList data={checkListData} /> */}
         {/* /--- Section check list --- */}
       </div>
     );

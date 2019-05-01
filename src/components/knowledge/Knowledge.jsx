@@ -3,14 +3,7 @@ import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
 class Knowledge extends Component {
-  constructor(props) {
-    super(props);
-    this.test = 'knowledge';
-  }
-
-  someMethod = () => {
-
-  }
+  someMethod = () => {}
 
   render() {
     const { heading, children } = this.props;

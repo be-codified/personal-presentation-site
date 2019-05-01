@@ -10,24 +10,43 @@ class Portfolio extends Component {
 
   render() {
     const {
-      tags, heading, desc, link, client, image,
+      tags, heading, desc, link, client, type, images,
     } = this.props;
     const classNames = new BEMHelper('portfolio');
 
-    /* TODO: Any better way to code indenting and no linter issues? */
-    const tagsNode = <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>{tags.map(tag => <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>{tag}</li>)}</ul>;
-
     return (
       <div {...classNames()}>
-        <span>{heading.intro}</span>
+        <span>{heading.pre}</span>
         <h2>{heading.main}</h2>
         <p>{desc}</p>
-        <span>Technologies used: </span>{tagsNode}
+        <span>Technologies used: </span>
+        <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>
+          {tags.map(tag => (
+            <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>
+              {tag}
+            </li>
+          ))}
+        </ul>
         <p>
-          See it live at <a href={link.href} title={link.title}>{link.text}.</a>
+          See it&nbsp;
+          <a
+            href={link.href}
+            title={link.title}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.text}.
+          </a>
         </p>
-        <p>Client: {client}</p>
-        <img src={image.src} srcSet={image.srcSet} alt={image.alt} />
+        <p>Client: {client} / {type}</p>
+        {images.map(image => (
+          <img
+            key={shortid.generate()}
+            src={image.src}
+            srcSet={image.srcSet}
+            alt={image.alt}
+          />
+        ))}
       </div>
     );
   }
@@ -35,22 +54,25 @@ class Portfolio extends Component {
 
 Portfolio.propTypes = {
   heading: PropTypes.PropTypes.shape({
-    intro: PropTypes.string.isRequired,
+    pre: PropTypes.string.isRequired,
     main: PropTypes.string.isRequired,
   }).isRequired,
   desc: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   client: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   link: PropTypes.shape({
     text: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    srcSet: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-  }).isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      srcSet: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default Portfolio;
