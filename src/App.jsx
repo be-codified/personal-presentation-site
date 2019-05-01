@@ -122,6 +122,11 @@ class App extends Component {
           ]}
         />
 
+        <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
+        <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />
+        <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
+
+
         {/* {techCompScrollToAnchor} */}
 
         {/* eslint-disable max-len */}
