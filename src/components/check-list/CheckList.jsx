@@ -52,7 +52,7 @@ class CheckList extends Component {
                             {...classNames('tags-item', '', 'text-uppercase')}
                             key={shortid.generate()}
                           >
-                            {tag}
+                            <small>{tag}</small>
                           </li>
                         ))}
                         </ul>

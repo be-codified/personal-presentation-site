@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import shortid from 'shortid';
 // import techCompScrollToAnchor from './components/tech/data/techCompScrollToAnchor';
 import Portfolio from './components/portfolio/Portfolio';
+import Intro from './components/intro/Intro';
 // import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
 // import Navigation from './components/navigation/Navigation';
@@ -21,6 +22,8 @@ class App extends Component {
     return (
       <div className="space-padding-large">
         <ScrollBarVertical />
+        <Intro />
+        <hr />
 
         <Portfolio
           heading={{
@@ -38,22 +41,23 @@ class App extends Component {
           }}
           images={[
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
           ]}
         />
+        <hr />
 
         <Portfolio
           heading={{
@@ -71,23 +75,23 @@ class App extends Component {
           }}
           images={[
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
           ]}
         />
-
+        <hr />
 
         <Portfolio
           heading={{
@@ -105,22 +109,23 @@ class App extends Component {
           }}
           images={[
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
             {
-              src: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image',
-              srcSet: 'https://via.placeholder.com/320x180.jpg?text=Sample+portfolio+image 1x, https://via.placeholder.com/640x360.jpg?text=Sample+portfolio+image 2x',
-              alt: 'Some portfolio image',
+              src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
+              srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
+              alt: 'Portfolio image',
             },
           ]}
         />
+        <hr />
 
         <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
         <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />

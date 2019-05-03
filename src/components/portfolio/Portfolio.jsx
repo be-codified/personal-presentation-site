@@ -23,7 +23,7 @@ class Portfolio extends Component {
         <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>
           {tags.map(tag => (
             <li {...classNames('tags-item', '', 'text-uppercase')} key={shortid.generate()}>
-              {tag}
+              <small>{tag}</small>
             </li>
           ))}
         </ul>
