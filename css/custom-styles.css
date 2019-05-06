@@ -8,9 +8,7 @@
 *********************************************************/
 body {
   position: relative;
-  background: url('../img/background-pattern.svg') 0 0 #f3f5f5;
-  background-size: 0.5%;
-  background-attachment: fixed;
+  background-color: #444143;
 }
 .container-fluid {
   max-width: 1280px;
