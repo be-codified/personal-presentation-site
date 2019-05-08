@@ -3,9 +3,9 @@ import React from 'react';
 import Portfolio from './components/portfolio/Portfolio';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
+import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 // import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
-import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 // import checkListData from './components/check-list/check-list-data';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
     <div className="space-padding-large">
       <ScrollBarVertical />
       <Footer />
+      <hr />
 
       <Intro />
       <hr />
