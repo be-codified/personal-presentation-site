@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
+/*
+  TODO:
+    - use timeMin from FetchApiGitHub
+*/
+
 class Loader extends Component {
   someMethod = () => {}
 

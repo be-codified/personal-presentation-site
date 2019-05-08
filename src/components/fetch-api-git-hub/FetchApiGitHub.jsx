@@ -4,6 +4,7 @@ import Loader from '../loader/Loader';
 /*
   TODO:
     - handle errors better (if cannot fetch, if forbidden)
+    - move timeMin to Loader component
 */
 
 const fetchApiUrl = 'https://api.github.com/repos/be-codified/personal-presentation-site';
@@ -83,7 +84,7 @@ class FetchApiGitHub extends Component {
 
     return state.isLoading
       ? <Loader type="ring" />
-      : <p>Page last updated on { state.data }</p>;
+      : <span>Website last updated on { state.data }</span>;
   }
 }
 
