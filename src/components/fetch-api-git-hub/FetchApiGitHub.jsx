@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Loader from '../loader/Loader';
 
+/*
+  TODO:
+    - handle errors better (if cannot fetch, if forbidden)
+*/
+
 const fetchApiUrl = 'https://api.github.com/repos/be-codified/personal-presentation-site';
 class FetchApiGitHub extends Component {
   constructor(props) {
