@@ -1,12 +1,10 @@
 import React from 'react';
-// import BEMHelper from 'react-bem-helper';
 // import shortid from 'shortid';
 import Portfolio from './components/portfolio/Portfolio';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
 // import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
-// import Navigation from './components/navigation/Navigation';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 // import checkListData from './components/check-list/check-list-data';
 
