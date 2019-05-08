@@ -5,12 +5,11 @@ import React, { Component } from 'react';
 // import techCompScrollToAnchor from './components/tech/data/techCompScrollToAnchor';
 import Portfolio from './components/portfolio/Portfolio';
 import Intro from './components/intro/Intro';
-import Loader from './components/loader/Loader';
 // import CheckList from './components/check-list/CheckList';
 // import Knowledge from './components/knowledge/Knowledge';
 // import Navigation from './components/navigation/Navigation';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
-// import FetchApiGitHub from './components/fetch-api-git-hub/FetchApiGitHub';
+import FetchApiGitHub from './components/fetch-api-git-hub/FetchApiGitHub';
 // import checkListData from './components/check-list/check-list-data';
 
 class App extends Component {
@@ -24,11 +23,7 @@ class App extends Component {
     return (
       <div className="space-padding-large">
         <ScrollBarVertical />
-        {/* <FetchApiGitHub /> */}
-
-        <Loader type="ellipsis" />
-        <hr />
-        <Loader type="ring" />
+        <FetchApiGitHub />
 
         <Intro />
         <hr />

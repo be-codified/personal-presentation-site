@@ -12,11 +12,12 @@ $config: (
   color: map-get($colors, black),
   ellipsis: (
     width: 64px,
-    height: 64px
+    height: 64px,
+    radius: 3px
   ),
   ring: (
-    width: 16px,
-    height: 16px
+    dimension: 16px,
+    border: 2px,
   )
 );
 
@@ -37,9 +38,8 @@ $config: (
 
       div {
         position: absolute;
-        top: 27px;
-        width: 11px;
-        height: 11px;
+        width: map-get(map-get($config, ellipsis), radius) * 2;
+        height: map-get(map-get($config, ellipsis), radius) * 2;
         border-radius: 50%;
         background: map-get($config, color);
         animation-timing-function: cubic-bezier(0, 1, 1, 0);
@@ -86,14 +86,14 @@ $config: (
 
     // Type ring
     &--ring {
-      border: 8px solid map-get($config, color);
-      border-top: 8px solid map-get($colors, white);
+      border: map-get(map-get($config, ring), border) solid map-get($config, color);
+      border-top: map-get(map-get($config, ring), border) solid map-get($colors, white);
       border-radius: 50%;
-      width: map-get(map-get($config, ring), width);
-      height: map-get(map-get($config, ring), width);
+      width: map-get(map-get($config, ring), dimension);
+      height: map-get(map-get($config, ring), dimension);
       animation: ring 1s linear infinite;
-      top: calc(50% - #{map-get(map-get($config, ring), width)} / 2);
-      left: calc(50% - #{map-get(map-get($config, ring), height)} / 2);
+      top: calc(50% - #{map-get(map-get($config, ring), dimension)} / 2);
+      left: calc(50% - #{map-get(map-get($config, ring), dimension)} / 2);
 
       @keyframes ring {
         0% { transform: rotate(0deg); }
