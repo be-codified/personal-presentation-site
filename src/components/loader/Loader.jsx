@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
@@ -7,33 +7,29 @@ import BEMHelper from 'react-bem-helper';
     - use timeMin from FetchApiGitHub
 */
 
-class Loader extends Component {
-  someMethod = () => {}
+function Loader(props) {
+  const { type } = props;
 
-  render() {
-    const { type } = this.props;
+  const classNames = new BEMHelper('loader');
+  let loaderType;
 
-    const classNames = new BEMHelper('loader');
-    let loaderType;
-
-    if (type === 'ellipsis') {
-      loaderType = (
-        <div {...classNames('inner', 'ellipsis')}>
-          <div /><div /><div /><div />
-        </div>
-      );
-    } else if (type === 'ring') {
-      loaderType = (
-        <div {...classNames('inner', 'ring')} />
-      );
-    }
-
-    return (
-      <div {...classNames('')}>
-        {loaderType}
-      </div>
+  if (type === 'ellipsis') {
+    loaderType = (
+      <span {...classNames('inner', 'ellipsis')}>
+        <div /><div /><div /><div />
+      </span>
+    );
+  } else if (type === 'ring') {
+    loaderType = (
+      <span {...classNames('inner', 'ring')} />
     );
   }
+
+  return (
+    <span {...classNames('')}>
+      {loaderType}
+    </span>
+  );
 }
 
 Loader.propTypes = {

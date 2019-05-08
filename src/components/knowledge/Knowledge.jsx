@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 
-class Knowledge extends Component {
-  someMethod = () => {}
+function Knowledge(props) {
+  const { heading, children } = props;
+  const classNames = new BEMHelper('knowledge');
 
-  render() {
-    const { heading, children } = this.props;
-    const classNames = new BEMHelper('knowledge');
-
-    return (
-      <div {...classNames()}>
-        <h2>{heading}</h2>
-        {children}
-      </div>
-    );
-  }
+  return (
+    <div {...classNames()}>
+      <h2>{heading}</h2>
+      {children}
+    </div>
+  );
 }
 
 Knowledge.propTypes = {

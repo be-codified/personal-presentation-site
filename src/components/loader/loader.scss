@@ -23,6 +23,7 @@ $config: (
 
 .#{$className} {
   position: relative;
+  display: block;
 
   &__inner {
     display: block;
