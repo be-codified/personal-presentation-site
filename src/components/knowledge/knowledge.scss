@@ -7,9 +7,15 @@
 $className: knowledge;
 
 .#{$className} {
+  li {
+    margin: 4px 0;
+    padding: 3px 0;
+  }
+
   &__highlight {
     color: map-get($colors, white);
     background-color: map-get($colors, gray);
+    padding: 3px 5px;
   }
 
   &__code {

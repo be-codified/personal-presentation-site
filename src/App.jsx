@@ -17,31 +17,27 @@ function App() {
   return (
     <div className="space-padding-large">
       <ScrollBarVertical />
-
       <Intro />
       <hr />
-
       {/* eslint-disable max-len */}
       {/* My main strengths */}
-      <Knowledge heading="// TODO: My main strengths">
+      <Knowledge heading="My main strengths">
         <ul>
-          <li>strong understanding of developing for the web and a <span>careful eye for design,</span></li>
-          <li>exceptional ability to translate designs into semantic, accessible front-end code,</li>
-          <li>strong understanding of modern web technologies and workflows,</li>
-          <li>strong understanding of mobile and responsive design and development practices,</li>
-          <li>solid understanding of designing in a browser,</li>
-          <li>solid understanding of integration or modification of front-end code with CMSs,</li>
-          <li>solid understanding of SEO,</li>
-          <li>strong understanding and appreciation of colour and typography,</li>
+          <li>understanding of developing for the web and a <span {...classNames.knowledge('highlight')}>careful eye for design,</span></li>
+          <li>ability to <span {...classNames.knowledge('highlight')}>translate designs</span> into semantic, accessible front-end code,</li>
+          <li>understanding of <span {...classNames.knowledge('highlight')}>modern web technologies and workflows,</span></li>
+          <li>fully aware of <span {...classNames.knowledge('highlight')}>mobile and responsive design</span> and development practices,</li>
+          <li>capable of <span {...classNames.knowledge('highlight')}>designing in a browser,</span></li>
+          <li>understanding of <span {...classNames.knowledge('highlight')}>integration or modification of front-end code</span> with CMSs,</li>
+          <li>knowing of <span {...classNames.knowledge('highlight')}>SEO</span>,</li>
+          <li>understanding and <span {...classNames.knowledge('highlight')}>appreciation of colour and typography,</span></li>
           <li>ability to work directly with UX/UI and designers to implement designs and provide feedback on design if needed,</li>
-          <li>excellent communication skills,</li>
-          <li>ability to dive in and learn new things to find solutions for technical problems.</li>
+          <li>excellent <span {...classNames.knowledge('highlight')}>communication skills,</span></li>
+          <li>ability to dive in and <span {...classNames.knowledge('highlight')}>learn new things</span> to find solutions for technical problems.</li>
         </ul>
       </Knowledge>
       {/* / My main strengths */}
-
       <hr />
-
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -75,7 +71,6 @@ function App() {
         ]}
       />
       <hr />
-
       {/* My skills to produce visual output */}
       <Knowledge heading="My skills to produce visual output">
         <ul>
@@ -99,15 +94,13 @@ function App() {
               <li>CSS pre-processor Sass (use word like Css style isolation, reusable, scalable)</li>
             </ul>
           </li>
-          <li>template engine Nunjucks</li>
-          <li>graphic tools (e.g. Sketch, Adobe Photoshop & Illustrator).</li>
+          <li>template engine <span {...classNames.knowledge('highlight')}>Nunjucks</span></li>
+          <li><span {...classNames.knowledge('highlight')}>graphic tools</span> (e.g. Sketch, Adobe Photoshop & Illustrator).</li>
         </ul>
       </Knowledge>
       {/* / My skills to produce visual output
       {/* eslint-enable max-len */}
-
       <hr />
-
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -140,31 +133,27 @@ function App() {
           },
         ]}
       />
-
       <hr />
-
-      {/* My skills to ??? */}
-      <Knowledge heading="My skills to ???">
+      {/* My skills to work with programming logic */}
+      <Knowledge heading="My skills to work with programming logic">
         <ul>
-          <li><span {...classNames.knowledge('highlight')}>JavaScript</span>
+          <li>
+            <span {...classNames.knowledge('highlight')}>JavaScript</span>
             <ul>
               <li>object-oriented programming,</li>
               <li>
-                ECMAScript6 — front-end frameworks e.g.&nbsp;
+                ECMAScript6 &mdash; front-end frameworks e.g.&nbsp;
                 <a href="/" title="Link to framework Angular">Angular</a>,&nbsp;
                 <a href="/" title="Link to framework React">React</a> and&nbsp;
                 <a href="/" title="Link to framework VueJS">VueJS</a>
               </li>
-              <li>backend technology Node.js and framework Express</li>
+              <li>back-end technology <span {...classNames.knowledge('highlight')}>Node.js</span> and framework <span {...classNames.knowledge('highlight')}>Express</span></li>
             </ul>
-            and
           </li>
         </ul>
       </Knowledge>
-      {/* / My skills to ??? */}
-
+      {/* / My skills to work with programming logic */}
       <hr />
-
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -198,7 +187,6 @@ function App() {
         ]}
       />
       <hr />
-
       {/* My skills to ??? */}
       <Knowledge heading="My skills to ???">
         <ul>
@@ -206,9 +194,7 @@ function App() {
         </ul>
       </Knowledge>
       {/* / My skills to ??? */}
-
       <hr />
-
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -244,15 +230,12 @@ function App() {
       <hr />
       <Footer />
       <hr />
-
       <div className="text-center">
         <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
         <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />
         <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
       </div>
-
       {/* {techCompScrollToAnchor} */}
-
       {/* --- Section check list --- */}
       {/* <CheckList data={checkListData} /> */}
       {/* /--- Section check list --- */}
