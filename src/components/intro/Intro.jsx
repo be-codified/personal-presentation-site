@@ -34,6 +34,8 @@ class Intro extends Component {
           alt="Logo"
         />
 
+        <hr />
+
         <h1>Hi,<br />my name is Žiga and I&apos;m a front-end web developer.</h1>
         <p>I have been working in the web industry for the past {this.calculatePeriod(this.datesStart.webIndustry)} years, for the last {this.calculatePeriod(this.datesStart.freelancing, true)} years as a freelancer.</p> {/* eslint-disable-line max-len */}
 
@@ -54,6 +56,12 @@ class Intro extends Component {
             </strong> cups of coffee drank today
           </p>
         </div>
+
+        <img
+          src="https://via.placeholder.com/300x300.jpg?text=INTRO+IMAGE"
+          srcSet="https://via.placeholder.com/300x300.jpg?text=INTRO+IMAGE 1x, https://via.placeholder.com/600x600.jpg?text=INTRO+IMAGE 2x"
+          alt="Intro"
+        />
       </div>
     );
   }

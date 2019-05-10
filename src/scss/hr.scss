@@ -1,0 +1,15 @@
+/**
+ *
+ * Horizontal rule styles
+ *
+ */
+
+$config: (
+  type: dashed,
+  color: map-get($colors, gray)
+);
+
+hr {
+  height: 0;
+  border-top: 1px map-get($config, type) map-get($config, color);
+}
