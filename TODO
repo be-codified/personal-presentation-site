@@ -1,3 +1,40 @@
 ☐ set up bundle analyzer
 ☐ https://github.com/nfl/react-helmet
 ✔ check why linter is not working live on jsx files @done(19-04-30 17:52)
+
+DRAFTS
+
+- markup language HTML5 (using modern semantic markup e.g. <main> <header> <nav> <article> <picture>),
+- cascading style sheets language CSS3 within large scale projects
+
+
+
+
+- TODO: SVG, icons, icomoon
+- TODO: template engine Nunjucks
+- TODO: graphic tools (e.g. Sketch, Adobe Photoshop & Illustrator).
+
+
+- media queries
+- responsive design, mobile first
+- using modern properties
+- highly reusability, no duplicates
+- layout (grid?)
+- BEM methodology
+- web font embedding
+- transitions and animations
+- CSS pre-processor Sass (use word like Css style isolation, reusable, scalable)
+
+
+
+
+
+CSS pre-processor Sass (use word like Css style isolation, reusable, scalable)
+
+Stylesheet language SASS (variables, imports, extends, debug, conditions, loops, nested rules, mixins, functions)
+
+Add html validation, aria validation
+Add browserstack, add litmus
+Add CLI to knowledge
+
+Add Mongo, CI and Jira to portfolio

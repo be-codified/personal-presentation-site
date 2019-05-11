@@ -1,5 +1,6 @@
 import React from 'react';
 // import shortid from 'shortid';
+import { Helmet } from 'react-helmet';
 import BEMHelper from 'react-bem-helper';
 import Portfolio from './components/portfolio/Portfolio';
 import Intro from './components/intro/Intro';
@@ -7,6 +8,8 @@ import Footer from './components/footer/Footer';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 // import CheckList from './components/check-list/CheckList';
 import Knowledge from './components/knowledge/Knowledge';
+import Navigation from './components/navigation/Navigation';
+import dataNavigation from './data/navigation';
 // import checkListData from './components/check-list/check-list-data';
 
 function App() {
@@ -16,12 +19,17 @@ function App() {
 
   return (
     <div className="space-padding-large">
+      <Helmet>
+        <title>front-end web developer | be-codified.com</title>
+      </Helmet>
       <ScrollBarVertical />
+      <Navigation items={dataNavigation.main} />
+      <hr />
       <Intro />
       <hr />
       {/* eslint-disable max-len */}
-      {/* My main strengths */}
-      <Knowledge heading="My main strengths">
+      {/* My main skills */}
+      <Knowledge heading="My main skills">
         <ul>
           <li>understanding of developing for the web and a <span {...classNames.knowledge('highlight')}>careful eye for design,</span></li>
           <li>ability to <span {...classNames.knowledge('highlight')}>translate designs</span> into semantic, accessible front-end code,</li>
@@ -36,7 +44,7 @@ function App() {
           <li>ability to dive in and <span {...classNames.knowledge('highlight')}>learn new things</span> to find solutions for technical problems.</li>
         </ul>
       </Knowledge>
-      {/* / My main strengths */}
+      {/* / My main skills */}
       <hr />
       <Portfolio
         heading={{
