@@ -1,0 +1,33 @@
+/**
+ *
+ * Back to top styles
+ *
+ */
+
+$className: back-to-top;
+
+$config: (
+  size: 50px,
+  backgroundColor: map-get($colors, gray),
+  color: map-get($colors, white),
+  padding: 3px,
+  margin: 0 25px 10px 0,
+  fontSize: 12px
+);
+
+.#{$className} {
+  background-color: map-get($config, backgroundColor);
+  color: map-get($config, color);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: map-get($config, size);
+  width: map-get($config, size);
+  padding: map-get($config, padding);
+  margin: map-get($config, margin);
+  text-align: center;
+  font-size: map-get($config, fontSize);
+}

@@ -34,10 +34,10 @@ class ScrollToAnchor extends Component {
   }
 
   render() {
-    const { href, children } = this.props;
+    const { href, className, children } = this.props;
 
     return (
-      <a href={href} onClick={this.handleClick}>
+      <a href={href} onClick={this.handleClick} className={className}>
         {children}
       </a>
     );
@@ -45,11 +45,13 @@ class ScrollToAnchor extends Component {
 }
 
 ScrollToAnchor.defaultProps = {
+  className: '',
   offset: 30,
 };
 
 ScrollToAnchor.propTypes = {
   href: PropTypes.string.isRequired,
+  className: PropTypes.string,
   selectAnchor: PropTypes.func.isRequired,
   offset: PropTypes.number,
   children: PropTypes.string.isRequired,

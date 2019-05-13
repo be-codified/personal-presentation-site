@@ -11,6 +11,7 @@ import Knowledge from './components/knowledge/Knowledge';
 import Navigation from './components/navigation/Navigation';
 import dataNavigation from './data/navigation';
 // import checkListData from './components/check-list/check-list-data';
+import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
 
 function App() {
   const classNames = {
@@ -18,11 +19,24 @@ function App() {
   };
 
   return (
-    <div className="space-padding-large">
+    <div id="top" className="space-padding-large">
+      {/* Meta data */}
       <Helmet>
         <title>front-end web developer | be-codified.com</title>
       </Helmet>
+      {/* / Meta data */}
       <ScrollBarVertical />
+      {/* Back to top */}
+      <ScrollToAnchor
+        href="#top"
+        // selectAnchor={this.selectAnchor}
+        offset={10}
+        className="back-to-top"
+      >
+        Back to top
+      </ScrollToAnchor>
+      {/* / Back to top */}
+
       <Navigation items={dataNavigation.main} />
       <hr />
       <Intro />
