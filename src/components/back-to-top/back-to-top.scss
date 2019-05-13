@@ -8,11 +8,11 @@ $className: back-to-top;
 
 $config: (
   size: 50px,
-  backgroundColor: map-get($colors, gray),
+  backgroundColor: map-get($colors, black),
   color: map-get($colors, white),
   padding: 3px,
   margin: 0 25px 10px 0,
-  fontSize: 12px
+  fontSize: 10px
 );
 
 .#{$className} {
@@ -30,4 +30,5 @@ $config: (
   margin: map-get($config, margin);
   text-align: center;
   font-size: map-get($config, fontSize);
+  text-decoration: none;
 }

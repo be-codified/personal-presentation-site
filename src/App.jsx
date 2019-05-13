@@ -26,12 +26,15 @@ function App() {
       </Helmet>
       {/* / Meta data */}
       <ScrollBarVertical />
-      {/* Back to top */}
+      {/* Back to top
+        TODO:
+          -show button only when 30% of document is reached
+      */}
       <ScrollToAnchor
         href="#top"
         // selectAnchor={this.selectAnchor}
         offset={10}
-        className="back-to-top"
+        className="back-to-top text-uppercase text-no-underline"
       >
         Back to top
       </ScrollToAnchor>
