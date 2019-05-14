@@ -46,7 +46,7 @@ function App() {
       <hr />
       {/* eslint-disable max-len */}
       {/* My main skills */}
-      <Knowledge heading="My main skills">
+      <Knowledge heading="My main skills" id="section-skills-my-main-skills">
         <ul>
           <li>understanding of developing for the web and a <span {...classNames.knowledge('highlight')}>careful eye for design,</span></li>
           <li>ability to <span {...classNames.knowledge('highlight')}>translate designs</span> into semantic, accessible front-end code,</li>
@@ -215,7 +215,7 @@ function App() {
       {/* My skills to ??? */}
       <Knowledge heading="My skills to ???">
         <ul>
-          <li>todo</li>
+          <li>TODO</li>
         </ul>
       </Knowledge>
       {/* / My skills to ??? */}
@@ -252,6 +252,16 @@ function App() {
           },
         ]}
       />
+      <hr />
+
+      {/* How was this page made */}
+      <Knowledge heading="How was this page made">
+        <ul>
+          <li>TODO</li>
+        </ul>
+      </Knowledge>
+      {/* / How was this page made */}
+
       <hr />
       <Footer />
       <hr />
