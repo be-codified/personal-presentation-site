@@ -12,6 +12,7 @@ import Navigation from './components/navigation/Navigation';
 import dataNavigation from './data/navigation';
 // import checkListData from './components/check-list/check-list-data';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
+import Link from './components/link/Link';
 
 function App() {
   const classNames = {
@@ -48,7 +49,8 @@ function App() {
       {/* My main skills */}
       <Knowledge heading="My main skills" id="section-skills-my-main-skills">
         <ul>
-          <li>understanding of developing for the web and a <span {...classNames.knowledge('highlight')}>careful eye for design,</span></li>
+          <li>understanding of developing for the web and a <span {...classNames.knowledge('highlight')}>careful eye for design,</span>
+          </li>
           <li>ability to <span {...classNames.knowledge('highlight')}>translate designs</span> into semantic, accessible front-end code,</li>
           <li>understanding of <span {...classNames.knowledge('highlight')}>modern web technologies and workflows,</span></li>
           <li>fully aware of <span {...classNames.knowledge('highlight')}>mobile and responsive design</span> and development practices,</li>
@@ -99,28 +101,20 @@ function App() {
       {/* My skills to produce visual output */}
       <Knowledge heading="My skills to produce visual output">
         <ul>
-          <li>
-            <span {...classNames.knowledge('highlight')}>HTML5</span>
-            (using modern markup e.g.&nbsp;
-            <span {...classNames.knowledge('code')}>{['<article>']}</span>&nbsp;
-            <span {...classNames.knowledge('code')}>{['<aside>']}</span>&nbsp;
-            <span {...classNames.knowledge('code')}>{['<main>']}</span>
-            ),
-          </li>
-          <li><span {...classNames.knowledge('highlight')}>CSS3</span> within large scale projects,
+          <li>markup language <span {...classNames.knowledge('highlight')}>HTML5</span> (using modern semantic markup e.g. <span {...classNames.knowledge('code')}>{['<main>']}</span><span {...classNames.knowledge('code')}>{['<header>']}</span><span {...classNames.knowledge('code')}>{['<nav>']}</span><span {...classNames.knowledge('code')}>{['<article>']}</span> and <span {...classNames.knowledge('code')}>{['<picture>']}</span>),</li>
+          <li>cascading style sheets language <span {...classNames.knowledge('highlight')}>CSS3</span> within large scale projects:
             <ul>
-              <li>using modern properties</li>
-              <li>highly reusability, no duplicates</li>
-              <li>layout (grid?)</li>
-              <li>BEM methodology</li>
-              <li>web font embedding</li>
-              <li>transitions and animations</li>
-              <li>SVG</li>
-              <li>CSS pre-processor Sass (use word like Css style isolation, reusable, scalable)</li>
+              <li>using <span {...classNames.knowledge('highlight')}>modern properties</span>, writing highly <span {...classNames.knowledge('highlight')}>isolated, reusable, scalable and maintainable code</span> &mdash; no duplicated properties,</li>
+              <li><span {...classNames.knowledge('highlight')}>responsive web design</span> based on media queries (mobile first principle),</li>
+              <li>building <span {...classNames.knowledge('highlight')}>grid layout</span> with Flexbox or Grid properties, <span {...classNames.knowledge('highlight')}>web font embedding</span>, achieving  <span {...classNames.knowledge('highlight')}>transitions and animations</span> and</li>
+              <li><span {...classNames.knowledge('highlight')}>BEM methodology</span> (writing classes e.g. <span {...classNames.knowledge('code')}>tree__leaf--brown</span>),</li>
             </ul>
           </li>
-          <li>template engine <span {...classNames.knowledge('highlight')}>Nunjucks</span></li>
-          <li><span {...classNames.knowledge('highlight')}>graphic tools</span> (e.g. Sketch, Adobe Photoshop & Illustrator).</li>
+          <li>CSS extension language <span {...classNames.knowledge('highlight')}>SASS</span> (using nested properties, imports and extends, variables, conditions, loops, mixins and functions),</li>
+          <li>vector graphic format <span {...classNames.knowledge('highlight')}>SVG</span> for images (when possibility is given) or icons,</li>
+          <li><span {...classNames.knowledge('highlight')}>digital tools</span> Sketch, Adobe Photoshop & Illustrator,</li>
+          <li><span {...classNames.knowledge('highlight')}>cross-browser compatibility testing</span> (Chrome, Firefox, Safari, Edge,  Internet Explorer 11+) and <span {...classNames.knowledge('highlight')}>cross-platform compatibility testing</span> (Android, Apple OS X and iOS) and</li>
+          <li><span {...classNames.knowledge('highlight')}>CSS frameworks</span> <Link href="https://getbootstrap.com/" title="Link to Bootstrap" isOuter>Bootstrap</Link> and <Link href="https://foundation.zurb.com/" title="Link to Foundation" isOuter>Foundation</Link>.</li>
         </ul>
       </Knowledge>
       {/* / My skills to produce visual output
