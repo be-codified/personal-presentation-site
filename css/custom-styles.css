@@ -80,17 +80,6 @@ header h1 a:active {
   display: block;
   position: relative;
 }
-.profile .hire {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 20px;
-  display: inline-block;
-  line-height: 20px;
-  background-color: #b41c1c;
-  text-align: center;
-}
 /*** typography
 *********************************************************/
 @font-face {
@@ -546,13 +535,6 @@ ul.achievements .desc {
   .profile {
     padding-top: 310px;
   }
-  .profile .hire {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 5%;
-    width: 175px;
-  }
   ul.achievements li {
     width: 250px;
   }
@@ -561,9 +543,6 @@ ul.achievements .desc {
 @media (min-width: 992px) {
   .profile {
     padding-top: 275px;
-  }
-  .hire {
-    margin-top: -60px;
   }
   .portfolio .more {
     display: block;

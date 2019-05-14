@@ -5,14 +5,6 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.preloader img').fadeOut(500, function() {
         $('.preloader').fadeOut(1000, function() {
-
-          // Scroll down animation to contact info
-          $('.hire a').on('click', function() {
-            $('html, body').animate({
-              scrollTop: $('.neighbour-4').offset().top,
-            }, 2000);
-          });
-
           // Achievements calculations
           // Setting two important dates and today
           var dateWebindustry = new Date('2007-06-01');
