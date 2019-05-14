@@ -57,7 +57,7 @@ function App() {
           <li>knowing of <span {...classNames.knowledge('highlight')}>SEO</span>,</li>
           <li>understanding and <span {...classNames.knowledge('highlight')}>appreciation of colour and typography,</span></li>
           <li>ability to work directly with UX/UI and designers to implement designs and provide feedback on design if needed,</li>
-          <li>excellent <span {...classNames.knowledge('highlight')}>communication skills,</span></li>
+          <li>excellent <span {...classNames.knowledge('highlight')}>communication skills</span> and</li>
           <li>ability to dive in and <span {...classNames.knowledge('highlight')}>learn new things</span> to find solutions for technical problems.</li>
         </ul>
       </Knowledge>
