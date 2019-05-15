@@ -2,6 +2,7 @@
 
 // TODO
 
+VSC
  IcoMoon is an icon solution
 Add html validation, aria validation
 Add browserstack, add litmus

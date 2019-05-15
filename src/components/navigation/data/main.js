@@ -4,7 +4,7 @@ const sections = {
   howWasMade: 'section-how-was-this-page-made',
 };
 
-const navigation = {
+const dataMain = {
   main: [
     {
       id: null,
@@ -16,11 +16,11 @@ const navigation = {
         },
         {
           id: `${sections.skills}-my-skills-to-produce-visual-output`,
-          text: 'To produce visual output',
+          text: 'Producing visual output',
         },
         {
           id: `${sections.skills}-my-skills-to-work-with-programming-logic`,
-          text: 'To work with programming logic',
+          text: 'Working with programming logic',
         },
         {
           // TODO:
@@ -60,4 +60,4 @@ const navigation = {
   ],
 };
 
-export default navigation;
+export default dataMain;

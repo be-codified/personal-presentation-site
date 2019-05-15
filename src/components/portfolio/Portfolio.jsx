@@ -12,7 +12,7 @@ function Portfolio(props) {
   return (
     <div {...classNames()}>
       <span>{heading.pre}</span>
-      <h2 dangerouslySetInnerHTML={{ __html: heading.main }} />
+      <h2 dangerouslySetInnerHTML={{ __html: heading.main }} /> {/* eslint-disable-line react/no-danger, max-len */}
       <p>{desc}</p>
       <span>Technologies used: </span>
       <ul {...classNames('tags-list', '', 'list-no-style-type list-inline-block')}>
