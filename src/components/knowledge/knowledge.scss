@@ -12,8 +12,12 @@ $className: knowledge;
     padding: 3px 0;
   }
 
-  &__highlight {
+  &__highlight,
+  &__highlight a {
     color: map-get($colors, white);
+  }
+
+  &__highlight {
     background-color: map-get($colors, gray);
     padding: 3px 5px;
   }

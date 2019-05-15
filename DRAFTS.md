@@ -1,20 +1,3 @@
-# My skills to work with programming logic (previous Also skilled in)
-
-// TODO
-
-- JavaScript
-  - object-oriented programming,
-  - ECMAScript6 — front-end frameworks e.g. Angular, React and VueJS
-  - back-end technology Node.js and framework Express
-
-- TODO: template engine Nunjucks
-
-
-Add Mongo, CI
-
-- Communicating with REST APIs,
-- unit tests (tools Mocha and Chai),
-
 # Magical tools I use on a daily basis (previous the same)
 
 // TODO
@@ -22,9 +5,11 @@ Add Mongo, CI
  IcoMoon is an icon solution
 Add html validation, aria validation
 Add browserstack, add litmus
+CI
 - Jira
 - CLI
 - Git (working with a team of developers, pull request and code reviews, continuous integration, service GitHub & BitBucket),
+travis
 
 CSS pre-processor Sass,
 package manager npm,

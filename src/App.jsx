@@ -156,19 +156,24 @@ function App() {
       {/* My skills to work with programming logic */}
       <Knowledge heading="My skills to work with programming logic">
         <ul>
-          <li>
-            <span {...classNames.knowledge('highlight')}>JavaScript</span>
+          <li><span {...classNames.knowledge('highlight')}>object-oriented programming</span>,</li>
+          <li>architectural pattern <span {...classNames.knowledge('highlight')}>MVC</span>,</li>
+          <li><span {...classNames.knowledge('highlight')}>modular code</span>,</li>
+          <li><span {...classNames.knowledge('highlight')}>front-end development</span> (90% of time):
             <ul>
-              <li>object-oriented programming,</li>
-              <li>
-                ECMAScript6 &mdash; front-end frameworks e.g.&nbsp;
-                <a href="/" title="Link to framework Angular">Angular</a>,&nbsp;
-                <a href="/" title="Link to framework React">React</a> and&nbsp;
-                <a href="/" title="Link to framework VueJS">VueJS</a>
-              </li>
-              <li>back-end technology <span {...classNames.knowledge('highlight')}>Node.js</span> and framework <span {...classNames.knowledge('highlight')}>Express</span></li>
+              <li>vanilla <span {...classNames.knowledge('highlight')}>JavaScript &mdash; ECMAScript6</span> (e.g. classes, block scoped variables, template literals, arrow functions, destructuring assignments, promises, spread syntax, callbacks),</li>
+              <li>frameworks or libraries <span {...classNames.knowledge('highlight')}><Link href="https://reactjs.org/" title="Link to React" isOuter>React</Link></span> or <span {...classNames.knowledge('highlight')}><Link href="https://vuejs.org/" title="Link to Vue.js" isOuter>Vue.js</Link></span> (e.g components, props, state, lifecycle) and</li>
+              <li>JavaScript template engine <span {...classNames.knowledge('highlight')}><Link href="https://mozilla.github.io/nunjucks/" title="Link to Nunjucks" isOuter>Nunjucks</Link></span> (e.g. extends, macros, conditions, filters),</li>
             </ul>
           </li>
+          <li><span {...classNames.knowledge('highlight')}>back-end development</span> (10% of time):
+            <ul>
+              <li>JavaScript runtime environment <span {...classNames.knowledge('highlight')}><Link href="https://nodejs.org/en/" title="Link to Node.js" isOuter>Node.js</Link></span>, framework <span {...classNames.knowledge('highlight')}><Link href="https://expressjs.com/" title="Link to Express" isOuter>Express</Link></span> and document database <span {...classNames.knowledge('highlight')}><Link href="https://www.mongodb.com/" title="Link to MongoDB" isOuter>MongoDB</Link></span> and</li>
+            </ul>
+          </li>
+          <li>communicating with <span {...classNames.knowledge('highlight')}>REST APIs</span>,</li>
+          <li>reading or creating <span {...classNames.knowledge('highlight')}>JSONs</span> and</li>
+          <li>basic <span {...classNames.knowledge('highlight')}>unit tests</span> with tool <Link href="https://mochajs.org/" title="Link to Mocha" isOuter>Mocha</Link>.</li>
         </ul>
       </Knowledge>
       {/* / My skills to work with programming logic */}
