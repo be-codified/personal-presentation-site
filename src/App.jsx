@@ -28,7 +28,9 @@ function App() {
         <title>front-end web developer | be-codified.com</title>
       </Helmet>
       {/* / Meta data */}
+
       <ScrollBarVertical />
+
       {/* Back to top
         TODO:
           -show button only when 30% of document is reached
@@ -44,9 +46,8 @@ function App() {
       {/* / Back to top */}
 
       <Navigation items={dataNavigation.main} />
-      <hr />
       <Intro />
-      <hr />
+
       {/* My main skills */}
       <Knowledge
         heading="My main skills"
@@ -55,7 +56,8 @@ function App() {
         {dataKnowledgeMain}
       </Knowledge>
       {/* / My main skills */}
-      <hr />
+
+      {/* Portfolio NFL American Football Widgets */}
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -88,7 +90,8 @@ function App() {
           },
         ]}
       />
-      <hr />
+      {/* / Portfolio NFL American Football Widgets */}
+
       {/* My skills to produce visual output */}
       <Knowledge
         heading="My skills to produce visual output"
@@ -97,7 +100,8 @@ function App() {
         {dataKnowledgeVisualOutput}
       </Knowledge>
       {/* / My skills to produce visual output */}
-      <hr />
+
+      {/* Portfolio Petrol */}
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -130,7 +134,8 @@ function App() {
           },
         ]}
       />
-      <hr />
+      {/* / Portfolio Petrol */}
+
       {/* My skills to work with programming logic */}
       <Knowledge
         heading="My skills to work with programming logic"
@@ -139,7 +144,8 @@ function App() {
         {dataKnowledgeProgramming}
       </Knowledge>
       {/* / My skills to work with programming logic */}
-      <hr />
+
+      {/* Portfolio BTC City */}
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -172,7 +178,8 @@ function App() {
           },
         ]}
       />
-      <hr />
+      {/* / Portfolio BTC City */}
+
       {/* My skills to ??? */}
       <Knowledge
         heading="My skills to ???"
@@ -183,7 +190,8 @@ function App() {
         </ul>
       </Knowledge>
       {/* / My skills to ??? */}
-      <hr />
+
+      {/* Portfolio Mail starter */}
       <Portfolio
         heading={{
           pre: 'Latest work',
@@ -216,7 +224,7 @@ function App() {
           },
         ]}
       />
-      <hr />
+      {/* / Portfolio Mail starter */}
 
       {/* How was this page made */}
       <Knowledge
@@ -229,9 +237,7 @@ function App() {
       </Knowledge>
       {/* / How was this page made */}
 
-      <hr />
       <Footer />
-      <hr />
       <div className="text-center">
         <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
         <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />

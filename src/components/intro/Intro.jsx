@@ -33,7 +33,6 @@ class Intro extends Component {
           srcSet="https://via.placeholder.com/150x75.jpg?text=LOGO 1x, https://via.placeholder.com/300x150.jpg?text=LOGO 2x"
           alt="Logo"
         />
-        <hr />
         <h1>Hi,<br />my name is Žiga and I&apos;m a front-end web developer.</h1>
         <p>I have been working in the web industry over a decade, for the last {this.calculatePeriod(this.datesStart.freelancing, true)} years as a freelancer.</p> {/* eslint-disable-line max-len */}
         <div>
