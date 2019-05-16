@@ -28,11 +28,9 @@ $debug: true;
 @include space();
 
 // Components
-@import '../components/portfolio/portfolio';
+@import '../components/latest-work/latest-work';
 @import '../components/knowledge/knowledge';
-@import '../components/tech/tech';
 @import '../components/scroll-bar-vertical/scroll-bar-vertical';
-@import '../components/check-list/check-list';
 @import '../components/navigation/navigation';
 @import '../components/loader/loader';
 @import '../components/footer/footer';

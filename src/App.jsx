@@ -1,254 +1,261 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Portfolio from './components/portfolio/Portfolio';
+import helperGetNodeAnchor from './helpers/get-node-anchor';
+import LatestWork from './components/latest-work/LatestWork';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
 import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
-
 import Knowledge from './components/knowledge/Knowledge';
-import dataKnowledgeMain from './components/knowledge/data/main';
-import dataKnowledgeVisualOutput from './components/knowledge/data/visual-output';
-import dataKnowledgeProgramming from './components/knowledge/data/programming';
-
+import knowledgeDataMain from './components/knowledge/data/main';
+import knowledgeDataVisualOutput from './components/knowledge/data/visual-output';
+import knowledgeDataProgramming from './components/knowledge/data/programming';
+import knowledgeDataTools from './components/knowledge/data/tools';
+import knowledgeDataHowWasMade from './components/knowledge/data/how-was-made';
 import Navigation from './components/navigation/Navigation';
-import dataNavigation from './components/navigation/data/main';
-
+import navigationDataMain from './components/navigation/data/main';
+import navigationDataSections from './components/navigation/data/sections';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
 
-// import BEMHelper from 'react-bem-helper';
-// import shortid from 'shortid';
-// import CheckList from './components/check-list/CheckList';
-// import checkListData from './components/check-list/check-list-data';
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.refApp = React.createRef();
+  }
 
-function App() {
-  return (
-    <div id="top" className="space-padding-large">
-      {/* Meta data */}
-      <Helmet>
-        <title>front-end web developer | be-codified.com</title>
-      </Helmet>
-      {/* / Meta data */}
+  // Method called from child component to be able to select anchor
+  selectAnchor = hash => helperGetNodeAnchor(this.refApp, hash);
 
-      <ScrollBarVertical />
+  render() {
+    return (
+      <div ref={this.refApp}>
+        <div id="top" className="space-padding-large">
+          {/* Meta data */}
+          <Helmet>
+            <title>front-end web developer | be-codified.com</title>
+          </Helmet>
+          {/* / Meta data */}
 
-      {/* Back to top
-        TODO:
-          -show button only when 30% of document is reached
-      */}
-      <ScrollToAnchor
-        href="#top"
-        // selectAnchor={this.selectAnchor}
-        offset={10}
-        className="back-to-top text-uppercase text-no-underline"
-      >
-        Back to top
-      </ScrollToAnchor>
-      {/* / Back to top */}
+          <ScrollBarVertical />
 
-      <Navigation items={dataNavigation.main} />
-      <Intro />
+          {/* Back to top
+            TODO:
+              -show button only when 30% of document is reached
+          */}
+          <ScrollToAnchor
+            href="#top"
+            selectAnchor={this.selectAnchor}
+            offset={10}
+            className="back-to-top text-uppercase text-no-underline"
+          >
+            Back to top
+          </ScrollToAnchor>
+          {/* / Back to top */}
 
-      {/* My main skills */}
-      <Knowledge
-        heading="My main skills"
-        id="section-skills-my-main-skills"
-      >
-        {dataKnowledgeMain}
-      </Knowledge>
-      {/* / My main skills */}
+          <Navigation
+            items={navigationDataMain}
+            selectAnchor={this.selectAnchor}
+          />
+          <Intro />
 
-      {/* Portfolio NFL American Football Widgets */}
-      <Portfolio
-        heading={{
-          pre: 'Latest work',
-          main: 'NFL American Football Widgets',
-        }}
-        desc="Some description of portfolio item"
-        tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'React', 'cross-browser testing', 'cross-platform testing']}
-        client="Sportradar d.o.o."
-        type="team development"
-        link={{
-          text: 'live at official page',
-          href: 'https://store.sportradar.com/en/widget/nfl/index.php',
-          title: 'Go to official page',
-        }}
-        images={[
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-        ]}
-      />
-      {/* / Portfolio NFL American Football Widgets */}
+          {/* My main skills */}
+          <Knowledge
+            heading="My main skills"
+            id={`${navigationDataSections.skills}-my-main-skills`}
+          >
+            {knowledgeDataMain}
+          </Knowledge>
+          {/* / My main skills */}
 
-      {/* My skills to produce visual output */}
-      <Knowledge
-        heading="My skills to produce visual output"
-        id="section-skills-my-skills-to-produce-visual-output"
-      >
-        {dataKnowledgeVisualOutput}
-      </Knowledge>
-      {/* / My skills to produce visual output */}
+          {/* Latest work NFL American Football Widgets */}
+          <LatestWork
+            id={`${navigationDataSections.latestWork}-nfl-american-football-widgets`}
+            heading={{
+              pre: 'Latest work',
+              main: 'NFL American Football Widgets',
+            }}
+            desc="Some description of latest work item"
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'React', 'cross-browser testing', 'cross-platform testing']}
+            client="Sportradar d.o.o."
+            type="team development"
+            link={{
+              text: 'live at official page',
+              href: 'https://store.sportradar.com/en/widget/nfl/index.php',
+              title: 'Go to official page',
+            }}
+            images={[
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+            ]}
+          />
+          {/* / Latest work NFL American Football Widgets */}
 
-      {/* Portfolio Petrol */}
-      <Portfolio
-        heading={{
-          pre: 'Latest work',
-          main: 'Petrol website &mdash; the largest Slovenian energy company',
-        }}
-        desc="Some description of portfolio item"
-        tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
-        client="Petrol d.d. and Renderspace d.o.o."
-        type="team development"
-        link={{
-          text: 'live at official page',
-          href: 'https://www.petrol.si/',
-          title: 'Go to official page',
-        }}
-        images={[
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-        ]}
-      />
-      {/* / Portfolio Petrol */}
+          {/* My skills to produce visual output */}
+          <Knowledge
+            heading="My skills to produce visual output"
+            id={`${navigationDataSections.skills}-my-skills-to-produce-visual-output`}
+          >
+            {knowledgeDataVisualOutput}
+          </Knowledge>
+          {/* / My skills to produce visual output */}
 
-      {/* My skills to work with programming logic */}
-      <Knowledge
-        heading="My skills to work with programming logic"
-        id="todo"
-      >
-        {dataKnowledgeProgramming}
-      </Knowledge>
-      {/* / My skills to work with programming logic */}
+          {/* Latest work Petrol */}
+          <LatestWork
+            id={`${navigationDataSections.latestWork}-petrol-website`}
+            heading={{
+              pre: 'Latest work',
+              main: 'Petrol website &mdash; the largest Slovenian energy company',
+            }}
+            desc="Some description of latest work item"
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
+            client="Petrol d.d. and Renderspace d.o.o."
+            type="team development"
+            link={{
+              text: 'live at official page',
+              href: 'https://www.petrol.si/',
+              title: 'Go to official page',
+            }}
+            images={[
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+            ]}
+          />
+          {/* / Latest work Petrol */}
 
-      {/* Portfolio BTC City */}
-      <Portfolio
-        heading={{
-          pre: 'Latest work',
-          main: 'BTC City &mdash; shopping mall with over 500 shops',
-        }}
-        desc="Some description of portfolio item"
-        tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
-        client="BTC d.d. and Renderspace d.o.o."
-        type="team development"
-        link={{
-          text: 'live at official page',
-          href: 'http://www.btc-city.com/',
-          title: 'Go to official page',
-        }}
-        images={[
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-        ]}
-      />
-      {/* / Portfolio BTC City */}
+          {/* My skills to work with programming logic */}
+          <Knowledge
+            heading="My skills to work with programming logic"
+            id={`${navigationDataSections.skills}-my-skills-to-work-with-programming-logic`}
+          >
+            {knowledgeDataProgramming}
+          </Knowledge>
+          {/* / My skills to work with programming logic */}
 
-      {/* My skills to ??? */}
-      <Knowledge
-        heading="My skills to ???"
-        id="todo"
-      >
-        <ul>
-          <li>TODO</li>
-        </ul>
-      </Knowledge>
-      {/* / My skills to ??? */}
+          {/* Latest work BTC City */}
+          <LatestWork
+            id={`${navigationDataSections.latestWork}-btc-city`}
+            heading={{
+              pre: 'Latest work',
+              main: 'BTC City &mdash; shopping mall with over 500 shops',
+            }}
+            desc="Some description of latest work item"
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
+            client="BTC d.d. and Renderspace d.o.o."
+            type="team development"
+            link={{
+              text: 'live at official page',
+              href: 'http://www.btc-city.com/',
+              title: 'Go to official page',
+            }}
+            images={[
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=v+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+            ]}
+          />
+          {/* / Latest work BTC City */}
 
-      {/* Portfolio Mail starter */}
-      <Portfolio
-        heading={{
-          pre: 'Latest work',
-          main: 'Mail starter &mdash; create lovely emails',
-        }}
-        desc="Some description of portfolio item"
-        tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'cross-browser testing', 'cross-platform testing']}
-        client="Renderspace d.o.o."
-        type="individual development"
-        link={{
-          text: 'live',
-          href: '#',
-          title: 'Go to link',
-        }}
-        images={[
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-          {
-            src: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE',
-            srcSet: 'https://via.placeholder.com/320x180.jpg?text=PORTFOLIO+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=PORTFOLIO+IMAGE 2x',
-            alt: 'Portfolio image',
-          },
-        ]}
-      />
-      {/* / Portfolio Mail starter */}
+          {/* My skills to ??? */}
+          <Knowledge
+            heading="My skills to ???"
+            id={`${navigationDataSections.skills}-my-skills-to-???`}
+          >
+            {knowledgeDataTools}
+          </Knowledge>
+          {/* / My skills to ??? */}
 
-      {/* How was this page made */}
-      <Knowledge
-        heading="How was this page made"
-        id="todo"
-      >
-        <ul>
-          <li>TODO</li>
-        </ul>
-      </Knowledge>
-      {/* / How was this page made */}
+          {/* Latest work Mail starter */}
+          <LatestWork
+            id={`${navigationDataSections.latestWork}-mail-starter`}
+            heading={{
+              pre: 'Latest work',
+              main: 'Mail starter &mdash; create lovely emails',
+            }}
+            desc="Some description of latest work item"
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'cross-browser testing', 'cross-platform testing']}
+            client="Renderspace d.o.o."
+            type="individual development"
+            link={{
+              text: 'live',
+              href: '#',
+              title: 'Go to link',
+            }}
+            images={[
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+              {
+                src: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE',
+                srcSet: 'https://via.placeholder.com/320x180.jpg?text=LATEST+WORK+IMAGE 1x, https://via.placeholder.com/640x360.jpg?text=LATEST+WORK+IMAGE 2x',
+                alt: 'Latest work image',
+              },
+            ]}
+          />
+          {/* / Latest work Mail starter */}
 
-      <Footer />
-      <div className="text-center">
-        <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
-        <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />
-        <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
+          {/* How was this page made */}
+          <Knowledge
+            heading="How was this page made"
+            id={navigationDataSections.howWasMade}
+          >
+            {knowledgeDataHowWasMade}
+          </Knowledge>
+          {/* / How was this page made */}
+
+          <Footer />
+          <div className="text-center">
+            <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
+            <img src="https://heroku-badge.herokuapp.com/?app=be-codified&svg=1" alt="" />
+            <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
+          </div>
+        </div>
       </div>
-      {/* {techCompScrollToAnchor} */}
-      {/* --- Section check list --- */}
-      {/* <CheckList data={checkListData} /> */}
-      {/* /--- Section check list --- */}
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

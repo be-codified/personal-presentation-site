@@ -6,7 +6,7 @@ import Link from '../../link/Link';
 
 const classNames = new BEMHelper('knowledge');
 
-const dataProgramming = (
+const knowledgeDataProgramming = (
   <ul>
     <li><span {...classNames('highlight')}>object-oriented programming</span>,</li>
     <li>architectural pattern <span {...classNames('highlight')}>MVC</span>, writing <span {...classNames('highlight')}>modular code</span>,</li>
@@ -27,4 +27,4 @@ const dataProgramming = (
   </ul>
 );
 
-export default dataProgramming;
+export default knowledgeDataProgramming;

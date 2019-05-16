@@ -6,7 +6,7 @@ import Link from '../../link/Link';
 
 const classNames = new BEMHelper('knowledge');
 
-const dataVisualOutput = (
+const knowledgeDataVisualOutput = (
   <ul>
     <li>markup language <span {...classNames('highlight')}>HTML5</span> (using modern semantic markup e.g. <span {...classNames('code')}>{['<main>']}</span><span {...classNames('code')}>{['<header>']}</span><span {...classNames('code')}>{['<nav>']}</span><span {...classNames('code')}>{['<article>']}</span> and <span {...classNames('code')}>{['<picture>']}</span>),</li>
     <li>cascading style sheets language <span {...classNames('highlight')}>CSS3</span> within large scale projects:
@@ -25,4 +25,4 @@ const dataVisualOutput = (
   </ul>
 );
 
-export default dataVisualOutput;
+export default knowledgeDataVisualOutput;

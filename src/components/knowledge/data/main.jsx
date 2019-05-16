@@ -5,7 +5,7 @@ import BEMHelper from 'react-bem-helper';
 
 const classNames = new BEMHelper('knowledge');
 
-const dataMain = (
+const knowledgeDataMain = (
   <ul>
     <li>understanding of developing for the web and a <span {...classNames('highlight')}>careful eye for design,</span>
     </li>
@@ -22,4 +22,4 @@ const dataMain = (
   </ul>
 );
 
-export default dataMain;
+export default knowledgeDataMain;

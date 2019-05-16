@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import BEMHelper from 'react-bem-helper';
 
-function Portfolio(props) {
+function LatestWork(props) {
   const {
-    tags, heading, desc, link, client, type, images,
+    id, tags, heading, desc, link, client, type, images,
   } = props;
-  const classNames = new BEMHelper('portfolio');
+  const classNames = new BEMHelper('latest-work');
 
   return (
-    <div {...classNames()}>
+    <div id={id} {...classNames()}>
       <span>{heading.pre}</span>
       <h2 dangerouslySetInnerHTML={{ __html: heading.main }} /> {/* eslint-disable-line react/no-danger, max-len */}
       <p>{desc}</p>
@@ -46,7 +46,8 @@ function Portfolio(props) {
   );
 }
 
-Portfolio.propTypes = {
+LatestWork.propTypes = {
+  id: PropTypes.string.isRequired,
   heading: PropTypes.PropTypes.shape({
     pre: PropTypes.string.isRequired,
     main: PropTypes.string.isRequired,
@@ -69,4 +70,4 @@ Portfolio.propTypes = {
   ).isRequired,
 };
 
-export default Portfolio;
+export default LatestWork;

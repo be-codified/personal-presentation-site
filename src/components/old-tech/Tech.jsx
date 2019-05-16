@@ -4,6 +4,7 @@ import BEMHelper from 'react-bem-helper';
 // import shortid from 'shortid';
 // import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
 import Navigation from '../navigation/Navigation';
+import helperGetNodeAnchor from '../../helpers/get-node-anchor';
 
 class Tech extends Component {
   constructor(props) {
@@ -11,11 +12,8 @@ class Tech extends Component {
     this.refTech = React.createRef();
   }
 
-  selectAnchor = (hash) => {
-    // Method called from child component to be able to select anchor
-    const nodeAnchor = this.refTech.current.querySelector(hash);
-    return nodeAnchor;
-  }
+  // Method called from child component to be able to select anchor
+  selectAnchor = hash => helperGetNodeAnchor(this.refTech, hash);
 
   render() {
     const { navigation, children } = this.props;

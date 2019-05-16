@@ -7,7 +7,7 @@ import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
 // TODO: add option to wrap in <nav> tag
 
 function Navigation(props) {
-  const { items } = props;
+  const { items, selectAnchor } = props;
   const classNames = new BEMHelper('navigation');
 
   return (
@@ -19,7 +19,7 @@ function Navigation(props) {
               ? (
                 <ScrollToAnchor
                   href={`#${item.id}`}
-                  // selectAnchor={this.selectAnchor}
+                  selectAnchor={selectAnchor}
                   offset={10}
                 >
                   {item.text}
@@ -36,7 +36,7 @@ function Navigation(props) {
           }
 
           {/* Checking if item has children and recursively render component again */}
-          {item.items && <Navigation items={item.items} />}
+          {item.items && <Navigation items={item.items} selectAnchor={selectAnchor} />}
         </li>
       ))}
     </ul>
@@ -51,6 +51,7 @@ Navigation.propTypes = {
       classNames: PropTypes.string,
     }).isRequired,
   ).isRequired,
+  selectAnchor: PropTypes.func.isRequired,
 };
 
 export default Navigation;
