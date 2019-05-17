@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import helperGetNodeAnchorScrollPosition from '../../helpers/get-node-anchor-scroll-position';
 
 class ScrollToAnchor extends Component {
   constructor(props) {
@@ -14,13 +15,12 @@ class ScrollToAnchor extends Component {
 
     // Get hash of clicked anchor link
     const { hash } = event.currentTarget;
+
+
     // Selecting anchor node with method from parent
     const node = selectAnchor(hash);
-    // Get position of anchor
-    const nodePosition = window.pageYOffset + node.getBoundingClientRect().top;
-
     // Calculate scroll position
-    const scrollPosition = nodePosition - this.offset;
+    const scrollPosition = helperGetNodeAnchorScrollPosition(node, this.offset);
 
     // Scroll to position
     window.scrollTo({

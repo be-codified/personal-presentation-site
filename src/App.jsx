@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import helperGetNodeAnchor from './helpers/get-node-anchor';
+// import helperGetNodeAnchorScrollPosition from './helpers/get-node-anchor-scroll-position';
 import LatestWork from './components/latest-work/LatestWork';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
@@ -15,11 +16,32 @@ import Navigation from './components/navigation/Navigation';
 import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
+import Clients from './components/clients/Clients';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.refApp = React.createRef();
+  }
+
+  componentDidMount = () => {
+    // TODO: go to anchor if hash in url
+    // const { hash } = window.location;
+
+    // // Selecting anchor node with method from parent
+    // const node = this.selectAnchor(hash);
+    // // Calculate scroll position
+    // const scrollPosition = helperGetNodeAnchorScrollPosition(node, 0);
+
+    // console.log(node);
+    // console.log(scrollPosition);
+
+    // // Scroll to position
+    // window.scrollTo({
+    //   top: scrollPosition,
+    //   left: 0,
+    //   behavior: 'smooth',
+    // });
   }
 
   // Method called from child component to be able to select anchor
@@ -236,6 +258,10 @@ class App extends Component {
             ]}
           />
           {/* / Latest work Mail starter */}
+
+          {/* Clients */}
+          <Clients />
+          {/* / Clients */}
 
           {/* How was this page made */}
           <Knowledge
