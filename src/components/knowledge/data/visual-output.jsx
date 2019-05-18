@@ -11,7 +11,7 @@ const knowledgeDataVisualOutput = (
     <li>markup language <span {...classNames('highlight')}>HTML5</span> (using modern semantic markup e.g. <span {...classNames('code')}>{['<main>']}</span><span {...classNames('code')}>{['<header>']}</span><span {...classNames('code')}>{['<nav>']}</span><span {...classNames('code')}>{['<article>']}</span> and <span {...classNames('code')}>{['<picture>']}</span>),</li>
     <li>cascading style sheets language <span {...classNames('highlight')}>CSS3</span> within large scale projects:
       <ul>
-        <li>using <span {...classNames('highlight')}>modern properties</span>, writing highly <span {...classNames('highlight')}>isolated, reusable, scalable and maintainable code</span> &mdash; no duplicated properties,</li>
+        <li>using <span {...classNames('highlight')}>modern properties</span>, writing <span {...classNames('highlight')}>highly isolated,</span> <span {...classNames('highlight')}>reusable,</span> <span {...classNames('highlight')}>scalable</span> and <span {...classNames('highlight')}>maintainable code</span> &mdash; no duplicated properties,</li>
         <li><span {...classNames('highlight')}>responsive web design</span> based on media queries (mobile first principle),</li>
         <li>building <span {...classNames('highlight')}>grid layout</span> with Flexbox or Grid properties, <span {...classNames('highlight')}>web font embedding</span>, achieving  <span {...classNames('highlight')}>transitions and animations</span> and</li>
         <li><span {...classNames('highlight')}>BEM methodology</span> (writing classes e.g. <span {...classNames('code')}>tree__leaf--brown</span>),</li>

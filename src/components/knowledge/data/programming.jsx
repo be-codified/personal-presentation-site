@@ -8,8 +8,8 @@ const classNames = new BEMHelper('knowledge');
 
 const knowledgeDataProgramming = (
   <ul>
-    <li><span {...classNames('highlight')}>object-oriented programming</span>,</li>
-    <li>architectural pattern <span {...classNames('highlight')}>MVC</span>, writing <span {...classNames('highlight')}>modular code</span>,</li>
+    <li><span {...classNames('highlight')}>object-oriented programming,</span></li>
+    <li>architectural pattern <span {...classNames('highlight')}>MVC</span>, writing <span {...classNames('highlight')}>modular code,</span></li>
     <li><span {...classNames('highlight')}>front-end development</span> (90% of time):
       <ul>
         <li>vanilla <span {...classNames('highlight')}>JavaScript &mdash; ECMAScript6</span> (e.g. classes, block scoped variables, template literals, arrow functions, destructuring assignments, promises, spread syntax, callbacks),</li>
@@ -19,10 +19,10 @@ const knowledgeDataProgramming = (
     </li>
     <li><span {...classNames('highlight')}>back-end development</span> (10% of time):
       <ul>
-        <li>JavaScript runtime environment <span {...classNames('highlight')}><Link href="https://nodejs.org/en/" title="Link to Node.js" isOuter>Node.js</Link></span>, framework <span {...classNames('highlight')}><Link href="https://expressjs.com/" title="Link to Express" isOuter>Express</Link></span> and document database <span {...classNames('highlight')}><Link href="https://www.mongodb.com/" title="Link to MongoDB" isOuter>MongoDB</Link></span> and</li>
+        <li>JavaScript runtime environment <span {...classNames('highlight')}><Link href="https://nodejs.org/en/" title="Link to Node.js" isOuter>Node.js</Link>,</span> framework <span {...classNames('highlight')}><Link href="https://expressjs.com/" title="Link to Express" isOuter>Express</Link></span> and document database <span {...classNames('highlight')}><Link href="https://www.mongodb.com/" title="Link to MongoDB" isOuter>MongoDB</Link></span> and</li>
       </ul>
     </li>
-    <li>communicating with <span {...classNames('highlight')}>REST APIs</span>, handling <span {...classNames('highlight')}>JSONs</span> and</li>
+    <li>communicating with <span {...classNames('highlight')}>REST APIs,</span> handling <span {...classNames('highlight')}>JSONs</span> and</li>
     <li>basic <span {...classNames('highlight')}>unit tests</span> with tool <Link href="https://mochajs.org/" title="Link to Mocha" isOuter>Mocha</Link>.</li>
   </ul>
 );
