@@ -1,14 +1,16 @@
 ☐ Fix logo hover
-☐ Fix GA
+☐ Fix portofolio items to not be on bottom anymore
+☐ Deploy latest code to production
 ☐ Change portfolio
-  ☐ Sportradar
-  ☐ Petrol
-  ☐ BTC
-  ☐ Mail starter
-☐ Update content with latest content
+  ☐ Sportradar (add content)
+  ☐ Petrol (replace Avanture, add content, add image)
+  ☐ Moneta (replace Butterfly, add content, add image)
+  ☐ Web application (add content)
+☐ Fix GA
+✔ Update content with latest content @done(19-05-18 17:42)
   ✔ My main skills @done(19-05-14 17:55)
-  ☐ My skills to produce visual output
-  ☐ My skills to work with programming logic
-  ☐ My skills to ???
+  ✔ My skills to produce visual output @done(19-05-18 17:41)
+  ✔ My skills to work with programming logic @done(19-05-18 17:41)
+  ✔ Magical tools @done(19-05-18 17:41)
 ✔ Remove hire me @done(19-05-14 17:46)
 ✔ npm dependecies @done(19-05-14 17:46)
