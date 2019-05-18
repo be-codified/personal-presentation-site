@@ -464,6 +464,9 @@ ul.achievements .desc {
 .contacts li a span.phone {
   background-image: url('../img/icon-phone.svg');
 }
+.contacts li a span.github {
+  background-image: url('../img/icon-github.svg');
+}
 .contacts li a span.twitter {
   background-image: url('../img/icon-twitter.svg');
 }
