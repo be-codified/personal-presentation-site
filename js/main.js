@@ -5,6 +5,14 @@ $(document).ready(function() {
     setTimeout(function() {
       $('.preloader img').fadeOut(500, function() {
         $('.preloader').fadeOut(1000, function() {
+
+          // Scroll down animation to contact info
+          $('.contact a').on('click', function() {
+            $('html, body').animate({
+              scrollTop: $('.neighbour-4').offset().top,
+            }, 2000);
+          });
+
           // Achievements calculations
           // Setting two important dates and today
           var dateWebindustry = new Date('2007-06-01');
@@ -55,10 +63,10 @@ $(document).ready(function() {
           counterAnimate('.counter.normal.block-2', timePeriod(dateProgramming, dateToday, false), '+');
           counterAnimate('.counter.normal.block-3', 2, '+');
 
-          // Want to hire me animation
+          // Contact me animation
           setTimeout(function() {
             if ($(window).width() >= 992) {
-              $('.hire').animate({
+              $('.contact').animate({
                 marginTop: '0',
               }, 1000, 'easeInOutElastic');
             }

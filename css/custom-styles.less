@@ -60,6 +60,18 @@ ul {
 
 header {
     position: relative;
+
+    .contant {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 20px;
+        display: inline-block;
+        line-height: 20px;
+        background-color: @main-color-2;
+        text-align: center;
+    }
 }
 
 header h1 {
@@ -95,6 +107,18 @@ header h1 {
     padding-top: 275px;
     display: block;
     position: relative;
+
+    .contact {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 20px;
+        display: inline-block;
+        line-height: 20px;
+        background-color: @main-color-2;
+        text-align: center;
+    }
 }
 
 /*** typography
@@ -616,6 +640,14 @@ ul.achievements {
 @media (min-width: 768px) {
     .profile {
         padding-top: 310px;
+
+        .contact {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 5%;
+            width: 175px;
+        }
     }
 
     ul.achievements li {
@@ -627,6 +659,10 @@ ul.achievements {
 @media (min-width: 992px) {
     .profile {
         padding-top: 275px;
+    }
+
+    .contact {
+        margin-top: -60px;
     }
 
     .portfolio {

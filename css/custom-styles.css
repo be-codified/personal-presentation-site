@@ -50,6 +50,17 @@ ul li {
 header {
   position: relative;
 }
+header .contant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  display: inline-block;
+  line-height: 20px;
+  background-color: #b41c1c;
+  text-align: center;
+}
 header h1 {
   position: absolute;
   margin-top: 55px;
@@ -79,6 +90,17 @@ header h1 a:active {
   padding-top: 275px;
   display: block;
   position: relative;
+}
+.profile .contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  display: inline-block;
+  line-height: 20px;
+  background-color: #b41c1c;
+  text-align: center;
 }
 /*** typography
 *********************************************************/
@@ -535,6 +557,13 @@ ul.achievements .desc {
   .profile {
     padding-top: 310px;
   }
+  .profile .contact {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 5%;
+    width: 175px;
+  }
   ul.achievements li {
     width: 250px;
   }
@@ -543,6 +572,9 @@ ul.achievements .desc {
 @media (min-width: 992px) {
   .profile {
     padding-top: 275px;
+  }
+  .contact {
+    margin-top: -60px;
   }
   .portfolio .more {
     display: block;
