@@ -18,9 +18,8 @@ const navigationDataMain = [
         text: 'Working with programming logic',
       },
       {
-        // TODO:
-        id: `${sections.skills}-some-id`,
-        text: 'To ???',
+        id: `${sections.skills}-magical-tools-i-use`,
+        text: 'Magical tools I use',
       },
     ],
     classNames: 'button--plain',
@@ -34,8 +33,8 @@ const navigationDataMain = [
         text: 'NFL American Football Widgets',
       },
       {
-        id: `${sections.latestWork}-petrol-website`,
-        text: 'Petrol website',
+        id: `${sections.latestWork}-petrol`,
+        text: 'Petrol',
       },
       {
         id: `${sections.latestWork}-btc-city`,

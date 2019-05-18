@@ -10,7 +10,7 @@ import Knowledge from './components/knowledge/Knowledge';
 import knowledgeDataMain from './components/knowledge/data/main';
 import knowledgeDataVisualOutput from './components/knowledge/data/visual-output';
 import knowledgeDataProgramming from './components/knowledge/data/programming';
-import knowledgeDataTools from './components/knowledge/data/tools';
+import knowledgeDataMagicalTools from './components/knowledge/data/magical-tools';
 import knowledgeDataHowWasMade from './components/knowledge/data/how-was-made';
 import Navigation from './components/navigation/Navigation';
 import navigationDataMain from './components/navigation/data/main';
@@ -135,10 +135,10 @@ class App extends Component {
 
           {/* Latest work Petrol */}
           <LatestWork
-            id={`${navigationDataSections.latestWork}-petrol-website`}
+            id={`${navigationDataSections.latestWork}-petrol`}
             heading={{
               pre: 'Latest work',
-              main: 'Petrol website &mdash; the largest Slovenian energy company',
+              main: 'Petrol &mdash; the largest Slovenian energy company',
             }}
             desc="Some description of latest work item"
             tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
@@ -214,14 +214,14 @@ class App extends Component {
           />
           {/* / Latest work BTC City */}
 
-          {/* My skills to ??? */}
+          {/* Magical tools */}
           <Knowledge
-            heading="My skills to ???"
-            id={`${navigationDataSections.skills}-my-skills-to-???`}
+            heading="Magical tools I use"
+            id={`${navigationDataSections.skills}-magical-tools-i-use`}
           >
-            {knowledgeDataTools}
+            {knowledgeDataMagicalTools}
           </Knowledge>
-          {/* / My skills to ??? */}
+          {/* / Magical tools */}
 
           {/* Latest work Mail starter */}
           <LatestWork
