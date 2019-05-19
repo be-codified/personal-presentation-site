@@ -239,11 +239,13 @@ ul.strengths span.strong {
   line-height: 190%;
 }
 ul.skills li:before,
-ul.tools li:before {
+ul.tools li:before,
+ul.tags li:before {
   color: #d2dee2;
 }
 ul.skills li span.strong,
-ul.tools li span.strong {
+ul.tools li span.strong,
+ul.tags li span.strong {
   text-indent: 0;
   display: inline-block;
   color: #ffffff;
@@ -252,8 +254,23 @@ ul.tools li span.strong {
   border-bottom: 3px solid #93b1bb;
 }
 ul.skills ul,
-ul.tools ul {
+ul.tools ul,
+ul.tags ul {
   margin-top: 10px !important;
+}
+ul.tags li {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 3px;
+}
+ul.tags li span.strong {
+  background-color: #628d9b;
+  border-bottom: 3px solid #7a9fab;
+}
+ul.tags li:before {
+  content: '';
 }
 ul li span.strong.reduced-right-padding {
   padding-right: 3px;
@@ -583,4 +600,7 @@ ul.achievements .desc {
 /* large devices and above */
 .relative {
   position: relative;
+}
+.small-text {
+  font-size: 13px;
 }

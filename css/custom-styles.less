@@ -284,7 +284,8 @@ ul.strengths {
 }
 
 ul.skills,
-ul.tools {
+ul.tools,
+ul.tags {
     li {
         &:before { color: lighten(@main-color-1, 20%); }
 
@@ -300,6 +301,24 @@ ul.tools {
 
     ul {
         margin-top: 10px !important;
+    }
+}
+
+ul.tags {
+    li {
+        display: inline-block;
+        font-size: 13px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding-bottom: 3px;
+
+        span.strong {
+            background-color: darken(#7a9fab, 8%);
+            border-bottom: 3px solid #7a9fab;
+        }
+    }
+    li:before {
+        content: ''
     }
 }
 
@@ -674,4 +693,8 @@ ul.achievements {
 
 .relative {
     position: relative;
+}
+
+.small-text {
+    font-size: 13px;
 }
