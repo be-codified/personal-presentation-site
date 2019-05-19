@@ -22,7 +22,7 @@ $(document).ready(function() {
 
           // Function for calculating difference between
           // two dates and returning it as integer or string
-          // @NOTE: use true or false for returnString
+          // NOTE: use true or false for returnString
           function timePeriod(dateStart, dateEnd, returnString) {
             var period = Math.round(new Date(dateEnd - dateStart) / 1000 / 60 / 60 / 24 / 365);
 
@@ -89,65 +89,6 @@ $(document).ready(function() {
               setColumnHeight(i);
             }
           }
-
-          // Portfolio see more animations
-          var width = '30%';
-          var negativeMargin = '-30%';
-
-          // Opening panel
-          $('img.initial, .more').on('click', function(event) {
-            id = $(this).data().id;
-
-            // Checking if portfolio item position is on left or right
-            if (id % 2 == 1) {
-              animateParams = { width: '+=' + width, marginLeft: negativeMargin };
-            } else {
-              animateParams = { width: '+=' + width };
-            }
-
-            // Animating
-            $('.portfolio.item-' + id + ' .more').fadeOut(300, 'swing', function() {
-              $('.neighbour-' + id).fadeOut(300, 'swing', function() {
-                $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                  $('.portfolio.item-' + id).animate(animateParams, 750, 'easeInOutQuint', function() {
-                    $('.portfolio.item-' + id + ' .initial').css('opacity', '0');
-                    $('.portfolio.item-' + id + ' .more-close').fadeIn(300, 'swing');
-                  });
-                });
-              });
-            });
-
-            event.preventDefault();
-          });
-
-          // Closing panel
-          $('.more-close').on('click', function(event) {
-            id = $(this).data().id;
-
-            // Checking if portfolio item position is on left or right
-            if (id % 2 == 1) {
-              animateParams = { width: '-=' + width, marginLeft: 0 };
-            } else {
-              animateParams = { width: '-=' + width };
-            }
-
-            // Animating
-            $('.portfolio.item-' + id + ' .more-close').fadeOut(300, 'swing', function() {
-              $('.portfolio.item-' + id + ' .initial').css('opacity', '1');
-              $('.portfolio.item-' + id + ' > div').fadeOut(300, 'swing', function() {
-                $('.portfolio.item-' + id).animate(animateParams, 750, 'easeInOutQuint', function() {
-                  $('.portfolio.item-' + id + ' > div').fadeIn(300, 'swing', function() {
-                    $('.portfolio.item-' + id).css('width', '50%'); // cutting off decimal numbers
-                    $('.neighbour-' + id).fadeIn(300, 'swing', function() {
-                      $('.portfolio.item-' + id + ' .more').fadeIn(300, 'swing');
-                    });
-                  });
-                });
-              });
-            });
-
-            event.preventDefault();
-          });
         });
       });
     }, 2000);

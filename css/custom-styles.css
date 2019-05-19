@@ -398,39 +398,6 @@ ul.achievements .desc {
 .portfolio.item-4 {
   background-color: #7a9fab;
 }
-.portfolio .more,
-.portfolio .more-close {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  margin: 50px 25px 25px 0;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  border-bottom: none;
-}
-.portfolio .more:hover,
-.portfolio .more-close:hover {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.portfolio .more {
-  background-color: #fcb123;
-  background-image: url('../img/icon-eye.svg');
-}
-.portfolio .more:hover {
-  background-color: #f8a303;
-}
-.portfolio .more-close {
-  display: none;
-  background-image: url('../img/icon-cross.svg');
-}
 .neighbour-1.opened {
   margin-left: -50%;
 }
@@ -597,12 +564,7 @@ ul.achievements .desc {
     display: block;
   }
   .portfolio img {
-    position: absolute;
-    bottom: 0;
     display: block !important;
-  }
-  .portfolio img.initial {
-    cursor: pointer;
   }
   .portfolio h2 {
     padding-right: 50px;
@@ -619,3 +581,6 @@ ul.achievements .desc {
   }
 }
 /* large devices and above */
+.relative {
+  position: relative;
+}

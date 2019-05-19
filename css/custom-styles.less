@@ -8,12 +8,12 @@
 /*** general
 *********************************************************/
 
-@main-color-1: #93b1bb;                    // blue
-@main-color-2: #b41c1c;                    // red
-@main-color-3: #fcb123;                    // orange
+@main-color-1: #93b1bb;                  // blue
+@main-color-2: #b41c1c;                  // red
+@main-color-3: #fcb123;                  // orange
 
-@main-color-4: darken(@main-color-1, 8%);; // portfolio
-@main-color-5: #1f2227;                    // dark gray
+@main-color-4: darken(@main-color-1, 8%);  // portfolio
+@main-color-5: #1f2227;                  // dark gray
 @main-color-6: darken(@main-color-1, 16%); // how made
 
 @color-white:  #ffffff;
@@ -460,43 +460,6 @@ ul.achievements {
     &.item-4 {
         background-color: @main-color-4;
     }
-
-    .more,
-    .more-close {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 60px;
-        margin: 50px 25px 25px 0;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
-        border-bottom: none;
-
-        &:hover {
-            -webkit-transition: all 0.5s ease;
-               -moz-transition: all 0.5s ease;
-                -ms-transition: all 0.5s ease;
-                 -o-transition: all 0.5s ease;
-                    transition: all 0.5s ease;
-        }
-    }
-
-    .more {
-        background-color: @main-color-3;
-        background-image: url('../img/icon-eye.svg');
-
-        &:hover {
-            background-color: darken(@main-color-3, 7%);
-        }
-    }
-
-    .more-close {
-        display: none;
-        background-image: url('../img/icon-cross.svg');
-    }
 }
 
 .neighbour-1.opened {
@@ -684,13 +647,7 @@ ul.achievements {
         }
 
         img {
-            position: absolute;
-            bottom: 0;
             display: block !important;
-        }
-
-        img.initial {
-            cursor: pointer;
         }
     }
 
@@ -713,4 +670,8 @@ ul.achievements {
 /* large devices and above */
 @media (min-width: 1200px) {
 
+}
+
+.relative {
+    position: relative;
 }
