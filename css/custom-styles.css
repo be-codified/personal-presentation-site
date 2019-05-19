@@ -81,6 +81,10 @@ header h1 a {
 header h1 a:hover,
 header h1 a:active {
   border-bottom: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 /*** profile
 *********************************************************/
