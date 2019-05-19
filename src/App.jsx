@@ -141,7 +141,7 @@ class App extends Component {
               main: 'Petrol &mdash; the largest Slovenian energy company',
             }}
             desc="Some description of latest work item"
-            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'Nunjucks', 'cross-browser testing', 'cross-platform testing']}
             client="Petrol d.d. and Renderspace d.o.o."
             type="team development"
             link={{
@@ -186,7 +186,7 @@ class App extends Component {
               main: 'BTC City &mdash; shopping mall with over 500 shops',
             }}
             desc="Some description of latest work item"
-            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'cross-browser testing', 'cross-platform testing']}
+            tags={['HTML5', 'CSS3', 'SCSS', 'responsive design', 'JavaScript', 'Nunjucks', 'cross-browser testing', 'cross-platform testing']}
             client="BTC d.d. and Renderspace d.o.o."
             type="team development"
             link={{
