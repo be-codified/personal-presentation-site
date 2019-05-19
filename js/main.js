@@ -79,13 +79,14 @@ $(document).ready(function() {
           }
 
           if ($(window).width() >= 768) {
+            // NOTE: neglecting item-4
             $(window).resize(function() {
-              for (var i = 1; i <= 4; i++) {
+              for (var i = 1; i <= 3; i++) {
                 setColumnHeight(i);
               }
             });
 
-            for (var i = 1; i <= 4; i++) {
+            for (var i = 1; i <= 3; i++) {
               setColumnHeight(i);
             }
           }
