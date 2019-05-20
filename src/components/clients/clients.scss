@@ -7,5 +7,8 @@
 $className: clients;
 
 .#{$className} {
-  // TODO:
+  &__map {
+    // overflow: hidden;
+    // width: 200px;
+  }
 }
