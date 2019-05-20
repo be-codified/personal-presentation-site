@@ -27,7 +27,10 @@ Link.propTypes = {
   href: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   isOuter: PropTypes.bool,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]).isRequired,
 };
 
 export default Link;
