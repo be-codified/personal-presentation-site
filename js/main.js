@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // Preloader
   imagesLoaded(document.querySelector('body'), function(instance) {
     setTimeout(function() {
@@ -9,7 +8,7 @@ $(document).ready(function() {
           // Scroll down animation to contact info
           $('.contact a').on('click', function() {
             $('html, body').animate({
-              scrollTop: $('.neighbour-4').offset().top,
+              scrollTop: $('.neighbor-4').offset().top,
             }, 2000);
           });
 
@@ -34,15 +33,9 @@ $(document).ready(function() {
             }
           }
 
-          $('.years-web').html(
-            timePeriod(dateWebindustry, dateToday, false)
-          );
-          $('.years-programming').html(
-              timePeriod(dateProgramming, dateToday, false)
-          );
-          $('.years-freelance').html(
-            timePeriod(dateFreelancing, dateToday, true)
-          );
+          $('.years-web').html(timePeriod(dateWebindustry, dateToday, false));
+          $('.years-programming').html(timePeriod(dateProgramming, dateToday, false));
+          $('.years-freelance').html(timePeriod(dateFreelancing, dateToday, true));
 
           // Counter animations
           function counterAnimate(selector, number, sign) {
@@ -59,39 +52,48 @@ $(document).ready(function() {
             });
           }
 
-          counterAnimate('.counter.normal.block-1', timePeriod(dateWebindustry, dateToday, false), '+');
-          counterAnimate('.counter.normal.block-2', timePeriod(dateProgramming, dateToday, false), '+');
+          counterAnimate(
+            '.counter.normal.block-1',
+            timePeriod(dateWebindustry, dateToday, false), '+'
+          );
+          counterAnimate(
+            '.counter.normal.block-2',
+            timePeriod(dateProgramming, dateToday, false), '+'
+          );
           counterAnimate('.counter.normal.block-3', 2, '+');
 
-          // Contact me animation
-          setTimeout(function() {
-            if ($(window).width() >= 992) {
-              $('.contact').animate({
-                marginTop: '0',
-              }, 1000, 'easeInOutElastic');
-            }
-          }, 500);
-
-          // Portfolio column (same height as neighbour element)
-          function setColumnHeight(number) {
-            var heightNeighbour = $('.neighbour-' + number).height();
-            $('.item-' + number).height(heightNeighbour);
-          }
-
-          if ($(window).width() >= 768) {
-            // NOTE: neglecting item-4
-            $(window).resize(function() {
-              for (var i = 1; i <= 3; i++) {
-                setColumnHeight(i);
-              }
-            });
-
-            for (var i = 1; i <= 3; i++) {
-              setColumnHeight(i);
-            }
-          }
-        });
+          setColumnsHeights();
+         });
       });
     }, 2000);
+  });
+
+  function setColumnsHeights() {
+    // Portfolio column (same height as neighbor element)
+    function setColumnHeight(number) {
+      var heightNeighbor = $('.neighbor-' + number).height();
+      $('.item-' + number).height(heightNeighbor);
+    }
+
+    // Portfolio column (set to auto)
+    function setColumnHeightToAuto(number) {
+      $('.item-' + number).height('auto');
+    }
+
+    // NOTE: neglecting item-4 as it does not needs height change
+    if ($(window).width() >= 768) {
+      for (var i = 1; i <= 3; i++) {
+        setColumnHeight(i);
+      }
+    } else {
+      // NOTE: neglecting item-4
+      for (var i = 1; i <= 3; i++) {
+        setColumnHeightToAuto(i);
+      }
+    }
+  }
+
+  $(window).resize(function() {
+    setColumnsHeights();
   });
 });

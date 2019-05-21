@@ -415,7 +415,7 @@ ul.achievements .desc {
 .portfolio.item-4 {
   background-color: #7a9fab;
 }
-.neighbour-1.opened {
+.neighbor-1.opened {
   margin-left: -50%;
 }
 /*** icons
@@ -573,9 +573,6 @@ ul.achievements .desc {
 @media (min-width: 992px) {
   .profile {
     padding-top: 275px;
-  }
-  .contact {
-    margin-top: -60px;
   }
   .portfolio .more {
     display: block;
