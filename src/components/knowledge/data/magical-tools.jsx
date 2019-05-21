@@ -20,7 +20,7 @@ const knowledgeDataMagicalTools = (
     <li>
       web based tools:
       <ul>
-        <li><span {...classNames('highlight')}><Link href="https://github.com/" title="Link to GitHub" isOuter>GitHub</Link></span> (working with a team of developers, pull requests, code reviews and continuous integration),</li>
+        <li><span {...classNames('highlight')}><Link href="https://github.com/" title="Link to GitHub" isOuter>GitHub</Link></span> (working with a team of developers, git flow model, pull requests, code reviews and continuous integration),</li>
         <li>debugging tools <span {...classNames('highlight')}><Link href="https://developers.google.com/web/tools/chrome-devtools/" title="Link to Chrome DevTools" isOuter>Chrome DevTools</Link></span> built into browser Google Chrome,</li>
         <li>project management tool <span {...classNames('highlight')}><Link href="https://www.atlassian.com/software/jira" title="Link to Jira" isOuter>Jira</Link></span> (e.g. scrum boards, sprints, issues and tempo),</li>
         <li><span {...classNames('highlight')}>code validators</span> <Link href="https://travis-ci.com/" title="Link to Travis" isOuter>Travis</Link>, <Link href="https://validator.w3.org/" title="Link to W3C markup validation service" isOuter>W3C markup validation service</Link> and <Link href="https://wave.webaim.org/" title="Link to WAVE web accessibility tool" isOuter>WAVE web accessibility tool</Link>,</li>
