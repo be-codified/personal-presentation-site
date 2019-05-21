@@ -19,7 +19,7 @@ const knowledgeDataProgramming = (
     </li>
     <li><span {...classNames('highlight')}>back-end development</span> (10% of time):
       <ul>
-        <li>JavaScript runtime environment <span {...classNames('highlight')}><Link href="https://nodejs.org/en/" title="Link to Node.js" isOuter>Node.js</Link>,</span> framework <span {...classNames('highlight')}><Link href="https://expressjs.com/" title="Link to Express" isOuter>Express</Link></span> and document database <span {...classNames('highlight')}><Link href="https://www.mongodb.com/" title="Link to MongoDB" isOuter>MongoDB</Link></span> and</li>
+        <li>JavaScript runtime environment <span {...classNames('highlight')}><Link href="https://nodejs.org/en/" title="Link to Node.js" isOuter>Node.js</Link>,</span> framework <span {...classNames('highlight')}><Link href="https://expressjs.com/" title="Link to Express" isOuter>Express</Link></span> and document database <span {...classNames('highlight')}><Link href="https://www.mongodb.com/" title="Link to MongoDB" isOuter>MongoDB</Link>,</span></li>
       </ul>
     </li>
     <li>communicating with <span {...classNames('highlight')}>REST APIs,</span> handling <span {...classNames('highlight')}>JSONs</span> and</li>
