@@ -15,8 +15,9 @@ import knowledgeDataHowWasMade from './components/knowledge/data/how-was-made';
 import Navigation from './components/navigation/Navigation';
 import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
+import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
-import Clients from './components/clients/Clients';
+// import Clients from './components/clients/Clients';
 
 class App extends Component {
   constructor(props) {
@@ -73,10 +74,14 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
-          <Navigation
-            items={navigationDataMain}
-            selectAnchor={this.selectAnchor}
-          />
+          <Drawer>
+            <Navigation
+              items={navigationDataMain}
+              selectAnchor={this.selectAnchor}
+            />
+          </Drawer>
+
+
           <Intro />
 
           {/* My main skills */}
@@ -260,7 +265,7 @@ class App extends Component {
           {/* / Latest work Mail starter */}
 
           {/* Clients */}
-          <Clients />
+          {/* <Clients /> */}
           {/* / Clients */}
 
           {/* How was this page made */}

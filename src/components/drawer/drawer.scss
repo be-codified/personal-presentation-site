@@ -1,0 +1,39 @@
+/**
+ *
+ * Drawer styles
+ *
+ */
+
+$className: drawer;
+
+.#{$className} {
+  background-color: map-get($colors, white);
+  width: 100%;
+
+  &--opened {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+  }
+
+  &__open {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__close {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    &--hidden {
+      display: none;
+    }
+  }
+}
