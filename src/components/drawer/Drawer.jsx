@@ -61,7 +61,7 @@ class Drawer extends Component {
     const classNames = new BEMHelper('drawer');
 
     return (
-      <div test={state.isOpened} {...classNames('', state.isOpened && 'opened')}>
+      <div {...classNames('', state.isOpened && 'opened')}>
         <button
           type="button"
           onClick={this.handleClose}
@@ -81,7 +81,7 @@ Drawer.defaultProps = {
 };
 
 Drawer.propTypes = {
-  test: PropTypes.bool.isRequired,
+  // test: PropTypes.bool.isRequired,
   isOpened: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };

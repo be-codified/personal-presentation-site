@@ -3,7 +3,7 @@ import BEMHelper from 'react-bem-helper';
 import FetchApiGitHub from '../fetch-api-git-hub/FetchApiGitHub';
 import Log from '../../helpers/log';
 
-const logOutput = false;
+const logOutput = true;
 const log = new Log('Footer', logOutput);
 
 function Footer() {
