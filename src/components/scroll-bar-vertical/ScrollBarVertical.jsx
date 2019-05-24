@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('ScrollBarVertical', logOutput);
 
 // TODO:
 // - debounce
@@ -49,7 +53,8 @@ class ScrollBarVertical extends Component {
   }
 
   componentDidMount() {
-    // console.log('--- Component did mount');
+    log.output('componentDidMount', true);
+
     // TODO: try to work rather with refs to avoid timeout
     setTimeout(() => {
       this.setDoc();
@@ -63,6 +68,8 @@ class ScrollBarVertical extends Component {
   }
 
   componentWillUnmount() {
+    log.output('componentWillUnmount', true);
+
     // Removing listeners
     this.listeners.forEach((listener) => {
       window.removeEventListener(listener.name, listener.method);
@@ -70,7 +77,8 @@ class ScrollBarVertical extends Component {
   }
 
   getIndicatorTop = () => {
-    // console.log('--- Getting position');
+    log.output('getIndicatorTop', true);
+
     const { doc } = this;
     const { indicator } = this.state;
 
@@ -82,7 +90,8 @@ class ScrollBarVertical extends Component {
   }
 
   getIndicatorHeight = () => {
-    // console.log('--- Getting height');
+    log.output('getIndicatorHeight', true);
+
     const { doc } = this;
     const height = parseInt((doc.client.height / doc.scroll.height) * doc.client.height, 10); // eslint-disable-line max-len
 
@@ -90,6 +99,8 @@ class ScrollBarVertical extends Component {
   }
 
   setIndicatorState = (top, height) => {
+    log.output('setIndicatorState', true);
+
     this.setState(() => ({
       indicator: {
         transform: `translateX(0) translateY(${top}px)`,
@@ -99,6 +110,8 @@ class ScrollBarVertical extends Component {
   }
 
   setDoc = () => {
+    log.output('setDoc', true);
+
     const nodeHtml = document.documentElement;
     const nodeBody = nodeHtml.querySelector('body');
 
@@ -115,27 +128,31 @@ class ScrollBarVertical extends Component {
   }
 
   handleScroll = () => {
-    // console.log('--- Scrolling');
+    log.output('handleScroll', true);
+
     this.setDoc();
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
   handleTouchMove = () => {
-    // console.log('--- Touchmove');
+    log.output('handleTouchMove', true);
+
     this.setDoc();
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
   handleResize = () => {
-    // console.log('--- Resizing');
+    log.output('handleResize', true);
+
     this.setDoc();
     this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
   }
 
   render() {
-    // console.log('--- Rendering');
+    log.output('render', true);
+
     const state = { ...this.state };
     const classNames = new BEMHelper('scroll-bar-vertical');
 

@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('Link', logOutput);
 
 function Link(props) {
+  log.output('render', true);
+
   const {
     href, title, isOuter, children,
   } = props;

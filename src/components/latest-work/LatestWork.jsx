@@ -2,8 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('LatestWork', logOutput);
 
 function LatestWork(props) {
+  log.output('render', true);
+
   const {
     id, tags, heading, desc, link, client, type, images,
   } = props;

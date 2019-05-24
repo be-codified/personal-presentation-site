@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
 
+const logOutput = false;
+const log = new Log('Loader', logOutput);
 /*
   TODO:
     - use timeMin from FetchApiGitHub
 */
 
 function Loader(props) {
+  log.output('render', true);
+
   const { type } = props;
 
   const classNames = new BEMHelper('loader');

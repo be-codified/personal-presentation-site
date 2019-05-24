@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import numWords from 'num-words';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('Intro', logOutput);
 
 const dateToday = new Date();
 
@@ -16,6 +20,8 @@ class Intro extends Component {
   }
 
   calculatePeriod = (dateStart, useWords = false) => {
+    log.output('calculatePeriod', true);
+
     // Calculate period in years
     const periodInt = Math.round(new Date(dateToday - dateStart) / 1000 / 60 / 60 / 24 / 365);
 
@@ -26,6 +32,8 @@ class Intro extends Component {
   }
 
   render() {
+    log.output('render', true);
+
     return (
       <div>
         <img

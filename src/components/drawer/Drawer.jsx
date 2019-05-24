@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
+
+const logOutput = true;
+const log = new Log('Drawer', logOutput);
 
 /* TODO
   - use rather bem helper to pass classes on state change
@@ -15,61 +19,56 @@ class Drawer extends Component {
 
     // Setting default properties
     this.state = {
-      drawer: 'drawer',
-      actions: {
-        open: 'drawer__open',
-        close: 'drawer__close drawer__close--hidden',
-      },
-      navigation: 'drawer__navigation drawer__navigation--hidden',
+      isOpened: props.isOpened,
+    };
+
+    // this.state = {
+    //   drawer: 'drawer',
+    //   actions: {
+    //     open: 'drawer__open',
+    //     close: 'drawer__close drawer__close--hidden',
+    //   },
+    //   navigation: 'drawer__navigation drawer__navigation--hidden',
+    // };
+  }
+
+  componentDidMount = () => {
+    log.output('componentDidMount', true);
+  }
+
+  static getDerivedStateFromProps(nextProps) {
+    // this.log('getDerivedStateFromProps', true);
+    return {
+      isOpened: nextProps.isOpened,
     };
   }
 
   handleClose = () => {
-    this.setState(() => ({
-      drawer: 'drawer drawer',
-      actions: {
-        open: 'drawer__open',
-        close: 'drawer__close drawer__close--hidden',
-      },
-      navigation: 'drawer__navigation drawer__navigation--hidden',
-    }));
-  }
+    log.output('handleClose', true);
 
-  handleOpen = () => {
-    this.setState(() => ({
-      drawer: 'drawer drawer--opened',
-      actions: {
-        open: 'drawer__open drawer__open--hidden',
-        close: 'drawer__close',
-      },
-      navigation: 'drawer__navigation',
-    }));
+    /*
+    this.setState({ isOpened: false }, function () {
+      console.log(this.state.isOpened);
+    });
+    */
   }
 
   render() {
+    log.output('render', true);
+
     const { children } = this.props;
     const state = { ...this.state };
     const classNames = new BEMHelper('drawer');
 
     return (
-      <div className={state.drawer}>
-        <div {...classNames('actions')}>
-          <button
-            type="button"
-            className={state.actions.open}
-            onClick={this.handleOpen}
-          >
-            Open
-          </button>
-          <button
-            type="button"
-            className={state.actions.close}
-            onClick={this.handleClose}
-          >
-            Close
-          </button>
-        </div>
-        <div className={state.navigation}>
+      <div test={state.isOpened} {...classNames('', state.isOpened && 'opened')}>
+        <button
+          type="button"
+          onClick={this.handleClose}
+        >
+          Close
+        </button>
+        <div>
           {children}
         </div>
       </div>
@@ -77,7 +76,13 @@ class Drawer extends Component {
   }
 }
 
+Drawer.defaultProps = {
+  isOpened: false,
+};
+
 Drawer.propTypes = {
+  test: PropTypes.bool.isRequired,
+  isOpened: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 

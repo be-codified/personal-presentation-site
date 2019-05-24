@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Loader from '../loader/Loader';
+import Log from '../../helpers/log';
 
+const logOutput = false;
+const log = new Log('FetchApiGitHub', logOutput);
 /*
   TODO:
     - handle errors better (if cannot fetch, if forbidden)
@@ -20,6 +23,8 @@ class FetchApiGitHub extends Component {
   }
 
   componentDidMount = () => {
+    log.output('componentDidMount', true);
+
     // Set minimum time to loader to be able
     // to show, if fetch response from Api is really quick
     const timeMin = 500;
@@ -59,6 +64,8 @@ class FetchApiGitHub extends Component {
   }
 
   formatDateAndTime = (string) => {
+    log.output('formatDateAndTime', true);
+
     function addLeadingZero(int) {
       return (int < 10 ? '0' : '') + int;
     }
@@ -80,6 +87,8 @@ class FetchApiGitHub extends Component {
   }
 
   render() {
+    log.output('render', true);
+
     const state = { ...this.state };
 
     return state.isLoading

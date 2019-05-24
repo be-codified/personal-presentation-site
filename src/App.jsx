@@ -17,15 +17,26 @@ import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
-// import Clients from './components/clients/Clients';
+import Clients from './components/clients/Clients';
+import Log from './helpers/log';
+
+const logOutput = true;
+const log = new Log('App', logOutput);
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.refApp = React.createRef();
+
+    // Setting default properties
+    this.state = {
+      isDrawerOpened: false,
+    };
   }
 
   componentDidMount = () => {
+    log.output('componentDidMount', true);
+
     // TODO: go to anchor if hash in url
     // const { hash } = window.location;
 
@@ -46,9 +57,28 @@ class App extends Component {
   }
 
   // Method called from child component to be able to select anchor
-  selectAnchor = hash => helperGetNodeAnchor(this.refApp, hash);
+  selectAnchor = (hash) => {
+    log.output('selectAnchor', true);
+
+    return helperGetNodeAnchor(this.refApp, hash);
+  }
+
+  openDrawer = () => {
+    log.output('openDrawer', true);
+
+    Drawer.getDerivedStateFromProps({ isOpened: true });
+    /*
+    this.setState(() => ({
+      isDrawerOpened: true,
+    }));
+    */
+  };
 
   render() {
+    log.output('render', true);
+
+    const state = { ...this.state };
+
     return (
       <div ref={this.refApp}>
         <div id="top" className="space-padding-large">
@@ -74,13 +104,21 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
-          <Drawer>
+          <button
+            type="button"
+            onClick={this.openDrawer}
+          >
+            Open
+          </button>
+
+          {/* Drawer */}
+          <Drawer isOpened={state.isDrawerOpened}>
             <Navigation
               items={navigationDataMain}
               selectAnchor={this.selectAnchor}
             />
           </Drawer>
-
+          {/* Drawer */}
 
           <Intro />
 
@@ -265,7 +303,7 @@ class App extends Component {
           {/* / Latest work Mail starter */}
 
           {/* Clients */}
-          {/* <Clients /> */}
+          <Clients />
           {/* / Clients */}
 
           {/* How was this page made */}

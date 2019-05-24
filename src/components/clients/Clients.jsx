@@ -5,8 +5,14 @@ import { Chart } from 'react-google-charts';
 import Link from '../link/Link';
 import sections from '../navigation/data/sections';
 import clientsData from './data/clients';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('Clients', logOutput);
 
 function Clients() {
+  log.output('render', true);
+
   const classNames = new BEMHelper('clients');
 
   return (

@@ -1,8 +1,14 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
 import FetchApiGitHub from '../fetch-api-git-hub/FetchApiGitHub';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('Footer', logOutput);
 
 function Footer() {
+  log.output('render', true);
+
   const classNames = new BEMHelper('footer');
   const yearCurrent = new Date().getFullYear();
 

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import helperGetNodeAnchorScrollPosition from '../../helpers/get-node-anchor-scroll-position';
+import Log from '../../helpers/log';
 
+const logOutput = false;
+const log = new Log('ScrollToAnchor', logOutput);
 class ScrollToAnchor extends Component {
   constructor(props) {
     super(props);
@@ -10,12 +13,13 @@ class ScrollToAnchor extends Component {
   }
 
   handleClick = (event) => {
+    log.output('handleClick', true);
+
     const { selectAnchor } = this.props;
     event.preventDefault();
 
     // Get hash of clicked anchor link
     const { hash } = event.currentTarget;
-
 
     // Selecting anchor node with method from parent
     const node = selectAnchor(hash);
@@ -34,6 +38,8 @@ class ScrollToAnchor extends Component {
   }
 
   render() {
+    log.output('render', true);
+
     const { href, className, children } = this.props;
 
     return (

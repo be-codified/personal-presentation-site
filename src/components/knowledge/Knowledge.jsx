@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
+import Log from '../../helpers/log';
+
+const logOutput = false;
+const log = new Log('Knowledge', logOutput);
 
 function Knowledge(props) {
+  log.output('render', true);
+
   const { heading, id, children } = props;
   const classNames = new BEMHelper('knowledge');
 
