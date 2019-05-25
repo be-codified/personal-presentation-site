@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import numWords from 'num-words';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('Intro', logOutput);
-
+const log = new Log(logConfig.intro);
 const dateToday = new Date();
 
 class Intro extends Component {

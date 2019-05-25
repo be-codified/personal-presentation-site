@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Loader from '../loader/Loader';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('FetchApiGitHub', logOutput);
+const log = new Log(logConfig.fetchApiGitHub);
 /*
   TODO:
     - handle errors better (if cannot fetch, if forbidden)

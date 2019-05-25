@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import helperGetNodeAnchorScrollPosition from '../../helpers/get-node-anchor-scroll-position';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('ScrollToAnchor', logOutput);
+const log = new Log(logConfig.scrollToAnchor);
 class ScrollToAnchor extends Component {
   constructor(props) {
     super(props);

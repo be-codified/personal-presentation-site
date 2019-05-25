@@ -18,10 +18,9 @@ import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
 import Clients from './components/clients/Clients';
-import Log from './helpers/log';
+import { logConfig, Log } from './helpers/log';
 
-const logOutput = true;
-const log = new Log('App', logOutput);
+const log = new Log(logConfig.app);
 
 class App extends Component {
   constructor(props) {
@@ -87,8 +86,6 @@ class App extends Component {
             <title>front-end web developer | be-codified.com</title>
           </Helmet>
           {/* / Meta data */}
-
-          <ScrollBarVertical />
 
           {/* Back to top
             TODO:
@@ -322,6 +319,7 @@ class App extends Component {
             <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
           </div>
         </div>
+        <ScrollBarVertical />
       </div>
     );
   }

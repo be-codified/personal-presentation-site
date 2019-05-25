@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
 import ScrollToAnchor from '../scroll-to-anchor/ScrollToAnchor';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('Navigation', logOutput);
+const log = new Log(logConfig.navigation);
 
 // TODO: add option to wrap in <nav> tag
 

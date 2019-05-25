@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('ScrollBarVertical', logOutput);
+const log = new Log(logConfig.scrollBarVertical);
 
 // TODO:
 // - debounce

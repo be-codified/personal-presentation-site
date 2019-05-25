@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = true;
-const log = new Log('Drawer', logOutput);
+const log = new Log(logConfig.drawer);
 
 /* TODO
   - use rather bem helper to pass classes on state change

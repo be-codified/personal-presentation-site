@@ -1,10 +1,9 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
 import FetchApiGitHub from '../fetch-api-git-hub/FetchApiGitHub';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = true;
-const log = new Log('Footer', logOutput);
+const log = new Log(logConfig.footer);
 
 function Footer() {
   log.output('render', true);

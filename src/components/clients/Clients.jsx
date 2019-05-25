@@ -5,10 +5,9 @@ import { Chart } from 'react-google-charts';
 import Link from '../link/Link';
 import sections from '../navigation/data/sections';
 import clientsData from './data/clients';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('Clients', logOutput);
+const log = new Log(logConfig.clients);
 
 function Clients() {
   log.output('render', true);

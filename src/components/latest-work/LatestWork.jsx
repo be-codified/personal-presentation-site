@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import BEMHelper from 'react-bem-helper';
-import Log from '../../helpers/log';
+import { logConfig, Log } from '../../helpers/log';
 
-const logOutput = false;
-const log = new Log('LatestWork', logOutput);
+const log = new Log(logConfig.latestWork);
 
 function LatestWork(props) {
   log.output('render', true);
