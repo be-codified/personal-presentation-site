@@ -3,15 +3,27 @@ import Loader from '../loader/Loader';
 import { logConfig, Log } from '../../helpers/log';
 
 const log = new Log(logConfig.fetchApiGitHub);
-/*
+
+/**
   TODO:
     - handle errors better (if cannot fetch, if forbidden)
     - move timeMin to Loader component
-*/
+ */
 
 const fetchApiUrl = 'https://api.github.com/repos/be-codified/personal-presentation-site';
+
+/**
+ * Class representing fetch Api GitHub.
+ * @extends Component
+ */
+
 class FetchApiGitHub extends Component {
   constructor(props) {
+    /**
+     * Create fetch Api GitHub
+     * @param {object} props - Props object
+     */
+
     super(props);
 
     // Setting default properties
@@ -20,6 +32,11 @@ class FetchApiGitHub extends Component {
       data: null,
     };
   }
+
+  /**
+   * Component did mount
+   * @return {void}
+   */
 
   componentDidMount = () => {
     log.output('componentDidMount', true);
@@ -62,6 +79,12 @@ class FetchApiGitHub extends Component {
     }, timeMin);
   }
 
+  /**
+   * Format date and time
+   * @return {string} Value to be formatted
+   * @return {string} Formated date and time, e.g. `25.05.2019 at 12:00`
+   */
+
   formatDateAndTime = (string) => {
     log.output('formatDateAndTime', true);
 
@@ -82,8 +105,13 @@ class FetchApiGitHub extends Component {
       },
     };
 
-    return `${formatted.date.day}.${formatted.date.month}.${formatted.date.year} at ${formatted.time.hour}:${formatted.time.minute}.`;
+    return `${formatted.date.day}.${formatted.date.month}.${formatted.date.year} at ${formatted.time.hour}:${formatted.time.minute}`;
   }
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     log.output('render', true);
@@ -92,7 +120,7 @@ class FetchApiGitHub extends Component {
 
     return state.isLoading
       ? <Loader type="ring" />
-      : <span>Website last updated on { state.data }</span>;
+      : <span>Website last updated on { state.data }.</span>;
   }
 }
 

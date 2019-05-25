@@ -4,7 +4,17 @@ import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
 import Navigation from '../navigation/Navigation';
 
+/**
+ * Class representing check list.
+ * @extends Component
+ */
 class CheckList extends Component {
+  /**
+   * Calculate progress
+   * @param {array} items - Array of items
+   * @return {string} Progress, e.g. `2/10 (20%)`
+   */
+
   calculateProgress = (items) => {
     const total = items.length;
 
@@ -19,6 +29,11 @@ class CheckList extends Component {
 
     return `${counter}/${total} (${percentage}%)`;
   }
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     const { data } = this.props;
@@ -78,7 +93,10 @@ class CheckList extends Component {
 }
 
 CheckList.propTypes = {
-  // TODO: lock this with child properties
+  /**
+    TODO:
+      - lock this with child properties
+  */
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

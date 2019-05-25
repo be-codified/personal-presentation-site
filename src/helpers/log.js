@@ -70,11 +70,26 @@ const logConfig = {
   },
 };
 
+/**
+ * Class representing log.
+ */
 class Log {
   constructor(config) {
+    /**
+     * Create log
+     * @param {object} config - Config object
+     */
+
     this.config = { ...config };
     this.debug = require('debug')(`${project}: ${config.nameComponent} (${config.type})`); // eslint-disable-line global-require
   }
+
+  /**
+   * Output
+   * @param {string} nameMethod - Name of method
+   * @param {boolean} outputLog - Output log
+   * @return {void}
+   */
 
   output = (nameMethod, outputLog) => (
     (this.config.outputLog && outputLog)

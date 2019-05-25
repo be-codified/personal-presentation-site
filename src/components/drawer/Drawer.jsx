@@ -5,14 +5,25 @@ import { logConfig, Log } from '../../helpers/log';
 
 const log = new Log(logConfig.drawer);
 
-/* TODO
-  - use rather bem helper to pass classes on state change
-  - check if react has some simple is hidden method
-  - perhaps create state with just visibility booleans and classes in render
-*/
+/**
+  TODO:
+    - use rather bem helper to pass classes on state change
+    - check if react has some simple is hidden method
+    - perhaps create state with just visibility booleans and classes in render
+ */
+
+/**
+ * Class representing drawer.
+ * @extends Component
+ */
 
 class Drawer extends Component {
   constructor(props) {
+    /**
+     * Create drawer
+     * @param {object} props - Props object
+     */
+
     super(props);
     this.ref = React.createRef();
 
@@ -31,9 +42,16 @@ class Drawer extends Component {
     // };
   }
 
+  /**
+   * Component did mount
+   * @return {void}
+   */
+
   componentDidMount = () => {
     log.output('componentDidMount', true);
   }
+
+  // TODO: documentation
 
   static getDerivedStateFromProps(nextProps) {
     // this.log('getDerivedStateFromProps', true);
@@ -41,6 +59,11 @@ class Drawer extends Component {
       isOpened: nextProps.isOpened,
     };
   }
+
+  /**
+   * Handle close
+   * @return {void}
+   */
 
   handleClose = () => {
     log.output('handleClose', true);
@@ -51,6 +74,11 @@ class Drawer extends Component {
     });
     */
   }
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     log.output('render', true);

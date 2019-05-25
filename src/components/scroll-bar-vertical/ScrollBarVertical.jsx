@@ -4,16 +4,28 @@ import { logConfig, Log } from '../../helpers/log';
 
 const log = new Log(logConfig.scrollBarVertical);
 
-// TODO:
-// - debounce
-// - styles (perhaps transform for cleaner scroll)
-// - on drag
-// - listeners for each
-// - touchmove
-// - fix inconsistent indicator height cross browsers
+/**
+  TODO:
+    - debounce
+    - styles (perhaps transform for cleaner scroll)
+    - on drag
+    - listeners for each
+    - touchmove
+    - fix inconsistent indicator height cross browsers
+ */
+
+/**
+ * Class representing vertical scroll bar.
+ * @extends Component
+ */
 
 class ScrollBarVertical extends Component {
   constructor(props) {
+    /**
+     * Create vertical scroll bar
+     * @param {object} props - Props object
+     */
+
     super(props);
 
     // Setting default properties
@@ -51,6 +63,11 @@ class ScrollBarVertical extends Component {
     ];
   }
 
+  /**
+   * Component did mount
+   * @return {void}
+   */
+
   componentDidMount() {
     log.output('componentDidMount', true);
 
@@ -66,6 +83,11 @@ class ScrollBarVertical extends Component {
     }, 0);
   }
 
+  /**
+   * Component will unmount
+   * @return {void}
+   */
+
   componentWillUnmount() {
     log.output('componentWillUnmount', true);
 
@@ -74,6 +96,11 @@ class ScrollBarVertical extends Component {
       window.removeEventListener(listener.name, listener.method);
     });
   }
+
+  /**
+   * Get indicator top
+   * @return {number} Top value
+   */
 
   getIndicatorTop = () => {
     log.output('getIndicatorTop', true);
@@ -88,6 +115,11 @@ class ScrollBarVertical extends Component {
     return top;
   }
 
+  /**
+   * Get indicator height
+   * @return {number} Height value
+   */
+
   getIndicatorHeight = () => {
     log.output('getIndicatorHeight', true);
 
@@ -96,6 +128,13 @@ class ScrollBarVertical extends Component {
 
     return height;
   }
+
+  /**
+   * Set indicator state
+   * @param {number} top - Top value
+   * @param {number} height - Height value
+   * @return {void}
+   */
 
   setIndicatorState = (top, height) => {
     log.output('setIndicatorState', true);
@@ -107,6 +146,11 @@ class ScrollBarVertical extends Component {
       },
     }));
   }
+
+  /**
+   * Set document
+   * @return {void}
+   */
 
   setDoc = () => {
     log.output('setDoc', true);
@@ -126,6 +170,11 @@ class ScrollBarVertical extends Component {
     };
   }
 
+  /**
+   * Handle scroll
+   * @return {void}
+   */
+
   handleScroll = () => {
     log.output('handleScroll', true);
 
@@ -133,6 +182,11 @@ class ScrollBarVertical extends Component {
     const { indicator } = this.state;
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
+
+  /**
+   * Handle touch and move
+   * @return {void}
+   */
 
   handleTouchMove = () => {
     log.output('handleTouchMove', true);
@@ -142,12 +196,22 @@ class ScrollBarVertical extends Component {
     this.setIndicatorState(this.getIndicatorTop(), indicator.height);
   }
 
+  /**
+   * Handle resize
+   * @return {void}
+   */
+
   handleResize = () => {
     log.output('handleResize', true);
 
     this.setDoc();
     this.setIndicatorState(this.getIndicatorTop(), this.getIndicatorHeight());
   }
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     log.output('render', true);

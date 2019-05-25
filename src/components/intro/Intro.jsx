@@ -5,8 +5,18 @@ import { logConfig, Log } from '../../helpers/log';
 const log = new Log(logConfig.intro);
 const dateToday = new Date();
 
+/**
+ * Class representing intro.
+ * @extends Component
+ */
+
 class Intro extends Component {
   constructor(props) {
+    /**
+     * Create intro
+     * @param {object} props - Props object
+     */
+
     super(props);
 
     // Setting period starting dates
@@ -17,17 +27,29 @@ class Intro extends Component {
     };
   }
 
+  /**
+   * Calculate period
+   * @param {number} dateStart - Start date
+   * @param {boolean} useWords - Use words
+   * @return {number|string} - Calculated period
+   */
+
   calculatePeriod = (dateStart, useWords = false) => {
     log.output('calculatePeriod', true);
 
     // Calculate period in years
     const periodInt = Math.round(new Date(dateToday - dateStart) / 1000 / 60 / 60 / 24 / 365);
 
-    // Set period based on int or string
+    // Set period based on number or string
     const period = useWords ? numWords(periodInt) : periodInt;
 
     return period;
   }
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     log.output('render', true);
