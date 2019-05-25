@@ -3,14 +3,13 @@ import Loader from '../loader/Loader';
 import { logConfig, Log } from '../../helpers/log';
 
 const log = new Log(logConfig.fetchApiGitHub);
+const fetchApiUrl = 'https://api.github.com/repos/be-codified/personal-presentation-site';
 
 /**
   TODO:
     - handle errors better (if cannot fetch, if forbidden)
     - move timeMin to Loader component
  */
-
-const fetchApiUrl = 'https://api.github.com/repos/be-codified/personal-presentation-site';
 
 /**
  * Class representing fetch Api GitHub.

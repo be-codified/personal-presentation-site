@@ -8,6 +8,7 @@ import Navigation from '../navigation/Navigation';
  * Class representing check list.
  * @extends Component
  */
+
 class CheckList extends Component {
   /**
    * Calculate progress

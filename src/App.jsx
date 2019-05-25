@@ -22,8 +22,18 @@ import { logConfig, Log } from './helpers/log';
 
 const log = new Log(logConfig.app);
 
+/**
+ * Class representing app.
+ * @extends Component
+ */
+
 class App extends Component {
   constructor(props) {
+    /**
+     * Create app
+     * @param {object} props - Props object
+     */
+
     super(props);
     this.refApp = React.createRef();
 
@@ -32,6 +42,11 @@ class App extends Component {
       isDrawerOpened: false,
     };
   }
+
+  /**
+   * Component did mount
+   * @return {void}
+   */
 
   componentDidMount = () => {
     log.output('componentDidMount', true);
@@ -55,12 +70,22 @@ class App extends Component {
     // });
   }
 
-  // Method called from child component to be able to select anchor
+  /**
+   * Select anchor (method called from child component to be able to select anchor)
+   * @param {string} hash - Hash
+   * @return {object} Node anchor
+   */
+
   selectAnchor = (hash) => {
     log.output('selectAnchor', true);
 
     return helperGetNodeAnchor(this.refApp, hash);
   }
+
+  /**
+   * Open drawer
+   * @return {void}
+   */
 
   openDrawer = () => {
     log.output('openDrawer', true);
@@ -72,6 +97,11 @@ class App extends Component {
     }));
     */
   };
+
+  /**
+   * Render
+   * @return {object} React component instance
+   */
 
   render() {
     log.output('render', true);
