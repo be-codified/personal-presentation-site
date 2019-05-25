@@ -5,7 +5,7 @@ import helperGetNodeAnchor from './helpers/get-node-anchor';
 import LatestWork from './components/latest-work/LatestWork';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
-import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
+// import ScrollBarVertical from './components/scroll-bar-vertical/ScrollBarVertical';
 import Knowledge from './components/knowledge/Knowledge';
 import knowledgeDataMain from './components/knowledge/data/main';
 import knowledgeDataVisualOutput from './components/knowledge/data/visual-output';
@@ -18,6 +18,8 @@ import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
 import Clients from './components/clients/Clients';
+import CheckList from './components/check-list/CheckList';
+import checkListData from './components/check-list/data/check-list';
 import { logConfig, Log } from './helpers/log';
 
 const log = new Log(logConfig.app);
@@ -131,12 +133,12 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
-          <button
+          {/* <button
             type="button"
             onClick={this.openDrawer}
           >
             Open
-          </button>
+          </button> */}
 
           {/* Drawer */}
           <Drawer isOpened={state.isDrawerOpened}>
@@ -342,6 +344,10 @@ class App extends Component {
           </Knowledge>
           {/* / How was this page made */}
 
+          {/* Check list */}
+          <CheckList data={checkListData} />
+          {/* / Check list */}
+
           <Footer />
           <div className="text-center">
             <img src="https://travis-ci.com/be-codified/personal-presentation-site.svg?branch=develop" alt="" />
@@ -349,7 +355,7 @@ class App extends Component {
             <img src="https://api.codacy.com/project/badge/Grade/21eae5ab878b480daea8c5fca18d3736" alt="" />
           </div>
         </div>
-        <ScrollBarVertical />
+        {/* <ScrollBarVertical /> */}
       </div>
     );
   }

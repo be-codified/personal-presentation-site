@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BEMHelper from 'react-bem-helper';
 import shortid from 'shortid';
-import Navigation from '../navigation/Navigation';
+// import Navigation from '../navigation/Navigation';
 
 /**
  * Class representing check list.
@@ -42,13 +42,14 @@ class CheckList extends Component {
 
     return (
       <div {...classNames('', '', 'space-padding-bottom-xlarge')}>
-        <Navigation items={data} />
+        <h2>Check list</h2>
+        {/* <Navigation items={data} /> */}
         {
           /* For each segment */
           data.map(segment => (
             <React.Fragment key={shortid.generate()}>
               {/* Heading */}
-              <h2 id={segment.id}>{segment.heading}</h2>
+              <h3 id={segment.id}>{segment.text}</h3>
               {/* Progress */}
               <p>Progress: {this.calculateProgress(segment.list)}</p>
               <ul className="list-no-style-type">

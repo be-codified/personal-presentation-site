@@ -89,12 +89,12 @@ class Drawer extends Component {
 
     return (
       <div {...classNames('', state.isOpened && 'opened')}>
-        <button
+        {/* <button
           type="button"
           onClick={this.handleClose}
         >
           Close
-        </button>
+        </button> */}
         <div>
           {children}
         </div>

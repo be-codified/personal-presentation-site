@@ -7,7 +7,7 @@
 $className: drawer;
 
 .#{$className} {
-  background-color: map-get($colors, yellow);
+  // background-color: map-get($colors, yellow);
   width: 100%;
 
   &--opened {
