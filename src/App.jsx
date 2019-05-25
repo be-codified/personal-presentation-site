@@ -133,12 +133,12 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
-          {/* <button
+          <button
             type="button"
             onClick={this.openDrawer}
           >
             Open
-          </button> */}
+          </button>
 
           {/* Drawer */}
           <Drawer isOpened={state.isDrawerOpened}>
