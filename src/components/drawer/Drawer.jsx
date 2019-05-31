@@ -29,35 +29,19 @@ class Drawer extends Component {
 
     // Setting default properties
     this.state = {
-      isOpened: props.isOpened,
+      isFixed: props.isFixed,
     };
-
-    // this.state = {
-    //   drawer: 'drawer',
-    //   actions: {
-    //     open: 'drawer__open',
-    //     close: 'drawer__close drawer__close--hidden',
-    //   },
-    //   navigation: 'drawer__navigation drawer__navigation--hidden',
-    // };
   }
 
-  /**
-   * Component did mount
-   * @return {void}
-   */
+  static getDerivedStateFromProps(props, state) {
+    log.output('getDerivedStateFromProps', true);
 
-  componentDidMount = () => {
-    log.output('componentDidMount', true);
-  }
-
-  // TODO: documentation
-
-  static getDerivedStateFromProps(nextProps) {
-    // this.log('getDerivedStateFromProps', true);
-    return {
-      isOpened: nextProps.isOpened,
-    };
+    if (props.isFixed !== state.isFixed) {
+      return {
+        isFixed: props.isFixed,
+      };
+    }
+    return null;
   }
 
   /**
@@ -68,11 +52,8 @@ class Drawer extends Component {
   handleClose = () => {
     log.output('handleClose', true);
 
-    /*
-    this.setState({ isOpened: false }, function () {
-      console.log(this.state.isOpened);
-    });
-    */
+    const props = { ...this.props };
+    props.toggleDrawer();
   }
 
   /**
@@ -88,12 +69,13 @@ class Drawer extends Component {
     const classNames = new BEMHelper('drawer');
 
     return (
-      <div {...classNames('', state.isOpened && 'opened')}>
+      <div {...classNames('', state.isFixed && 'fixed')}>
         <button
           type="button"
           onClick={this.handleClose}
+          {...classNames('button-close')}
         >
-          Close
+          Close mobile navigation
         </button>
         <div>
           {children}
@@ -103,13 +85,8 @@ class Drawer extends Component {
   }
 }
 
-Drawer.defaultProps = {
-  isOpened: false,
-};
-
 Drawer.propTypes = {
-  // test: PropTypes.bool.isRequired,
-  isOpened: PropTypes.bool,
+  isFixed: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
 };
 

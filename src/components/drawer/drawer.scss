@@ -6,34 +6,53 @@
 
 $className: drawer;
 
+$config: (
+  transition: (
+    duration: 200ms,
+    easing: map-get($easing, normal),
+  )
+);
+
 .#{$className} {
-  background-color: map-get($colors, yellow);
-  width: 100%;
+  background-color: map-get($colors, map-get($colors, white));
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all map-get(map-get($config, transition), duration) map-get(map-get($config, transition), easing);
 
-  &--opened {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
-  }
+  &--fixed {
+    transform: translateX(0);
 
-  &__open {
-    &--hidden {
-      display: none;
+    .#{$className}__button-close {
+      display: block;
     }
   }
 
-  &__close {
-    &--hidden {
-      display: none;
-    }
+  &__button-close {
+    display: none;
+    float: right;
   }
 
-  &__navigation {
-    &--hidden {
-      display: none;
-    }
+  &__button-open {
+    float: right;
   }
+
+  // @include breakpoint('tablet') {
+  //   display: block;
+
+  //   &__button-open {
+  //     display: none;
+  //   }
+
+  //   &--fixed {
+  //     position: relative;
+
+  //     .drawer__button-close {
+  //       display: none;
+  //     }
+  //   }
+  // }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BEMHelper from 'react-bem-helper';
 import { Helmet } from 'react-helmet';
 import helperGetNodeAnchor from './helpers/get-node-anchor';
 // import helperGetNodeAnchorScrollPosition from './helpers/get-node-anchor-scroll-position';
@@ -17,7 +18,7 @@ import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
-import Clients from './components/clients/Clients';
+// import Clients from './components/clients/Clients';
 import CheckList from './components/check-list/CheckList';
 import checkListData from './components/check-list/data/check-list';
 import { logConfig, Log } from './helpers/log';
@@ -41,7 +42,9 @@ class App extends Component {
 
     // Setting default properties
     this.state = {
-      isDrawerOpened: false,
+      drawer: {
+        isFixed: false,
+      },
     };
   }
 
@@ -85,20 +88,23 @@ class App extends Component {
   }
 
   /**
-   * Open drawer
+   * Toggle drawer
+   * (TODO: method called from child component to be able to select anchor)
+   * @param {boolean} isFixed - Is fixed
    * @return {void}
    */
 
-  openDrawer = () => {
-    log.output('openDrawer', true);
+  toggleDrawer = () => {
+    log.output('toggleDrawer', true);
 
-    Drawer.getDerivedStateFromProps({ isOpened: true });
-    /*
+    const state = { ...this.state };
+
     this.setState(() => ({
-      isDrawerOpened: true,
+      drawer: {
+        isFixed: !state.drawer.isFixed,
+      },
     }));
-    */
-  };
+  }
 
   /**
    * Render
@@ -109,6 +115,9 @@ class App extends Component {
     log.output('render', true);
 
     const state = { ...this.state };
+    const classNames = {
+      drawer: new BEMHelper('drawer'),
+    };
 
     return (
       <div ref={this.refApp}>
@@ -133,15 +142,18 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
+          {/* Drawer */}
           <button
             type="button"
-            onClick={this.openDrawer}
+            onClick={this.toggleDrawer}
+            {...classNames.drawer('button-open')}
           >
-            Open
+            Open mobile navigation
           </button>
-
-          {/* Drawer */}
-          <Drawer isOpened={state.isDrawerOpened}>
+          <Drawer
+            isFixed={state.drawer.isFixed}
+            toggleDrawer={this.toggleDrawer}
+          >
             <Navigation
               items={navigationDataMain}
               selectAnchor={this.selectAnchor}
@@ -332,7 +344,7 @@ class App extends Component {
           {/* / Latest work Mail starter */}
 
           {/* Clients */}
-          <Clients />
+          {/* <Clients /> */}
           {/* / Clients */}
 
           {/* How was this page made */}

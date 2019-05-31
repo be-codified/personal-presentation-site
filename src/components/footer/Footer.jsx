@@ -1,6 +1,6 @@
 import React from 'react';
 import BEMHelper from 'react-bem-helper';
-import FetchApiGitHub from '../fetch-api-git-hub/FetchApiGitHub';
+// import FetchApiGitHub from '../fetch-api-git-hub/FetchApiGitHub';
 import { logConfig, Log } from '../../helpers/log';
 
 const log = new Log(logConfig.footer);
@@ -18,9 +18,9 @@ function Footer() {
       <p>
         <small>Copyright 2015-{yearCurrent} © be-codified.com</small><br />
       </p>
-      <p>
+      {/* <p>
         <small><FetchApiGitHub /></small>
-      </p>
+      </p> */}
     </footer>
   );
 }
