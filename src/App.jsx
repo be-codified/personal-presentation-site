@@ -43,7 +43,7 @@ class App extends Component {
     // Setting default properties
     this.state = {
       drawer: {
-        isFixed: false,
+        isFixedForTabletAndBelow: false,
       },
     };
   }
@@ -89,8 +89,10 @@ class App extends Component {
 
   /**
    * Toggle drawer
-   * (TODO: method called from child component to be able to select anchor)
-   * @param {boolean} isFixed - Is fixed
+   * Method is used twice:
+   * - when button open is clicked in this component
+   * - when button close is clicked in Drawer component (method passed through props into child)
+   * @param {boolean} isFixedForTabletAndBelow - Is fixed for tablet and below breakpoints
    * @return {void}
    */
 
@@ -101,7 +103,7 @@ class App extends Component {
 
     this.setState(() => ({
       drawer: {
-        isFixed: !state.drawer.isFixed,
+        isFixedForTabletAndBelow: !state.drawer.isFixedForTabletAndBelow,
       },
     }));
   }
@@ -146,12 +148,12 @@ class App extends Component {
           <button
             type="button"
             onClick={this.toggleDrawer}
-            {...classNames.drawer('button-open')}
+            {...classNames.drawer('button-open', '', 'button')}
           >
-            Open mobile navigation
+            Open navigation
           </button>
           <Drawer
-            isFixed={state.drawer.isFixed}
+            isFixedForTabletAndBelow={state.drawer.isFixedForTabletAndBelow}
             toggleDrawer={this.toggleDrawer}
           >
             <Navigation

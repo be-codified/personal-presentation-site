@@ -8,9 +8,10 @@ $className: drawer;
 
 $config: (
   transition: (
-    duration: 200ms,
+    duration: 300ms,
     easing: map-get($easing, normal),
-  )
+  ),
+  padding: 20px
 );
 
 .#{$className} {
@@ -20,10 +21,11 @@ $config: (
   bottom: 0;
   left: 0;
   right: 0;
+  padding: map-get($config, padding);
   transform: translateX(-100%);
   transition: all map-get(map-get($config, transition), duration) map-get(map-get($config, transition), easing);
 
-  &--fixed {
+  &--fixed-for-tablet-and-below {
     transform: translateX(0);
 
     .#{$className}__button-close {
@@ -31,28 +33,32 @@ $config: (
     }
   }
 
+  &__button-open,
+  &__button-close {
+    margin-left: auto;
+  }
+
   &__button-close {
     display: none;
-    float: right;
   }
 
   &__button-open {
-    float: right;
+    display: block;
   }
 
-  // @include breakpoint('tablet') {
-  //   display: block;
+  @include breakpoint('desktop') {
+    display: block;
 
-  //   &__button-open {
-  //     display: none;
-  //   }
+    &__button-open {
+      display: none;
+    }
 
-  //   &--fixed {
-  //     position: relative;
+    &--fixed-for-tablet-and-below {
+      position: relative;
 
-  //     .drawer__button-close {
-  //       display: none;
-  //     }
-  //   }
-  // }
+      .#{$className}__button-close {
+        display: none;
+      }
+    }
+  }
 }

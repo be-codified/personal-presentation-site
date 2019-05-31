@@ -6,13 +6,6 @@ import { logConfig, Log } from '../../helpers/log';
 const log = new Log(logConfig.drawer);
 
 /**
-  TODO:
-    - use rather bem helper to pass classes on state change
-    - check if react has some simple is hidden method
-    - perhaps create state with just visibility booleans and classes in render
- */
-
-/**
  * Class representing drawer.
  * @extends Component
  */
@@ -29,16 +22,16 @@ class Drawer extends Component {
 
     // Setting default properties
     this.state = {
-      isFixed: props.isFixed,
+      isFixedForTabletAndBelow: props.isFixedForTabletAndBelow,
     };
   }
 
   static getDerivedStateFromProps(props, state) {
     log.output('getDerivedStateFromProps', true);
 
-    if (props.isFixed !== state.isFixed) {
+    if (props.isFixedForTabletAndBelow !== state.isFixedForTabletAndBelow) {
       return {
-        isFixed: props.isFixed,
+        isFixedForTabletAndBelow: props.isFixedForTabletAndBelow,
       };
     }
     return null;
@@ -69,13 +62,13 @@ class Drawer extends Component {
     const classNames = new BEMHelper('drawer');
 
     return (
-      <div {...classNames('', state.isFixed && 'fixed')}>
+      <div {...classNames('', state.isFixedForTabletAndBelow && 'fixed-for-tablet-and-below')}>
         <button
           type="button"
           onClick={this.handleClose}
-          {...classNames('button-close')}
+          {...classNames('button-close', '', 'button')}
         >
-          Close mobile navigation
+          Close navigation
         </button>
         <div>
           {children}
@@ -86,7 +79,7 @@ class Drawer extends Component {
 }
 
 Drawer.propTypes = {
-  isFixed: PropTypes.bool.isRequired,
+  isFixedForTabletAndBelow: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
 };
 
