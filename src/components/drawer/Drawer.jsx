@@ -6,13 +6,6 @@ import { logConfig, Log } from '../../helpers/log';
 const log = new Log(logConfig.drawer);
 
 /**
-  TODO:
-    - use rather bem helper to pass classes on state change
-    - check if react has some simple is hidden method
-    - perhaps create state with just visibility booleans and classes in render
- */
-
-/**
  * Class representing drawer.
  * @extends Component
  */
@@ -29,54 +22,37 @@ class Drawer extends Component {
 
     // Setting default properties
     this.state = {
-      isOpened: props.isOpened,
+      isFixedForTabletAndBelow: props.isFixedForTabletAndBelow,
     };
-
-    // this.state = {
-    //   drawer: 'drawer',
-    //   actions: {
-    //     open: 'drawer__open',
-    //     close: 'drawer__close drawer__close--hidden',
-    //   },
-    //   navigation: 'drawer__navigation drawer__navigation--hidden',
-    // };
   }
 
-  /**
-   * Component did mount
-   * @return {void}
-   */
+  static getDerivedStateFromProps(props, state) {
+    log.output('getDerivedStateFromProps', true);
 
-  componentDidMount = () => {
-    log.output('componentDidMount', true);
-  }
-
-  // TODO: documentation
-
-  static getDerivedStateFromProps(nextProps) {
-    // this.log('getDerivedStateFromProps', true);
-    return {
-      isOpened: nextProps.isOpened,
-    };
+    if (props.isFixedForTabletAndBelow !== state.isFixedForTabletAndBelow) {
+      return {
+        isFixedForTabletAndBelow: props.isFixedForTabletAndBelow,
+      };
+    }
+    return null;
   }
 
   /**
    * Handle close
+   *
    * @return {void}
    */
 
   handleClose = () => {
     log.output('handleClose', true);
 
-    /*
-    this.setState({ isOpened: false }, function () {
-      console.log(this.state.isOpened);
-    });
-    */
+    const props = { ...this.props };
+    props.toggleDrawer();
   }
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 
@@ -88,13 +64,14 @@ class Drawer extends Component {
     const classNames = new BEMHelper('drawer');
 
     return (
-      <div {...classNames('', state.isOpened && 'opened')}>
-        {/* <button
+      <div {...classNames('', state.isFixedForTabletAndBelow && 'fixed-for-tablet-and-below')}>
+        <button
           type="button"
           onClick={this.handleClose}
+          {...classNames('button-close', '', 'button')}
         >
-          Close
-        </button> */}
+          Close navigation
+        </button>
         <div>
           {children}
         </div>
@@ -103,13 +80,8 @@ class Drawer extends Component {
   }
 }
 
-Drawer.defaultProps = {
-  isOpened: false,
-};
-
 Drawer.propTypes = {
-  // test: PropTypes.bool.isRequired,
-  isOpened: PropTypes.bool,
+  isFixedForTabletAndBelow: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
 };
 

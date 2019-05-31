@@ -12,6 +12,7 @@ import shortid from 'shortid';
 class CheckList extends Component {
   /**
    * Calculate progress
+   *
    * @param {array} items - Array of items
    * @return {string} Progress, e.g. `2/10 (20%)`
    */
@@ -33,6 +34,7 @@ class CheckList extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

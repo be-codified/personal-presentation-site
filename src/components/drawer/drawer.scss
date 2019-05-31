@@ -6,34 +6,67 @@
 
 $className: drawer;
 
+$config: (
+  transition: (
+    duration: 300ms,
+    easing: map-get($easing, normal),
+  ),
+  padding: (
+    tabletAndBelow: 20px,
+    desktop: 0
+  )
+);
+
 .#{$className} {
-  // background-color: map-get($colors, yellow);
+  background-color: map-get($colors, map-get($colors, white));
+  padding: map-get(map-get($config, padding), tabletAndBelow);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
   width: 100%;
+  height: 100%;
+  transition: transform map-get(map-get($config, transition), duration) map-get(map-get($config, transition), easing);
 
-  &--opened {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
-  }
+  &--fixed-for-tablet-and-below {
+    transform: translateX(100%);
+    transition: transform map-get(map-get($config, transition), duration) map-get(map-get($config, transition), easing);
 
-  &__open {
-    &--hidden {
-      display: none;
+    .#{$className}__button-close {
+      display: block;
     }
   }
 
-  &__close {
-    &--hidden {
-      display: none;
-    }
+  &__button-open,
+  &__button-close {
+    margin-left: auto;
   }
 
-  &__navigation {
-    &--hidden {
+  &__button-close {
+    display: none;
+  }
+
+  &__button-open {
+    display: block;
+  }
+
+  @include breakpoint('desktop') {
+    position: relative;
+    left: auto;
+    transition: none;
+    padding: map-get(map-get($config, padding), desktop);
+
+    &__button-open {
       display: none;
+    }
+
+    &--fixed-for-tablet-and-below {
+      position: relative;
+      transform: translateX(0);
+
+      .#{$className}__button-close {
+        display: none;
+      }
     }
   }
 }

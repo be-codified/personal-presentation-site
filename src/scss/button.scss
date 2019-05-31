@@ -7,6 +7,12 @@
 $className: button;
 
 .#{$className} {
+  border: 1px solid map-get($colors, black);
+  padding: 3px 5px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+
   // Modifiers
   &--plain {
     border: none;

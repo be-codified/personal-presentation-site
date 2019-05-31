@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import BEMHelper from 'react-bem-helper';
 import { Helmet } from 'react-helmet';
 import helperGetNodeAnchor from './helpers/get-node-anchor';
-// import helperGetNodeAnchorScrollPosition from './helpers/get-node-anchor-scroll-position';
 import LatestWork from './components/latest-work/LatestWork';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
@@ -17,7 +17,7 @@ import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
 import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
-import Clients from './components/clients/Clients';
+// import Clients from './components/clients/Clients';
 import CheckList from './components/check-list/CheckList';
 import checkListData from './components/check-list/data/check-list';
 import { logConfig, Log } from './helpers/log';
@@ -33,6 +33,7 @@ class App extends Component {
   constructor(props) {
     /**
      * Create app
+     *
      * @param {object} props - Props object
      */
 
@@ -41,39 +42,17 @@ class App extends Component {
 
     // Setting default properties
     this.state = {
-      isDrawerOpened: false,
+      drawer: {
+        isFixedForTabletAndBelow: false,
+      },
     };
   }
 
   /**
-   * Component did mount
-   * @return {void}
-   */
-
-  componentDidMount = () => {
-    log.output('componentDidMount', true);
-
-    // TODO: go to anchor if hash in url
-    // const { hash } = window.location;
-
-    // // Selecting anchor node with method from parent
-    // const node = this.selectAnchor(hash);
-    // // Calculate scroll position
-    // const scrollPosition = helperGetNodeAnchorScrollPosition(node, 0);
-
-    // console.log(node);
-    // console.log(scrollPosition);
-
-    // // Scroll to position
-    // window.scrollTo({
-    //   top: scrollPosition,
-    //   left: 0,
-    //   behavior: 'smooth',
-    // });
-  }
-
-  /**
-   * Select anchor (method called from child component to be able to select anchor)
+   * Select anchor
+   *
+   * Method called from child component to be able to select anchor.
+   *
    * @param {string} hash - Hash
    * @return {object} Node anchor
    */
@@ -85,23 +64,30 @@ class App extends Component {
   }
 
   /**
-   * Open drawer
+   * Toggle drawer
+   *
+   * Method used
+   * - when button open is clicked in this component
+   * - when button close is clicked in Drawer component (method passed through props into child)
+   * @param {boolean} isFixedForTabletAndBelow - Is fixed for tablet and below breakpoints
    * @return {void}
    */
 
-  openDrawer = () => {
-    log.output('openDrawer', true);
+  toggleDrawer = () => {
+    log.output('toggleDrawer', true);
 
-    Drawer.getDerivedStateFromProps({ isOpened: true });
-    /*
+    const state = { ...this.state };
+
     this.setState(() => ({
-      isDrawerOpened: true,
+      drawer: {
+        isFixedForTabletAndBelow: !state.drawer.isFixedForTabletAndBelow,
+      },
     }));
-    */
-  };
+  }
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 
@@ -109,6 +95,9 @@ class App extends Component {
     log.output('render', true);
 
     const state = { ...this.state };
+    const classNames = {
+      drawer: new BEMHelper('drawer'),
+    };
 
     return (
       <div ref={this.refApp}>
@@ -133,15 +122,18 @@ class App extends Component {
           </ScrollToAnchor>
           {/* / Back to top */}
 
-          {/* <button
-            type="button"
-            onClick={this.openDrawer}
-          >
-            Open
-          </button> */}
-
           {/* Drawer */}
-          <Drawer isOpened={state.isDrawerOpened}>
+          <button
+            type="button"
+            onClick={this.toggleDrawer}
+            {...classNames.drawer('button-open', '', 'button')}
+          >
+            Open navigation
+          </button>
+          <Drawer
+            isFixedForTabletAndBelow={state.drawer.isFixedForTabletAndBelow}
+            toggleDrawer={this.toggleDrawer}
+          >
             <Navigation
               items={navigationDataMain}
               selectAnchor={this.selectAnchor}
@@ -332,7 +324,7 @@ class App extends Component {
           {/* / Latest work Mail starter */}
 
           {/* Clients */}
-          <Clients />
+          {/* <Clients /> */}
           {/* / Clients */}
 
           {/* How was this page made */}

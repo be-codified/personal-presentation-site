@@ -86,6 +86,7 @@ class Log {
 
   /**
    * Output
+   *
    * @param {string} nameMethod - Name of method
    * @param {boolean} outputLog - Output log
    * @return {void}
