@@ -39,6 +39,7 @@ class Drawer extends Component {
 
   /**
    * Handle close
+   *
    * @return {void}
    */
 
@@ -51,6 +52,7 @@ class Drawer extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

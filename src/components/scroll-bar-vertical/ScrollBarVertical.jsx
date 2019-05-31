@@ -65,6 +65,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Component did mount
+   *
    * @return {void}
    */
 
@@ -85,6 +86,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Component will unmount
+   *
    * @return {void}
    */
 
@@ -99,6 +101,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Get indicator top
+   *
    * @return {number} Top value
    */
 
@@ -117,6 +120,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Get indicator height
+   *
    * @return {number} Height value
    */
 
@@ -131,6 +135,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Set indicator state
+   *
    * @param {number} top - Top value
    * @param {number} height - Height value
    * @return {void}
@@ -149,6 +154,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Set document
+   *
    * @return {void}
    */
 
@@ -172,6 +178,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Handle scroll
+   *
    * @return {void}
    */
 
@@ -185,6 +192,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Handle touch and move
+   *
    * @return {void}
    */
 
@@ -198,6 +206,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Handle resize
+   *
    * @return {void}
    */
 
@@ -210,6 +219,7 @@ class ScrollBarVertical extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

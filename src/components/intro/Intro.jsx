@@ -29,6 +29,7 @@ class Intro extends Component {
 
   /**
    * Calculate period
+   *
    * @param {number} dateStart - Start date
    * @param {boolean} useWords - Use words
    * @return {number|string} - Calculated period
@@ -48,6 +49,7 @@ class Intro extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

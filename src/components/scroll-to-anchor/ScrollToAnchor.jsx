@@ -24,6 +24,7 @@ class ScrollToAnchor extends Component {
 
   /**
    * Handle click
+   *
    * @return {void}
    */
 
@@ -55,6 +56,7 @@ class ScrollToAnchor extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

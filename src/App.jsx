@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import BEMHelper from 'react-bem-helper';
 import { Helmet } from 'react-helmet';
 import helperGetNodeAnchor from './helpers/get-node-anchor';
-// import helperGetNodeAnchorScrollPosition from './helpers/get-node-anchor-scroll-position';
 import LatestWork from './components/latest-work/LatestWork';
 import Intro from './components/intro/Intro';
 import Footer from './components/footer/Footer';
@@ -34,6 +33,7 @@ class App extends Component {
   constructor(props) {
     /**
      * Create app
+     *
      * @param {object} props - Props object
      */
 
@@ -49,34 +49,10 @@ class App extends Component {
   }
 
   /**
-   * Component did mount
-   * @return {void}
-   */
-
-  componentDidMount = () => {
-    log.output('componentDidMount', true);
-
-    // TODO: go to anchor if hash in url
-    // const { hash } = window.location;
-
-    // // Selecting anchor node with method from parent
-    // const node = this.selectAnchor(hash);
-    // // Calculate scroll position
-    // const scrollPosition = helperGetNodeAnchorScrollPosition(node, 0);
-
-    // console.log(node);
-    // console.log(scrollPosition);
-
-    // // Scroll to position
-    // window.scrollTo({
-    //   top: scrollPosition,
-    //   left: 0,
-    //   behavior: 'smooth',
-    // });
-  }
-
-  /**
-   * Select anchor (method called from child component to be able to select anchor)
+   * Select anchor
+   *
+   * Method called from child component to be able to select anchor.
+   *
    * @param {string} hash - Hash
    * @return {object} Node anchor
    */
@@ -89,7 +65,8 @@ class App extends Component {
 
   /**
    * Toggle drawer
-   * Method is used twice:
+   *
+   * Method used
    * - when button open is clicked in this component
    * - when button close is clicked in Drawer component (method passed through props into child)
    * @param {boolean} isFixedForTabletAndBelow - Is fixed for tablet and below breakpoints
@@ -110,6 +87,7 @@ class App extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 

@@ -34,6 +34,7 @@ class FetchApiGitHub extends Component {
 
   /**
    * Component did mount
+   *
    * @return {void}
    */
 
@@ -80,6 +81,7 @@ class FetchApiGitHub extends Component {
 
   /**
    * Format date and time
+   *
    * @return {string} Value to be formatted
    * @return {string} Formated date and time, e.g. `25.05.2019 at 12:00`
    */
@@ -109,6 +111,7 @@ class FetchApiGitHub extends Component {
 
   /**
    * Render
+   *
    * @return {object} React component instance
    */
 
