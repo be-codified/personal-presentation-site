@@ -11,17 +11,6 @@ const log = new Log(logConfig.scrollToAnchor);
  */
 
 class ScrollToAnchor extends Component {
-  constructor(props) {
-    /**
-     * Create scroll to anchor
-     * @param {object} props - Props object
-     */
-
-    super(props);
-    const { offset } = this.props;
-    this.offset = offset;
-  }
-
   /**
    * Handle click
    *
@@ -31,24 +20,35 @@ class ScrollToAnchor extends Component {
   handleClick = (event) => {
     log.output('handleClick', true);
 
-    const { selectAnchor } = this.props;
+    const { handleClick, offset, delay } = this.props;
     event.preventDefault();
 
     // Get hash of clicked anchor link
     const { hash } = event.currentTarget;
 
     // Selecting anchor node with method from parent
-    const node = selectAnchor(hash);
+    const node = handleClick(hash);
 
     // Calculate scroll position
-    const scrollPosition = helperGetNodeAnchorScrollPosition(node, this.offset);
+    const scrollPosition = helperGetNodeAnchorScrollPosition(node, offset);
 
-    // Scroll to position
-    window.scrollTo({
-      top: scrollPosition,
-      left: 0,
-      behavior: 'smooth',
-    });
+    function scrollTo() {
+      window.scrollTo({
+        top: scrollPosition,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+
+    if (delay) {
+      setTimeout(() => {
+        // Scroll to position with delay
+        scrollTo();
+      }, delay);
+    } else {
+      // Scroll to position
+      scrollTo();
+    }
 
     // Update URL
     history.replaceState({}, false, hash); // eslint-disable-line no-restricted-globals
@@ -76,13 +76,15 @@ class ScrollToAnchor extends Component {
 ScrollToAnchor.defaultProps = {
   className: '',
   offset: 30,
+  delay: 0,
 };
 
 ScrollToAnchor.propTypes = {
   href: PropTypes.string.isRequired,
   className: PropTypes.string,
-  selectAnchor: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
   offset: PropTypes.number,
+  delay: PropTypes.number,
   children: PropTypes.string.isRequired,
 };
 

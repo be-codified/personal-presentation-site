@@ -12,7 +12,7 @@ const log = new Log(logConfig.navigation);
 function Navigation(props) {
   log.output('render', true);
 
-  const { items, selectAnchor } = props;
+  const { items, handleClick } = props;
   const classNames = new BEMHelper('navigation');
 
   return (
@@ -24,7 +24,7 @@ function Navigation(props) {
               ? (
                 <ScrollToAnchor
                   href={`#${item.id}`}
-                  selectAnchor={selectAnchor}
+                  handleClick={handleClick}
                   offset={10}
                 >
                   {item.text}
@@ -41,7 +41,7 @@ function Navigation(props) {
           }
 
           {/* Checking if item has children and recursively render component again */}
-          {item.items && <Navigation items={item.items} selectAnchor={selectAnchor} />}
+          {item.items && <Navigation items={item.items} handleClick={handleClick} />}
         </li>
       ))}
     </ul>
@@ -56,7 +56,7 @@ Navigation.propTypes = {
       classNames: PropTypes.string,
     }).isRequired,
   ).isRequired,
-  selectAnchor: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Navigation;

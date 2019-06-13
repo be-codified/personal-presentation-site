@@ -6,7 +6,7 @@ const logConfig = {
   app: {
     nameComponent: 'App',
     type: 'class',
-    outputLog: true,
+    outputLog: false,
   },
   clients: {
     nameComponent: 'Clients',
@@ -53,10 +53,10 @@ const logConfig = {
     type: 'func',
     outputLog: false,
   },
-  navigation: {
-    nameComponent: 'Navigation',
+  navigationMain: {
+    nameComponent: 'NavigationMain',
     type: 'func',
-    outputLog: false,
+    outputLog: true,
   },
   scrollBarVertical: {
     nameComponent: 'ScrollBarVertical',

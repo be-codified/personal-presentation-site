@@ -12,7 +12,8 @@ import knowledgeDataVisualOutput from './components/knowledge/data/visual-output
 import knowledgeDataProgramming from './components/knowledge/data/programming';
 import knowledgeDataMagicalTools from './components/knowledge/data/magical-tools';
 import knowledgeDataHowWasMade from './components/knowledge/data/how-was-made';
-import Navigation from './components/navigation/Navigation';
+// import Navigation from './components/navigation/Navigation';
+import NavigationMain from './components/navigation/NavigationMain';
 import navigationDataMain from './components/navigation/data/main';
 import navigationDataSections from './components/navigation/data/sections';
 import Drawer from './components/drawer/Drawer';
@@ -60,6 +61,22 @@ class App extends Component {
   selectAnchor = (hash) => {
     log.output('selectAnchor', true);
 
+    return helperGetNodeAnchor(this.refApp, hash);
+  }
+
+  /**
+   * Handle click navigation item
+   *
+   * Method called from child component to be able to toggle drawer and select anchor.
+   *
+   * @param {string} hash - Hash
+   * @return {object} Node anchor
+   */
+
+  handleClickNavigationItem = (hash) => {
+    log.output('handleClickNavigationItem', true);
+
+    this.toggleDrawer();
     return helperGetNodeAnchor(this.refApp, hash);
   }
 
@@ -114,7 +131,7 @@ class App extends Component {
           */}
           <ScrollToAnchor
             href="#top"
-            selectAnchor={this.selectAnchor}
+            handleClick={this.selectAnchor}
             offset={10}
             className="back-to-top text-uppercase text-no-underline"
           >
@@ -134,9 +151,10 @@ class App extends Component {
             isFixedForTabletAndBelow={state.drawer.isFixedForTabletAndBelow}
             toggleDrawer={this.toggleDrawer}
           >
-            <Navigation
+            <NavigationMain
               items={navigationDataMain}
-              selectAnchor={this.selectAnchor}
+              handleClickNavigationItem={this.handleClickNavigationItem}
+              clickDelay={400}
             />
           </Drawer>
           {/* Drawer */}

@@ -6,6 +6,12 @@ import { logConfig, Log } from '../../helpers/log';
 const log = new Log(logConfig.drawer);
 
 /**
+  TODO:
+    - lock body when showing fixed drawer
+    - handle anchor links (hiding drawer, go to anchor)
+ */
+
+/**
  * Class representing drawer.
  * @extends Component
  */
