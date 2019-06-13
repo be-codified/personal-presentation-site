@@ -47,10 +47,10 @@ const navigationDataMain = [
     ],
     classNames: 'button--plain',
   },
-  {
-    id: sections.clients,
-    text: 'Clients',
-  },
+  // {
+  //   id: sections.clients,
+  //   text: 'Clients',
+  // },
   {
     id: sections.howWasMade,
     text: 'How was this page made',

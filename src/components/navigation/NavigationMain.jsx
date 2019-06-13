@@ -14,7 +14,7 @@ function NavigationMain(props) {
 
   const { items, handleClickNavigationItem, clickDelay } = props;
   const classNames = new BEMHelper('navigation-main');
-  let levelCounter = 1;
+  const levelCounter = 1;
 
   return (
     <ul {...classNames('')}>

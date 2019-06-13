@@ -22,6 +22,7 @@ import ScrollToAnchor from './components/scroll-to-anchor/ScrollToAnchor';
 import CheckList from './components/check-list/CheckList';
 import checkListData from './components/check-list/data/check-list';
 import { logConfig, Log } from './helpers/log';
+import mediaQuery from './helpers/media-query';
 
 const log = new Log(logConfig.app);
 
@@ -154,7 +155,7 @@ class App extends Component {
             <NavigationMain
               items={navigationDataMain}
               handleClickNavigationItem={this.handleClickNavigationItem}
-              clickDelay={400}
+              clickDelay={mediaQuery('tablet') ? 500 : 0}
             />
           </Drawer>
           {/* Drawer */}
