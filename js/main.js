@@ -26,7 +26,7 @@ $(document).ready(function() {
             var period = Math.round(new Date(dateEnd - dateStart) / 1000 / 60 / 60 / 24 / 365);
 
             if (returnString) {
-              var integerToString = ['two', 'three', 'four', 'five', 'six'];
+              var integerToString = ['two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
               return integerToString[period - 2];
             } else {
               return period;
