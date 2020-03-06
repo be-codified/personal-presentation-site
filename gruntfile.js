@@ -163,7 +163,7 @@ module.exports = function(grunt) {
           port: 21,
           authKey: 'credentials',
         },
-        src: '/Users/ziga/Development/be-codified/build/development',
+        src: '/Users/zigav/Development/be-codified/build/development',
         dest: '/public_html/development',
         exclusions: [
           '.DS_Store', '*/.DS_Store', 'package-lock.json',
